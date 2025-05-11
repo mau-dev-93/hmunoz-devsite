@@ -1,17 +1,16 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
-import { Box } from "@mui/material";
-import Navbar from "../../components/layout/Navbar/Navbar"; // Navbar específico para el landing
+import Navbar from "../../components/layout/Navbar/Navbar";
 
-// assets
-import { styles } from "../../assets/styles/layout/landingStyles";
+import { LandingContainer } from "./LandingLayout.styles";
 
-const LandingLayout = ({children}) => {
+const LandingLayout = ({ children }) => {
     return (
-        <Box css>
+        <>
             <Navbar />
-            <main>{children}</main>
-        </Box>
+            <LandingContainer as="main">
+                {children}
+            </LandingContainer>
+        </>
     );
 };
 

@@ -1,18 +1,13 @@
 import React from 'react'
-import './App.css'
+// import './App.css'
 
-import Button from '@mui/material/Button';
-import styled from 'styled-components';
+import AppRouter from './routes/AppRouter';
 
-const StyledBox = styled.div``;
-
-function App() {
-  return (
-    <>
-      <h1>¡Hola, Mauricio!</h1>
-      <Button variant="contained">Botón MUI</Button>
-    </>
-  );
+const App = () => {
+    /*inicializaciones*/
+    return (
+        <AppRouter isAuthenticated={true} />
+    );
 }
 
-export default App
+export default App;
