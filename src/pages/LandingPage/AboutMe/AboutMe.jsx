@@ -5,6 +5,9 @@ import Box from "@mui/material/Box"
 import Grid from "@mui/material/Grid"
 import Typography from "@mui/material/Typography"
 
+// components
+import SwipeableGallery from './SwipeableGallery/SwipeableGallery';
+
 const AboutMe = () => {
     return <Box>
         <Box textAlign="center" sx={{ marginBottom: "24px" }}>
@@ -13,6 +16,7 @@ const AboutMe = () => {
         </Box>
         <Grid container spacing={4}>
             <Grid item size={6}>
+                {/* <SwipeableGallery /> */}
                 <Box
                     component="img"
                     src="\src\assets\images\family.jpg"

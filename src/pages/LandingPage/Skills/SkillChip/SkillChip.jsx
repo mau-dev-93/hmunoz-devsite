@@ -19,7 +19,7 @@ const SkillChip = ({ techKey }) => {
     return (
         <Stack direction="row" spacing={0.5}>
             <Icon style={{ color: theme.palette.primary.main }} />
-            <Typography variant="body2" color="text.primary">{label}</Typography>
+            <Typography variant="body2" color="text.secondary">{label}</Typography>
         </Stack>
     );
 };

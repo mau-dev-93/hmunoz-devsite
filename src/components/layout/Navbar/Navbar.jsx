@@ -19,7 +19,7 @@ const StyledAppBar = styled(AppBar)`
 
 const Navbar = () => {
     return (
-        <StyledAppBar position="relative" elevation={0} /*position="fixed" color="transparent" elevation={0}*/>
+        <StyledAppBar position="fixed" elevation={0} color="transparent" /*position="fixed"  elevation={0}*/>
             <Toolbar variant="regular">
                 <Box display="flex" justifyContent="center" width="100%">
                     <NavbarLink to="home" smooth duration={500} offset={-64}>

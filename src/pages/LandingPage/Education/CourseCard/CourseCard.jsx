@@ -13,7 +13,7 @@ import Stack from '@mui/material/Stack';
 import VerifiedIcon from '@mui/icons-material/Verified';
 
 const CourseCard = () => {
-    return <Card sx={{ maxWidth: 320 }}>
+    return <Card sx={{ maxWidth: 260 }}>
         <CardMedia
             image="../../../../../src/assets/images/liderazgo.jpg"
             sx={{ height: 140 }}

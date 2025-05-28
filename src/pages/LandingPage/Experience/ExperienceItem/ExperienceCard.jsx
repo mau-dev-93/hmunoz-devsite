@@ -99,7 +99,7 @@ const ExperienceCard = ({ title, dateRange, company, summary, responsibilities, 
                                     <ListItemIcon sx={{ minWidth: 28, color: 'primary.main' }}>
                                         <CheckCircleOutlineIcon fontSize="small" />
                                     </ListItemIcon>
-                                    <ListItemText color='primary.main' primary={item} />
+                                    <ListItemText primary={<Typography variant='body2' color="textSecondary">{item}</Typography>} />
                                 </ListItem>
                             ))}
                         </List>
@@ -123,7 +123,12 @@ const ExperienceCard = ({ title, dateRange, company, summary, responsibilities, 
                             {expanded ? <ExpandLessIcon sx={{ fontSize: 13 }} /> : <ExpandMoreIcon sx={{ fontSize: 13 }} />}
                         </Link>
                     )} */}
-                    <Stack direction="row" spacing={1} flexWrap="wrap">
+                    <Typography variant="subtitle2" color="text.primary">Tecnologías</Typography>
+                    <Stack 
+                        direction="row" 
+                        spacing={0} 
+                        flexWrap="wrap"
+                        gap={1}>
                         {techStack.map((tech, index) => (
                             <Chip
                                 key={index}
