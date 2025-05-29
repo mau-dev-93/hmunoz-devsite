@@ -12,14 +12,14 @@ import Typography from "@mui/material/Typography";
 import NavbarLink from "../NavbarLink/NavbarLink";
 
 const StyledAppBar = styled(AppBar)`
-    background-color: ${(props) => props.theme.palette.navbar.main};
+    background-color: ${(props) => props.theme.palette.navbar.transparent};
     backdrop-filter: blur(6px);
     box-shadow: none;
 `;
 
 const Navbar = () => {
     return (
-        <StyledAppBar position="fixed" elevation={0} color="transparent" /*position="fixed"  elevation={0}*/>
+        <StyledAppBar position="fixed" elevation={0} /*position="fixed"  elevation={0}*/>
             <Toolbar variant="regular">
                 <Box display="flex" justifyContent="center" width="100%">
                     <NavbarLink to="home" smooth duration={500} offset={-64}>

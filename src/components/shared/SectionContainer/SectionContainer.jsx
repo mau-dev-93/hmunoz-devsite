@@ -8,7 +8,7 @@ import Container from '@mui/material/Container';
 const SectionContainer = styled(Box)`
     width: 100%;
     // min-height: 100vh;
-    padding: 2rem 2rem;
+    padding: 4rem 2rem;
     background-color: ${({ theme, bgcolor }) =>
         theme.palette.background[bgcolor] || 'inherit'};
 `;
@@ -16,7 +16,7 @@ const SectionContainer = styled(Box)`
 const SectionWrapper = ({ id, children, bgcolor = 'default' }) => {
     return (
         <SectionContainer id={id} bgcolor={bgcolor}>
-            <Container maxWidth="md">{children}</Container>
+            <Container maxWidth="lg">{children}</Container>
         </SectionContainer>
     );
 };

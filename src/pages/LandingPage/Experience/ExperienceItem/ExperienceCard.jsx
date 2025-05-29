@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 
 // @mui/material
 import Accordion from "@mui/material/Accordion"
@@ -22,6 +23,15 @@ import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 
+
+const StyledAccordion = styled(Accordion)`
+    background-color: ${(props) => props.theme.palette.background.paper};
+    border-color: ${(props) => props.theme.palette.divider};
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+`;
+
 const ExperienceCard = ({ title, dateRange, company, summary, responsibilities, techStack, defaultExpanded }) => {
     // const [expanded, setExpanded] = React.useState(false);
     // const [expanded, setExpanded] = React.useState(false);
@@ -32,8 +42,9 @@ const ExperienceCard = ({ title, dateRange, company, summary, responsibilities, 
 
     return (
         // <Paper elevation={0} sx={{ backgroundColor: "background.paper", width: "100%", paddingX: "24px", paddingY: "16px", borderRadius: 2 }}>
-        <Accordion
+        <StyledAccordion
             defaultExpanded={defaultExpanded}
+            elevation={0}
         // expanded={expanded === 'panel1'}
         // onChange={handleChange('panel1')}
         >
@@ -141,7 +152,7 @@ const ExperienceCard = ({ title, dateRange, company, summary, responsibilities, 
                     </Stack>
                 </Stack>
             </AccordionDetails>
-        </Accordion>
+        </StyledAccordion>
     )
 };
 

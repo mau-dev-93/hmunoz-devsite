@@ -13,19 +13,19 @@ import Education from './Education/Education';
 
 const LandingPage = () => {
     return <Box>
-        <SectionWrapper id="home" bgcolor="section">
+        <SectionWrapper id="home" bgcolor="background">
             <Home />
         </SectionWrapper>
         <SectionWrapper id="about_me" bgcolor="background">
            <AboutMe />
         </SectionWrapper>
-        <SectionWrapper id="experience" bgcolor="section">
+        <SectionWrapper id="experience" bgcolor="background">
             <Experience />
         </SectionWrapper>
         <SectionWrapper id="skills" bgcolor="background">
             <Skills />
         </SectionWrapper>
-        <SectionWrapper id="education" bgcolor="section">
+        <SectionWrapper id="education" bgcolor="background">
             <Education />
         </SectionWrapper>
     </Box>

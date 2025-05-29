@@ -3,7 +3,8 @@ import colors from "./colors";
 export const palette = {
     primary: {
         main: colors.cyanPurpleBlue,
-        contrastText: colors.nightSkyBlack
+        // contrastText: colors.nightSkyBlack
+
     },
     secondary: {
         main: colors.bluePurpleAccent,
@@ -23,16 +24,16 @@ export const palette = {
     background: {
         default: colors.darkBluishBlack,
         section: colors.deepBlueGray,
-        paper: colors.nightSkyBlack,
+        paper: colors.deepBlueGray2,
     },
     navbar: {
         main: colors.darkBluishBlack,
-        translucent: colors.translucentBlackNavbar
+        transparent: colors.translucentBlackNavbar
     },
     text: {
         primary: colors.softWhite,
         secondary: colors.lightGray,
         disabled: colors.disabledGray
     },
-    divider: colors.subtleWhiteOverlay
+    divider: colors.borderGray
 };

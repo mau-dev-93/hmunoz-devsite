@@ -30,7 +30,7 @@ const AboutMe = () => {
                 />
             </Grid>
             <Grid item size={6}>
-                <Typography variant="body1" fontWeight="400" color="text.secondary">
+                <Typography variant="body1" fontWeight="400" color="text.primary" component="p">
                     Soy un desarrollador frontend con experiencia en la creación de aplicaciones web modernas y receptivas. Me apasiona crear interfaces de usuario intuitivas y atractivas que mejoren la experiencia del usuario. Tengo habilidades sólidas en HTML, CSS y JavaScript, así como en frameworks como React y Angular. Siempre estoy buscando aprender nuevas tecnologías y mejorar mis habilidades para seguir siendo relevante en este campo en constante evolución.
                 </Typography>
             </Grid>

@@ -28,14 +28,14 @@ import CourseCard from './CourseCard/CourseCard';
 
 const Education = () => {
     return (<Box width="100%">
-        <Box textAlign="center" sx={{ marginBottom: "24px" }}>
+        <Box textAlign='center' sx={{ marginBottom: "24px" }}>
             <Typography variant="h4" fontWeight="600" color="text.primary">Educación</Typography>
             <Typography variant="subtitle2" fontWeight="400" color="text.secondary">Mi carrera académica</Typography>
         </Box>
         <Timeline position="alternate">
             <TimelineItem>
                 <TimelineSeparator>
-                    <TimelineDot variant='outlined' />
+                    <TimelineDot variant='outlined' color='primary' />
                     <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>
@@ -51,7 +51,7 @@ const Education = () => {
             </TimelineItem>
             <TimelineItem>
                 <TimelineSeparator>
-                    <TimelineDot variant='outlined' />
+                    <TimelineDot variant='outlined' color='primary' />
                     <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>
