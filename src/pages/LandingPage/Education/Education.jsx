@@ -44,7 +44,7 @@ const Education = () => {
                         <Typography variant="subtitle2" fontWeight="400" color="text.secondary">Universidad Tecnológica de México</Typography>
                         <Stack direction="row" mt={2} spacing={0.5} justifyContent="flex-start">
                             <CalendarMonthOutlinedIcon fontSize="small" fontWeight="400" />
-                            <Typography variant="subtitle2" fontWeight="400" color="text.secondary">2023 - en curso</Typography>
+                            <Typography variant="subtitle2" fontWeight="400" color="primary">2023 - en curso</Typography>
                         </Stack>
                     </Stack>
                 </TimelineContent>
@@ -60,7 +60,7 @@ const Education = () => {
                         <Typography variant="subtitle2" fontWeight="400" color="text.secondary">Universidad Autónoma de Nuevo León</Typography>
                         <Stack direction="row" mt={2} spacing={0.5} justifyContent="flex-end">
                             <CalendarMonthOutlinedIcon fontSize="small" fontWeight="400" />
-                            <Typography variant="subtitle2" fontWeight="400" color="text.secondary">2010 - 2014</Typography>
+                            <Typography variant="subtitle2" fontWeight="400" color="primary">2010 - 2014</Typography>
                         </Stack>
                     </Stack>
                 </TimelineContent>
@@ -72,7 +72,7 @@ const Education = () => {
                 <CourseCard
                     course={{
                         title: "Curso de React.js",
-                        institution: "Platzi",
+                        institution: "Coursera",
                         duration: "2022",
                         description: "Curso avanzado de desarrollo web con React.js.",
                         link: "https://platzi.com/cursos/react/"

@@ -100,7 +100,7 @@ const Home = () => {
                 </Grid>
                 <Grid>
                     <Button
-                        variant='contained'
+                        variant='outlined'
                         size='medium'>
                         Descargar CV
                     </Button>

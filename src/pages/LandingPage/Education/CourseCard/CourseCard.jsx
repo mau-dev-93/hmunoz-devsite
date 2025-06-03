@@ -29,7 +29,7 @@ const CourseCard = () => {
                 <Typography
                     variant="body1"
                     fontWeight="500"
-                    color='primary'>
+                    color='text.primary'>
                     Liderazgo y comunicación
                 </Typography>
                 <Chip

@@ -26,7 +26,7 @@ import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 
 const StyledAccordion = styled(Accordion)`
     background-color: ${(props) => props.theme.palette.background.paper};
-    border-color: ${(props) => props.theme.palette.divider};
+    border-color: ${(props) => props.theme.palette.divider.main};
     border-radius: 8px;
     border-width: 1px;
     border-style: solid;
@@ -67,16 +67,15 @@ const ExperienceCard = ({ title, dateRange, company, summary, responsibilities, 
                     }
                 }}
             >
-                <Stack width="100%" direction="row" justifyContent="space-between" sx={{ paddingRight: 1 }}>
-                    <Stack direction="row" spacing={1} alignItems="center">
-                        <Typography variant="body1" fontWeight="600" color="text.primary">{title}</Typography>
-                        <Box component="span">|</Box>
-                        <Typography variant="body1" fontWeight="600" color="primary.main">{company}</Typography>
+                <Stack width="100%" direction="row" justifyContent="space-between">
+                    <Stack>
+                        <Typography variant="body1" fontWeight="600" color="text.primary">{title} en {company}</Typography>
+                        <Typography variant="subtitle2" color="primary">{dateRange}</Typography>
                     </Stack>
-                    <Stack direction="row" spacing={1} alignItems="center">
+                    {/* <Stack direction="row" spacing={1} alignItems="center">
                         <CalendarMonthOutlinedIcon fontSize="small" />
-                        <Typography variant="subtitle2" color="text.secondary">{dateRange}</Typography>
-                    </Stack>
+                        <Typography variant="subtitle2" color="primary">{dateRange}</Typography>
+                    </Stack> */}
                 </Stack>
                 {/* <Typography component="span" sx={{ width: '33%', flexShrink: 0 }}>
                     General settings

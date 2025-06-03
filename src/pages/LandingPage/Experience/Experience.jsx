@@ -17,8 +17,8 @@ const Experience = () => {
             <ExperienceCard
                 title="Desarrollador Full-Stack"
                 company="Talisis"
-                dateRange="ene. 2021 - dic. 2024"
-                defaultExpanded={true}
+                dateRange="enero 2021 - diciembre 2024"
+                // defaultExpanded={true}
                 summary="Líder técnico del módulo de compras, suscripciones y matriculación en la plataforma educativa Talisis.com, responsable de diseñar, desarrollar y mantener soluciones escalables para los procesos de compra, asignación de productos, procesos de inscripción académica y analíticas. Coordiné ciclos completos de desarrollo, lo que permitió un flujo de pagos que procesaba 400,000 MXN mensuales en promedio."
                 responsibilities={[
                     "Lideré el desarrollo del checkout multiproducto y suscripciones de Talisis.com, con un volumen de ventas mensual promedio de $400,000 MXN mediante pagos por SPEI, tarjeta y efectivo.",
@@ -53,7 +53,7 @@ const Experience = () => {
             <ExperienceCard
                 title="Desarrollador Full Stack"
                 company="Enkontrol"
-                dateRange="jul. 2017 - sept. 2020"
+                dateRange="julio 2017 - septiembre 2020"
                 summary="Desarrollador Fullstack en Enkontrol, encargado de la migración del ERP Enkontrol 9 hacia su versión web, participando desde el análisis funcional hasta el desarrollo e implementación de nuevos módulos. Lideré el desarrollo técnico del módulo de Construcción, coordinando tareas de equipo y diseño de soluciones. Mi trabajo abarcó el frontend con ReactJS, TypeScript, HTML5, CSS3 y JQuery, así como el backend con ASP.NET MVC en C#."
                 responsibilities={[
                     "Colaboré en la migración del ERP Enkontrol 9 (versión de escritorio) a su versión web, asegurando compatibilidad funcional y mejoras en la experiencia del usuario.",
@@ -84,7 +84,7 @@ const Experience = () => {
             <ExperienceCard
                 title="Desarrollador de Software"
                 company="TCA Software Solutions"
-                dateRange="feb. 2015 - jul. 2017"
+                dateRange="febrero 2015 - julio 2017"
                 summary="Desarrollador de Software en Merksyst, enfocado en el diseño y desarrollo de aplicaciones híbridas en C/C++ y Object Pascal, así como en la migración del ERP de versión 7.6 a 10 basada en ASP.NET. Lideré tareas de documentación, análisis de requerimientos y soporte a garantías del sistema, además de optimizar consultas y procedimientos almacenados en SQL Server 2014 dentro de un equipo técnico reducido."
                 responsibilities={[
                     "Diseñé y desarrollé aplicaciones híbridas en C/C++ y Object Pascal, utilizadas en procesos administrativos y operativos de clientes del ERP.",
@@ -108,7 +108,7 @@ const Experience = () => {
             <ExperienceCard
                 title="Practicante Móvil"
                 company="Consultoría Consiss"
-                dateRange="sept. 2014 - ene. 2015"
+                dateRange="septiembre 2014 - enero 2015"
                 summary="Practicante Desarrollador en Consiss, donde diseñé y desarrollé desde cero una aplicación móvil nativa para Android para el cliente Arca Continental, así como su Web API en ASP.NET Web API 4.5 y un administrador web en ASP.NET 4.5. Implementé también consultas y procedimientos almacenados en SQL Server 2014, participando en el ciclo completo de desarrollo de la solución."
                 responsibilities={[
                     "Diseñé y desarrollé una aplicación móvil nativa para Android desde cero, adaptada a las necesidades operativas de Arca Continental.",
@@ -129,7 +129,7 @@ const Experience = () => {
             <ExperienceCard
                 title="Practicante Móvil"
                 company="Diestel"
-                dateRange="ago. 2013 - ago. 2014"
+                dateRange="agosto 2013 - agosto 2014"
                 summary="Practicante móvil en Diestel, colaborando en el diseño y desarrollo de aplicaciones móviles nativas para Android e iOS, con integración de bases de datos locales, redes sociales y servicios multimedia. Participé en la implementación de funcionalidades clave y en el consumo de servicios backend a través de WCF."
                 responsibilities={[
                     "Desarrollé aplicaciones móviles nativas para Android e iOS, adaptadas a requerimientos internos de la empresa.",

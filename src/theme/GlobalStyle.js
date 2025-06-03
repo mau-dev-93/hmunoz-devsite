@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         width: 100%;
         font-family: 'Roboto', sans-serif;
-        background-color: ${({ theme }) => theme.palette.background.default};
+        background-color: ${({ theme }) => theme.palette.background.main};
         color: ${({ theme }) => theme.palette.text.primary};
         scroll-behavior: smooth;
     }

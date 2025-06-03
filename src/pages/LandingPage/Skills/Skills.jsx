@@ -41,8 +41,8 @@ import CodeIcon from '@mui/icons-material/CodeOutlined';
 import BuildIcon from '@mui/icons-material/BuildOutlined';
 
 const StyledBox = styled(Box)`
-    background-color: ${(props) => props.theme.palette.background.section};
-    border-color: ${(props) => props.theme.palette.divider};
+    background-color: ${(props) => props.theme.palette.background.paper};
+    border-color: ${(props) => props.theme.palette.divider.main};
     border-radius: 8px;
     border-width: 1px;
     border-style: solid;

@@ -13,7 +13,7 @@ const SectionContainer = styled(Box)`
         theme.palette.background[bgcolor] || 'inherit'};
 `;
 
-const SectionWrapper = ({ id, children, bgcolor = 'default' }) => {
+const SectionWrapper = ({ id, children, bgcolor = 'main' }) => {
     return (
         <SectionContainer id={id} bgcolor={bgcolor}>
             <Container maxWidth="lg">{children}</Container>
