@@ -25,7 +25,7 @@ const Home = () => {
                     {/* <Typography variant="h4" fontWeight="600" color="text.primary">Hello, I'm</Typography> */}
                     <Typography variant="h3" fontWeight="600" color="text.primary" marginBottom={1}>Mauricio Muñoz</Typography>
                     <Typography variant="h5" fontWeight="600" color="primary" marginBottom={1}>Desarrollador Full Stack</Typography>
-                    <Typography variant="body1" fontWeight="400" color="text.primary">I have a passion for building intuitive, user-friendly interfaces that provide an enjoyable and seamless user experience.</Typography>
+                    <Typography variant="body1" fontWeight="400" color="text.primary">Me especializo en desarrollar soluciones tecnológicas que no solo resuelven problemas, sino que también mejoran la forma en que las personas interactúan con los sistemas.</Typography>
                 </Grid>
                 <Grid container size={12} direction="column" spacing={2} sx={{ marginBottom: "16px" }}>
                     <Grid container spacing={1}>

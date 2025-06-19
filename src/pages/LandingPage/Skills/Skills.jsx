@@ -55,10 +55,10 @@ const Skills = () => {
     return (
         <Box width="100%">
             <Box sx={{ marginBottom: "24px" }}>
-                <Typography variant="h4" fontWeight="600" color="text.primary">Habilidades</Typography>
+                <Typography variant="h4" fontWeight="600" color="text.primary" textAlign="center">Habilidades</Typography>
             </Box>
-            {/* <Typography variant="h5" fontWeight={600} textAlign="center" color="text.primary" gutterBottom>Tecnológicas</Typography> */}
-            <Grid container spacing={3} width="100%">
+            <Typography variant="h6" fontWeight={600} color="text.primary" gutterBottom>Tecnologías</Typography>
+            <Grid container spacing={3} width="100%" sx={{ marginBottom: "24px" }}>
                 <Grid size={6}>
                     <StyledBox>
                         <Stack direction="row" alignItems="center" spacing={1} mb={2}>
@@ -232,6 +232,22 @@ const Skills = () => {
                     </Box>
                 </Grid> */}
             </Grid>
+            {/* <Typography variant="h6" fontWeight={600} color="text.primary" gutterBottom>Blandas</Typography>
+            <Grid container spacing={3} width="100%">
+                <Grid size={3}>
+                    <StyledBox>
+                        <Stack spacing={2} textAlign="center" alignItems="center">
+                            <LightbulbIcon sx={{ fontSize: 40, color: 'primary.main' }} />
+                            <Box>
+                                <Typography variant="subtitle1" fontWeight={600}>Pensamiento crítico</Typography>
+                                <Typography variant="body2" color="text.secondary" sx={{ maxWidth: '300px' }}>
+                                    Capacidad para analizar problemas complejos y proponer soluciones efectivas.
+                                </Typography>
+                            </Box>
+                        </Stack>
+                    </StyledBox>
+                </Grid>
+            </Grid> */}
         </Box>
     );
 };
