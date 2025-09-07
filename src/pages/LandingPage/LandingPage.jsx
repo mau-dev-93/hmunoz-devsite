@@ -4,31 +4,34 @@ import React from 'react';
 import Box from "@mui/material/Box"
 
 // components/shared
-import SectionWrapper from "../../components/shared/SectionContainer/SectionContainer";
-import Home from "./Home/Home";
-import AboutMe from "./AboutMe/AboutMe";
+import HomeSection from "./Home/Home";
+import AboutMeSection from "./AboutMe/AboutMe";
+import ProjectsSection from './Projects/Projects';
 import Experience from './Experience/Experience';
 import Skills from './Skills/Skills';
 import Education from './Education/Education';
 
+// import SectionContainer from '../../components/shared/SectionContainer/SectionContainer';
+
 const LandingPage = () => {
-    return <Box>
-        <SectionWrapper id="home" bgcolor="background">
-            <Home />
-        </SectionWrapper>
-        <SectionWrapper id="about_me" bgcolor="background">
-           <AboutMe />
-        </SectionWrapper>
-        <SectionWrapper id="experience" bgcolor="background">
+    return <>
+        <HomeSection />
+        <AboutMeSection />
+        <ProjectsSection />
+
+        {/* <SectionContainer id="about_me" bgcolor="background">
+            <AboutMe />
+        </SectionContainer>
+        <SectionContainer id="experience" bgcolor="background">
             <Experience />
-        </SectionWrapper>
-        <SectionWrapper id="skills" bgcolor="background">
+        </SectionContainer>
+        <SectionContainer id="skills" bgcolor="background">
             <Skills />
-        </SectionWrapper>
-        <SectionWrapper id="education" bgcolor="background">
+        </SectionContainer>
+        <SectionContainer id="education" bgcolor="background">
             <Education />
-        </SectionWrapper>
-    </Box>
+        </SectionContainer> */}
+    </>
 };
 
 export default LandingPage;

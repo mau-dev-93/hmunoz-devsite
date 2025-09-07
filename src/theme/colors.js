@@ -1,24 +1,23 @@
-// src/theme/colors.js
+export const colors = {
+    // Base
+    bluePrimary: "#2563eb",       // Azul vivo (Primary)
+    orangeAccent: "#d97706",      // Naranja cálido (Secondary)
+    whiteCream: "#F5EEE6",        // Blanco crema (texto principal)
+    slateGray: "#9ca3af",         // Gris pizarra (texto secundario)
 
-const colors = {
-  cyanPurpleBlue: '#fdbe46',                      // Main CTA color (cyan with a hint of purple/blue)
-  bluePurpleAccent: '#1A1E3Fff',                  // Accent color for active states or highlights
-  // colores de alertas
-  redError: '#f44336',
-  orangeWarning: '#ffa726',
-  blueInfo: '#29b6f6',
-  greenSuccess: '#66bb6a',
-  darkBluishBlack: '#121212',                     // Overall dark background
-  deepBlueGray: '#1e1e1f',                        // Section or card background
-  softBlackNavbar: '#1f1f1f',                     // Solid navbar background
-  translucentBlackNavbar: 'rgba(18,18,18,0.8)', // Translucent navbar variant
-  // softWhite: '#E0E0E0',                           // Primary text (not pure white)
-  softWhite: '#fafafa',                           // Primary text (not pure white)
-  lightGray: '#9f9fa9',                           // Secondary text (descriptions, subtitles)
-  // lightGray: '#d6d6d6',                           // Secondary text (descriptions, subtitles)
-  // lightGray: '#B0B0B0',                           // Secondary text (descriptions, subtitles)
-  borderGray: '#383838',                          // Borders and dividers
-  disabledGray: '#6E6E6E',                        // Disabled text
+    // Backgrounds
+    darkBlack: "#0a0a0a",         // Fondo principal (Background default)
+    softBlack: "#1a1a1a",         // Fondo paper / tarjetas
+    navbarBack: "rgba(10,10,10,0.8)", // Fondo navbar translúcido
+    borderGray: "#374151",      // Gris oscuro para bordes y divisores
+
+    // Inputs
+    inputGray: "#1f2937",             // Fondo translúcido para inputs
+    foreground: "#f8fafc",             // Texto input
+
+    // Semantic
+    successGreen: "#22c55e",     // Verde brillante (éxito)
+    errorRed: "#ef4444",         // Rojo intenso (error)
+    warningYellow: "#facc15",    // Amarillo cálido (advertencia)
+    infoSky: "#0ea5e9",          // Azul cielo (informativo)
 };
-
-export default colors;

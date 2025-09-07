@@ -6,69 +6,88 @@ import Box from "@mui/material/Box"
 import Grid from "@mui/material/Grid"
 import Typography from "@mui/material/Typography"
 import Stack from "@mui/material/Stack"
+import { Button, Chip, Container } from '@mui/material';
 
 // components
-import SwipeableGallery from './SwipeableGallery/SwipeableGallery';
-import Highlight from './Highlight/Highlight';
+// import SwipeableGallery from './SwipeableGallery/SwipeableGallery';
+// import Highlight from './Highlight/Highlight';
+import StatCard from '../../../components/shared/StatCard/StatCard';
+import CustomChip from '../../../components/shared/CustomChip/CustomChip';
+import HighlightBox from '../../../components/shared/HighlightBox/HighlightBox';
+
+const techStack = ["React", "Node.js", "AWS", "TypeScript", "SQL Server"]
 
 const AboutMe = () => {
-    // const theme = useTheme();
-
     return (
-
-        <Box>
-            <Box textAlign="center" sx={{ marginBottom: "24px" }}>
-                <Typography variant="h4" fontWeight="600" color="text.primary">Sobre mí</Typography>
-                <Typography variant="subtitle2" fontWeight="400" color="text.secondary">Mi introducción</Typography>
-            </Box>
-            <Grid container spacing={4}>
-                <Grid item size={6}>
-                    {/* <SwipeableGallery /> */}
-                    <Box
-                        component="img"
-                        src="\src\assets\images\family.jpg"
-                        alt="Mauricio Muñoz"
-                        sx={{
-                            width: "100%",
-                            height: "auto",
-                            borderRadius: "8px",
-                            boxShadow: 2,
-                        }}
-                    />
+        <Box id="about_me" component="section" bgcolor="background" py={10}> {/*.25rem*20*/}
+            <Container maxWidth="lg">
+                <Grid container spacing={4}>
+                    <Grid size={{ xs: 12, md: 6 }}>
+                        <Box mb={2}>
+                            <Typography variant="h4" fontWeight="600" color="text.primary" mb={2}>Sobre mí</Typography>
+                            <Typography variant="body1" fontWeight="400" color="text.secondary">
+                                Soy Mauricio, Full Stack Developer con 12 años de experiencia en React, Node.js y AWS. Me especializo en plataformas web escalables, sistemas de pagos y automatización en la nube. Apasionado por el código limpio y el aprendizaje continuo.
+                            </Typography>
+                        </Box>
+                        <Box mb={4}>
+                            <Typography variant="subtitle1" fontWeight="600" color="text.primary">Stack principal</Typography>
+                            <Stack direction="row" spacing={0} flexWrap="wrap" gap={1}>
+                                {techStack.map((tech, index) => (
+                                    <CustomChip key={index} label={tech} variant="outlined" size="small" color="primary" />
+                                ))}
+                            </Stack>
+                        </Box>
+                        <Stack direction="row" spacing={2}>
+                            <Button variant='contained' size='large'>Ver proyectos</Button>
+                            <Button variant='outlined' color="input" size='large'>Contactar</Button>
+                        </Stack>
+                    </Grid>
+                    <Grid container size={{ xs: 12, md: 6 }} spacing={2}>
+                        <Grid size={{ xs: 12, md: 6 }}>
+                            <StatCard
+                                color="primary"
+                                variant='outlined'
+                                title="+12 años"
+                                subtitle="de experiencia"
+                                icon={<i className="ri-code-line"></i>}
+                            />
+                        </Grid>
+                        <Grid size={{ xs: 12, md: 6 }}>
+                            <StatCard
+                                color="success"
+                                variant='outlined'
+                                title="+5 proyectos"
+                                subtitle="completados, dah!"
+                                icon={<i className="ri-group-line"></i>}
+                            />
+                        </Grid>
+                        <Grid size={{ xs: 12, md: 6 }}>
+                            <StatCard
+                                color="warning"
+                                variant='outlined'
+                                title="+15 tecnologías"
+                                subtitle="dominadas"
+                                icon={<i className="ri-medal-line"></i>}
+                            />
+                        </Grid>
+                        <Grid size={{ xs: 12, md: 6 }}>
+                            <StatCard
+                                color="error"
+                                variant='outlined'
+                                title="Full Stack Developer"
+                                subtitle="especialista"
+                                icon={<i className="ri-flashlight-line"></i>}
+                            />
+                        </Grid>
+                    </Grid>
+                    <Grid size={{ xs: 12 }}>
+                        <HighlightBox>
+                            <Typography variant="subtitle1" fontWeight={700}>¿Buscas un desarrollador comprometido con la excelencia?</Typography>
+                            <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600 }}>Construyo soluciones escalables que generan valor real para usuarios y empresas. Mi enfoque combina experiencia técnica sólida con visión de negocio.</Typography>
+                        </HighlightBox>
+                    </Grid>
                 </Grid>
-                <Grid item size={6}>
-                    <Typography variant="body1" fontWeight="400" color="text.primary" component="p">
-                        Soy Héctor Mauricio Muñoz Fonseca, desarrollador full stack con más de 10 años de experiencia en proyectos web.
-                        Trabajo tanto en backend como en frontend, y disfruto construir interfaces limpias e intuitivas, procesos bien estructurados y experiencias pensadas para satisfacer las necesidades del usuario, usando tecnologías como React, Node.js, AWS y SQL. He trabajado en empresas del sector educativo, salud, construcción y comercio, participando en todas las etapas del ciclo de vida del software.
-                        En lo personal, soy curioso, autodidacta y creativo. Desde niño he estado ligado a la música, la expresión artística y la tecnología, lo que ha moldeado mi forma de ver el desarrollo como una mezcla entre arte, lógica y experiencia humana. La filosofía también forma parte importante de mi vida, como una guía para comprender el mundo, cuestionarlo y tomar decisiones con mayor conciencia y profundidad.
-                    </Typography>
-                    {/* <Stack direction="row" spacing={1} sx={{ marginTop: 2 }}>
-                    <Box sx={{ width: 18, height: 18 }}>
-                        <svg width="20px" height="20px" viewBox="0 0 512 512" id="icons" xmlns="http://www.w3.org/2000/svg" fill={theme.palette.primary.main}><path d="M208,512,155.62,372.38,16,320l139.62-52.38L208,128l52.38,139.62L400,320,260.38,372.38Z" /><path d="M88,176,64.43,111.57,0,88,64.43,64.43,88,0l23.57,64.43L176,88l-64.43,23.57Z" /><path d="M400,256l-31.11-80.89L288,144l80.89-31.11L400,32l31.11,80.89L512,144l-80.89,31.11Z" /></svg>
-                    </Box>
-                    <Typography variant="body2" color="text.primary">
-                        Intereses:
-                    </Typography>
-                    <Typography variant="body2" color="text.primary" sx={{ marginLeft: 1 }}>
-                        Musica, Pizza, Perros
-                    </Typography>
-                </Stack> */}
-                    <Stack direction="row" spacing={4} justifyContent="center" sx={{ marginTop: 4 }}>
-                        <Highlight
-                            value="12+"
-                            indicator={<>Años de<br />experiencia</>}
-                        />
-                        <Highlight
-                            value="05+"
-                            indicator={<>Empresas<br />donde laboré</>}
-                        />
-                        <Highlight
-                            value="04+"
-                            indicator={<>Proyectos<br />liderados</>}
-                        />
-                    </Stack>
-                </Grid>
-            </Grid>
+            </Container>
         </Box>
     )
 };

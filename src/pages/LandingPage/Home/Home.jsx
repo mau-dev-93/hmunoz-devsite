@@ -1,119 +1,85 @@
 import React from 'react';
-// import styled from 'styled-components';
 
 // @mui/material
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
+import Icon from '@mui/material/Icon';
+import Container from '@mui/material/Container';
 
-// @mui/icons-material
-import EmailIcon from '@mui/icons-material/EmailOutlined';
-import PhoneIcon from '@mui/icons-material/PhoneOutlined';
-import LocationOn from '@mui/icons-material/LocationOnOutlined';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import { Icon } from '@mui/material';
+// components
+import SocialIconButton from '../../../components/shared/SocialIconButton/SocialIconButton';
+import ProfileAvatar from '../../../components/shared/ProfileAvatar/ProfileAvatar';
 
 const Home = () => {
     return (
-        <Grid container spacing={4}>
-            <Grid container size={6} spacing={2} sx={{ marginBottom: "16px" }}>
-                <Grid size={12}>
-                    {/* <Typography variant="h4" fontWeight="600" color="text.primary">Hello, I'm</Typography> */}
-                    <Typography variant="h3" fontWeight="600" color="text.primary" marginBottom={1}>Mauricio Muñoz</Typography>
-                    <Typography variant="h5" fontWeight="600" color="primary" marginBottom={1}>Desarrollador Full Stack</Typography>
-                    <Typography variant="body1" fontWeight="400" color="text.primary">Me especializo en desarrollar soluciones tecnológicas que no solo resuelven problemas, sino que también mejoran la forma en que las personas interactúan con los sistemas.</Typography>
-                </Grid>
-                <Grid container size={12} direction="column" spacing={2} sx={{ marginBottom: "16px" }}>
-                    <Grid container spacing={1}>
-                        <Grid>
-                            <Icon
-                                fontSize='small'
-                                color='primary'>
-                                <EmailIcon fontSize='inherit' />
-                            </Icon>
+        <Box id="home" component="section" display="flex" alignItems="center" justifyContent="center" position="relative" bgcolor="background" minHeight="90vh">
+            <Box position="absolute"
+                sx={{
+                    top: '0 !important',
+                    left: '0 !important',
+                    inset: 'calc(var(--spacing) * 0)',
+                    backgroundImage: 'linear-gradient(var(--tw-gradient-stops))'
+                }}>
+            </Box>
+            <Box position="absolute"
+                sx={{
+                    top: 0,
+                    left: 0,
+                    inset: 'calc(var(--spacing) * 0)',
+                    backgroundImage: 'radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.1) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(245, 158, 11, 0.1) 0%, transparent 50%)'
+                }}>
+            </Box>
+            <Container maxWidth="lg">
+                <Grid container spacing={4}>
+                    <Grid container size={6} spacing={2} sx={{ marginBottom: "16px" }}>
+                        <Grid size={12}>
+                            <Typography variant="h3" fontWeight="600" marginBottom={1}>Mauricio Muñoz</Typography>
+                            <Typography variant="h5" fontWeight="600" color="secondary" marginBottom={1}>Desarrollador Full Stack</Typography>
+                            <Typography variant="body1" fontWeight="400" color="text.secondary">Me especializo en desarrollar soluciones tecnológicas que no solo resuelven problemas, sino que también mejoran la forma en que las personas interactúan con los sistemas.</Typography>
                         </Grid>
-                        <Grid>
-                            <Stack>
-                                <Typography
-                                    variant="body2"
-                                    color="text.primary">
-                                    Correo
-                                </Typography>
-                                <Typography
-                                    variant="body2"
-                                    color="text.secondary">
+                        <Box display="flex" flexDirection="column" gap={1}>
+                            <Stack direction="row" alignItems="center" gap={1.5}>
+                                <Icon color='primary' sx={{ fontSize: "1.5rem", height: "auto" }}>
+                                    <i className="ri-mail-line" />
+                                </Icon>
+                                <Typography variant="body1" color="text.primary">
                                     hmmunozf@gmail.com
                                 </Typography>
                             </Stack>
-                        </Grid>
-                    </Grid>
-                    <Grid container spacing={1}>
-                        <Grid>
-                            <Icon
-                                fontSize='small'
-                                color='primary'>
-                                <PhoneIcon fontSize='inherit' />
-                            </Icon>
-                        </Grid>
-                        <Grid>
-                            <Stack>
-                                <Typography
-                                    variant="body2"
-                                    color="text.primary">
-                                    Teléfono
-                                </Typography>
-                                <Typography
-                                    variant="body2"
-                                    color="text.secondary">
+                            <Stack direction="row" alignItems="center" gap={1.5}>
+                                <Icon color='primary' sx={{ fontSize: "1.5rem", height: "auto" }}>
+                                    <i className="ri-phone-line" />
+                                </Icon>
+                                <Typography variant="body1" color="text.primary">
                                     8120136619
                                 </Typography>
                             </Stack>
-                        </Grid>
-                    </Grid>
-                    <Grid container spacing={1}>
-                        <Grid>
-                            <Icon
-                                fontSize='small'
-                                color='primary'>
-                                <LocationOn fontSize='inherit' />
-                            </Icon>
-                        </Grid>
-                        <Grid>
-                            <Stack>
-                                <Typography
-                                    variant="body2"
-                                    color="text.primary">
-                                    Ubicación
-                                </Typography>
-                                <Typography
-                                    variant="body2"
-                                    color="text.secondary">
+                            <Stack direction="row" alignItems="center" gap={1.5}>
+                                <Icon color='primary' sx={{ fontSize: "1.5rem", height: "auto" }}>
+                                    <i className="ri-map-pin-line" />
+                                </Icon>
+                                <Typography variant="body1" color="text.primary">
                                     Monterrey, Nuevo León, México
                                 </Typography>
                             </Stack>
-                        </Grid>
+                        </Box>
+                        <Box width="100%" display="flex" gap={1.5}>
+                            <Button variant='contained' size='medium' startIcon={<i className='ri-download-2-line'></i>}>
+                                Descargar CV
+                            </Button>
+                            <SocialIconButton size="medium" href="https://github.com/tu-usuario" icon={<i className='ri-github-line'></i>} />
+                            <SocialIconButton size="medium" href="https://github.com/tu-usuario" icon={<i className='ri-linkedin-line'></i>} />
+                        </Box>
+                    </Grid>
+                    <Grid size={6} alignSelf="center" justifyItems="flex-end">
+                        <ProfileAvatar />
                     </Grid>
                 </Grid>
-                <Grid>
-                    <Button
-                        variant='outlined'
-                        size='medium'>
-                        Descargar CV
-                    </Button>
-                </Grid>
-            </Grid>
-            <Grid size={6} alignSelf="center" justifyItems="center">
-                <Avatar
-                    alt="Remy Sharp"
-                    src="src\assets\images\profile.jpeg"
-                    sx={{ width: 250, height: 250 }}
-                />
-            </Grid>
-        </Grid>
+            </Container>
+        </Box>
     )
 };
 

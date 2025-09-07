@@ -11,12 +11,12 @@ import {
 
 const FooterBox = styled(Box)`
     background-color: ${(props) => props.theme.palette.background.paper};
-    border-top: 1px solid ${(props) => props.theme.palette.divider.main};
+    // border-top: 1px solid ${(props) => props.theme.palette.divider.main};
 `;
 
 const Footer = () => {
     return (
-        <FooterBox component="footer" sx={{ mt: 4, p: 3, /*bgcolor: 'grey.900', color: 'grey.100'*/ }}>
+        <FooterBox component="footer" sx={{ p: 3, /*bgcolor: 'grey.900', color: 'grey.100'*/ }}>
             {/* <Divider variant='middle'/> */}
             <Stack direction={{ xs: 'column', sm: 'row' }} spacing={4} justifyContent="center">
                 <Box>

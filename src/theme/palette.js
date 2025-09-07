@@ -1,38 +1,52 @@
-import colors from "./colors";
+import { colors } from "./colors";
 
 export const palette = {
     primary: {
-        main: colors.cyanPurpleBlue,
+        main: colors.bluePrimary,
+        contrastText: '#ffffff',
+        gradient: "#4facfe"
     },
     secondary: {
-        main: colors.bluePurpleAccent,
-    },
-    error: {
-        main: colors.redError,
-    },
-    warning: {
-        main: colors.orangeWarning,
-    },
-    info: {
-        main: colors.blueInfo
-    },
-    success: {
-        main: colors.greenSuccess
+        main: colors.orangeAccent,
+        contrastText: '#ffffff',
+        gradient: "#f7971e"
     },
     background: {
-        main: colors.darkBluishBlack,
-        paper: colors.deepBlueGray,
+        default: colors.darkBlack,
+        paper: colors.softBlack
     },
     navbar: {
-        main: colors.darkBluishBlack,
-        transparent: colors.translucentBlackNavbar
+        background: colors.navbarBack,
+        border: colors.borderGray,
+    },
+    success: {
+        main: colors.successGreen
+    },
+    error: {
+        main: colors.errorRed
+    },
+    warning: {
+        main: colors.warningYellow
+    },
+    info: {
+        main: colors.infoSky
     },
     text: {
-        primary: colors.softWhite,
-        secondary: colors.lightGray,
-        disabled: colors.disabledGray
+        primary: colors.whiteCream,
+        secondary: colors.slateGray,
+        disabled: colors.inputGray,
     },
-    divider: {
-        main: colors.borderGray
-    }
+    input: {
+        main: colors.inputGray,
+        contrastText: colors.foreground,
+        border: colors.borderGray,
+    },
+    black: {
+        main: colors.darkBlack,
+        contrastText: colors.foreground,
+    },
+    progress: {
+        background: colors.inputGray
+    },
+    divider: colors.borderGray
 };
