@@ -17,9 +17,9 @@ import HighlightBox from '../../../components/shared/HighlightBox/HighlightBox';
 
 const techStack = ["React", "Node.js", "AWS", "TypeScript", "SQL Server"]
 
-const AboutMe = () => {
+const AboutMeSection = () => {
     return (
-        <Box id="about_me" component="section" bgcolor="background" py={10}> {/*.25rem*20*/}
+        <Box id="aboutme_section" component="section" bgcolor="background" py={10}> {/*.25rem*20*/}
             <Container maxWidth="lg">
                 <Grid container spacing={4}>
                     <Grid size={{ xs: 12, md: 6 }}>
@@ -92,4 +92,4 @@ const AboutMe = () => {
     )
 };
 
-export default AboutMe;
+export default AboutMeSection;

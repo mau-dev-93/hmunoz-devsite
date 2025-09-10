@@ -5,11 +5,12 @@ import { Box, Button, Card, CardActions, CardContent, CardMedia, Stack, Typograp
 import CustomChip from '../CustomChip/CustomChip';
 import IconSquare from '../IconSquare/IconSquare';
 import ProgressBar from '../ProgressBar/ProgressBar';
-import ProjectFeatures from './ProjectFeatures/ProjectFeatures';
+import HighlightList from '../HighlightList/HighlightList';
 
 const ProjectCard = ({ name, description, status, icon, progress_percentage = 0, tech_stack = [], features = [], imagen_url, github_repo_url, live_demo_url }) => {
     return (
         <Card
+            variant='outlined'
             sx={{
                 maxWidth: 345,
                 position: "relative",
@@ -49,7 +50,7 @@ const ProjectCard = ({ name, description, status, icon, progress_percentage = 0,
                     <Typography variant="caption" color="text.primary" fontWeight={600}>
                         Caracteristicas principales
                     </Typography>
-                    <ProjectFeatures features={features} sx={{ marginTop: 1 }} />
+                    <HighlightList features={features} color="primary.main" sx={{ marginTop: 1 }} />
                 </Box>
             </CardContent>
             <CardActions sx={{ p: 2, mt: 'auto' }}>

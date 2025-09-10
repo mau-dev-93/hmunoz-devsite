@@ -13,7 +13,9 @@ export const palette = {
     },
     background: {
         default: colors.darkBlack,
-        paper: colors.softBlack
+        paper: colors.softBlack,
+        section: colors.lightBlack30,
+        paperLight: colors.lightBlack50
     },
     navbar: {
         background: colors.navbarBack,

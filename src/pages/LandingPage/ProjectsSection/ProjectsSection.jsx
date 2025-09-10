@@ -5,9 +5,9 @@ import data from './data';
 // components
 import ProjectCard from "../../../components/shared/ProjectCard/ProjectCard";
 
-const Projects = () => {
+const ProjectsSection = () => {
     return (
-        <Box id="projects" component="section" bgcolor="background" py={10}>
+        <Box id="projects_section" component="section" bgcolor="background" py={10}>
             <Container maxWidth="lg">
                 <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" textAlign="center">
                     <Typography variant="h4" fontWeight="600" color="text.primary" mb={2}>Mis proyectos</Typography>
@@ -36,4 +36,4 @@ const Projects = () => {
     )
 };
 
-export default Projects;
+export default ProjectsSection;

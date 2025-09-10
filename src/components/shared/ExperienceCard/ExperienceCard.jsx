@@ -1,0 +1,82 @@
+import PropTypes from 'prop-types';
+import { Card, CardContent, Box, Typography, Chip, Stack, Divider } from "@mui/material";
+
+// components
+import CustomChip from '../CustomChip/CustomChip';
+import HighlightList from '../HighlightList/HighlightList';
+
+const ExperienceCard = ({ title, duration, jobTitle, dateRange, location, employmentType, description, highlights = [], goals = [], techStack = [] }) => {
+    return (
+        <Card sx={{ borderRadius: 4, p: 2 }} variant='outlined'>
+            <CardContent>
+                <Box display="flex" justifyContent="space-between" alignItems="flex-start" mb={6}>
+                    <Box>
+                        <Typography variant="h6" color="text.primary" fontWeight={600}>{jobTitle}</Typography>
+                        <Typography variant="subtitle1" color="primary" fontWeight={500}>{title}</Typography>
+                        <Stack direction="row" spacing={2} mt={1}>
+                            <Box color="text.secondary" display="flex" alignItems="center" gap={0.5}>
+                                <i className='ri-calendar-line' style={{ marginRight: 4 }}></i>
+                                <Typography variant="body2" color="text.secondary">{dateRange}</Typography>
+                            </Box>
+                            <Box color="text.secondary" display="flex" alignItems="center" gap={0.5}>
+                                <i className='ri-map-pin-2-line' style={{ marginRight: 4 }}></i>
+                                <Typography variant="body2" color="text.secondary">{location}</Typography>
+                            </Box>
+                            <CustomChip label={employmentType} variant="transparent" color="input" size="small" sx={{ fontSize: 10 }} />
+                        </Stack>
+                    </Box>
+                    <CustomChip label={`${duration} años`} variant="outlined" size="small" color="primary" sx={{ fontSize: 10 }} />
+                </Box>
+                <Typography variant="body1" color="text.secondary" mb={3}>{description}</Typography>
+                <Box sx={{ bgcolor: "background.paperLight", borderRadius: 2, p: 2, mb: 4 }}>
+                    <Stack direction="row" spacing={4} justifyContent="center">
+                        {goals.map((goal, idx) => (
+                            <Box key={idx} textAlign="center">
+                                <Typography variant="h6" color="primary" fontWeight={700}>{goal.value}</Typography>
+                                <Typography variant="caption" color="text.secondary">{goal.label}</Typography>
+                            </Box>
+                        ))}
+                    </Stack>
+                </Box>
+                <Box color="secondary.main" display="flex" alignItems="center" gap={0.5} mb={1}>
+                    <i className='ri-award-line' style={{ marginRight: 4 }}></i>
+                    <Typography variant="subtitle2" color="text.primary" fontWeight={600}>Logros Principales</Typography>
+                </Box>
+                <HighlightList features={highlights} color="secondary.main" sx={{ mb: 2 }} />
+                <Box color="secondary.main" display="flex" alignItems="center" gap={0.5} mb={1}>
+                    <i className='ri-code-line' style={{ marginRight: 4 }}></i>
+                    <Typography variant="subtitle2" color="text.primary" fontWeight={600}> Tecnologias utilizadas</Typography>
+                </Box>
+                <Stack direction="row" spacing={1} flexWrap="wrap">
+                    {techStack.map((tech, index) => (
+                        <CustomChip key={index} label={tech} variant="transparent" color="input" size="small" sx={{ fontSize: 10 }} />
+                    ))}
+                </Stack>
+            </CardContent>
+        </Card>
+    );
+};
+
+ExperienceCard.defaultProps = {
+    highlights: [],
+    goals: [],
+    techStack: []
+};
+
+ExperienceCard.propTypes = {
+    title: PropTypes.string.isRequired,
+    duration: PropTypes.number.isRequired,
+    jobTitle: PropTypes.string.isRequired,
+    dateRange: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    employmentType: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    goals: PropTypes.arrayOf(PropTypes.shape({
+        label: PropTypes.string.isRequired,
+        value: PropTypes.string.isRequired
+    })),
+    highlights: PropTypes.arrayOf(PropTypes.string),
+    techStack: PropTypes.arrayOf(PropTypes.string)
+};
+
+export default ExperienceCard;

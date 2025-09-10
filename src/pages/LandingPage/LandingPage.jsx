@@ -3,11 +3,11 @@ import React from 'react';
 // @material-ui/core
 import Box from "@mui/material/Box"
 
-// components/shared
-import HomeSection from "./Home/Home";
-import AboutMeSection from "./AboutMe/AboutMe";
-import ProjectsSection from './Projects/Projects';
-import Experience from './Experience/Experience';
+// components
+import HeroSection from "./HeroSection/HeroSection";
+import AboutMeSection from "./AboutMeSection/AboutMeSection";
+import ProjectsSection from './ProjectsSection/ProjectsSection';
+import ExperienceSection from './ExperienceSection/ExperienceSection';
 import Skills from './Skills/Skills';
 import Education from './Education/Education';
 
@@ -15,10 +15,10 @@ import Education from './Education/Education';
 
 const LandingPage = () => {
     return <>
-        <HomeSection />
+        <HeroSection />
         <AboutMeSection />
         <ProjectsSection />
-
+        <ExperienceSection />
         {/* <SectionContainer id="about_me" bgcolor="background">
             <AboutMe />
         </SectionContainer>

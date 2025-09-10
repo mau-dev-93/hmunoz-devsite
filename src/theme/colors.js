@@ -8,7 +8,9 @@ export const colors = {
     // Backgrounds
     darkBlack: "#0a0a0a",         // Fondo principal (Background default)
     softBlack: "#1a1a1a",         // Fondo paper / tarjetas
-    navbarBack: "rgba(10,10,10,0.8)", // Fondo navbar translúcido
+    lightBlack30: "#1f29374d",        // Fondo secciones (Background section)
+    lightBlack50: "#1f293780",        // Fondo secciones más claro
+    navbarBack: "#0a0a0acc",    // Fondo navbar translúcido
     borderGray: "#374151",      // Gris oscuro para bordes y divisores
 
     // Inputs

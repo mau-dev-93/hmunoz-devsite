@@ -13,9 +13,9 @@ import Container from '@mui/material/Container';
 import SocialIconButton from '../../../components/shared/SocialIconButton/SocialIconButton';
 import ProfileAvatar from '../../../components/shared/ProfileAvatar/ProfileAvatar';
 
-const Home = () => {
+const HeroSection = () => {
     return (
-        <Box id="home" component="section" display="flex" alignItems="center" justifyContent="center" position="relative" bgcolor="background" minHeight="90vh">
+        <Box id="hero_section" component="section" display="flex" alignItems="center" justifyContent="center" position="relative" bgcolor="background" minHeight="90vh">
             <Box position="absolute"
                 sx={{
                     top: '0 !important',
@@ -83,4 +83,4 @@ const Home = () => {
     )
 };
 
-export default Home;
+export default HeroSection;

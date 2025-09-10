@@ -1,7 +1,8 @@
+import PropTypes from "prop-types";
 import { List, ListItem, ListItemText, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 
-const ProjectFeatures = ({ features, sx }) => {
+const HighlightList = ({ features, color, sx }) => {
     return (
         <List dense disablePadding sx={{ ...sx }}>
             {features.map((feature, index) => (
@@ -11,7 +12,7 @@ const ProjectFeatures = ({ features, sx }) => {
                             width: 6,
                             height: 6,
                             borderRadius: '50%',
-                            bgcolor: 'primary.main',
+                            bgcolor: color,
                             flexShrink: 0,
                             marginRight: 1,
                         }}
@@ -25,4 +26,16 @@ const ProjectFeatures = ({ features, sx }) => {
     )
 };
 
-export default ProjectFeatures;
+HighlightList.defaultProps = {
+    features: [],
+    color: 'primary.main',
+    sx: {}
+};
+
+HighlightList.propTypes = {
+    features: PropTypes.arrayOf(PropTypes.string),
+    color: PropTypes.string,
+    sx: PropTypes.object
+}
+
+export default HighlightList;
