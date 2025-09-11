@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { alpha, Box, Paper, Typography } from "@mui/material";
 
-const StatCard = ({ icon, color = 'default', variant = 'outlined', title, subtitle }) => {
+const HeroStatCard = ({ icon, color = 'default', variant = 'outlined', title, subtitle }) => {
     return (
         <Paper
             variant="outlined"
@@ -67,7 +67,7 @@ const StatCard = ({ icon, color = 'default', variant = 'outlined', title, subtit
     );
 };
 
-StatCard.propTypes = {
+HeroStatCard.propTypes = {
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string,
     icon: PropTypes.node,
@@ -86,10 +86,10 @@ StatCard.propTypes = {
     ]),
 };
 
-StatCard.defaultProps = {
+HeroStatCard.defaultProps = {
     subtitle: "",
     variant: "outlined",
     color: "default",
 };
 
-export default StatCard;
+export default HeroStatCard;

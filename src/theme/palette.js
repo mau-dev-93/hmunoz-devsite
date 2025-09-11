@@ -8,18 +8,20 @@ export const palette = {
     },
     secondary: {
         main: colors.orangeAccent,
-        contrastText: '#ffffff',
+        contrastText: '#0f0f0f',
         gradient: "#f7971e"
     },
     background: {
         default: colors.darkBlack,
         paper: colors.softBlack,
         section: colors.lightBlack30,
-        paperLight: colors.lightBlack50
+        paper20: colors.lightBlack20,
+        paper50: colors.lightBlack50
     },
     navbar: {
         background: colors.navbarBack,
         border: colors.borderGray,
+        contrastText: colors.whiteGray,
     },
     success: {
         main: colors.successGreen

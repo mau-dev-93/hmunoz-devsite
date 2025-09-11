@@ -32,5 +32,22 @@ export default [
         "imagen_url": "https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGRhc2hib2FyZCUyMGFuYWx5dGljc3xlbnwxfHx8fDE3NTYwNDg1MTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
         "github_repo_url": "https://github.com/usuario/task-manager-app",
         "live_demo_url": "https://task-manager-demo.herokuapp.com"
+    },
+    {
+        "name": "Este devsite profesional",
+        "description": "Sistema integral de planificación de recursos empresariales diseñado específicamente para pequeñas y medianas empresas. Incluye gestión de inventarios, facturación, punto de venta y reportes analíticos.",
+        "status": "En desarrollo",
+        "icon": "ri-check-line",
+        "progress_percentage": 20,
+        "tech_stack": ["Vue.js", "Node.js", "Express", "MongoDB", "Socket.io"],
+        "features": [
+            "User authentication",
+            "Real-time task updates",
+            "Task categorization",
+            "Due date reminders"
+        ],
+        "imagen_url": "https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGRhc2hib2FyZCUyMGFuYWx5dGljc3xlbnwxfHx8fDE3NTYwNDg1MTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        "github_repo_url": "https://github.com/usuario/task-manager-app",
+        "live_demo_url": "https://task-manager-demo.herokuapp.com"
     }
 ]

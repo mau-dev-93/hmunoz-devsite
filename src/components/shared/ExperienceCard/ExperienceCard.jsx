@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types';
-import { Card, CardContent, Box, Typography, Chip, Stack, Divider } from "@mui/material";
+import { Card, CardContent, Box, Typography, Stack, Paper } from "@mui/material";
 
 // components
 import CustomChip from '../CustomChip/CustomChip';
 import HighlightList from '../HighlightList/HighlightList';
 
-const ExperienceCard = ({ title, duration, jobTitle, dateRange, location, employmentType, description, highlights = [], goals = [], techStack = [] }) => {
+const ExperienceCard = ({ title, duration, jobTitle, dateRange, location, employmentType, description, highlights = [], techStack = [] }) => {
     return (
         <Card sx={{ borderRadius: 4, p: 2 }} variant='outlined'>
             <CardContent>
-                <Box display="flex" justifyContent="space-between" alignItems="flex-start" mb={6}>
+                <Box display="flex" justifyContent="space-between" alignItems="flex-start" mb={5}>
                     <Box>
                         <Typography variant="h6" color="text.primary" fontWeight={600}>{jobTitle}</Typography>
                         <Typography variant="subtitle1" color="primary" fontWeight={500}>{title}</Typography>
@@ -25,27 +25,29 @@ const ExperienceCard = ({ title, duration, jobTitle, dateRange, location, employ
                             <CustomChip label={employmentType} variant="transparent" color="input" size="small" sx={{ fontSize: 10 }} />
                         </Stack>
                     </Box>
-                    <CustomChip label={`${duration} años`} variant="outlined" size="small" color="primary" sx={{ fontSize: 10 }} />
+                    <CustomChip label={`${duration} años`} variant="outlined" size="medium" color="secondary" sx={{ fontSize: 10 }} />
                 </Box>
                 <Typography variant="body1" color="text.secondary" mb={3}>{description}</Typography>
-                <Box sx={{ bgcolor: "background.paperLight", borderRadius: 2, p: 2, mb: 4 }}>
-                    <Stack direction="row" spacing={4} justifyContent="center">
-                        {goals.map((goal, idx) => (
-                            <Box key={idx} textAlign="center">
-                                <Typography variant="h6" color="primary" fontWeight={700}>{goal.value}</Typography>
-                                <Typography variant="caption" color="text.secondary">{goal.label}</Typography>
-                            </Box>
-                        ))}
-                    </Stack>
-                </Box>
                 <Box color="secondary.main" display="flex" alignItems="center" gap={0.5} mb={1}>
                     <i className='ri-award-line' style={{ marginRight: 4 }}></i>
-                    <Typography variant="subtitle2" color="text.primary" fontWeight={600}>Logros Principales</Typography>
+                    <Typography variant="subtitle2" color="text.primary" fontWeight={600}>Actividades y logros</Typography>
                 </Box>
-                <HighlightList features={highlights} color="secondary.main" sx={{ mb: 2 }} />
+                <Paper
+                    variant="outlined"
+                    sx={{
+                        p: 2,
+                        borderRadius: 2,
+                        bgcolor: "background.paper50",
+                        border: "none",
+                        borderColor: "divider",
+                        mb: 3
+                    }}
+                >
+                    <HighlightList features={highlights} variant='body2' color="secondary.main" />
+                </Paper>
                 <Box color="secondary.main" display="flex" alignItems="center" gap={0.5} mb={1}>
                     <i className='ri-code-line' style={{ marginRight: 4 }}></i>
-                    <Typography variant="subtitle2" color="text.primary" fontWeight={600}> Tecnologias utilizadas</Typography>
+                    <Typography variant="subtitle2" color="text.primary" fontWeight={600}> Tecnologias</Typography>
                 </Box>
                 <Stack direction="row" spacing={1} flexWrap="wrap">
                     {techStack.map((tech, index) => (

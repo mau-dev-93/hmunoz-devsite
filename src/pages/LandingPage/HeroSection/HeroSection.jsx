@@ -15,7 +15,7 @@ import ProfileAvatar from '../../../components/shared/ProfileAvatar/ProfileAvata
 
 const HeroSection = () => {
     return (
-        <Box id="hero_section" component="section" display="flex" alignItems="center" justifyContent="center" position="relative" bgcolor="background" minHeight="90vh">
+        <Box id="hero_section" component="section" display="flex" alignItems="center" justifyContent="center" position="relative" bgcolor="background" minHeight="60vh">
             <Box position="absolute"
                 sx={{
                     top: '0 !important',

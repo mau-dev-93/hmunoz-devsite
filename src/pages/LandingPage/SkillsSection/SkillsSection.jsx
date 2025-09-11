@@ -1,0 +1,287 @@
+import { Box, Container, Grid, Typography } from "@mui/material";
+import skillsData from './tech_skills_data';
+import TechSkillsCard from "../../../components/shared/TechSkillsCard/TechSkillsCard";
+
+const SkillsSection = () => {
+    return (
+        <Box id="skills_section" component="section" bgcolor="background" py={10}>
+            <Container maxWidth="lg">
+                <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" textAlign="center">
+                    <Typography variant="h4" fontWeight="600" color="text.primary" mb={2}>Habilidades</Typography>
+                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600 }}>Combinación de habilidades técnicas y habilidades humanadas para crear soluciones integrales</Typography>
+                </Box>
+                <Typography variant="h6" color="text.primary" fontWeight={600} mt={8} mb={3} textAlign="center">Habilidades Técnicas</Typography>
+                <Grid container spacing={4} justifyContent="center" alignItems="stretch">
+                    {skillsData.map((category, index) => (
+                        <Grid key={index} xs={12} sm={6} md={4} sx={{ display: 'flex', justifyContent: 'center' }}>
+                            <TechSkillsCard
+                                title={category.title}
+                                icon={category.icon}
+                                color={category.color}
+                                skills={category.skills}
+                            />
+                        </Grid>
+                    ))}
+                </Grid>
+            </Container>
+        </Box>
+    )
+}
+
+export default SkillsSection;
+
+// import React from 'react';
+// import { useTheme } from "@mui/material/styles";
+// import styled from 'styled-components';
+
+// // @mui/material
+// import Box from "@mui/material/Box"
+// import Stack from "@mui/material/Stack"
+// import Typography from "@mui/material/Typography"
+// import Grid from "@mui/material/Grid"
+// // import { Icon } from '@mui/material';
+
+// // Components
+// import TechSkills from './TechSkills/TechSkills';
+// // import logoCsharp from '../../../assets/images/logos/technologies/icons8-csharp.svg';
+// // import logoAws from '../../../assets/images/logos/technologies/icons8-aws.svg';
+
+// // Icons
+// import {
+//     SiJavascript,
+//     SiTypescript,
+//     SiDotnet,
+//     SiReact,
+//     SiSubversion,
+//     SiSqlite,
+//     SiMixpanel,
+//     SiGoogleanalytics,
+//     SiHubspot,
+//     SiPostman,
+//     SiCplusplus,
+//     SiHtml5,
+//     SiCss3,
+//     SiNodedotjs,
+//     SiGit,
+// } from "react-icons/si";
+
+// // material icons
+// import LightbulbIcon from '@mui/icons-material/Lightbulb';
+// import TerminalIcon from '@mui/icons-material/TerminalOutlined';
+// import MonitorIcon from '@mui/icons-material/MonitorOutlined';
+// import CodeIcon from '@mui/icons-material/CodeOutlined';
+// import BuildIcon from '@mui/icons-material/BuildOutlined';
+
+// const StyledBox = styled(Box)`
+//     background-color: ${(props) => props.theme.palette.background.paper};
+//     border-color: ${(props) => props.theme.palette.divider.main};
+//     border-radius: 8px;
+//     border-width: 1px;
+//     border-style: solid;
+//     padding: 16px;
+// `;
+
+// const Skills = () => {
+//     const theme = useTheme();
+
+//     return (
+//         <Box width="100%">
+//             <Box sx={{ marginBottom: "24px" }}>
+//                 <Typography variant="h4" fontWeight="600" color="text.primary" textAlign="center">Habilidades</Typography>
+//             </Box>
+//             <Typography variant="h6" fontWeight={600} color="text.primary" gutterBottom>Tecnologías</Typography>
+//             <Grid container spacing={3} width="100%" sx={{ marginBottom: "24px" }}>
+//                 <Grid size={6}>
+//                     <StyledBox>
+//                         <Stack direction="row" alignItems="center" spacing={1} mb={2}>
+//                             <TerminalIcon fontSize='small' sx={{ color: 'primary.main', mr: 1 }} />
+//                             <Typography variant="subtitle2" color="text.primary">Lenguajes de programación</Typography>
+//                         </Stack>
+//                         <Grid container spacing={3}>
+//                             <Grid item>
+//                                 <Stack spacing={1} alignItems="center">
+//                                     <SiJavascript size={32} style={{ color: theme.palette.primary.main }} />
+//                                     <Typography variant="caption">JavaScript</Typography>
+//                                 </Stack>
+//                             </Grid>
+//                             <Grid item>
+//                                 <Stack spacing={1} alignItems="center">
+//                                     <SiTypescript size={32} style={{ color: theme.palette.primary.main }} />
+//                                     <Typography variant="caption">TypeScript</Typography>
+//                                 </Stack>
+//                             </Grid>
+//                             <Grid item>
+//                                 <Stack spacing={1} alignItems="center">
+//                                     <SiCplusplus size={32} style={{ color: theme.palette.primary.main }} />
+//                                     <Typography variant="caption">C/C++</Typography>
+//                                 </Stack>
+//                             </Grid>
+//                             <Grid item>
+//                                 <Stack spacing={1} alignItems="center">
+//                                     <Box sx={{ width: 32, height: 32 }}>
+//                                         <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="33px" height="33px" fillRule="evenodd"><g transform="translate(-17.92,-17.92) scale(1.14,1.14)"><g fill="none" fillRule="evenodd" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none" style={{ mixBlendMode: "normal" }}><g transform="scale(5.33333,5.33333)"><path d="M22.903,3.286c0.679,-0.381 1.515,-0.381 2.193,0c3.355,1.883 13.451,7.551 16.807,9.434c0.679,0.38 1.097,1.084 1.097,1.846c0,3.766 0,15.101 0,18.867c0,0.762 -0.418,1.466 -1.097,1.847c-3.355,1.883 -13.451,7.551 -16.807,9.434c-0.679,0.381 -1.515,0.381 -2.193,0c-3.355,-1.883 -13.451,-7.551 -16.807,-9.434c-0.678,-0.381 -1.096,-1.084 -1.096,-1.846c0,-3.766 0,-15.101 0,-18.867c0,-0.762 0.418,-1.466 1.097,-1.847c3.354,-1.883 13.452,-7.551 16.806,-9.434z" fill={theme.palette.primary.main}></path><path d="M5.304,34.404c-0.266,-0.356 -0.304,-0.694 -0.304,-1.149c0,-3.744 0,-15.014 0,-18.759c0,-0.758 0.417,-1.458 1.094,-1.836c3.343,-1.872 13.405,-7.507 16.748,-9.38c0.677,-0.379 1.594,-0.371 2.271,0.008c3.343,1.872 13.371,7.459 16.714,9.331c0.27,0.152 0.476,0.335 0.66,0.576z" fill={theme.palette.primary.main}></path><path d="M24,10c7.727,0 14,6.273 14,14c0,7.727 -6.273,14 -14,14c-7.727,0 -14,-6.273 -14,-14c0,-7.727 6.273,-14 14,-14zM24,17c3.863,0 7,3.136 7,7c0,3.863 -3.137,7 -7,7c-3.863,0 -7,-3.137 -7,-7c0,-3.864 3.136,-7 7,-7z" fill="#0f1214"></path><path d="M42.485,13.205c0.516,0.483 0.506,1.211 0.506,1.784c0,3.795 -0.032,14.589 0.009,18.384c0.004,0.396 -0.127,0.813 -0.323,1.127l-19.084,-10.5z" fill={theme.palette.primary.main}></path><path d="M34,20h1v8h-1zM37,20h1v8h-1z" fill="#0f1214"></path><path d="M32,25h8v1h-8zM32,22h8v1h-8z" fill="#0f1214"></path></g></g></g></svg>
+//                                     </Box>
+//                                     <Typography variant="caption">C#</Typography>
+//                                 </Stack>
+//                             </Grid>
+//                         </Grid>
+//                     </StyledBox>
+//                 </Grid>
+//                 <Grid size={6}>
+//                     <StyledBox>
+//                         <Stack direction="row" alignItems="center" spacing={1} mb={2}>
+//                             <MonitorIcon fontSize='small' sx={{ color: 'primary.main', mr: 1 }} />
+//                             <Typography variant="subtitle2" color="text.primary">Frontend</Typography>
+//                         </Stack>
+//                         <Grid container spacing={3}>
+//                             <Grid item>
+//                                 <Stack spacing={1} alignItems="center">
+//                                     <SiReact size={32} style={{ color: theme.palette.primary.main }} />
+//                                     <Typography variant="caption">React JS</Typography>
+//                                 </Stack>
+//                             </Grid>
+//                             <Grid item>
+//                                 <Stack spacing={1} alignItems="center">
+//                                     <SiHtml5 size={32} style={{ color: theme.palette.primary.main }} />
+//                                     <Typography variant="caption">HTML5</Typography>
+//                                 </Stack>
+//                             </Grid>
+//                             <Grid item>
+//                                 <Stack spacing={1} alignItems="center">
+//                                     <SiCss3 size={32} style={{ color: theme.palette.primary.main }} />
+//                                     <Typography variant="caption">CSS3</Typography>
+//                                 </Stack>
+//                             </Grid>
+//                         </Grid>
+//                     </StyledBox>
+//                 </Grid>
+//                 <Grid size={6}>
+//                     <StyledBox>
+//                         <Stack direction="row" alignItems="center" spacing={1} mb={2}>
+//                             <CodeIcon fontSize='small' sx={{ color: 'primary.main', mr: 1 }} />
+//                             <Typography variant="subtitle2" color="text.primary">Backend & Cloud</Typography>
+//                         </Stack>
+//                         <Grid container spacing={3}>
+//                             <Grid item>
+//                                 <Stack spacing={1} alignItems="center">
+//                                     <SiNodedotjs size={32} style={{ color: theme.palette.primary.main }} />
+//                                     <Typography variant="caption">Node JS</Typography>
+//                                 </Stack>
+//                             </Grid>
+//                             <Grid item>
+//                                 <Stack spacing={1} alignItems="center">
+//                                     <Box sx={{ width: 32, height: 32 }}>
+//                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32px" height="32px" fill={theme.palette.primary.main}>
+//                                             <path d="M 20.455078 5.4121094 C 20.104078 5.4121094 19.769219 5.4528281 19.449219 5.5488281 C 19.130219 5.6448281 18.858141 5.7808437 18.619141 5.9648438 C 18.380141 6.1408438 18.188922 6.3631406 18.044922 6.6191406 C 17.900922 6.8741406 17.828125 7.1708594 17.828125 7.5058594 C 17.828125 7.9208594 17.963562 8.3111094 18.226562 8.6621094 C 18.489563 9.0211094 18.920906 9.2935625 19.503906 9.4765625 L 20.660156 9.8359375 C 21.051156 9.9639375 21.322797 10.098 21.466797 10.25 C 21.610797 10.402 21.681641 10.584594 21.681641 10.808594 C 21.681641 11.135594 21.538578 11.391406 21.267578 11.566406 C 20.996578 11.742406 20.603562 11.830078 20.101562 11.830078 C 19.782563 11.830078 19.471344 11.798375 19.152344 11.734375 C 18.841344 11.670375 18.544438 11.574078 18.273438 11.455078 C 18.193438 11.423078 18.122219 11.391 18.074219 11.375 C 18.026219 11.359 17.977687 11.351563 17.929688 11.351562 C 17.809687 11.351562 17.746094 11.430656 17.746094 11.597656 L 17.746094 12.005859 C 17.746094 12.077859 17.762922 12.157516 17.794922 12.228516 C 17.827922 12.303516 17.915969 12.381125 18.042969 12.453125 C 18.250969 12.573125 18.561937 12.677438 18.960938 12.773438 C 19.359938 12.869438 19.774453 12.917969 20.189453 12.917969 C 20.596453 12.917969 20.971078 12.860047 21.330078 12.748047 C 21.673078 12.644047 21.969797 12.502734 22.216797 12.302734 C 22.463797 12.110734 22.654828 11.870609 22.798828 11.599609 C 22.934828 11.328609 23.007813 11.016828 23.007812 10.673828 C 23.007812 10.258828 22.887625 9.8836406 22.640625 9.5566406 C 22.393625 9.2296406 21.977344 8.9740156 21.402344 8.7910156 L 20.269531 8.4316406 C 19.846531 8.2956406 19.552578 8.1441875 19.392578 7.9921875 C 19.232578 7.8401875 19.152344 7.6497812 19.152344 7.4257812 C 19.152344 7.0987813 19.280344 6.8677969 19.527344 6.7167969 C 19.774344 6.5647969 20.134844 6.4921875 20.589844 6.4921875 C 21.156844 6.4921875 21.668047 6.5976875 22.123047 6.8046875 C 22.259047 6.8686875 22.361781 6.9003906 22.425781 6.9003906 C 22.545781 6.9003906 22.609375 6.8115313 22.609375 6.6445312 L 22.609375 6.2675781 C 22.609375 6.1555781 22.585109 6.0688594 22.537109 6.0058594 C 22.489109 5.9338594 22.409828 5.8686875 22.298828 5.8046875 C 22.218828 5.7566875 22.107844 5.7081563 21.964844 5.6601562 C 21.820844 5.6121562 21.669766 5.5732031 21.509766 5.5332031 C 21.341766 5.5012031 21.174234 5.4693125 20.990234 5.4453125 C 20.814234 5.4213125 20.631078 5.4121094 20.455078 5.4121094 z M 3.9941406 5.4296875 C 3.5551406 5.4296875 3.1390469 5.4780312 2.7480469 5.5820312 C 2.3560469 5.6770313 2.0211875 5.7974062 1.7421875 5.9414062 C 1.6301875 5.9974063 1.5595313 6.0524219 1.5195312 6.1074219 C 1.4795312 6.1634219 1.4628906 6.2606719 1.4628906 6.3886719 L 1.4628906 6.7792969 C 1.4628906 6.9472969 1.5188594 7.0253906 1.6308594 7.0253906 C 1.6628594 7.0253906 1.7037656 7.0179531 1.7597656 7.0019531 C 1.8147656 6.9859531 1.9091094 6.9544375 2.0371094 6.8984375 C 2.3161094 6.7864375 2.6053906 6.6999062 2.9003906 6.6289062 C 3.1953906 6.5569062 3.4827188 6.5234375 3.7617188 6.5234375 C 4.3767188 6.5234375 4.8075 6.643625 5.0625 6.890625 C 5.3095 7.137625 5.4375 7.5609688 5.4375 8.1679688 L 5.4375 8.7519531 C 5.1185 8.6799531 4.8155313 8.6142188 4.5195312 8.5742188 C 4.2245313 8.5342188 3.9448281 8.5117188 3.6738281 8.5117188 C 2.8518281 8.5117188 2.20575 8.7197656 1.71875 9.1347656 C 1.23275 9.5497656 0.9921875 10.099344 0.9921875 10.777344 C 0.9921875 11.416344 1.1910313 11.926547 1.5820312 12.310547 C 1.9730313 12.693547 2.5096875 12.886719 3.1796875 12.886719 C 4.1216875 12.886719 4.9023906 12.518203 5.5253906 11.783203 C 5.6133906 11.967203 5.6944375 12.119859 5.7734375 12.255859 C 5.8534375 12.383859 5.9495469 12.510859 6.0605469 12.630859 C 6.1405469 12.702859 6.2198281 12.742188 6.2988281 12.742188 C 6.3628281 12.742188 6.4358125 12.717922 6.5078125 12.669922 L 7.0097656 12.335938 C 7.1137656 12.255937 7.1621094 12.174703 7.1621094 12.095703 C 7.1621094 12.039703 7.1454688 11.976109 7.1054688 11.912109 C 6.9934687 11.704109 6.9145625 11.513891 6.8515625 11.337891 C 6.7955625 11.161891 6.7636719 10.921953 6.7636719 10.626953 L 6.7460938 10.626953 L 6.7460938 8.0390625 C 6.7460938 7.1610625 6.5239844 6.5071719 6.0839844 6.0761719 C 5.6379844 5.6461719 4.9441406 5.4296875 3.9941406 5.4296875 z M 7.7050781 5.6210938 C 7.5770781 5.6210938 7.5136719 5.6942656 7.5136719 5.8222656 C 7.5136719 5.8782656 7.5379375 5.981625 7.5859375 6.140625 L 9.4609375 12.310547 C 9.5089375 12.462547 9.5649062 12.573094 9.6289062 12.621094 C 9.6929063 12.677094 9.7886406 12.701172 9.9316406 12.701172 L 10.617188 12.701172 C 10.761188 12.701172 10.8735 12.677094 10.9375 12.621094 C 11.0015 12.565094 11.049844 12.461734 11.089844 12.302734 L 12.318359 7.1621094 L 13.554688 12.310547 C 13.586688 12.470547 13.643031 12.574859 13.707031 12.630859 C 13.771031 12.686859 13.874391 12.710937 14.025391 12.710938 L 14.712891 12.710938 C 14.848891 12.710938 14.951625 12.678859 15.015625 12.630859 C 15.079625 12.582859 15.135594 12.477359 15.183594 12.318359 L 17.107422 6.1484375 C 17.139422 6.0604375 17.154109 5.9972188 17.162109 5.9492188 C 17.170109 5.9012187 17.179688 5.8603125 17.179688 5.8203125 C 17.179688 5.6843125 17.106516 5.6210937 16.978516 5.6210938 L 16.236328 5.6210938 C 16.092328 5.6210938 15.989781 5.6531719 15.925781 5.7011719 C 15.869781 5.7491719 15.813625 5.8527188 15.765625 6.0117188 L 14.384766 11.359375 L 13.123047 6.0117188 C 13.091047 5.8597187 13.036656 5.7491719 12.972656 5.7011719 C 12.908656 5.6451719 12.803344 5.6210938 12.652344 5.6210938 L 12.013672 5.6210938 C 11.869672 5.6210938 11.759313 5.6531719 11.695312 5.7011719 C 11.631312 5.7491719 11.582969 5.8527188 11.542969 6.0117188 L 10.300781 11.296875 L 8.9589844 6.0136719 C 8.9109844 5.8616719 8.8628281 5.7491719 8.7988281 5.7011719 C 8.7428281 5.6451719 8.6392812 5.6210938 8.4882812 5.6210938 L 7.7050781 5.6210938 z M 3.9707031 9.4609375 C 4.2177031 9.4609375 4.4657031 9.4777656 4.7207031 9.5097656 C 4.9757031 9.5417656 5.222125 9.5885312 5.453125 9.6445312 L 5.453125 9.9804688 C 5.453125 10.251469 5.4210469 10.482828 5.3730469 10.673828 C 5.3250469 10.865828 5.2305156 11.033547 5.1035156 11.185547 C 4.8875156 11.424547 4.6327031 11.599312 4.3457031 11.695312 C 4.0587031 11.791313 3.7864375 11.839844 3.5234375 11.839844 C 3.1564375 11.839844 2.8765469 11.743922 2.6855469 11.544922 C 2.4855469 11.352922 2.390625 11.074219 2.390625 10.699219 C 2.390625 10.300219 2.51825 9.99725 2.78125 9.78125 C 3.04425 9.56525 3.4357031 9.4609375 3.9707031 9.4609375 z M 22.236328 14.361328 C 21.396203 14.373203 20.404297 14.560891 19.654297 15.087891 C 19.423297 15.255891 19.46275 15.479266 19.71875 15.447266 C 20.57275 15.343266 22.457969 15.119781 22.792969 15.550781 C 23.127969 15.973781 22.416656 17.754922 22.097656 18.544922 C 22.001656 18.783922 22.210781 18.878312 22.425781 18.695312 C 23.829781 17.514312 24.195203 15.048453 23.908203 14.689453 C 23.764703 14.513953 23.076453 14.349453 22.236328 14.361328 z M 0.17578125 14.837891 C -4.6875e-05 14.859594 -0.078578125 15.072984 0.10742188 15.240234 C 3.2364219 18.066234 7.3795625 19.765625 11.976562 19.765625 C 15.257563 19.765625 19.071266 18.735875 21.697266 16.796875 C 22.128266 16.476875 21.753453 15.989453 21.314453 16.189453 C 18.369453 17.434453 15.169859 18.042969 12.255859 18.042969 C 7.9378594 18.042969 3.7629062 16.852672 0.37890625 14.888672 C 0.30515625 14.844672 0.23439062 14.830656 0.17578125 14.837891 z" />
+//                                         </svg>
+//                                     </Box>
+//                                     <Typography variant="caption">AWS</Typography>
+//                                 </Stack>
+//                             </Grid>
+//                             <Grid item>
+//                                 <Stack spacing={1} alignItems="center">
+//                                     <SiDotnet size={32} style={{ color: theme.palette.primary.main }} />
+//                                     <Typography variant="caption">ASP.NET</Typography>
+//                                 </Stack>
+//                             </Grid>
+//                             <Grid item>
+//                                 <Stack spacing={1} alignItems="center">
+//                                     <Box sx={{ width: 32, height: 32 }}>
+//                                         <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="32px" height="32px" fillRule="nonzero">
+//                                             <g transform="translate(-10.24,-10.24) scale(1.08,1.08)"><g fill={theme.palette.primary.main} fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none" style={{ mixBlendMode: "normal" }}><g transform="scale(5.33333,5.33333)"><path d="M23.084,11.277c-1.633,-2.449 -1.986,-5.722 -2.063,-7.067c-4.148,0.897 -8.269,2.506 -8.031,3.691c0.03,0.149 0.218,0.328 0.53,0.502l-0.488,0.873c-0.596,-0.334 -0.931,-0.719 -1.022,-1.179c-0.269,-1.341 1.25,-2.554 4.642,-3.709c2.316,-0.789 4.652,-1.26 4.751,-1.279l0.597,-0.12l0,0.611c0,0.042 0.026,4.288 1.916,7.123z"></path><path d="M24.751,43h-0.251c-8.192,0 -17.309,-2.573 -18.386,-6.879c-0.657,-2.63 1.492,-5.536 6.214,-8.401l0.52,0.854c-4.249,2.579 -6.296,5.172 -5.763,7.305c0.935,3.738 9.575,6.068 17.153,6.12c0.901,-1.347 5.742,-9.26 2.979,-19.873l0.967,-0.252c3.149,12.092 -3.218,20.837 -3.282,20.924z"></path><path d="M9.931,39.306c-0.539,0 -0.806,-0.059 -0.85,-0.07c-0.176,-0.043 -0.314,-0.178 -0.362,-0.352c-0.049,-0.174 0.001,-0.361 0.129,-0.488c0.072,-0.072 7.197,-7.208 8.159,-12.978l0.986,0.164c-0.827,4.964 -5.715,10.623 -7.656,12.707c1.939,-0.111 6.835,-1.019 16.234,-6.28c-7.335,-0.804 -8.495,-6.676 -8.507,-6.739l0.983,-0.181c0.047,0.246 1.226,6.011 9.244,6.011c0.003,0 0.005,0 0.008,0v0c0.227,0 0.424,0.152 0.482,0.37c0.06,0.218 -0.036,0.449 -0.231,0.563c-11.235,6.509 -16.683,7.272 -18.619,7.273z"></path><path d="M14.524,41.7c-0.207,0 -0.395,-0.128 -0.468,-0.325c-0.079,-0.211 -0.007,-0.45 0.177,-0.582c0.034,-0.025 1.813,-1.338 3.706,-4.228c-0.728,-0.322 -1.465,-0.698 -2.196,-1.137c-0.888,-0.533 -1.559,-1.105 -2.06,-1.691c-2.57,0.678 -4.942,0.946 -7.025,0.769l0.084,-0.996c1.876,0.159 4.009,-0.063 6.321,-0.64c-1.573,-2.688 -0.129,-5.356 -0.109,-5.392l0.874,0.487c-0.067,0.122 -1.265,2.37 0.249,4.633c2.201,-0.632 4.549,-1.567 6.979,-2.782c0.559,-1.835 0.996,-3.922 1.225,-6.276c0.016,-0.161 0.108,-0.304 0.248,-0.385c0.14,-0.081 0.311,-0.088 0.458,-0.021c0.032,0.015 3.264,1.491 5.604,2.454c0.17,0.07 0.288,0.228 0.307,0.411c0.02,0.183 -0.063,0.361 -0.216,0.465c-2.289,1.56 -4.563,2.913 -6.778,4.042c-0.702,2.225 -1.571,4.077 -2.459,5.591c3.702,1.383 6.915,1.404 6.956,1.404c0.228,0 0.427,0.154 0.484,0.375c0.057,0.221 -0.042,0.452 -0.241,0.563c-4.54,2.522 -11.767,3.232 -12.072,3.261c-0.016,-0.001 -0.032,0 -0.048,0zM18.909,36.967c-1.04,1.614 -2.062,2.773 -2.826,3.53c1.998,-0.294 5.501,-0.938 8.408,-2.139c-1.392,-0.171 -3.407,-0.551 -5.582,-1.391zM14.767,33.431c0.393,0.392 0.883,0.775 1.49,1.14c0.736,0.442 1.483,0.817 2.22,1.135c0.754,-1.264 1.501,-2.781 2.142,-4.568c-2.021,0.962 -3.983,1.73 -5.852,2.293zM23.202,24.329c-0.205,1.768 -0.521,3.381 -0.913,4.85c1.66,-0.885 3.354,-1.896 5.062,-3.026c-1.549,-0.656 -3.252,-1.419 -4.149,-1.824z"></path><path d="M17.924,10.6c-0.117,0 -0.233,-0.042 -0.325,-0.12c-1.61,-1.378 -3.505,-4.182 -3.585,-4.301c-0.129,-0.191 -0.109,-0.446 0.046,-0.616c0.154,-0.171 0.408,-0.211 0.608,-0.102c0.011,0.003 0.938,0.385 7.217,1.431c0.181,0.03 0.33,0.156 0.39,0.328c0.061,0.172 0.022,0.364 -0.1,0.5c-1.758,1.953 -3.979,2.813 -4.073,2.848c-0.058,0.021 -0.119,0.032 -0.178,0.032zM15.647,6.746c0.631,0.849 1.54,1.996 2.372,2.769c0.511,-0.233 1.657,-0.818 2.744,-1.798c-2.583,-0.441 -4.159,-0.755 -5.116,-0.971z"></path><path d="M21.843,24.4c-0.068,0 -0.137,-0.014 -0.201,-0.042c-0.199,-0.088 -0.319,-0.294 -0.296,-0.51c0.292,-2.749 -3.926,-3.852 -3.969,-3.862c-0.174,-0.044 -0.312,-0.179 -0.359,-0.352c-0.047,-0.173 0.002,-0.359 0.129,-0.486c0.207,-0.207 5.139,-5.098 11.327,-7.784c0.173,-0.075 0.369,-0.047 0.515,0.07c0.145,0.118 0.212,0.307 0.174,0.489c-1.186,5.744 -6.71,12.044 -6.944,12.309c-0.099,0.109 -0.237,0.168 -0.376,0.168zM18.455,19.285c1.184,0.445 3.258,1.475 3.783,3.356c1.449,-1.808 4.542,-5.973 5.697,-9.934c-4.387,2.11 -8.081,5.292 -9.48,6.578z"></path><path d="M13.079,28.36l-0.475,-0.88c1.883,-1.015 4.04,-2.883 5.807,-5.054c-1.504,1.03 -2.365,1.735 -2.392,1.758l-0.639,-0.77c0.039,-0.032 1.764,-1.447 4.631,-3.22c0.787,-1.266 1.392,-2.568 1.703,-3.816c0.053,-0.212 0.099,-0.417 0.136,-0.615c-1.925,-0.687 -3.701,-1.094 -4.921,-1.269c-0.185,-0.026 -0.339,-0.153 -0.401,-0.328c-0.062,-0.175 -0.021,-0.371 0.104,-0.507c0.085,-0.092 2.116,-2.268 4.654,-3.463c0.197,-0.093 0.433,-0.047 0.581,0.114c0.067,0.073 1.44,1.615 1.091,4.805c1.155,0.45 2.345,0.997 3.491,1.648c2.759,-1.24 5.892,-2.356 9.229,-3.03c0.172,-0.034 0.363,0.028 0.481,0.168c0.117,0.14 0.149,0.333 0.083,0.503c-1.3,3.332 -4.786,6.891 -4.934,7.041c-0.101,0.102 -0.239,0.153 -0.383,0.148c-0.143,-0.008 -0.275,-0.076 -0.365,-0.188c-1.12,-1.408 -2.584,-2.574 -4.163,-3.523c-2.175,1.004 -4.101,2.078 -5.684,3.049c-2.02,3.153 -5.069,6.048 -7.634,7.429zM27.492,17.396c1.29,0.832 2.491,1.81 3.484,2.948c0.828,-0.898 2.815,-3.168 3.942,-5.422c-2.65,0.61 -5.158,1.493 -7.426,2.474zM22.799,16.122c-0.033,0.163 -0.071,0.33 -0.113,0.5c-0.21,0.839 -0.544,1.701 -0.972,2.561c1.096,-0.626 2.309,-1.272 3.618,-1.898c-0.838,-0.444 -1.693,-0.83 -2.533,-1.163zM18.048,13.672c1.111,0.218 2.48,0.574 3.941,1.086c0.152,-1.843 -0.346,-2.972 -0.647,-3.472c-1.376,0.718 -2.581,1.728 -3.294,2.386z"></path><path d="M18.05,18.5c0,4.38 -3.65,7.86 -6.28,10.4c-0.44,0.43 -1.93,0.5 -1.93,0.5c0.37,-0.38 0.79,-0.78 1.24,-1.21c2.5,-2.42 5.97,-5.73 5.97,-9.69c0,-4.69 -1.89,-6.54 -3.38,-8.02c-0.66,-0.67 -1.22,-1.31 -1.56,-2.09l0.31,-0.13c0.34,0.15 0.73,0.32 1.03,0.45c0.24,0.35 0.56,0.69 0.93,1.06c1.53,1.53 3.67,3.63 3.67,8.73z"></path><path d="M42.935,19.794c0,0 -0.605,0.086 -0.775,0.106c-8.76,0.97 -17.8,3.49 -22.97,5.56c-1.87,0.75 -3.81,1.66 -5.58,2.68c-0.01,0.01 -0.02,0.01 -0.04,0.02c-1.04,0.6 -3.57,1.84 -5.62,2.93c3,-3.19 8.62,-5.65 10.86,-6.55c5.07,-2.03 13.78,-4.48 22.35,-5.53c-1.01,-1.18 -3.48,-3.68 -8.34,-5.54c-2.84,-1.1 -7.16,-1.72 -10.97,-2.27c-6.06,-0.87 -9.51,-1.45 -9.84,-3.1c-0.07,-0.33 -0.02,-0.66 0.13,-0.98c0.33,0.54 0.8,0.92 1.11,1.14c0.15,0.1 0.26,0.16 0.3,0.18l0.01,0.01c1.42,0.75 5.25,1.3 8.44,1.76c3.86,0.56 8.23,1.19 11.18,2.32c6.87,2.65 9.24,6.44 9.34,6.6c0.09,0.15 0.415,0.664 0.415,0.664z"></path></g></g></g>
+//                                         </svg>
+//                                     </Box>
+//                                     <Typography variant="caption">SQL Server</Typography>
+//                                 </Stack>
+//                             </Grid>
+//                             <Grid item>
+//                                 <Stack spacing={1} alignItems="center">
+//                                     <SiSqlite size={32} style={{ color: theme.palette.primary.main }} />
+//                                     <Typography variant="caption">SQL Lite</Typography>
+//                                 </Stack>
+//                             </Grid>
+//                         </Grid>
+//                     </StyledBox>
+//                 </Grid>
+//                 <Grid size={6}>
+//                     <StyledBox>
+//                         <Stack direction="row" alignItems="center" spacing={1} mb={2}>
+//                             <BuildIcon fontSize='small' sx={{ color: 'primary.main', mr: 1 }} />
+//                             <Typography variant="subtitle2" color="text.primary">Herramientas</Typography>
+//                         </Stack>
+//                         <Grid container spacing={3}>
+//                             <Grid item>
+//                                 <Stack spacing={1} alignItems="center">
+//                                     <SiGit size={32} style={{ color: theme.palette.primary.main }} />
+//                                     <Typography variant="caption">Git</Typography>
+//                                 </Stack>
+//                             </Grid>
+//                             <Grid item>
+//                                 <Stack spacing={1} alignItems="center">
+//                                     <SiSubversion size={32} style={{ color: theme.palette.primary.main }} />
+//                                     <Typography variant="caption">SVN</Typography>
+//                                 </Stack>
+//                             </Grid>
+//                             <Grid item>
+//                                 <Stack spacing={1} alignItems="center">
+//                                     <SiMixpanel size={32} style={{ color: theme.palette.primary.main }} />
+//                                     <Typography variant="caption">Mixpanel</Typography>
+//                                 </Stack>
+//                             </Grid>
+//                             <Grid item>
+//                                 <Stack spacing={1} alignItems="center">
+//                                     <SiGoogleanalytics size={32} style={{ color: theme.palette.primary.main }} />
+//                                     <Typography variant="caption">Ga4</Typography>
+//                                 </Stack>
+//                             </Grid>
+//                             <Grid item>
+//                                 <Stack spacing={1} alignItems="center">
+//                                     <SiHubspot size={32} style={{ color: theme.palette.primary.main }} />
+//                                     <Typography variant="caption">HubSpot</Typography>
+//                                 </Stack>
+//                             </Grid>
+//                             <Grid item>
+//                                 <Stack spacing={1} alignItems="center">
+//                                     <SiPostman size={32} style={{ color: theme.palette.primary.main }} />
+//                                     <Typography variant="caption">Postman</Typography>
+//                                 </Stack>
+//                             </Grid>
+//                         </Grid>
+//                     </StyledBox>
+//                 </Grid>
+//                 {/* <Grid size={6}>
+//                     <Typography variant="h5" fontWeight={600} color="text.primary" textAlign="center" gutterBottom>Blandas</Typography>
+//                     <Box sx={{ backgroundColor: theme.palette.background.section, padding: 2, borderRadius: "8px" }} display="flex" >
+//                         <Stack spacing={2} textAlign="center" alignItems="center">
+//                             <LightbulbIcon sx={{ fontSize: 40, color: 'primary.main' }} />
+//                             <Box>
+//                                 <Typography variant="subtitle1" fontWeight={600}>Pensamiento crítico</Typography>
+//                                 <Typography variant="body2" color="text.secondary">
+//                                     Capacidad para analizar problemas complejos y proponer soluciones efectivas.
+//                                 </Typography>
+//                             </Box>
+//                         </Stack>
+//                     </Box>
+//                 </Grid> */}
+//             </Grid>
+//             {/* <Typography variant="h6" fontWeight={600} color="text.primary" gutterBottom>Blandas</Typography>
+//             <Grid container spacing={3} width="100%">
+//                 <Grid size={3}>
+//                     <StyledBox>
+//                         <Stack spacing={2} textAlign="center" alignItems="center">
+//                             <LightbulbIcon sx={{ fontSize: 40, color: 'primary.main' }} />
+//                             <Box>
+//                                 <Typography variant="subtitle1" fontWeight={600}>Pensamiento crítico</Typography>
+//                                 <Typography variant="body2" color="text.secondary" sx={{ maxWidth: '300px' }}>
+//                                     Capacidad para analizar problemas complejos y proponer soluciones efectivas.
+//                                 </Typography>
+//                             </Box>
+//                         </Stack>
+//                     </StyledBox>
+//                 </Grid>
+//             </Grid> */}
+//         </Box>
+//     );
+// };
+
+// export default Skills;

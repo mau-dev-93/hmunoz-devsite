@@ -11,7 +11,7 @@ import { Button, Chip, Container } from '@mui/material';
 // components
 // import SwipeableGallery from './SwipeableGallery/SwipeableGallery';
 // import Highlight from './Highlight/Highlight';
-import StatCard from '../../../components/shared/StatCard/StatCard';
+import HeroStatCard from '../../../components/shared/HeroStatCard/HeroStatCard';
 import CustomChip from '../../../components/shared/CustomChip/CustomChip';
 import HighlightBox from '../../../components/shared/HighlightBox/HighlightBox';
 
@@ -44,34 +44,34 @@ const AboutMeSection = () => {
                     </Grid>
                     <Grid container size={{ xs: 12, md: 6 }} spacing={2}>
                         <Grid size={{ xs: 12, md: 6 }}>
-                            <StatCard
+                            <HeroStatCard
                                 color="primary"
                                 variant='outlined'
-                                title="+12 años"
+                                title="12+ años"
                                 subtitle="de experiencia"
                                 icon={<i className="ri-code-line"></i>}
                             />
                         </Grid>
                         <Grid size={{ xs: 12, md: 6 }}>
-                            <StatCard
+                            <HeroStatCard
                                 color="success"
                                 variant='outlined'
-                                title="+5 proyectos"
+                                title="5+ proyectos"
                                 subtitle="completados, dah!"
                                 icon={<i className="ri-group-line"></i>}
                             />
                         </Grid>
                         <Grid size={{ xs: 12, md: 6 }}>
-                            <StatCard
+                            <HeroStatCard
                                 color="warning"
                                 variant='outlined'
-                                title="+15 tecnologías"
+                                title="15+ tecnologías"
                                 subtitle="dominadas"
                                 icon={<i className="ri-medal-line"></i>}
                             />
                         </Grid>
                         <Grid size={{ xs: 12, md: 6 }}>
-                            <StatCard
+                            <HeroStatCard
                                 color="error"
                                 variant='outlined'
                                 title="Full Stack Developer"
