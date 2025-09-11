@@ -1,6 +1,10 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
-import skillsData from './tech_skills_data';
+import techSkillsData from './tech_skills_data';
+import humanSkillsData from './human_skills_data';
+
+// components
 import TechSkillsCard from "../../../components/shared/TechSkillsCard/TechSkillsCard";
+import HumanSkillCard from "../../../components/shared/HumanSkillCard/HumanSkillCard";
 
 const SkillsSection = () => {
     return (
@@ -12,13 +16,26 @@ const SkillsSection = () => {
                 </Box>
                 <Typography variant="h6" color="text.primary" fontWeight={600} mt={8} mb={3} textAlign="center">Habilidades Técnicas</Typography>
                 <Grid container spacing={4} justifyContent="center" alignItems="stretch">
-                    {skillsData.map((category, index) => (
+                    {techSkillsData.map((category, index) => (
                         <Grid key={index} xs={12} sm={6} md={4} sx={{ display: 'flex', justifyContent: 'center' }}>
                             <TechSkillsCard
                                 title={category.title}
                                 icon={category.icon}
                                 color={category.color}
                                 skills={category.skills}
+                            />
+                        </Grid>
+                    ))}
+                </Grid>
+                <Typography variant="h6" color="text.primary" fontWeight={600} mt={8} mb={3} textAlign="center">Habilidades Humanas</Typography>
+                <Grid container spacing={4} justifyContent="center" alignItems="stretch">
+                    {humanSkillsData.map((skill, index) => (
+                        <Grid key={index} xs={12} sm={6} md={4} sx={{ display: 'flex', justifyContent: 'center' }}>
+                            <HumanSkillCard
+                                title={skill.title}
+                                icon={skill.icon}
+                                color={skill.color}
+                                description={skill.description}
                             />
                         </Grid>
                     ))}

@@ -7,9 +7,6 @@ import Stack from "@mui/material/Stack"
 import Typography from "@mui/material/Typography"
 import Grid from '@mui/material/Grid'
 
-// Components
-// import SkillChip from './SkillChip/SkillChip';
-
 // Icons
 import {
     SiJavascript,

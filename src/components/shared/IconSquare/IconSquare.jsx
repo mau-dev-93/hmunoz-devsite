@@ -20,7 +20,7 @@ const IconSquare = ({ size = 36, variant = "condensed", color = "primary", icon 
                     justifyContent: "center",
                     borderRadius: "12px",
                     fontSize: size * 0.5,
-                    cursor: "pointer",
+                    // cursor: "pointer",
                     transition: "all 0.25s ease"
                 };
 
