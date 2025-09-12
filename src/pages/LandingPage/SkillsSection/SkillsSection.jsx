@@ -65,15 +65,15 @@ const SkillsSection = () => {
                     <Stack direction="row" spacing={6} justifyContent="center" alignItems="center">
                         <Stack direction="row" spacing={1} alignItems="center">
                             <i className="ri-award-line" style={{ color: "orange", fontSize: 20 }}></i>
-                            <Typography variant="caption" color="text.primary" fontWeight={600}>8+ años experiencia</Typography>
+                            <Typography variant="caption" color="text.primary" fontWeight={500}>8+ años experiencia</Typography>
                         </Stack>
-                        <Stack direction="row" spacing={1} alignItems="center">
-                            <i className="ri-team-line" style={{ color: "#2196F3", fontSize: 20 }}></i>
-                            <Typography variant="caption" color="text.primary" fontWeight={600}>5+ equipos liderados</Typography>
+                        <Stack direction="row" spacing={1} color="primary.main" alignItems="center">
+                            <i className="ri-team-line" style={{ color: "inherit", fontSize: 20 }}></i>
+                            <Typography variant="caption" color="text.primary" fontWeight={500}>5+ equipos liderados</Typography>
                         </Stack>
-                        <Stack direction="row" spacing={1} alignItems="center">
-                            <i className="ri-code-line" style={{ color: "#4facfe", fontSize: 20 }}></i>
-                            <Typography variant="caption" color="text.primary" fontWeight={600}>15+ tecnologías</Typography>
+                        <Stack direction="row" spacing={1} color="secondary.main" alignItems="center">
+                            <i className="ri-code-line" style={{ color: "inherit", fontSize: 20 }}></i>
+                            <Typography variant="caption" color="text.primary" fontWeight={500}>15+ tecnologías</Typography>
                         </Stack>
                     </Stack>
                 </Box>
