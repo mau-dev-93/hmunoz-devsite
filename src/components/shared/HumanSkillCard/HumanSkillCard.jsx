@@ -15,7 +15,7 @@ const HumanSkillCard = ({ title, icon, color, description }) => {
                 border: "1px solid",
                 borderColor: "divider",
                 height: "100%",
-                width: '357px',
+                width: '362px',
                 maxWidth: "100%"
             }}
         >

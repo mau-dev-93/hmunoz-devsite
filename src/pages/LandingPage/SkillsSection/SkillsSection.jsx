@@ -1,10 +1,11 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { alpha, Box, Container, Grid, Stack, Typography } from "@mui/material";
 import techSkillsData from './tech_skills_data';
 import humanSkillsData from './human_skills_data';
 
 // components
 import TechSkillsCard from "../../../components/shared/TechSkillsCard/TechSkillsCard";
 import HumanSkillCard from "../../../components/shared/HumanSkillCard/HumanSkillCard";
+import HighlightBox from "../../../components/shared/HighlightBox/HighlightBox";
 
 const SkillsSection = () => {
     return (
@@ -28,7 +29,7 @@ const SkillsSection = () => {
                     ))}
                 </Grid>
                 <Typography variant="h6" color="text.primary" fontWeight={600} mt={8} mb={3} textAlign="center">Habilidades Humanas</Typography>
-                <Grid container spacing={4} justifyContent="center" alignItems="stretch">
+                <Grid container spacing={4} justifyContent="center" alignItems="stretch" mb={8}>
                     {humanSkillsData.map((skill, index) => (
                         <Grid key={index} xs={12} sm={6} md={4} sx={{ display: 'flex', justifyContent: 'center' }}>
                             <HumanSkillCard
@@ -40,6 +41,42 @@ const SkillsSection = () => {
                         </Grid>
                     ))}
                 </Grid>
+                <Box
+                    display="flex"
+                    flexDirection="column"
+                    textAlign="center"
+                    alignItems="center"
+                    sx={(theme) => ({
+                        p: 3,
+                        backgroundColor: theme.palette.background.section,
+                        borderColor: alpha(theme.palette.divider, 0.5),
+                        borderStyle: 'solid',
+                        borderWidth: '1px',
+                        borderRadius: 'calc(.625rem + 4px)',
+                        gap: 1
+                    })}>
+                    <Box display="flex" alignItems="center" gap={0.5} color="primary.main" mb={1}>
+                        <i className='ri-award-line' style={{ marginRight: 4, fontSize: 24, color: "inherit" }}></i>
+                        <Typography variant="h6" color="text.primary" fontWeight={600}>Enfoque Integral</Typography>
+                    </Box>
+                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600, mb: 2 }}>
+                        Combino expertise técnico con habilidades humanas para liderar proyectos, formar equipos de alto rendimiento y entregar soluciones de impacto real y medible
+                    </Typography>
+                    <Stack direction="row" spacing={6} justifyContent="center" alignItems="center">
+                        <Stack direction="row" spacing={1} alignItems="center">
+                            <i className="ri-award-line" style={{ color: "orange", fontSize: 20 }}></i>
+                            <Typography variant="caption" color="text.primary" fontWeight={600}>8+ años experiencia</Typography>
+                        </Stack>
+                        <Stack direction="row" spacing={1} alignItems="center">
+                            <i className="ri-team-line" style={{ color: "#2196F3", fontSize: 20 }}></i>
+                            <Typography variant="caption" color="text.primary" fontWeight={600}>5+ equipos liderados</Typography>
+                        </Stack>
+                        <Stack direction="row" spacing={1} alignItems="center">
+                            <i className="ri-code-line" style={{ color: "#4facfe", fontSize: 20 }}></i>
+                            <Typography variant="caption" color="text.primary" fontWeight={600}>15+ tecnologías</Typography>
+                        </Stack>
+                    </Stack>
+                </Box>
             </Container>
         </Box>
     )

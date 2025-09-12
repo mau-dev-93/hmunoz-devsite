@@ -41,7 +41,7 @@ const TechSkillsCard = ({ title, icon, color, skills = [] }) => {
                 border: "1px solid",
                 borderColor: "divider",
                 height: "100%",
-                width: 260,
+                width: 264,
                 maxWidth: "100%"
             }}
         >

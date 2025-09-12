@@ -9,7 +9,7 @@ const humanSkills = [
         title: "Liderazgo",
         icon: "ri-team-line",
         color: "warning.main",
-        description: "Motivo y guío a los miembros del equipo para alcanzar objetivos comunes, promoviendo el desarrollo profesional."
+        description: "Coordiné con equipos multidisciplinarios en 3 países logrando entregas sin retrasos."
     },
     {
         title: "Resolución de problemas",
