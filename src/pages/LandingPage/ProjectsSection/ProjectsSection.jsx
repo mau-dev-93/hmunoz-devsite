@@ -15,7 +15,7 @@ const ProjectsSection = () => {
                 </Box>
                 <Grid container spacing={4} mt={4} justifyContent="center" alignItems="stretch" sx={{ minHeight: "100%" }}>
                     {data.map((project, index) => (
-                        <Grid item key={index} xs={12} sm={6} md={4}>
+                        <Grid key={index} /*size={{ xs: 12, sm: 6, md: 4 }}*/>
                             <ProjectCard
                                 name={project.name}
                                 description={project.description}

@@ -9,7 +9,7 @@ import AboutMeSection from "./AboutMeSection/AboutMeSection";
 import ProjectsSection from './ProjectsSection/ProjectsSection';
 import ExperienceSection from './ExperienceSection/ExperienceSection';
 import SkillsSection from './SkillsSection/SkillsSection';
-import Education from './Education/Education';
+import EducationSection from './EducationSection/EducationSection';
 
 // import SectionContainer from '../../components/shared/SectionContainer/SectionContainer';
 
@@ -20,6 +20,7 @@ const LandingPage = () => {
         <ProjectsSection />
         <ExperienceSection />
         <SkillsSection />
+        <EducationSection />
         {/* <SectionContainer id="about_me" bgcolor="background">
             <AboutMe />
         </SectionContainer>

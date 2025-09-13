@@ -18,7 +18,7 @@ const SkillsSection = () => {
                 <Typography variant="h6" color="text.primary" fontWeight={600} mt={8} mb={3} textAlign="center">Habilidades Técnicas</Typography>
                 <Grid container spacing={4} justifyContent="center" alignItems="stretch">
                     {techSkillsData.map((category, index) => (
-                        <Grid key={index} xs={12} sm={6} md={4} sx={{ display: 'flex', justifyContent: 'center' }}>
+                        <Grid key={index} /*size={{ xs: 12, sm: 6, md: 4 }}*/ sx={{ display: 'flex', justifyContent: 'center' }}>
                             <TechSkillsCard
                                 title={category.title}
                                 icon={category.icon}
@@ -31,7 +31,7 @@ const SkillsSection = () => {
                 <Typography variant="h6" color="text.primary" fontWeight={600} mt={8} mb={3} textAlign="center">Habilidades Humanas</Typography>
                 <Grid container spacing={4} justifyContent="center" alignItems="stretch" mb={8}>
                     {humanSkillsData.map((skill, index) => (
-                        <Grid key={index} xs={12} sm={6} md={4} sx={{ display: 'flex', justifyContent: 'center' }}>
+                        <Grid key={index} /*xs={12} sm={6} md={4}*/ sx={{ display: 'flex', justifyContent: 'center' }}>
                             <HumanSkillCard
                                 title={skill.title}
                                 icon={skill.icon}
