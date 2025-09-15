@@ -1,12 +1,12 @@
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import cardsData from "./humaside-data.js";
-import { Masonry } from "@mui/lab";
+import identityData from "./identity-data.js";
 
 // components
 import HumanSideCard from "../../../components/shared/HumanSideCard/HumanSideCard";
+import IdentityPaper from "../../../components/shared/IdentityPaper/IdentityPaper.jsx";
 
 const HumanSideSection = () => {
-    // Altura base de “fila” (ajústala para controlar la densidad)
     const row = 600;
 
     return (
@@ -17,6 +17,7 @@ const HumanSideSection = () => {
                     <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600 }}>Mi motor, mis pasiones y lo que me inspira como persona y programador</Typography>
                 </Box>
                 <Box
+                    mb={8}
                     sx={{
                         display: "grid",
                         gap: 3,
@@ -52,6 +53,17 @@ const HumanSideSection = () => {
                             />
                         </Box>
                     ))}
+                </Box>
+                <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" textAlign="center" sx={{ width: { xs: "100%", md: "70%" }, mx: "auto" }}>
+                    <Typography variant="h5" fontWeight="600" color="text.primary" mb={2}>Pequeñas cosas que me <Box component="span" color="secondary.main">Definen</Box></Typography>
+                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600, mb: 4 }}>Los detalles que forman mi identidad y que, de alguna manera, influyen en mi forma de crear y pensar el desarrollo de software</Typography>
+                    <Grid container spacing={3} direction="row">
+                        {identityData.map((item, index) => (
+                            <Grid key={index} size={{ xs: 12, md: 6 }}>
+                                <IdentityPaper icon={item.icon} description={item.description} />
+                            </Grid>
+                        ))}
+                    </Grid>
                 </Box>
             </Container>
         </Box>
