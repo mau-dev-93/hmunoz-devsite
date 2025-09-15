@@ -5,6 +5,7 @@ import identityData from "./identity-data.js";
 // components
 import HumanSideCard from "../../../components/shared/HumanSideCard/HumanSideCard";
 import IdentityPaper from "../../../components/shared/IdentityPaper/IdentityPaper.jsx";
+import HighlightBox from "../../../components/shared/HighlightBox/HighlightBox.jsx";
 
 const HumanSideSection = () => {
     const row = 600;
@@ -54,7 +55,7 @@ const HumanSideSection = () => {
                         </Box>
                     ))}
                 </Box>
-                <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" textAlign="center" sx={{ width: { xs: "100%", md: "70%" }, mx: "auto" }}>
+                <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" textAlign="center" sx={{ width: { xs: "100%", md: "70%" }, mx: "auto" }} mb={8}>
                     <Typography variant="h5" fontWeight="600" color="text.primary" mb={2}>Pequeñas cosas que me <Box component="span" color="secondary.main">Definen</Box></Typography>
                     <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600, mb: 4 }}>Los detalles que forman mi identidad y que, de alguna manera, influyen en mi forma de crear y pensar el desarrollo de software</Typography>
                     <Grid container spacing={3} direction="row">
@@ -65,6 +66,16 @@ const HumanSideSection = () => {
                         ))}
                     </Grid>
                 </Box>
+                <HighlightBox>
+                    <Typography variant="h6" component="div" display="flex" gap={2}>
+                        <Box component="span" color="error.main"><i className='ri-heart-3-line'></i></Box>
+                        Gracias por Llegar Hasta Aquí
+                        <Box component="span" color="error.main"><i className='ri-heart-3-line'></i></Box>
+                    </Typography>
+                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 750 }}>
+                        Si has llegado hasta esta sección, probablemente compartimos una visión similar: las mejores colaboraciones surgen cuando nos conocemos como personas, no solo como profesionales. Cada proyecto es una oportunidad de crear algo significativo, y me encantaría ser parte de tu próxima historia de éxito.
+                    </Typography>
+                </HighlightBox>
             </Container>
         </Box>
     )

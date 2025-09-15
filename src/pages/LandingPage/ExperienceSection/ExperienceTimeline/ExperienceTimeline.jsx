@@ -22,9 +22,15 @@ const ExperienceTimeline = ({ experiences }) => {
             }}>
             {experiences.map((experience, index) => (
                 <TimelineItem key={index} >
-                    <TimelineSeparator>
-                        <TimelineDot color='primary' />
-                        <TimelineConnector />
+                    <TimelineSeparator
+                        sx={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            alignItems: 'center'
+                        }}>
+                        <TimelineConnector sx={{ backgroundColor: "divider", width: '3px', flex: 1 }} />
+                        <TimelineDot variant='outlined' color='primary' />
+                        <TimelineConnector sx={{ backgroundColor: "divider", width: '3px', flex: 1 }} />
                     </TimelineSeparator>
                     <TimelineContent sx={{ pl: 4 }}>
                         <ExperienceCard

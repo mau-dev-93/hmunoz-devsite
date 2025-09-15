@@ -38,9 +38,9 @@ const Education = () => {
                                         flexDirection: 'column',
                                         alignItems: 'center'
                                     }}>
-                                    <TimelineConnector sx={{ backgroundColor: "divider", width: '2px', flex: 1 }} />
+                                    <TimelineConnector sx={{ backgroundColor: "divider", width: '3px', flex: 1 }} />
                                     <TimelineDot variant='outlined' color='primary' />
-                                    <TimelineConnector sx={{ backgroundColor: "divider", width: '2px', flex: 1 }} />
+                                    <TimelineConnector sx={{ backgroundColor: "divider", width: '3px', flex: 1 }} />
                                 </TimelineSeparator>
                                 <TimelineContent>
                                     <EducationCard
