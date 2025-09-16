@@ -21,18 +21,6 @@ const LandingPage = () => {
         <SkillsSection />
         <EducationSection />
         <HumanSideSection />
-        {/* <SectionContainer id="about_me" bgcolor="background">
-            <AboutMe />
-        </SectionContainer>
-        <SectionContainer id="experience" bgcolor="background">
-            <Experience />
-        </SectionContainer>
-        <SectionContainer id="skills" bgcolor="background">
-            <Skills />
-        </SectionContainer>
-        <SectionContainer id="education" bgcolor="background">
-            <Education />
-        </SectionContainer> */}
     </>
 };
 

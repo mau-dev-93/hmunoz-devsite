@@ -1,38 +1,60 @@
-import React from 'react';
-import styled from 'styled-components';
+import { Box, Container, Grid, Typography, IconButton, Button, Divider, Link } from "@mui/material";
 
-import {
-    Box,
-    Typography,
-    Link,
-    Stack,
-    // Divider
-} from '@mui/material';
-
-const FooterBox = styled(Box)`
-    background-color: ${(props) => props.theme.palette.background.paper};
-    // border-top: 1px solid ${(props) => props.theme.palette.divider.main};
-`;
+// shared
+import SocialIconButton from "../../shared/SocialIconButton/SocialIconButton.jsx";
 
 const Footer = () => {
     return (
-        <FooterBox component="footer" sx={{ p: 3, /*bgcolor: 'grey.900', color: 'grey.100'*/ }}>
-            {/* <Divider variant='middle'/> */}
-            <Stack direction={{ xs: 'column', sm: 'row' }} spacing={4} justifyContent="center">
-                <Box>
-                    {/* <Typography variant="h6">hm-devsite</Typography> */}
-                    <Typography variant="body2" /*sx={{ mt: 1 }}*/>
-                        © {new Date().getFullYear()} Mauricio Muñoz. Todos los derechos reservados.
+        <Box component="footer" bgcolor="background.paper" pt={6} pb={4}>
+            <Container maxWidth="lg">
+                <Grid container spacing={4}>
+                    <Grid size={{ xs: 12, md: 5 }}>
+                        <Typography variant="h6" fontWeight="bold" mb={2}>Mauricio Muñoz</Typography>
+                        <Typography variant="body2" color="text.secondary" mb={2} lineHeight={1.8}>
+                            Desarrollador Full Stack especializado en crear soluciones tecnológicas que mejoran la forma en que las personas interactúan con los sistemas. Combinando experiencia técnica con habilidades humanas para entregar valor real.
+                        </Typography>
+                        <Box display="flex" gap={1}>
+                            <SocialIconButton size="medium" href="https://github.com/tu-usuario" icon={<i className='ri-github-line'></i>} />
+                            <SocialIconButton size="medium" href="https://github.com/tu-usuario" icon={<i className='ri-linkedin-line'></i>} />
+                        </Box>
+                    </Grid>
+                    <Grid size={{ xs: 12, md: 4 }}>
+                        <Typography variant="body1" fontWeight="bold" mb={2}>Enlaces rápidos</Typography>
+                        <Box display="flex" flexDirection="column" gap={0.5}>
+                            <Link href="#" color="text.secondary" sx={{ textDecoration: 'none' }}>Inicio</Link>
+                            <Link href="#" color="text.secondary" sx={{ textDecoration: 'none' }}>Sobre mí</Link>
+                            <Link href="#" color="text.secondary" sx={{ textDecoration: 'none' }}>Proyectos</Link>
+                            <Link href="#" color="text.secondary" sx={{ textDecoration: 'none' }}>Experiencia</Link>
+                            <Link href="#" color="text.secondary" sx={{ textDecoration: 'none' }}>Habilidades</Link>
+                            <Link href="#" color="text.secondary" sx={{ textDecoration: 'none' }}>Educación</Link>
+                        </Box>
+                    </Grid>
+                    <Grid size={{ xs: 12, md: 3 }}>
+                        <Typography variant="body1" fontWeight="bold" mb={2}>Contacto</Typography>
+                        <Box display="flex" flexDirection="column" gap={1}>
+                            <Box display="flex" alignItems="center" gap={1.5} color="text.secondary">
+                                <i className='ri-mail-line'></i>
+                                <Typography variant="body2">hmmunozf@gmail.com</Typography>
+                            </Box>
+                            <Box display="flex" alignItems="center" gap={1.5} color="text.secondary">
+                                <i className='ri-phone-line'></i>
+                                <Typography variant="body2">8120136619</Typography>
+                            </Box>
+                            <Box display="flex" alignItems="center" gap={1.5} color="text.secondary">
+                                <i className='ri-map-pin-line'></i>
+                                <Typography variant="body2">Monterrey, Nuevo León, México</Typography>
+                            </Box>
+                        </Box>
+                    </Grid>
+                </Grid>
+                <Divider sx={{ my: 4 }} />
+                <Box display="flex" justifyContent="space-between" alignItems="center" flexWrap="wrap">
+                    <Typography variant="body2" color="text.secondary">
+                        © 2025 Mauricio Muñoz. Hecho con <Box component="span" color="error.main"><i className='ri-heart-line'></i></Box> y mucho código.
                     </Typography>
                 </Box>
-                {/* <Stack spacing={1}>
-                    <Link href="#inicio" underline="hover" color="inherit">Inicio</Link>
-                    <Link href="#sobre-mi" underline="hover" color="inherit">Sobre mí</Link>
-                    <Link href="#experiencia" underline="hover" color="inherit">Experiencia</Link>
-                    <Link href="#contacto" underline="hover" color="inherit">Contacto</Link>
-                </Stack> */}
-            </Stack>
-        </FooterBox>
+            </Container>
+        </Box>
     );
 };
 

@@ -13,7 +13,7 @@ export const colors = {
     lightBlack30: "#1f29374d",        // Fondo secciones (Background section)
     lightBlack50: "#1f293780",        // Fondo secciones más claro
     navbarBack: "#0a0a0acc",    // Fondo navbar translúcido
-    borderGray: "#3741514B",      // Gris oscuro para bordes y divisores (75%)
+    borderGray: "#374151",      // Gris oscuro para bordes y divisores (75%)
 
     // Inputs
     inputGray: "#1f2937",             // Fondo translúcido para inputs
