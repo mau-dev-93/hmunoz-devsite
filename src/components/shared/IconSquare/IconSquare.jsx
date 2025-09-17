@@ -20,20 +20,26 @@ const IconSquare = ({ size = 36, variant = "condensed", color = "primary", icon 
                     justifyContent: "center",
                     borderRadius: "12px",
                     fontSize: size * 0.5,
-                    // cursor: "pointer",
-                    transition: "all 0.25s ease"
+                    transition: "all 0.25s ease",
+                    zIndex: 1,
                 };
 
                 if (variant === "condensed") {
-                    base.color = contrast;
+                    base.color = contrast || "#fff";
                     base.background = `linear-gradient(135deg, ${gradient} 0%, ${main} 100%)`;
                     base.boxShadow = "0 4px 10px rgba(0,0,0,0.2)";
-                } 
-                
-                if (variant === "outlined") {
+                }
+                else if (variant === "bicolor") {
                     base.color = main;
                     base.backgroundColor = alpha(background, 0.5);
                     base.boxShadow = "none";
+                }
+                else if (variant === "outlined") {
+                    base.color = main;
+                    base.border = `1px solid ${alpha(main, 0.3)}`;
+                    base.backgroundColor = alpha(theme.palette[color].main, 0.2);
+                    base.boxShadow = "none";
+                    base.backdropFilter = 'blur(8px)';
                 }
 
                 return {

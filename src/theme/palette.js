@@ -38,6 +38,7 @@ export const palette = {
     text: {
         primary: colors.whiteCream,
         secondary: colors.slateGray300,
+        tertiary: colors.mutedGray,
         main: colors.lightBlack50,
         contrastText: colors.slateGray300,
         disabled: colors.inputGray,

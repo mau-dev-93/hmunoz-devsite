@@ -102,7 +102,7 @@ const AboutMeSection = () => {
                         </Grid>
                     </Grid>
                     <Grid size={{ xs: 12 }}>
-                        <HighlightBox gradientDirection='center'>
+                        <HighlightBox gradientDirection='center' sx={{ py: 4 }}>
                             <Typography variant="h6" fontWeight={700}>¿Buscas un desarrollador comprometido con la excelencia?</Typography>
                             <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600 }}>Construyo soluciones escalables que generan valor real para usuarios y empresas. Mi enfoque combina experiencia técnica sólida con visión de negocio.</Typography>
                         </HighlightBox>

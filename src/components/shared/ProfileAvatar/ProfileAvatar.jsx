@@ -4,7 +4,7 @@ const ProfileAvatar = () => {
     return (
         <Avatar
             alt="Mauricio Muñoz"
-            src="src\assets\images\profile.jpeg"
+            src="src/assets/images/profile.jpeg"
             sx={(theme) => ({
                 width: 'calc(.25rem * 96)',
                 height: 'calc(.25rem * 96)',

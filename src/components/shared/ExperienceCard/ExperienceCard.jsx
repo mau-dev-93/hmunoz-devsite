@@ -7,13 +7,13 @@ import HighlightList from '../HighlightList/HighlightList';
 
 const ExperienceCard = ({ title, duration, jobTitle, dateRange, location, employmentType, description, highlights = [], techStack = [] }) => {
     return (
-        <Card sx={{ borderRadius: 4, p: 2 }} variant='outlined'>
+        <Card sx={{ borderRadius: 3, p: 1 }} variant='outlined'>
             <CardContent>
                 <Box display="flex" justifyContent="space-between" alignItems="flex-start" mb={5}>
                     <Box>
-                        <Typography variant="h6" color="text.primary" fontWeight={600}>{jobTitle}</Typography>
-                        <Typography variant="subtitle1" color="primary" fontWeight={500}>{title}</Typography>
-                        <Stack direction="row" spacing={2} mt={1}>
+                        <Typography variant="h6" color="text.primary" fontWeight={600} gutterBottom>{jobTitle}</Typography>
+                        <Typography variant="subtitle1" color="primary" fontWeight={600}>{title}</Typography>
+                        <Stack direction="row" spacing={2} mt={1.5}>
                             <Box color="text.secondary" display="flex" alignItems="center" gap={0.5}>
                                 <i className='ri-calendar-line' style={{ marginRight: 4 }}></i>
                                 <Typography variant="body2" color="text.secondary">{dateRange}</Typography>
@@ -28,9 +28,9 @@ const ExperienceCard = ({ title, duration, jobTitle, dateRange, location, employ
                     <CustomChip label={`${duration} años`} variant="outlined" size="medium" color="secondary" sx={{ fontSize: 10 }} />
                 </Box>
                 <Typography variant="body1" color="text.secondary" mb={3}>{description}</Typography>
-                <Box color="secondary.main" display="flex" alignItems="center" gap={0.5} mb={1}>
+                <Box color="secondary.main" display="flex" alignItems="center" gap={0.5} mb={1.5}>
                     <i className='ri-award-line' style={{ marginRight: 4 }}></i>
-                    <Typography variant="subtitle2" color="text.primary" fontWeight={600}>Actividades y logros</Typography>
+                    <Typography variant="body2" color="text.primary" fontWeight={600}>Actividades y logros</Typography>
                 </Box>
                 <Paper
                     variant="outlined"
@@ -45,13 +45,13 @@ const ExperienceCard = ({ title, duration, jobTitle, dateRange, location, employ
                 >
                     <HighlightList features={highlights} variant='body2' color="secondary.main" />
                 </Paper>
-                <Box color="secondary.main" display="flex" alignItems="center" gap={0.5} mb={1}>
+                <Box color="primary.main" display="flex" alignItems="center" gap={0.5} mb={1.5}>
                     <i className='ri-code-line' style={{ marginRight: 4 }}></i>
-                    <Typography variant="subtitle2" color="text.primary" fontWeight={600}> Tecnologias</Typography>
+                    <Typography variant="body2" color="text.primary" fontWeight={600}> Tecnologias</Typography>
                 </Box>
                 <Stack direction="row" spacing={1} flexWrap="wrap">
                     {techStack.map((tech, index) => (
-                        <CustomChip key={index} label={tech} variant="transparent" color="input" size="small" sx={{ fontSize: 10 }} />
+                        <CustomChip key={index} label={tech} variant="condensed" color="input" size="medium" />
                     ))}
                 </Stack>
             </CardContent>

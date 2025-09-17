@@ -1,17 +1,20 @@
-import PropTypes from 'prop-types'  
+import PropTypes from 'prop-types'
 import { Box, Button, Card, CardActions, CardContent, CardMedia, Stack, Typography, Divider } from "@mui/material";
-import CustomChip from "../CustomChip/CustomChip";
 
-const CourseCard = ({ 
-    title="Aprendiendo con el curso de React",
-    institution= "Udemy",
-    year= "2025",
-    duration= "50 horas",
-    hasCertificate= true,
-    status= "En progreso",
-    tags= ["Java", "Back-end", "SpringBoot", "React"],
-    image_url= "https://blacksuan19.dev/assets/images/aws.jpg"
- }) => {
+// components
+import CustomChip from "../CustomChip/CustomChip";
+import BrandLogo from '../BrandLogo/BrandLogo';
+
+const CourseCard = ({
+    title = "",
+    institution = "",
+    year = "",
+    duration = "",
+    hasCertificate = false,
+    status = "",
+    tags = [],
+    image_url = ""
+}) => {
     return (
         <Card
             variant='outlined'
@@ -20,22 +23,40 @@ const CourseCard = ({
                 width: "100%",
                 position: "relative",
                 height: "100%",
+                transition: 'transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out',
+                '&:hover': {
+                    transform: 'translateY(-4px)',
+                    boxShadow: 3,
+                }
             }}>
-            <Box position="absolute" display="flex" justifyContent="right" width="100%" p={1.5}>
-                <CustomChip label={status} variant="condensed" size="small" color="black" sx={{ fontSize: 10 }} />
+            <Box position="absolute" top={12} right={12} zIndex={1}>
+                <CustomChip
+                    label={status}
+                    variant="condensed"
+                    size="small"
+                    color="black" 
+                />
             </Box>
             <CardMedia
                 component="img"
-                alt={title}
+                alt={`Curso ${title} de ${institution}`}
                 height="100"
                 image={image_url}
+                onError={(e) => {
+                    e.target.src = 'https://img.freepik.com/free-photo/scorched-fall-wood-concept_23-2147866526.jpg?semt=ais_incoming&w=740&q=80'; // imagen por defecto
+                }}
             />
             <CardContent sx={{ p: 2 }}>
                 <Box mb={2}>
                     <Typography gutterBottom variant="body1" fontWeight={600} component="div">{title}</Typography>
-                    <Typography variant="body2" fontWeight="600" color="primary">{institution}</Typography>
+                    <BrandLogo
+                        brandId='udemy'
+                        size={24}
+                        bgColor="#101010"
+                        rounded="full"
+                    />
                 </Box>
-                <Stack spacing={1} mb={2}>
+                <Stack spacing={1} mb={3}>
                     <Box display="flex" justifyContent="space-between" alignItems="center">
                         <Typography variant="caption" color="text.secondary">
                             Año
@@ -61,14 +82,14 @@ const CourseCard = ({
                         </Typography>
                     </Box>
                 </Stack>
-                <Divider  />
-                <Box mt={2}>
-                    <Stack direction="row" spacing={1} flexWrap="wrap">
+                <Typography variant="body2" fontWeight={600} color="text.primary" gutterBottom>Tecnologías:</Typography>
+                <Box mt={1}>
+                    <Stack direction="row" spacing={1} useFlexGap flexWrap="wrap">
                         {tags?.map((tag, index) => (
                             <CustomChip
                                 key={index}
                                 label={tag}
-                                variant="transparent"
+                                variant="condensed"
                                 color="input"
                                 size="small"
                             />
@@ -89,6 +110,6 @@ CourseCard.propTypes = {
     status: PropTypes.string.isRequired,
     tags: PropTypes.arrayOf(PropTypes.string),
     image_url: PropTypes.string,
-}  
+}
 
 export default CourseCard;

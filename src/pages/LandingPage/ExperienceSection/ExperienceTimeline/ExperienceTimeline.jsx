@@ -28,11 +28,11 @@ const ExperienceTimeline = ({ experiences }) => {
                             flexDirection: 'column',
                             alignItems: 'center'
                         }}>
-                        <TimelineConnector sx={{ backgroundColor: "divider", width: '3px', flex: 1 }} />
+                        <TimelineConnector sx={{ backgroundColor: "divider", width: '2px', flex: 1 }} />
                         <TimelineDot variant='outlined' color='primary' />
-                        <TimelineConnector sx={{ backgroundColor: "divider", width: '3px', flex: 1 }} />
+                        <TimelineConnector sx={{ backgroundColor: "divider", width: '2px', flex: 1 }} />
                     </TimelineSeparator>
-                    <TimelineContent sx={{ pl: 4 }}>
+                    <TimelineContent sx={{ pl: 4, pt: 0, pb: index + 1 < experiences.length ? 4 :'inherit' }}>
                         <ExperienceCard
                             title={experience.title}
                             duration={experience.duration}

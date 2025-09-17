@@ -4,7 +4,7 @@ export const colors = {
     orangeAccent: "#f59e0b",      // Naranja cálido (Secondary)
     whiteCream: "#f8fafc",        // Blanco crema (texto principal)
     slateGray300: "#cad5e2",         // Gris pizarra (texto secundario)
-    mutedGray: "#cbd5e1",        // Gris atenuado (texto disabled)
+    mutedGray: "#6a7282",        // Gris atenuado (texto disabled)
     whiteGray: "#f1f5f9",        // Gris muy claro
     secondaryGray: "#6a7282",     // Gris intermedio
 

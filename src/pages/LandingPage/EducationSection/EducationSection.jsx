@@ -8,14 +8,12 @@ import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
-import Stack from "@mui/material/Stack";
 import Grid from "@mui/material/Grid";
 
 import educationData from './education-data';
 import coursesData from './courses-data';
 
 // components
-import CustomChip from "../../../components/shared/CustomChip/CustomChip";
 import EducationCard from '../../../components/shared/EducationCard/EducationCard';
 import CourseCard from "../../../components/shared/CourseCard/CourseCard";
 
@@ -23,12 +21,12 @@ const Education = () => {
     return (
         <Box id="education_section" component="section" bgcolor="background.section" py={10}>
             <Container maxWidth="lg">
-                <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" textAlign="center" mb={6}>
-                    <Typography variant="h4" fontWeight="600" color="text.primary" mb={2}>Educación</Typography>
+                <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" textAlign="center" mb={8}>
+                    <Typography variant="h4" fontWeight="600" color="text.primary" mb={2}>Educación <Box component="span" color="secondary.main">y Formación</Box></Typography>
                     <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600 }}>Mi carrera académica y compromiso con el aprendizaje continuo</Typography>
                 </Box>
-                <Box textAlign="center" pb={4}>
-                    <Typography variant="h6" fontWeight="600" color="text.primary" mb={2}>Formación Académica</Typography>
+                <Box textAlign="center" pb={6}>
+                    <Typography variant="h6" fontWeight="600" color="text.primary" mb={4}>Formación Académica</Typography>
                     <Timeline position="alternate">
                         {educationData.map((education, index) => (
                             <TimelineItem key={index}>
@@ -38,11 +36,11 @@ const Education = () => {
                                         flexDirection: 'column',
                                         alignItems: 'center'
                                     }}>
-                                    <TimelineConnector sx={{ backgroundColor: "divider", width: '3px', flex: 1 }} />
+                                    <TimelineConnector sx={{ backgroundColor: "divider", width: '2px', flex: 1 }} />
                                     <TimelineDot variant='outlined' color='primary' />
-                                    <TimelineConnector sx={{ backgroundColor: "divider", width: '3px', flex: 1 }} />
+                                    <TimelineConnector sx={{ backgroundColor: "divider", width: '2px', flex: 1 }} />
                                 </TimelineSeparator>
-                                <TimelineContent>
+                                <TimelineContent sx={{ pt: 0, pb: index + 1 < education.length ? 4 :'inherit' }}>
                                     <EducationCard
                                         degree={education.degree}
                                         institution={education.institution}
@@ -57,7 +55,7 @@ const Education = () => {
                     </Timeline>
                 </Box>
                 <Box textAlign="center">
-                    <Typography variant="h6" fontWeight="600" color="text.primary" mb={2}>Cursos y certificaciones</Typography>
+                    <Typography variant="h6" fontWeight="600" color="text.primary" mb={2}>Certificaciones y Cursos</Typography>
                 </Box>
                 <Grid container spacing={4} mt={4} justifyContent="flex-start" alignItems="stretch" sx={{ minHeight: "100%" }}>
                     {coursesData.map((course, index) => (

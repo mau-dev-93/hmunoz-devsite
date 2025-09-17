@@ -13,8 +13,8 @@ const HumanSideSection = () => {
     return (
         <Box id="humanside_section" component="section" bgcolor="background.default" py={10}>
             <Container maxWidth="lg">
-                <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" textAlign="center" mb={6}>
-                    <Typography variant="h4" fontWeight="600" color="text.primary" mb={2}>Más Allá del <Box component="span" color="secondary.main">Código</Box></Typography>
+                <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" textAlign="center" mb={8}>
+                    <Typography variant="h4" fontWeight="600" color="text.primary" gutterBottom>Más Allá del <Box component="span" color="secondary.main">Código</Box></Typography>
                     <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600 }}>Mi motor, mis pasiones y lo que me inspira como persona y programador</Typography>
                 </Box>
                 <Box

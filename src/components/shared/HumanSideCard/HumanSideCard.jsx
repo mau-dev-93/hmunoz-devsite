@@ -1,5 +1,8 @@
 import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
 
+// components
+import IconSquare from "../IconSquare/IconSquare";
+
 const HumanSideCard = ({
     title = "Human side title",
     imageUrl = 'https://images.unsplash.com/photo-1736479494478-d1bb4fd5d09d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMGZhbWlseSUyMHRvZ2V0aGVyJTIwbG92ZSUyMGluc3BpcmF0aW9ufGVufDF8fHx8MTc1Nzg4NTMwN3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
@@ -7,14 +10,19 @@ const HumanSideCard = ({
 }) => {
     return (
         <Card
-            variant='outlined'
+            variant='sharp'
+            elevation={0}
             sx={{
+                position: "relative",
                 height: "100%",
                 overflow: "hidden",
                 borderRadius: 3,
                 display: "flex",
-                flexDirection: "column"
+                flexDirection: "column",
             }}>
+            <Box position="absolute" display="flex" justifyContent="space-between" width="100%" p={1.5}>
+                <IconSquare icon={'ri-calendar-line'} color="secondary" variant="outlined" />
+            </Box>
             <CardMedia component="div" sx={{ position: "relative", height: 260, overflow: "hidden" }}>
                 <Box
                     sx={{
@@ -25,7 +33,7 @@ const HumanSideCard = ({
                         transition: "transform 700ms cubic-bezier(.4,0,.2,1)",
                         transform: "scale(1)",
                         "&:hover": {
-                            transform: "scale(1.08)"
+                            transform: "scale(1.1)"
                         },
                         
                         /* Efecto más rápido o más suave */
@@ -50,9 +58,9 @@ const HumanSideCard = ({
                 />
             </CardMedia>
             <CardContent sx={{ flexGrow: 1 }}>
-                <Box py={2}>
-                    <Typography variant="body1" fontWeight="bold">{title}</Typography>
-                    <Typography variant="caption" color="text.secondary">{description}</Typography>
+                <Box py={2} px={1}>
+                    <Typography variant="subtitle1" fontWeight="600" gutterBottom mb={1}>{title}</Typography>
+                    <Typography variant="body2" color="text.secondary">{description}</Typography>
                 </Box>
             </CardContent>
         </Card>

@@ -5,7 +5,7 @@ import { Paper, Box, Typography, Stack, Chip } from "@mui/material";
 import CustomChip from '../CustomChip/CustomChip';
 import IconSquare from '../IconSquare/IconSquare';
 
-const TechSkillsCard = ({ title, icon, color, skills = [] }) => {
+const TechSkillsCard = ({ title, icon, color, experience, skills = [] }) => {
     const getLevelProps = (level) => {
         switch (level.toLowerCase()) {
             case 'avanzado':
@@ -41,14 +41,18 @@ const TechSkillsCard = ({ title, icon, color, skills = [] }) => {
                 border: "1px solid",
                 borderColor: "divider",
                 height: "100%",
-                width: 264,
-                maxWidth: "100%"
+                // minWidth: 264,
+                // maxWidth: "100%"
+                width: '100%'
             }}
         >
             <Box display="flex" flexDirection="column" alignItems="center" mb={3}>
-                <IconSquare icon={icon} size={40} variant='outlined' color={color} sx={{ mb: 2 }} />
-                <Typography variant="body2" color="text.primary" fontSize={14} fontWeight={600} textAlign="center">
+                <IconSquare icon={icon} size={40} variant='bicolor' color={color} sx={{ mb: 2 }} />
+                <Typography variant="body2" color="text.primary" fontWeight={600} textAlign="center" gutterBottom>
                     {title}
+                </Typography>
+                <Typography variant="caption" color="text.tertiary" textAlign="center">
+                    {experience}
                 </Typography>
             </Box>
             <Stack spacing={1}>

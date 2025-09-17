@@ -16,22 +16,23 @@ const SkillsSection = () => {
                     <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600 }}>Combinación de habilidades técnicas y habilidades humanadas para crear soluciones integrales</Typography>
                 </Box>
                 <Typography variant="h6" color="text.primary" fontWeight={600} mt={8} mb={3} textAlign="center">Habilidades Técnicas</Typography>
-                <Grid container spacing={4} justifyContent="center" alignItems="stretch">
+                <Grid container spacing={3} justifyContent="center" alignItems="stretch" width={'100%'}>
                     {techSkillsData.map((category, index) => (
-                        <Grid key={index} /*size={{ xs: 12, sm: 6, md: 4 }}*/ sx={{ display: 'flex', justifyContent: 'center' }}>
+                        <Grid key={index} size={{ xs: 12, sm: 6, md: 3 }} sx={{ display: 'flex', justifyContent: 'center' }}>
                             <TechSkillsCard
                                 title={category.title}
                                 icon={category.icon}
                                 color={category.color}
                                 skills={category.skills}
+                                experience={category.experience}
                             />
                         </Grid>
                     ))}
                 </Grid>
                 <Typography variant="h6" color="text.primary" fontWeight={600} mt={8} mb={3} textAlign="center">Habilidades Humanas</Typography>
-                <Grid container spacing={4} justifyContent="center" alignItems="stretch" mb={8}>
+                <Grid container spacing={3} justifyContent="center" alignItems="stretch" mb={10}>
                     {humanSkillsData.map((skill, index) => (
-                        <Grid key={index} /*xs={12} sm={6} md={4}*/ sx={{ display: 'flex', justifyContent: 'center' }}>
+                        <Grid key={index} size={{ xs: 12, sm: 6, md: 4 }} sx={{ display: 'flex', justifyContent: 'center' }}>
                             <HumanSkillCard
                                 title={skill.title}
                                 icon={skill.icon}
