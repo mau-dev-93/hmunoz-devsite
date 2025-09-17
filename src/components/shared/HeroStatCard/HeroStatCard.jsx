@@ -15,7 +15,6 @@ const HeroStatCard = ({ icon, color = 'default', variant = 'outlined', title, su
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
-                    gap: 1,
                     border: '1px solid',
                     borderColor: 'divider',
                     boxShadow: 'none'
@@ -51,16 +50,16 @@ const HeroStatCard = ({ icon, color = 'default', variant = 'outlined', title, su
                         fontSize: '1.5rem',
                         color: color === 'default' ? theme.palette.text.primary : theme.palette[color].main,
                         backgroundColor: color === 'default' ? 'action.hover' : alpha(theme.palette[color].main, 0.08),
-                        mb: 0.5
+                        mb: 2
                     })}
                 >
                     {icon}
                 </Box>
             )}
-            <Typography variant={'h6'} fontWeight={800}>
+            <Typography variant='h6' fontWeight={800}>
                 {title}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="caption" color="text.secondary">
                 {subtitle}
             </Typography>
         </Paper>

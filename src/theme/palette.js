@@ -36,10 +36,10 @@ export const palette = {
         main: colors.infoSky
     },
     text: {
-        main: colors.lightBlack50,
-        contrastText: colors.slateGray,
         primary: colors.whiteCream,
-        secondary: colors.slateGray,
+        secondary: colors.slateGray300,
+        main: colors.lightBlack50,
+        contrastText: colors.slateGray300,
         disabled: colors.inputGray,
     },
     input: {

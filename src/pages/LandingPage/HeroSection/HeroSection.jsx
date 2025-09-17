@@ -36,34 +36,28 @@ const HeroSection = () => {
                 <Grid container spacing={4}>
                     <Grid container size={6} spacing={2} sx={{ marginBottom: "16px" }}>
                         <Grid size={12}>
-                            <Typography variant="h3" fontWeight="600" marginBottom={1}>Mauricio Muñoz</Typography>
-                            <Typography variant="h5" fontWeight="600" color="secondary" marginBottom={1}>Desarrollador Full Stack</Typography>
+                            <Typography variant="h2" fontWeight="600" marginBottom={1}>Mauricio Muñoz</Typography>
+                            <Typography variant="h4" fontWeight="600" color="secondary" marginBottom={1}>Desarrollador Full Stack</Typography>
                             <Typography variant="body1" fontWeight="400" color="text.secondary">Me especializo en desarrollar soluciones tecnológicas que no solo resuelven problemas, sino que también mejoran la forma en que las personas interactúan con los sistemas.</Typography>
                         </Grid>
                         <Box display="flex" flexDirection="column" gap={1}>
-                            <Stack direction="row" alignItems="center" gap={1.5}>
-                                <Icon color='primary' sx={{ fontSize: "1.5rem", height: "auto" }}>
+                            <Stack direction="row" alignItems="center" gap={1.2}>
+                                <Icon color='primary' sx={{ fontSize: "1.4rem", height: "auto" }}>
                                     <i className="ri-mail-line" />
                                 </Icon>
-                                <Typography variant="body1" color="text.primary">
-                                    hmmunozf@gmail.com
-                                </Typography>
+                                <Typography variant="body2" color="text.secondary">hmmunozf@gmail.com</Typography>
                             </Stack>
-                            <Stack direction="row" alignItems="center" gap={1.5}>
-                                <Icon color='primary' sx={{ fontSize: "1.5rem", height: "auto" }}>
+                            <Stack direction="row" alignItems="center" gap={1.2}>
+                                <Icon color='primary' sx={{ fontSize: "1.4rem", height: "auto" }}>
                                     <i className="ri-phone-line" />
                                 </Icon>
-                                <Typography variant="body1" color="text.primary">
-                                    8120136619
-                                </Typography>
+                                <Typography variant="body2" color="text.secondary">8120136619</Typography>
                             </Stack>
-                            <Stack direction="row" alignItems="center" gap={1.5}>
-                                <Icon color='primary' sx={{ fontSize: "1.5rem", height: "auto" }}>
+                            <Stack direction="row" alignItems="center" gap={1.2}>
+                                <Icon color='primary' sx={{ fontSize: "1.4rem", height: "auto" }}>
                                     <i className="ri-map-pin-line" />
                                 </Icon>
-                                <Typography variant="body1" color="text.primary">
-                                    Monterrey, Nuevo León, México
-                                </Typography>
+                                <Typography variant="body2" color="text.secondary">Monterrey, Nuevo León, México</Typography>
                             </Stack>
                         </Box>
                         <Box width="100%" display="flex" gap={1.5}>

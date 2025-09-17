@@ -15,5 +15,11 @@ export const resolveGradient = (theme, color) => {
 
 export const resolveColor = (theme, color, prop) => {
     const maybe = theme.palette?.[color]?.[prop];
-    return maybe || "#ffffff";
+    return maybe || color;
+};
+
+export const resolveColor2 = (theme, color) => {
+    const keys = color.split('.');
+    const value = keys.reduce((acc, key) => acc?.[key], theme.palette);
+    return value || color;
 };
