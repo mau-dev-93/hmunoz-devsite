@@ -19,18 +19,18 @@ const Footer = () => {
                         </Box>
                     </Grid>
                     <Grid size={{ xs: 12, md: 4 }}>
-                        <Typography variant="body1" fontWeight="bold" mb={2}>Enlaces rápidos</Typography>
-                        <Box display="flex" flexDirection="column" gap={0.5}>
-                            <Link href="#" color="text.secondary" sx={{ textDecoration: 'none' }}>Inicio</Link>
-                            <Link href="#" color="text.secondary" sx={{ textDecoration: 'none' }}>Sobre mí</Link>
-                            <Link href="#" color="text.secondary" sx={{ textDecoration: 'none' }}>Proyectos</Link>
-                            <Link href="#" color="text.secondary" sx={{ textDecoration: 'none' }}>Experiencia</Link>
-                            <Link href="#" color="text.secondary" sx={{ textDecoration: 'none' }}>Habilidades</Link>
-                            <Link href="#" color="text.secondary" sx={{ textDecoration: 'none' }}>Educación</Link>
+                        <Typography variant="body2" fontWeight="bold" mb={2}>Enlaces rápidos</Typography>
+                        <Box display="flex" flexDirection="column" gap={1.5}>
+                            <Link href="#" color="text.secondary" sx={{ textDecoration: 'none' }}><Typography variant="body2">Inicio</Typography></Link>
+                            <Link href="#" color="text.secondary" sx={{ textDecoration: 'none' }}><Typography variant="body2">Sobre mí</Typography></Link>
+                            <Link href="#" color="text.secondary" sx={{ textDecoration: 'none' }}><Typography variant="body2">Proyectos</Typography></Link>
+                            <Link href="#" color="text.secondary" sx={{ textDecoration: 'none' }}><Typography variant="body2">Experiencia</Typography></Link>
+                            <Link href="#" color="text.secondary" sx={{ textDecoration: 'none' }}><Typography variant="body2">Habilidades</Typography></Link>
+                            <Link href="#" color="text.secondary" sx={{ textDecoration: 'none' }}><Typography variant="body2">Educación</Typography></Link>
                         </Box>
                     </Grid>
                     <Grid size={{ xs: 12, md: 3 }}>
-                        <Typography variant="body1" fontWeight="bold" mb={2}>Contacto</Typography>
+                        <Typography variant="body2" fontWeight="bold" mb={2}>Contacto</Typography>
                         <Box display="flex" flexDirection="column" gap={1}>
                             <Box display="flex" alignItems="center" gap={1.5} color="text.secondary">
                                 <i className='ri-mail-line'></i>

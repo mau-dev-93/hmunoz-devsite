@@ -1,24 +1,28 @@
 import { alpha, Box, Paper, Typography } from "@mui/material";
-import { resolveColor } from "../../../utils/paletteUtils";
+import { resolveColor2 } from "../../../utils/paletteUtils";
 
 const IdentityPaper = ({ icon, description }) => {
     return (
         <Paper
             variant="outlined"
-            sx={{
-                display: "flex",
-                alignItems: "center",
-                gap: 2,
-                p: "16px",
-                bgcolor: "background.paper",
-                border: "1px solid",
-                borderColor: "divider",
-                borderRadius: 3,
+            sx={(theme) => {
+                const color = resolveColor2(theme, 'background.paper');
+                const border = resolveColor2(theme, 'divider');
+                return {
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 2,
+                    p: "16px",
+                    bgcolor: alpha(color, 0.5),
+                    border: "1px solid",
+                    borderColor: alpha(border, 0.3),
+                    borderRadius: 3,
+                }
             }}
         >
             <Box
                 sx={(theme) => {
-                    const color = resolveColor(theme, 'secondary', 'main');
+                    const color = resolveColor2(theme, 'secondary.main');
                     return {
                         bgcolor: alpha(color, 0.1),
                         color: "secondary.main",
@@ -36,7 +40,7 @@ const IdentityPaper = ({ icon, description }) => {
             >
                 <i className={icon}></i>
             </Box>
-            <Typography variant="caption">{description}</Typography>
+            <Typography variant="body2" align="left">{description}</Typography>
         </Paper>
     )
 };

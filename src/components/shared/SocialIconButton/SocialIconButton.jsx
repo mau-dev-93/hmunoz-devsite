@@ -10,14 +10,22 @@ const SocialIconButton = ({ icon, size, href }) => {
             target="_blank"
             rel="noopener noreferrer"
             color='primary'
-            sx={(theme)=>({
+            disableRipple
+            sx={(theme) => ({
                 borderWidth: 1,
                 borderStyle: "solid",
                 borderColor: alpha(theme.palette.input.main, 1),
                 backgroundColor: alpha(theme.palette.input.main, 0.3),
                 color: alpha(theme.palette.input.contrastText, 1),
                 fontSize: "1.25rem",
-                width: "47.5px"
+                width: "47.5px",
+                transition: "background-color 0.2s",
+                "&:hover": {
+                    backgroundColor: alpha(theme.palette.input.main, 0.6),
+                    "& i": {
+                        color: theme.palette.primary.main, // si usas <i> para iconos
+                    },
+                },
             })}
         >
             {icon}

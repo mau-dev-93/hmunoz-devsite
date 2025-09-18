@@ -18,7 +18,7 @@ const HumanSideSection = () => {
                     <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600 }}>Mi motor, mis pasiones y lo que me inspira como persona y programador</Typography>
                 </Box>
                 <Box
-                    mb={8}
+                    mb={10}
                     sx={{
                         display: "grid",
                         gap: 3,
@@ -55,8 +55,8 @@ const HumanSideSection = () => {
                         </Box>
                     ))}
                 </Box>
-                <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" textAlign="center" sx={{ width: { xs: "100%", md: "70%" }, mx: "auto" }} mb={8}>
-                    <Typography variant="h5" fontWeight="600" color="text.primary" mb={2}>Pequeñas cosas que me <Box component="span" color="secondary.main">Definen</Box></Typography>
+                <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" textAlign="center" sx={{ width: { xs: "100%", md: "70%" }, mx: "auto" }} mb={10}>
+                    <Typography variant="h5" fontWeight="600" color="text.primary" mb={2}>Pequeñas Cosas Que Me <Box component="span" color="secondary.main">Definen</Box></Typography>
                     <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600, mb: 4 }}>Los detalles que forman mi identidad y que, de alguna manera, influyen en mi forma de crear y pensar el desarrollo de software</Typography>
                     <Grid container spacing={3} direction="row">
                         {identityData.map((item, index) => (
@@ -66,13 +66,13 @@ const HumanSideSection = () => {
                         ))}
                     </Grid>
                 </Box>
-                <HighlightBox>
-                    <Typography variant="h6" component="div" display="flex" gap={2}>
-                        <Box component="span" color="error.main"><i className='ri-heart-3-line'></i></Box>
-                        Gracias por Llegar Hasta Aquí
-                        <Box component="span" color="error.main"><i className='ri-heart-3-line'></i></Box>
+                <HighlightBox gradientDirection="to left" borderColor="secondary" sx={{ py: 6 }}>
+                    <Typography variant="h5" component="div" fontWeight={600} display="flex" gap={1}  gutterBottom mb={2}>
+                        <Box component="span" color="secondary.main" fontWeight={400}><i className='ri-heart-3-line'></i></Box>
+                        <Box component="span">Gracias por Llegar Hasta <Box component="span" color="secondary.main">Aquí</Box></Box>
+                        <Box component="span" color="secondary.main" fontWeight={400}><i className='ri-heart-3-line'></i></Box>
                     </Typography>
-                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 750 }}>
+                    <Typography variant="body1" color="textSecondary" sx={{ maxWidth: 750 }}>
                         Si has llegado hasta esta sección, probablemente compartimos una visión similar: las mejores colaboraciones surgen cuando nos conocemos como personas, no solo como profesionales. Cada proyecto es una oportunidad de crear algo significativo, y me encantaría ser parte de tu próxima historia de éxito.
                     </Typography>
                 </HighlightBox>

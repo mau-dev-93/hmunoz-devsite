@@ -36,11 +36,11 @@ const AboutMeSection = () => {
                             <Typography variant="subtitle1" fontWeight={600}>Mi Enfoque Full Stack</Typography>
                             <Grid container spacing={2}>
                                 <Grid size={{ xs: 12, md: 6 }}>
-                                    <Typography variant="subtitle1" color="secondary.main" fontWeight={700} mb={1}>🎨 Frontend:</Typography>
+                                    <Typography variant="subtitle1" color="secondary.main" fontWeight={700} mb={1}>🎨 Frontend Development</Typography>
                                     <Typography variant="body2" color="text.secondary">Creo interfaces modernas y responsivas con React, TypeScript y Tailwind CSS. Enfocado en UX/UI excepcional y performance optimizada.</Typography>
                                 </Grid>
                                 <Grid size={{ xs: 12, md: 6 }}>
-                                    <Typography variant="subtitle1" color="secondary.main" fontWeight={700} mb={1}>⚙️ Backend:</Typography>
+                                    <Typography variant="subtitle1" color="secondary.main" fontWeight={700} mb={1}>⚙️ Backend Development</Typography>
                                     <Typography variant="body2" color="text.secondary">Desarrollo APIs escalables con Node.js, bases de datos SQL/NoSQL, y despliegues en la nube con AWS para arquitecturas robustas.</Typography>
                                 </Grid>
                             </Grid>
