@@ -59,8 +59,8 @@ const AboutMeSection = () => {
                             </Stack>
                         </Box>
                         <Stack direction="row" spacing={2}>
-                            <Button variant='contained' size='large'>Ver Proyectos</Button>
-                            <Button variant='outlined' size='large' color="input">Contactar</Button>
+                            <Button variant='contained' size='large' href='#projects_section'>Ver Proyectos</Button>
+                            <Button variant='outlined' size='large' href='#hero_section' color="input">Contactar</Button>
                         </Stack>
                     </Grid>
                     <Grid container size={{ xs: 12, md: 6 }} spacing={2} alignContent={"center"} alignItems={"center"} justifyContent={"center"}>

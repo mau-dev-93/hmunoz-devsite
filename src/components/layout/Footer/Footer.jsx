@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Typography, IconButton, Button, Divider, Link } from "@mui/material";
+import { Box, Container, Grid, Typography, Divider, Link } from "@mui/material";
 
 // shared
 import SocialIconButton from "../../shared/SocialIconButton/SocialIconButton.jsx";
@@ -21,12 +21,13 @@ const Footer = () => {
                     <Grid size={{ xs: 12, md: 4 }}>
                         <Typography variant="body2" fontWeight="bold" mb={2}>Enlaces rápidos</Typography>
                         <Box display="flex" flexDirection="column" gap={1.5}>
-                            <Link href="#" color="text.secondary" sx={{ textDecoration: 'none' }}><Typography variant="body2">Inicio</Typography></Link>
-                            <Link href="#" color="text.secondary" sx={{ textDecoration: 'none' }}><Typography variant="body2">Sobre mí</Typography></Link>
-                            <Link href="#" color="text.secondary" sx={{ textDecoration: 'none' }}><Typography variant="body2">Proyectos</Typography></Link>
-                            <Link href="#" color="text.secondary" sx={{ textDecoration: 'none' }}><Typography variant="body2">Experiencia</Typography></Link>
-                            <Link href="#" color="text.secondary" sx={{ textDecoration: 'none' }}><Typography variant="body2">Habilidades</Typography></Link>
-                            <Link href="#" color="text.secondary" sx={{ textDecoration: 'none' }}><Typography variant="body2">Educación</Typography></Link>
+                            <Link href="#hero_section" color="text.secondary" sx={{ textDecoration: 'none' }}><Typography variant="body2">Inicio</Typography></Link>
+                            <Link href="#aboutme_section" color="text.secondary" sx={{ textDecoration: 'none' }}><Typography variant="body2">Sobre mí</Typography></Link>
+                            <Link href="#projects_section" color="text.secondary" sx={{ textDecoration: 'none' }}><Typography variant="body2">Proyectos</Typography></Link>
+                            <Link href="#experience_section" color="text.secondary" sx={{ textDecoration: 'none' }}><Typography variant="body2">Experiencia</Typography></Link>
+                            <Link href="#skills_section" color="text.secondary" sx={{ textDecoration: 'none' }}><Typography variant="body2">Habilidades</Typography></Link>
+                            <Link href="#education_section" color="text.secondary" sx={{ textDecoration: 'none' }}><Typography variant="body2">Educación</Typography></Link>
+                            <Link href="#humanside_section" color="text.secondary" sx={{ textDecoration: 'none' }}><Typography variant="body2">Lado Humano</Typography></Link>
                         </Box>
                     </Grid>
                     <Grid size={{ xs: 12, md: 3 }}>

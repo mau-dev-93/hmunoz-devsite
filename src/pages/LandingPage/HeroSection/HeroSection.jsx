@@ -1,11 +1,8 @@
-import React from 'react';
-
 // @mui/material
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import Stack from "@mui/material/Stack";
 import Icon from '@mui/material/Icon';
 import Container from '@mui/material/Container';
 import Fade from '@mui/material/Fade';
@@ -13,6 +10,7 @@ import Fade from '@mui/material/Fade';
 // components
 import SocialIconButton from '../../../components/shared/SocialIconButton/SocialIconButton';
 import ProfileAvatar from '../../../components/shared/ProfileAvatar/ProfileAvatar';
+import ContactDetail from "../../../components/shared/ContactDetail/ContactDetail";
 
 const HeroSection = () => {
     return (
@@ -34,7 +32,7 @@ const HeroSection = () => {
                 }}>
             </Box>
             <Container maxWidth="lg">
-                <Fade in timeout={800}>
+                <Fade in timeout={600}>
                     <Grid container spacing={4}>
                         <Grid container size={6} spacing={2} sx={{ marginBottom: "16px" }}>
                             <Grid size={12} mb={1}>
@@ -42,25 +40,10 @@ const HeroSection = () => {
                                 <Typography variant="h4" fontWeight="600" color="secondary" marginBottom={1}>Desarrollador Full Stack</Typography>
                                 <Typography variant="body1" fontWeight="400" color="text.secondary">Me especializo en desarrollar soluciones tecnológicas que no solo resuelven problemas, sino que también mejoran la forma en que las personas interactúan con los sistemas.</Typography>
                             </Grid>
-                            <Box display="flex" flexDirection="column" gap={0.5} mb={2}>
-                                <Stack direction="row" alignItems="center" gap={1.2}>
-                                    <Icon color='primary' sx={{ fontSize: "1.4rem", height: "auto" }}>
-                                        <i className="ri-mail-line" />
-                                    </Icon>
-                                    <Typography variant="body2" color="text.secondary">hmmunozf@gmail.com</Typography>
-                                </Stack>
-                                <Stack direction="row" alignItems="center" gap={1.2}>
-                                    <Icon color='primary' sx={{ fontSize: "1.4rem", height: "auto" }}>
-                                        <i className="ri-phone-line" />
-                                    </Icon>
-                                    <Typography variant="body2" color="text.secondary">8120136619</Typography>
-                                </Stack>
-                                <Stack direction="row" alignItems="center" gap={1.2}>
-                                    <Icon color='primary' sx={{ fontSize: "1.4rem", height: "auto" }}>
-                                        <i className="ri-map-pin-line" />
-                                    </Icon>
-                                    <Typography variant="body2" color="text.secondary">Monterrey, Nuevo León, México</Typography>
-                                </Stack>
+                            <Box display="flex" flexDirection="column" gap={1} mb={2}>
+                                <ContactDetail text="hmmunozf@gmail.com" icon={<i className="ri-mail-line" />} actionHref="mailto:hmmunozf@gmail.com" />
+                                <ContactDetail text="8120136619" icon={<i className="ri-phone-line" />} actionHref="tel:8120136619" />
+                                <ContactDetail text="Monterrey, Nuevo León, México" icon={<i className="ri-map-pin-line" />} actionHref="https://www.google.com/maps/search/?api=1&query=Monterrey,+Nuevo+León,+México" />
                             </Box>
                             <Box width="100%" display="flex" gap={1.5}>
                                 <Button variant='contained' size='medium' startIcon={<i className='ri-download-2-line'></i>}>

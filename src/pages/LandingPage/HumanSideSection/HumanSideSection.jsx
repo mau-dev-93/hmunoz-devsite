@@ -67,12 +67,12 @@ const HumanSideSection = () => {
                     </Grid>
                 </Box>
                 <HighlightBox gradientDirection="to left" borderColor="secondary" sx={{ py: 6 }}>
-                    <Typography variant="h5" component="div" fontWeight={600} display="flex" gap={1}  gutterBottom mb={2}>
+                    <Typography variant="h6" component="div" fontWeight={700} display="flex" gap={1}  gutterBottom mb={2}>
                         <Box component="span" color="secondary.main" fontWeight={400}><i className='ri-heart-3-line'></i></Box>
                         <Box component="span">Gracias por Llegar Hasta <Box component="span" color="secondary.main">Aquí</Box></Box>
                         <Box component="span" color="secondary.main" fontWeight={400}><i className='ri-heart-3-line'></i></Box>
                     </Typography>
-                    <Typography variant="body1" color="textSecondary" sx={{ maxWidth: 750 }}>
+                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 750 }}>
                         Si has llegado hasta esta sección, probablemente compartimos una visión similar: las mejores colaboraciones surgen cuando nos conocemos como personas, no solo como profesionales. Cada proyecto es una oportunidad de crear algo significativo, y me encantaría ser parte de tu próxima historia de éxito.
                     </Typography>
                 </HighlightBox>
