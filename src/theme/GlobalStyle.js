@@ -35,6 +35,9 @@ const GlobalStyle = createGlobalStyle`
         text-decoration: none;
         color: inherit;
     }
+        
+    section { scroll-margin-top: 64px; }
+    @media (max-width: 900px) { section { scroll-margin-top: 56px; } }
 `;
 
 export default GlobalStyle;
