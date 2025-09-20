@@ -12,13 +12,8 @@ import HeroStatCard from '../../../components/shared/HeroStatCard/HeroStatCard';
 import HighlightBox from '../../../components/shared/HighlightBox/HighlightBox';
 import TechLogoChip from '../../../components/shared/TechLogoChip/TechLogoChip';
 
-const techStack = [
-    { label: "React", icon: "react-original", color: "primary.main" },
-    { label: "Node.js", icon: "nodejs-plain", color: "success.main" },
-    { label: "AWS", icon: "amazonwebservices-plain-wordmark", color: "secondary.main" },
-    { label: "TypeScript", icon: "typescript-plain", color: "warning.main" },
-    { label: "SQL Server", icon: "microsoftsqlserver-plain", color: "info.main" }
-]
+// data
+import profile from '../../../data/profile';
 
 const AboutMeSection = () => {
     return (
@@ -48,7 +43,7 @@ const AboutMeSection = () => {
                         <Box mb={4}>
                             <Typography variant="subtitle1" fontWeight="600" color="text.primary" mb={1}>Stack Principal</Typography>
                             <Stack direction="row" spacing={0} flexWrap="wrap" gap={2}>
-                                {techStack.map((tech, index) => (
+                                {profile.techStack.map((tech, index) => (
                                     <TechLogoChip
                                         key={index}
                                         label={tech.label}

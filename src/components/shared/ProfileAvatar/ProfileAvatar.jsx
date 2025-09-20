@@ -1,10 +1,10 @@
 import { alpha, Avatar } from "@mui/material";
 
-const ProfileAvatar = () => {
+const ProfileAvatar = ({ src }) => {
     return (
         <Avatar
             alt="Mauricio Muñoz"
-            src="src/assets/images/profile.jpeg"
+            src={src}
             sx={(theme) => ({
                 width: 'calc(.25rem * 96)',
                 height: 'calc(.25rem * 96)',

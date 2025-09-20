@@ -1,13 +1,14 @@
 import React from "react";
 
 // @material-ui/core
-import { Drawer, Icon, IconButton, List, ListItemButton, ListItemText } from "@mui/material";
+import { alpha, Drawer, IconButton, List, Icon, ListItemButton, ListItemText } from "@mui/material";
 
 // context
 import { useNavbarScrollContext } from "../../../contexts/NavbarScrollContext/useNavbarScrollContext";
 
 // sections
 import { SECTIONS } from "../../../config/sections";
+import { resolveColor2 } from "../../../utils/paletteUtils";
 
 const NavbarDrawer = () => {
     const [openDrawer, setOpenDrawer] = React.useState(false);
@@ -20,27 +21,55 @@ const NavbarDrawer = () => {
         setOpenDrawer(open);
     };
 
+    const drawerWidth = 340;
+    const TB_XS = 56;   // xs
+    const TB_MD = 64;   // md+
+
     return (
         <React.Fragment>
             <IconButton
                 edge="end"
                 color="inherit"
                 aria-label="menu"
-                onClick={toggleDrawer(true)}
+                onClick={toggleDrawer(!openDrawer)}
+                size="medium"
                 sx={{
-                    mr: -1,
-                    '&:hover': {
-                        transition: 'background-color 0.3s',
-                        backgroundColor: 'background.paper'
-                    }
-                }}>
-                <Icon className="ri-menu-line" />
+                    transition: (t) => t.transitions.create("background-color", { duration: t.transitions.duration.shorter }),
+                    "&:hover": { bgcolor: "background.section" },
+                }}
+            >
+                <Icon className={openDrawer ? "ri-close-line" : "ri-menu-line"} sx={{ fontSize: 24, lineHeight: 1 }}  />
             </IconButton>
             <Drawer
                 ModalProps={{ keepMounted: true }}
                 anchor="right"
                 open={openDrawer}
                 onClose={toggleDrawer(false)}
+                sx={{
+                    width: drawerWidth,
+                    flexShrink: 0,
+                    '& .MuiDrawer-paper': {
+                        top: { xs: TB_XS, md: TB_MD },
+                        height: {
+                            xs: `calc(100% - ${TB_XS}px)`,
+                            md: `calc(100% - ${TB_MD}px)`,
+                        },
+                        width: drawerWidth,
+                        bgcolor: 'background.default',
+                        boxSizing: 'border-box',
+                    },
+                }}
+                slotProps={{
+                    backdrop: {
+                        sx: {
+                            top: { xs: TB_XS, md: TB_MD },
+                            height: {
+                                xs: `calc(100% - ${TB_XS}px)`,
+                                md: `calc(100% - ${TB_MD}px)`,
+                            },
+                        },
+                    }
+                }}
             >
                 <DrawerList onToggleDrawer={toggleDrawer} />
             </Drawer>
@@ -69,11 +98,16 @@ const DrawerList = ({ onToggleDrawer }) => {
                         e.stopPropagation();
                         handleListItemClick(section.id, index);
                     }}
-                    sx={{
-                        '&.Mui-selected': { backgroundColor: 'primary.main', color: 'common.white' },
-                        '&.Mui-selected:hover': { backgroundColor: 'primary.dark', color: 'common.white' },
-                        '&:hover': { backgroundColor: 'primary.main' },
-                        transition: (t) => t.transitions.create(['background-color', 'color'], { duration: t.transitions.duration.shorter }),
+                    sx={(theme) => {
+                        const color = resolveColor2(theme, 'primary.main');
+                        return {
+                            margin: 1,
+                            borderRadius: '6.75px',
+                            '&.Mui-selected': { backgroundColor: alpha(color, 0.1), color: 'primary.main' },
+                            '&.Mui-selected:hover': { backgroundColor: alpha(color, 0.1), color: 'primary.main' },
+                            '&:hover': { backgroundColor: 'background.section' },
+                            transition: (t) => t.transitions.create(['background-color', 'color'], { duration: t.transitions.duration.shorter }),
+                        }
                     }}
                 >
                     <ListItemText primary={section.label} slotProps={{ primary: { variant: 'body2' } }} />

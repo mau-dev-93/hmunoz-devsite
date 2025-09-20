@@ -17,6 +17,7 @@ export const AppBar = React.forwardRef(function AppBar(props, ref) {
                 borderBottom: `1px solid ${theme.palette.navbar.border}`,
                 backdropFilter: 'blur(8px)',
                 boxShadow: 'none',
+                zIndex: (theme) => theme.zIndex.drawer + 1
             })}
             {...props} />
     );
@@ -25,7 +26,7 @@ export const AppBar = React.forwardRef(function AppBar(props, ref) {
 const Navbar = () => {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-    
+
     return (
         <AppBar position="fixed" elevation={0}>
             <Toolbar variant="regular" sx={{ display: "flex", justifyContent: "space-between" }}>

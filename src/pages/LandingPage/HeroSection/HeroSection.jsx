@@ -12,9 +12,12 @@ import SocialIconButton from '../../../components/shared/SocialIconButton/Social
 import ProfileAvatar from '../../../components/shared/ProfileAvatar/ProfileAvatar';
 import ContactDetail from "../../../components/shared/ContactDetail/ContactDetail";
 
+// data
+import profile from '../../../data/profile';
+
 const HeroSection = () => {
     return (
-        <Box id="hero_section" component="section" display="flex" alignItems="center" justifyContent="center" position="relative" bgcolor="background" minHeight="100vh">
+        <Box id="hero_section" component="section" display="flex" alignItems="center" justifyContent="center" position="relative" bgcolor="background" sx={{ minHeight: { xs: '100svh', md: '80vh' } }}>
             <Box position="absolute"
                 sx={{
                     top: '0 !important',
@@ -33,28 +36,29 @@ const HeroSection = () => {
             </Box>
             <Container maxWidth="lg">
                 <Fade in timeout={600}>
-                    <Grid container spacing={4}>
-                        <Grid container size={6} spacing={2} sx={{ marginBottom: "16px" }}>
-                            <Grid size={12} mb={1}>
-                                <Typography variant="h2" fontWeight="600" marginBottom={1}>Mauricio Muñoz</Typography>
-                                <Typography variant="h4" fontWeight="600" color="secondary" marginBottom={1}>Desarrollador Full Stack</Typography>
-                                <Typography variant="body1" fontWeight="400" color="text.secondary">Me especializo en desarrollar soluciones tecnológicas que no solo resuelven problemas, sino que también mejoran la forma en que las personas interactúan con los sistemas.</Typography>
+                    <Grid container spacing={4} direction={{ xs: "column-reverse", md: "row" }}>
+                        <Grid container size={{ xs: 12, md: 6 }} spacing={2} justifyContent={{ xs: "center", md: "flex-start" }} sx={{ marginBottom: "16px" }}>
+                            <Grid size={12} mb={1} textAlign={{ xs: "center", md: "left" }}>
+                                <Typography variant="h2" fontWeight="600" marginBottom={1}>{profile.personal.name}</Typography>
+                                <Typography variant="h4" fontWeight="600" color="secondary" marginBottom={1}>{profile.personal.role}</Typography>
+                                <Typography variant="body1" fontWeight="400" color="text.secondary">{profile.personal.resume}</Typography>
                             </Grid>
-                            <Box display="flex" flexDirection="column" gap={1} mb={2}>
-                                <ContactDetail text="hmmunozf@gmail.com" icon={<i className="ri-mail-line" />} actionHref="mailto:hmmunozf@gmail.com" />
-                                <ContactDetail text="8120136619" icon={<i className="ri-phone-line" />} actionHref="tel:8120136619" />
-                                <ContactDetail text="Monterrey, Nuevo León, México" icon={<i className="ri-map-pin-line" />} actionHref="https://www.google.com/maps/search/?api=1&query=Monterrey,+Nuevo+León,+México" />
+                            <Box display="flex" flexDirection="column" width={{ xs: "100%", md: "auto" }} textAlign={{ xs: "center", md: "left" }} gap={1} mb={2}>
+                                <ContactDetail text={profile.personal.email} icon={<i className="ri-mail-line" />} actionHref={`mailto:${profile.personal.email}`} />
+                                <ContactDetail text={profile.personal.phone} icon={<i className="ri-phone-line" />} actionHref={`tel:${profile.personal.phone}`} />
+                                <ContactDetail text={profile.personal.location} icon={<i className="ri-map-pin-line" />} actionHref={`https://www.google.com/maps/search/?api=1&query=${profile.personal.location}`} />
                             </Box>
-                            <Box width="100%" display="flex" gap={1.5}>
-                                <Button variant='contained' size='medium' startIcon={<i className='ri-download-2-line'></i>}>
-                                    Descargar CV
-                                </Button>
-                                <SocialIconButton size="small" href="https://github.com/mau-dev-93" icon={<i className='ri-github-line'></i>} />
-                                <SocialIconButton size="small" href="https://www.linkedin.com/in/mau-dev-93/" icon={<i className='ri-linkedin-line'></i>} />
+                            <Box display="flex" width={{ xs: "100%", md: "auto" }} flexDirection={{ xs: "column", md: "row" }} alignItems={{ xs: "center", md: "flex-start" }} gap={1.5}>
+                                <Button variant='contained' size="medium" fullWidth startIcon={<i className='ri-download-2-line'></i>}>Descargar CV</Button>
+                                <Box display="flex" gap={1.5}>
+                                    {profile.socials.map((social, index) => (
+                                        <SocialIconButton key={index} icon={<i className={social.icon} />} href={social.link} />
+                                    ))}
+                                </Box>
                             </Box>
                         </Grid>
                         <Grid size={6} alignSelf="center" justifyItems="flex-end">
-                            <ProfileAvatar />
+                            <ProfileAvatar src={profile.personal.picture} />
                         </Grid>
                     </Grid>
                 </Fade>
