@@ -17,8 +17,10 @@ const SocialIconButton = ({ icon, size, href }) => {
                 borderColor: alpha(theme.palette.input.main, 1),
                 backgroundColor: alpha(theme.palette.input.main, 0.3),
                 color: alpha(theme.palette.input.contrastText, 1),
+                boxShadow: theme.shadows[3],
                 fontSize: "1.25rem",
-                width: "47.5px",
+                width: theme.spacing(6),
+                height: theme.spacing(6),
                 transition: "background-color 0.2s",
                 "&:hover": {
                     backgroundColor: alpha(theme.palette.input.main, 0.6),

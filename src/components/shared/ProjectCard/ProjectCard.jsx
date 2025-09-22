@@ -59,11 +59,11 @@ const ProjectCard = ({ name, description, status, role, icon, progress_percentag
                     />
                 </Box>
             </CardContent>
-            <CardActions sx={{ p: 2, mt: 'auto' }}>
-                <Button variant="outlined" color="input" sx={{ flex: 1 }} size='small' href={github_repo_url} target="_blank" startIcon={<i className='ri-github-line'></i>}>
+            <CardActions disableSpacing sx={{ p: 2, mt: 'auto', flexDirection: { xs: 'column', sm: 'row' }, gap: 2 }}>
+                <Button variant="outlined" color="input" fullWidth size='medium' href={github_repo_url} target="_blank" startIcon={<i className='ri-github-line'></i>}>
                     <Typography variant="body2" color="text.primary">Ver código</Typography>
                 </Button>
-                <Button variant="contained" color="primary" sx={{ flex: 1 }} size='small' href={live_demo_url} target="_blank" startIcon={<i className='ri-external-link-line'></i>}>
+                <Button variant="contained" color="primary" fullWidth size='medium' href={live_demo_url} target="_blank" startIcon={<i className='ri-external-link-line'></i>}>
                     <Typography variant="body2" color="text.primary">Ver proyecto</Typography>
                 </Button>
             </CardActions>

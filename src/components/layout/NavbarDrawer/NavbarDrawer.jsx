@@ -23,12 +23,12 @@ const NavbarDrawer = () => {
 
     const drawerWidth = 340;
     const TB_XS = 56;   // xs
-    const TB_MD = 64;   // md+
+    const TB_SM = 64;   // sm+
 
     return (
         <React.Fragment>
             <IconButton
-                edge="end"
+                edge={"start"}
                 color="inherit"
                 aria-label="menu"
                 onClick={toggleDrawer(!openDrawer)}
@@ -49,10 +49,10 @@ const NavbarDrawer = () => {
                     width: drawerWidth,
                     flexShrink: 0,
                     '& .MuiDrawer-paper': {
-                        top: { xs: TB_XS, md: TB_MD },
+                        top: { xs: TB_XS, sm: TB_SM },
                         height: {
                             xs: `calc(100% - ${TB_XS}px)`,
-                            md: `calc(100% - ${TB_MD}px)`,
+                            sm: `calc(100% - ${TB_SM}px)`,
                         },
                         width: drawerWidth,
                         bgcolor: 'background.default',
@@ -62,10 +62,10 @@ const NavbarDrawer = () => {
                 slotProps={{
                     backdrop: {
                         sx: {
-                            top: { xs: TB_XS, md: TB_MD },
+                            top: { xs: TB_XS, sm: TB_SM },
                             height: {
                                 xs: `calc(100% - ${TB_XS}px)`,
-                                md: `calc(100% - ${TB_MD}px)`,
+                                sm: `calc(100% - ${TB_SM}px)`,
                             },
                         },
                     }

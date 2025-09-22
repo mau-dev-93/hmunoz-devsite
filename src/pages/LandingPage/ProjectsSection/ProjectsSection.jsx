@@ -13,9 +13,9 @@ const ProjectsSection = () => {
                     <Typography variant="h4" fontWeight="600" color="text.primary" mb={2}>Proyectos <Box component="span" color="secondary.main">Personales</Box></Typography>
                     <Typography variant="body1" color="textSecondary" sx={{ maxWidth: '42rem' }}>Soluciones tecnológicas que estoy desarrollando para resolver problemas reales</Typography>
                 </Box>
-                <Grid container spacing={4} mt={8} justifyContent="center" alignItems="stretch" sx={{ minHeight: "100%" }}>
+                <Grid container spacing={4} mt={8} justifyContent="center" alignItems="stretch">
                     {data.map((project, index) => (
-                        <Grid key={index} size={{ xs: 12, sm: 6, md: 4 }}>
+                        <Grid key={index} size={{ xs: 12, lg: 4 }}>
                             <ProjectCard
                                 name={project.name}
                                 role={project.role}

@@ -17,10 +17,10 @@ import profile from '../../../data/profile';
 
 const AboutMeSection = () => {
     return (
-        <Box id="aboutme_section" component="section" bgcolor="background" py={10}> {/*.25rem*20*/}
+        <Box id="aboutme_section" component="section" bgcolor="background" py={10}>
             <Container maxWidth="lg">
                 <Grid container spacing={4}>
-                    <Grid size={{ xs: 12, md: 6 }} mb={3}>
+                    <Grid size={{ xs: 12, lg: 6 }} mb={3}>
                         <Box mb={3}>
                             <Typography variant="h4" fontWeight="600" color="text.primary" mb={2}>Sobre <Box component="span" color="secondary.main">Mí</Box></Typography>
                             <Typography variant="body1" fontWeight="400" color="text.secondary">
@@ -53,13 +53,13 @@ const AboutMeSection = () => {
                                 ))}
                             </Stack>
                         </Box>
-                        <Stack direction="row" spacing={2}>
+                        <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
                             <Button variant='contained' size='large' href='#projects_section'>Ver Proyectos</Button>
                             <Button variant='outlined' size='large' href='#hero_section' color="input">Contactar</Button>
                         </Stack>
                     </Grid>
-                    <Grid container size={{ xs: 12, md: 6 }} spacing={2} alignContent={"center"} alignItems={"center"} justifyContent={"center"}>
-                        <Grid size={{ xs: 12, md: 6 }}>
+                    <Grid container size={{ xs: 12, lg: 6 }} spacing={2} alignContent={"center"} alignItems={"center"} justifyContent={"center"}>
+                        <Grid size={{ xs: 6 }}>
                             <HeroStatCard
                                 color="primary"
                                 variant='outlined'
@@ -68,7 +68,7 @@ const AboutMeSection = () => {
                                 icon={<i className="ri-code-line"></i>}
                             />
                         </Grid>
-                        <Grid size={{ xs: 12, md: 6 }}>
+                        <Grid size={{ xs: 6 }}>
                             <HeroStatCard
                                 color="success"
                                 variant='outlined'
@@ -77,7 +77,7 @@ const AboutMeSection = () => {
                                 icon={<i className="ri-group-line"></i>}
                             />
                         </Grid>
-                        <Grid size={{ xs: 12, md: 6 }}>
+                        <Grid size={{ xs: 6 }}>
                             <HeroStatCard
                                 color="secondary"
                                 variant='outlined'
@@ -86,7 +86,7 @@ const AboutMeSection = () => {
                                 icon={<i className="ri-award-line"></i>}
                             />
                         </Grid>
-                        <Grid size={{ xs: 12, md: 6 }}>
+                        <Grid size={{ xs: 6 }}>
                             <HeroStatCard
                                 color="error"
                                 variant='outlined'

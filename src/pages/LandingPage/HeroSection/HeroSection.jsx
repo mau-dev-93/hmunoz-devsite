@@ -48,16 +48,25 @@ const HeroSection = () => {
                                 <ContactDetail text={profile.personal.phone} icon={<i className="ri-phone-line" />} actionHref={`tel:${profile.personal.phone}`} />
                                 <ContactDetail text={profile.personal.location} icon={<i className="ri-map-pin-line" />} actionHref={`https://www.google.com/maps/search/?api=1&query=${profile.personal.location}`} />
                             </Box>
-                            <Box display="flex" width={{ xs: "100%", md: "auto" }} flexDirection={{ xs: "column", md: "row" }} alignItems={{ xs: "center", md: "flex-start" }} gap={1.5}>
-                                <Button variant='contained' size="medium" fullWidth startIcon={<i className='ri-download-2-line'></i>}>Descargar CV</Button>
-                                <Box display="flex" gap={1.5}>
+                            <Box display="flex" width={{ xs: "100%", md: "auto" }} flexDirection={{ xs: "column", sm: "row" }} justifyContent={{ xs: "center" }} alignItems={{ xs: "center", sm: "inherit" }} gap={1.5}>
+                                <Button
+                                    variant='contained'
+                                    size="medium"
+                                    startIcon={<i className='ri-download-2-line'></i>}
+                                    sx={{
+                                        width: { xs: '100%', sm: 'auto' }
+                                    }}
+                                >
+                                    Descargar CV
+                                </Button>
+                                <Box display="flex" gap={1.5} mt={{ xs: 1, sm: 0 }}>
                                     {profile.socials.map((social, index) => (
-                                        <SocialIconButton key={index} icon={<i className={social.icon} />} href={social.link} />
+                                        <SocialIconButton size="medium" key={index} icon={<i className={social.icon} />} href={social.link} />
                                     ))}
                                 </Box>
                             </Box>
                         </Grid>
-                        <Grid size={6} alignSelf="center" justifyItems="flex-end">
+                        <Grid size={{ xs: 12, md: 6 }} alignSelf="center" justifyItems={{ xs: "center", md: "flex-end" }}>
                             <ProfileAvatar src={profile.personal.picture} />
                         </Grid>
                     </Grid>

@@ -23,7 +23,7 @@ const GlobalStyle = createGlobalStyle`
   /* ===== Alturas AppBar (úsalas en Drawer/section) */
   :root {
     --appbar-height-xs: 56px;
-    --appbar-height-md: 64px;
+    --appbar-height-sm: 64px;
   }
 
   html, body, #root { height: 100%; }
@@ -68,8 +68,8 @@ const GlobalStyle = createGlobalStyle`
 
   /* ===== Offset para anclas bajo AppBar */
   section { scroll-margin-top: var(--appbar-height-xs); }
-  @media (min-width: 900px) {
-    section { scroll-margin-top: var(--appbar-height-md); }
+  @media (min-width: 600px) {
+    section { scroll-margin-top: var(--appbar-height-sm); }
   }
 
   /* ===== Accesibilidad: focus visible */

@@ -6,8 +6,8 @@ const ProfileAvatar = ({ src }) => {
             alt="Mauricio Muñoz"
             src={src}
             sx={(theme) => ({
-                width: 'calc(.25rem * 96)',
-                height: 'calc(.25rem * 96)',
+                width: { xs: theme.spacing(27), md: theme.spacing(42) },
+                height: { xs: theme.spacing(27), md: theme.spacing(42) },
                 borderColor: alpha(theme.palette.primary.main, 0.2),
                 borderStyle: 'solid',
                 borderWidth: '4px',

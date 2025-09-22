@@ -26,7 +26,7 @@ const NavbarLinks = ({ isMobile }) => {
                 "& .MuiTab-root": {
                     textTransform: "none",
                     fontWeight: 600,
-                    minHeight: 56,
+                    minHeight: { xs: 56, sm: 64 },
                     color: "text.secondary",
                     "&:hover": { color: "text.primary" },
                 },
