@@ -2,7 +2,7 @@ import * as React from "react";
 
 // @material-ui/core
 import MuiAppBar from "@mui/material/AppBar";
-import { Toolbar, Box, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { Toolbar, Box, Typography } from "@mui/material";
 
 // navbar links
 import NavbarLinks from "../NavbarLinks/NavbarLinks";
@@ -23,10 +23,7 @@ export const AppBar = React.forwardRef(function AppBar(props, ref) {
     );
 });
 
-const Navbar = () => {
-    const theme = useTheme();
-    const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-
+const Navbar = ({ isMobile }) => {
     return (
         <AppBar position="fixed" elevation={0}>
             <Toolbar variant="regular" sx={{ display: "flex", justifyContent: "space-between" }}>
