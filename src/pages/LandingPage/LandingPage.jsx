@@ -20,7 +20,7 @@ const LandingPage = () => {
         <ExperienceSection />
         <SkillsSection />
         <EducationSection />
-        {/*<HumanSideSection /> */}
+        <HumanSideSection />
     </>
 };
 
