@@ -1,9 +1,7 @@
 import { Box, Container, Typography } from "@mui/material";
-import { Grid } from "@mui/system";
 import data from './data';
 
 // components
-import ExperienceCard from "../../../components/shared/ExperienceCard/ExperienceCard";
 import ExperienceTimeline from "./ExperienceTimeline/ExperienceTimeline";
 
 const ExperienceSection = () => {

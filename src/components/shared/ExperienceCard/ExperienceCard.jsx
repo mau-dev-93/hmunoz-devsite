@@ -5,29 +5,29 @@ import { Card, CardContent, Box, Typography, Stack, Paper } from "@mui/material"
 import CustomChip from '../CustomChip/CustomChip';
 import HighlightList from '../HighlightList/HighlightList';
 
-const ExperienceCard = ({ title, duration, jobTitle, dateRange, location, employmentType, description, highlights = [], techStack = [] }) => {
+const ExperienceCard = ({ title, duration, jobTitle, dateRange, location, employmentType, isMobile, description, highlights = [], techStack = [] }) => {
     return (
         <Card sx={{ borderRadius: 3, p: 1 }} variant='outlined'>
             <CardContent>
-                <Box display="flex" justifyContent="space-between" alignItems="flex-start" mb={5}>
-                    <Box>
-                        <Typography variant="h6" color="text.primary" fontWeight={600} gutterBottom>{jobTitle}</Typography>
-                        <Typography variant="subtitle1" color="primary" fontWeight={600}>{title}</Typography>
-                        <Stack direction="row" spacing={2} mt={1.5}>
-                            <Box color="text.secondary" display="flex" alignItems="center" gap={0.5}>
-                                <i className='ri-calendar-line' style={{ marginRight: 4 }}></i>
-                                <Typography variant="body2" color="text.secondary">{dateRange}</Typography>
-                            </Box>
-                            <Box color="text.secondary" display="flex" alignItems="center" gap={0.5}>
-                                <i className='ri-map-pin-2-line' style={{ marginRight: 4 }}></i>
-                                <Typography variant="body2" color="text.secondary">{location}</Typography>
-                            </Box>
-                            <CustomChip label={employmentType} variant="transparent" color="input" size="small" sx={{ fontSize: 10 }} />
-                        </Stack>
+                <Box display="flex" justifyContent="space-between" mb={isMobile ? 2 :0.5} flexDirection={{ xs: 'column', sm: 'row' }} gap={1}>
+                    <Box component="div">
+                        <Typography variant="h6" color="text.primary" fontWeight={600} gutterBottom={!isMobile}>{jobTitle}</Typography>
+                        <Typography variant="subtitle1" color="primary" fontWeight={600} gutterBottom={!isMobile}>{title}</Typography>
                     </Box>
-                    <CustomChip label={`${duration} años`} variant="outlined" size="medium" color="secondary" sx={{ fontSize: 10 }} />
+                    <CustomChip label={`${duration} años`} variant="outlined" size="medium" color="secondary" sx={{ width: 'fit-content', fontSize: 10 }} />
                 </Box>
-                <Typography variant="body1" color="text.secondary" mb={3}>{description}</Typography>
+                <Stack direction="row" mb={5} flexWrap="wrap" gap={2}>
+                    <Box color="text.secondary" display="flex" alignItems="center" gap={0.5}>
+                        <i className='ri-calendar-line' style={{ marginRight: 4 }}></i>
+                        <Typography variant="body2" color="text.secondary">{dateRange}</Typography>
+                    </Box>
+                    <Box color="text.secondary" display="flex" alignItems="center" gap={0.5}>
+                        <i className='ri-map-pin-2-line' style={{ marginRight: 4 }}></i>
+                        <Typography variant="body2" color="text.secondary">{location}</Typography>
+                    </Box>
+                    <CustomChip label={employmentType} variant="transparent" color="input" size="small" sx={{ fontSize: 10 }} />
+                </Stack>
+                <Typography variant={isMobile ? "body2" : "body1"} color="text.secondary" mb={3}>{description}</Typography>
                 <Box color="secondary.main" display="flex" alignItems="center" gap={0.5} mb={1.5}>
                     <i className='ri-award-line' style={{ marginRight: 4 }}></i>
                     <Typography variant="body2" color="text.primary" fontWeight={600}>Actividades y logros</Typography>
@@ -49,7 +49,7 @@ const ExperienceCard = ({ title, duration, jobTitle, dateRange, location, employ
                     <i className='ri-code-line' style={{ marginRight: 4 }}></i>
                     <Typography variant="body2" color="text.primary" fontWeight={600}> Tecnologias</Typography>
                 </Box>
-                <Stack direction="row" spacing={1} flexWrap="wrap">
+                <Stack direction="row" flexWrap="wrap" gap={1}>
                     {techStack.map((tech, index) => (
                         <CustomChip key={index} label={tech} variant="condensed" color="input" size="medium" />
                     ))}

@@ -20,7 +20,7 @@ const HumanSkillCard = ({ title, icon, color, description }) => {
             }}
         >
             <Box display="flex" flexDirection="column" alignItems="center" mb={1}>
-                <IconSquare icon={icon} size={40} variant='bicolor' color={color} sx={{ mb: 2 }} />
+                <IconSquare icon={icon} size={40} variant='bicolor' color={color} sx={{ mb: 1.5 }} />
                 <Typography variant="body2" color="text.primary" fontSize={14} fontWeight={600} textAlign="center">
                     {title}
                 </Typography>

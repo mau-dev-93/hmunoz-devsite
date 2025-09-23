@@ -15,10 +15,10 @@ const SkillsSection = () => {
                     <Typography variant="h4" fontWeight="600" color="text.primary" mb={2}>Habilidades</Typography>
                     <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600 }}>Combinación de habilidades técnicas y habilidades humanadas para crear soluciones integrales</Typography>
                 </Box>
-                <Typography variant="h6" color="text.primary" fontWeight={600} mt={8} mb={3} textAlign="center">Habilidades Técnicas</Typography>
+                <Typography variant="h6" color="text.primary" fontWeight={600} mt={8} mb={2} textAlign="center">Habilidades Técnicas</Typography>
                 <Grid container spacing={3} justifyContent="center" alignItems="stretch" width={'100%'}>
                     {techSkillsData.map((category, index) => (
-                        <Grid key={index} size={{ xs: 12, sm: 6, md: 3 }} sx={{ display: 'flex', justifyContent: 'center' }}>
+                        <Grid key={index} size={{ xs: 12, md: 6, lg: 3 }} sx={{ display: 'flex', justifyContent: 'center' }}>
                             <TechSkillsCard
                                 title={category.title}
                                 icon={category.icon}
@@ -29,10 +29,10 @@ const SkillsSection = () => {
                         </Grid>
                     ))}
                 </Grid>
-                <Typography variant="h6" color="text.primary" fontWeight={600} mt={8} mb={3} textAlign="center">Habilidades Humanas</Typography>
-                <Grid container spacing={3} justifyContent="center" alignItems="stretch" mb={10}>
+                <Typography variant="h6" color="text.primary" fontWeight={600} mt={8} mb={2} textAlign="center">Habilidades Humanas</Typography>
+                <Grid container spacing={3} justifyContent="center" alignItems="stretch" mb={8}>
                     {humanSkillsData.map((skill, index) => (
-                        <Grid key={index} size={{ xs: 12, sm: 6, md: 4 }} sx={{ display: 'flex', justifyContent: 'center' }}>
+                        <Grid key={index} size={{ xs: 12, md: 6, lg: 4 }} sx={{ display: 'flex', justifyContent: 'center' }}>
                             <HumanSkillCard
                                 title={skill.title}
                                 icon={skill.icon}
@@ -63,18 +63,18 @@ const SkillsSection = () => {
                     <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600, mb: 2 }}>
                         Combino expertise técnico con habilidades humanas para liderar proyectos, formar equipos de alto rendimiento y entregar soluciones de impacto real y medible
                     </Typography>
-                    <Stack direction="row" spacing={6} justifyContent="center" alignItems="center">
+                    <Stack direction={{ sm: 'column', md: 'row' }} gap={{ sm: 2, md: 4 }} justifyContent="center" alignItems="center">
                         <Stack direction="row" spacing={1} alignItems="center">
                             <i className="ri-award-line" style={{ color: "orange", fontSize: 20 }}></i>
-                            <Typography variant="caption" color="text.primary" fontWeight={500}>8+ años experiencia</Typography>
+                            <Typography variant="caption" color="text.primary" fontWeight={400}>8+ años experiencia</Typography>
                         </Stack>
                         <Stack direction="row" spacing={1} color="primary.main" alignItems="center">
                             <i className="ri-team-line" style={{ color: "inherit", fontSize: 20 }}></i>
-                            <Typography variant="caption" color="text.primary" fontWeight={500}>5+ equipos liderados</Typography>
+                            <Typography variant="caption" color="text.primary" fontWeight={400}>5+ equipos liderados</Typography>
                         </Stack>
                         <Stack direction="row" spacing={1} color="secondary.main" alignItems="center">
                             <i className="ri-code-line" style={{ color: "inherit", fontSize: 20 }}></i>
-                            <Typography variant="caption" color="text.primary" fontWeight={500}>15+ tecnologías</Typography>
+                            <Typography variant="caption" color="text.primary" fontWeight={400}>15+ tecnologías</Typography>
                         </Stack>
                     </Stack>
                 </Box>
