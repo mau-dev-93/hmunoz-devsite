@@ -63,7 +63,7 @@ const SkillsSection = () => {
                     <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600, mb: 2 }}>
                         Combino expertise técnico con habilidades humanas para liderar proyectos, formar equipos de alto rendimiento y entregar soluciones de impacto real y medible
                     </Typography>
-                    <Stack direction={{ sm: 'column', md: 'row' }} gap={{ sm: 2, md: 4 }} justifyContent="center" alignItems="center">
+                    <Stack direction={{ xs: 'column', md: 'row' }} gap={{ xs: 2, md: 4 }} justifyContent="center" alignItems="center">
                         <Stack direction="row" spacing={1} alignItems="center">
                             <i className="ri-award-line" style={{ color: "orange", fontSize: 20 }}></i>
                             <Typography variant="caption" color="text.primary" fontWeight={400}>8+ años experiencia</Typography>
