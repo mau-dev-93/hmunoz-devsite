@@ -16,8 +16,12 @@ import coursesData from './courses-data';
 // components
 import EducationCard from '../../../components/shared/EducationCard/EducationCard';
 import CourseCard from "../../../components/shared/CourseCard/CourseCard";
+import { useMediaQuery, useTheme } from "@mui/material";
 
 const Education = () => {
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+
     return (
         <Box id="education_section" component="section" bgcolor="background.section" py={10}>
             <Container maxWidth="lg">
@@ -27,27 +31,36 @@ const Education = () => {
                 </Box>
                 <Box textAlign="center" pb={6}>
                     <Typography variant="h6" fontWeight="600" color="text.primary" mb={4}>Formación Académica</Typography>
-                    <Timeline position="alternate">
+                    <Timeline position={isMobile ? "right" : "alternate"} sx={{ px: isMobile ? 1 : 'inherit' }}>
                         {educationData.map((education, index) => (
-                            <TimelineItem key={index}>
+                            <TimelineItem
+                                key={index}
+                                sx={{
+                                    '&.MuiTimelineItem-missingOppositeContent:before': { display: isMobile ? 'none' : 'block' },
+                                }}>
                                 <TimelineSeparator
                                     sx={{
                                         display: 'flex',
                                         flexDirection: 'column',
-                                        alignItems: 'center'
+                                        alignItems: 'center',
                                     }}>
                                     <TimelineConnector sx={{ backgroundColor: "divider", width: '2px', flex: 1 }} />
-                                    <TimelineDot variant='outlined' color='primary' />
+                                    <TimelineDot variant='outlined' color='primary' sx={{ alignSelf: 'center' }} />
                                     <TimelineConnector sx={{ backgroundColor: "divider", width: '2px', flex: 1 }} />
                                 </TimelineSeparator>
-                                <TimelineContent sx={{ pt: 0, pb: index + 1 < education.length ? 4 :'inherit' }}>
+                                <TimelineContent
+                                    sx={{
+                                        pt: 0,
+                                        pb: (index + 1) < educationData.length ? 4 : 0,
+                                    }}>
                                     <EducationCard
+                                        isMobile={isMobile}
                                         degree={education.degree}
                                         institution={education.institution}
                                         dateRange={education.dateRange}
                                         specialties={education.specialties}
                                         status={education.status}
-                                        direction={index % 2 === 0 ? 'right' : 'left'}
+                                        direction={isMobile ? "right" : index % 2 === 0 ? 'right' : 'left'}
                                     />
                                 </TimelineContent>
                             </TimelineItem>
@@ -59,7 +72,7 @@ const Education = () => {
                 </Box>
                 <Grid container spacing={4} mt={4} justifyContent="flex-start" alignItems="stretch" sx={{ minHeight: "100%" }}>
                     {coursesData.map((course, index) => (
-                        <Grid key={index} size={{ xs: 12, sm: 6, md: 4 }}>
+                        <Grid key={index} size={{ xs: 12, md: 6, lg: 4 }}>
                             <CourseCard
                                 title={course.title}
                                 institution={course.institution}

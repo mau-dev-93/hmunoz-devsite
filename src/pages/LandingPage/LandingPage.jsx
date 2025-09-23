@@ -19,8 +19,8 @@ const LandingPage = () => {
         <ProjectsSection />
         <ExperienceSection />
         <SkillsSection />
-        {/*<EducationSection />
-        <HumanSideSection /> */}
+        <EducationSection />
+        {/*<HumanSideSection /> */}
     </>
 };
 

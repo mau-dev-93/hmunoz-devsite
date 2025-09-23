@@ -3,7 +3,7 @@ import { Box, Stack, Typography } from "@mui/material";
 // components
 import CustomChip from "../CustomChip/CustomChip";
 
-const EducationCard = ({ degree, institution, dateRange, status, specialties, direction }) => {
+const EducationCard = ({ degree, institution, dateRange, status, specialties, isMobile = false, direction = "right" }) => {
     const levelColor = () => {
         switch (status.toLowerCase()) {
             case 'titulado':
@@ -15,17 +15,25 @@ const EducationCard = ({ degree, institution, dateRange, status, specialties, di
         }
     };
     return (
-        <Box sx={{
-            p: "24px",
-            ml: '16px',
-            borderRadius: 3,
-            bgcolor: "background.paper",
-            border: "1px solid",
-            borderColor: "divider",
-            height: "100%",
-            maxWidth: '380px',
-            marginLeft: direction === "left" ? 'auto' : '64px',
-            marginRight: direction === "left" ? '64px' : '0',
+        <Box sx={(theme) => {
+            const base = {
+                p: theme.spacing(3),
+                // ml: theme.spacing(2),
+                borderRadius: 3,
+                bgcolor: "background.paper",
+                border: "1px solid",
+                borderColor: "divider",
+                height: "100%",
+                maxWidth: isMobile ? '100%' : '380px',
+                width: isMobile ? '100%' : 'auto',
+                marginLeft: direction === "left" ? 'auto' : theme.spacing(8),
+                marginRight: direction === "left" ? theme.spacing(8) : '0',
+            }
+            if (isMobile) {
+                base.marginLeft = theme.spacing(2);
+                base.marginRight = '0';
+            }
+            return base;
         }}>
             <Typography variant="body1" fontWeight="600" color="text.primary" gutterBottom>{degree}</Typography>
             <Typography variant="body2" fontWeight="500" color="primary">{institution}</Typography>
