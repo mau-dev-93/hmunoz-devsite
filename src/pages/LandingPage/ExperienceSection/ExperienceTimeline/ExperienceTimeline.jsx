@@ -55,7 +55,7 @@ const ExperienceTimeline = ({ experiences }) => {
                             alignItems: 'center'
                         }}>
                         <TimelineConnector sx={{ backgroundColor: "divider", width: '2px', flex: 1 }} />
-                        <TimelineDot variant='outlined' color='primary' />
+                        <TimelineDot variant='outlined' color='primary' sx={{ alignSelf: 'center' }} />
                         <TimelineConnector sx={{ backgroundColor: "divider", width: '2px', flex: 1 }} />
                     </TimelineSeparator>
                     <TimelineContent sx={{ pl: 4, pt: 0, pb: index + 1 < experiences.length ? 4 : 'inherit' }}>

@@ -39,8 +39,8 @@ const HeroSection = () => {
                     <Grid container spacing={4} direction={{ xs: "column-reverse", md: "row" }}>
                         <Grid container size={{ xs: 12, md: 6 }} spacing={2} justifyContent={{ xs: "center", md: "flex-start" }} sx={{ marginBottom: "16px" }}>
                             <Grid size={12} mb={1} textAlign={{ xs: "center", md: "left" }}>
-                                <Typography variant="h2" fontWeight="600" marginBottom={1}>{profile.personal.name}</Typography>
-                                <Typography variant="h4" fontWeight="600" color="secondary" marginBottom={1}>{profile.personal.role}</Typography>
+                                <Typography variant="h2" fontWeight="600">{profile.personal.name}</Typography>
+                                <Typography variant="h5" fontWeight="600" color="secondary" gutterBottom>{profile.personal.role}</Typography>
                                 <Typography variant="body1" fontWeight="400" color="text.secondary">{profile.personal.resume}</Typography>
                             </Grid>
                             <Box display="flex" flexDirection="column" width={{ xs: "100%", md: "auto" }} textAlign={{ xs: "center", md: "left" }} gap={1} mb={2}>

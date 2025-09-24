@@ -1,11 +1,17 @@
-import { createTheme } from '@mui/material/styles';
+import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 import { palette } from './palette';
 import { typography } from './typography';
 import { componentOverrides } from './overrides';
 
-const theme = createTheme({
+let theme = createTheme({
     palette,
     typography,
+});
+
+theme = responsiveFontSizes(theme, {
+    factor: 2,
+    breakpoints: ["xs", "sm", "md", "lg"],
+    disableAlign: false
 });
 
 theme.components = {
