@@ -50,7 +50,7 @@ const Footer = () => {
                 </Grid>
                 <Divider sx={{ my: 4 }} />
                 <Box display="flex" justifyContent="space-between" alignItems="center" flexWrap="wrap">
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography variant="caption" color="text.secondary">
                         © 2025 Mauricio Muñoz. Hecho con <Box component="span" color="error.main"><i className='ri-heart-line'></i></Box> y mucho código.
                     </Typography>
                 </Box>

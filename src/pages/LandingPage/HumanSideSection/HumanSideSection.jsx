@@ -11,7 +11,7 @@ const HumanSideSection = () => {
     const row = 600;
 
     return (
-        <Box id="humanside_section" component="section" bgcolor="background.default" py={10}>
+        <Box id="humanside_section" component="section" bgcolor="background.default" py={{ xs: 8, md: 10 }}>
             <Container maxWidth="lg">
                 <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" textAlign="center" mb={8}>
                     <Typography variant="h4" fontWeight="600" color="text.primary" gutterBottom>Más Allá del <Box component="span" color="secondary.main">Código</Box></Typography>

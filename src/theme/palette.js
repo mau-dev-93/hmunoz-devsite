@@ -35,6 +35,9 @@ export const palette = {
     info: {
         main: colors.infoSky
     },
+    infinity: {
+        main: colors.infinitePurple
+    },
     text: {
         primary: colors.whiteCream,
         secondary: colors.slateGray300,

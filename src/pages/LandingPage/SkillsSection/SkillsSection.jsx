@@ -9,7 +9,7 @@ import HighlightBox from "../../../components/shared/HighlightBox/HighlightBox";
 
 const SkillsSection = () => {
     return (
-        <Box id="skills_section" component="section" bgcolor="background" py={10}>
+        <Box id="skills_section" component="section" bgcolor="background" py={{ xs: 8, md: 10 }}>
             <Container maxWidth="lg">
                 <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" textAlign="center">
                     <Typography variant="h4" fontWeight="600" color="text.primary" mb={2}>Habilidades</Typography>

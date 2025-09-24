@@ -14,7 +14,7 @@ const ExperienceCard = ({ title, duration, jobTitle, dateRange, location, employ
                         <Typography variant="h6" color="text.primary" fontWeight={600} gutterBottom={!isMobile}>{jobTitle}</Typography>
                         <Typography variant="subtitle1" color="primary" fontWeight={600} gutterBottom={!isMobile}>{title}</Typography>
                     </Box>
-                    <CustomChip label={`${duration} años`} variant="outlined" size="medium" color="secondary" sx={{ width: 'fit-content', fontSize: 10 }} />
+                    <CustomChip label={`${duration}`} variant="outlined" size="medium" color="secondary" sx={{ width: 'fit-content', fontSize: 10 }} />
                 </Box>
                 <Stack direction="row" mb={5} flexWrap="wrap" gap={2}>
                     <Box color="text.secondary" display="flex" alignItems="center" gap={0.5}>

@@ -23,7 +23,7 @@ const Education = () => {
     const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
     return (
-        <Box id="education_section" component="section" bgcolor="background.section" py={10}>
+        <Box id="education_section" component="section" bgcolor="background.section" py={{ xs: 8, md: 10 }}>
             <Container maxWidth="lg">
                 <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" textAlign="center" mb={8}>
                     <Typography variant="h4" fontWeight="600" color="text.primary" mb={2}>Educación <Box component="span" color="secondary.main">y Formación</Box></Typography>

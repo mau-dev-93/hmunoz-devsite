@@ -40,9 +40,9 @@ const HeroSection = () => {
             <Container maxWidth="lg">
                 <Fade in timeout={600}>
                     <Grid container spacing={4} direction={{ xs: "column-reverse", md: "row" }}>
-                        <Grid container size={{ xs: 12, md: 6 }} spacing={2} justifyContent={{ xs: "center", md: "flex-start" }} sx={{ marginBottom: "16px" }}>
+                        <Grid container size={{ xs: 12, md: 6 }} spacing={2} justifyContent={{ xs: "center", md: "flex-start" }} /*sx={{ marginBottom: "16px" }}*/>
                             <Grid size={12} mb={1} textAlign={{ xs: "center", md: "left" }}>
-                                <Typography variant="h2" fontWeight="600">{profile.personal.name}</Typography>
+                                <Typography variant="h2" fontWeight="600" mb={0.75}>{profile.personal.name}</Typography>
                                 <Typography variant="h5" fontWeight="600" color="secondary" gutterBottom>{profile.personal.role}</Typography>
                                 <Typography variant={isMobile ? "body2" : "body1"} fontWeight="400" color="text.secondary">{profile.personal.resume}</Typography>
                             </Grid>

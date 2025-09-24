@@ -26,4 +26,5 @@ export const colors = {
     errorRed: "#e7000b",         // Rojo intenso (error)
     warningYellow: "#facc15",    // Amarillo cálido (advertencia)
     infoSky: "#0ea5e9",          // Azul cielo (informativo)
+    infinitePurple: "#DB2777",   // Púrpura infinito (creatividad)
 };

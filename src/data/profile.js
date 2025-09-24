@@ -2,8 +2,8 @@
 const profile = {
     personal: {
         name: "Mauricio Muñoz",
-        role: "Desarrollador Full Stack",
-        resume: "Me especializo en desarrollar soluciones tecnológicas que no solo resuelven problemas, sino que también mejoran la forma en que las personas interactúan con los sistemas.",
+        role: "Full-Stack Developer",
+        resume: "Construyo aplicaciones modernas y seguras que transcienden más allá de la funcionalidad. Mi objetivo es generar un impacto real, una transformación y un valor en cada solución que creo.",
         email: "hmmunozf@gmail.com",
         phone: "8120136619",
         location: "Monterrey, Nuevo León, México",
@@ -16,10 +16,16 @@ const profile = {
     ],
     techStack: [
         { label: "React", icon: "react-original", color: "primary.main" },
+        { label: "Material UI", icon: "materialui-plain", color: "info.main" },
+        { label: "Redux", icon: "redux-original", color: "infinity.main" },
         { label: "Node.js", icon: "nodejs-plain", color: "success.main" },
-        { label: "AWS", icon: "amazonwebservices-plain-wordmark", color: "secondary.main" },
+        { label: "NestJS", icon: "nestjs-original", color: "error.main" },
         { label: "TypeScript", icon: "typescript-plain", color: "warning.main" },
-        { label: "SQL Server", icon: "microsoftsqlserver-plain", color: "info.main" }
+        { label: "AWS", icon: "amazonwebservices-plain-wordmark", color: "secondary.main" },
+        { label: "SQL Server", icon: "microsoftsqlserver-plain", color: "info.main" },
+        { label: ".NET", icon: "dot-net-plain", color: "primary.main" },
+        { label: "Java", icon: "java-plain", color: "error.main" },
+
     ],
     experience: [/* ... */],
 };

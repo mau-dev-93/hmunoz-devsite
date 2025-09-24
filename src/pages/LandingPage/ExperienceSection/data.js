@@ -1,110 +1,93 @@
 export default [
     {
-        "title": "Tech Solutions Corp",
-        "duration": 3,
-        "job_title": "Desarrollador Senior Full Stack",
-        "date_range": "2022 - Presente",
-        "location": "Monterrey, NL",
+        "title": "Talisis",
+        "duration": "4 años",
+        "job_title": "Full-Stack Developer",
+        "date_range": "enero 2021 - diciembre 2024",
+        "location": "Monterrey, NL.",
         "employment_type": "Tiempo completo",
-        "description": "Líder técnico en el desarrollo de aplicaciones web escalables usando React, Node.js y AWS. Responsable de la arquitectura de software y mentoring del equipo.",
-        "goals": [
-            {
-                "value": "40%",
-                "label": "Mejora en performance"
-            },
-            {
-                "value": "60%",
-                "label": "Reducción de bugs"
-            },
-            {
-                "value": "-75%",
-                "label": "Tiempo de deploy"
-            }
-        ],
+        "description": "Lideré el desarrollo del e-commerce de talisis.com, diseñando soluciones front-end y back-end. Fui responsable de liberar funcionalidades de pagos y suscripciones para más de 35,000 usuarios activos. Implementé arquitecturas serverless en AWS e integré pasarelas de pago que generaron más de $400,000 MXN en ingresos mensuales.",
         "highlights": [
-            "Redujo el tiempo de carga de la aplicación en un 40%",
-            "Implementó CI/CD reduciendo bugs en producción en 60%",
-            "Lideró equipo de 5 desarrolladores",
-            "Migró sistemas legacy a arquitectura moderna"
+            "Desarrollé interfaces responsivas con React.js y Redux.",
+            "Integré pasarelas de pago de forma segura, generando más de $400,000 MXN en ingresos mensuales.",
+            "Creé APIs RESTful de alto rendimiento y diseñé modelos de datos con SQL Server.",
+            "Aseguré la calidad del código mediante code reviews, testing y monitoreo de logs con AWS CloudWatch.",
+            "Lideré la creación de una aplicación de accesos con QR para eventos masivos.",
         ],
         "tech_stack": [
             "React",
+            "Redux",
+            "Material UI",
             "Node.js",
-            "AWS",
-            "PostgreSQL",
-            "Docker"
+            "AWS Lambda",
+            "AWS API Gateway",
+            "AWS Step Functions",
+            "Conekta",
+            "Git",
+            "SQL Server",
         ]
     },
-        {
-        "title": "Tech Solutions Corp",
-        "duration": 3,
-        "job_title": "Desarrollador Senior Full Stack",
-        "date_range": "2022 - Presente",
-        "location": "Monterrey, NL",
+    {
+        "title": "Enkontrol",
+        "duration": "3 años 2 meses",
+        "job_title": "Full-Stack Developer",
+        "date_range": "julio 2017 - septiembre 2020",
+        "location": "San Pedro Garza García, NL.",
         "employment_type": "Tiempo completo",
-        "description": "Líder técnico en el desarrollo de aplicaciones web escalables usando React, Node.js y AWS. Responsable de la arquitectura de software y mentoring del equipo.",
-        "goals": [
-            {
-                "value": "40%",
-                "label": "Mejora en performance"
-            },
-            {
-                "value": "60%",
-                "label": "Reducción de bugs"
-            },
-            {
-                "value": "-75%",
-                "label": "Tiempo de deploy"
-            }
-        ],
+        "description": "Contribuí en el desarrollo web del ERP Enkontrol con ASP.NET. Lideré un equipo de desarrollo, gestionando tareas para asegurar las entregas a tiempo.",
         "highlights": [
-            "Redujo el tiempo de carga de la aplicación en un 40%",
-            "Implementó CI/CD reduciendo bugs en producción en 60%",
-            "Lideró equipo de 5 desarrolladores",
-            "Migró sistemas legacy a arquitectura moderna"
+            "Desarrollé interfaces responsivas con React.js, TypeScript y Redux.",
+            "Creé APIs RESTful en ASP.NET Web API (C#) utilizando arquitectura de capas y patrones de diseño.",
+            "Analicé requerimientos y diseñé bases de datos, vistas y stored procedures en SQL Server para procesos clave del ERP.",
+            "Lideré y gestioné un equipo de desarrollo para garantizar la entrega de proyectos en tiempo."
         ],
         "tech_stack": [
             "React",
-            "Node.js",
-            "AWS",
-            "PostgreSQL",
-            "Docker"
+            "TypeScript",
+            "Redux",
+            "ASP.NET",
+            "C#",
+            "Git",
+            "SQL Server"
         ]
     },
-        {
-        "title": "Tech Solutions Corp",
-        "duration": 3,
-        "job_title": "Desarrollador Senior Full Stack",
-        "date_range": "2022 - Presente",
-        "location": "Monterrey, NL",
+    {
+        "title": "TCA Software Solutions",
+        "duration": "2 años 4 meses",
+        "job_title": "Software Developer",
+        "date_range": "febrero 2015 - julio 2017",
+        "location": "Monterrey, NL.",
         "employment_type": "Tiempo completo",
-        "description": "Líder técnico en el desarrollo de aplicaciones web escalables usando React, Node.js y AWS. Responsable de la arquitectura de software y mentoring del equipo.",
-        "goals": [
-            {
-                "value": "40%",
-                "label": "Mejora en performance"
-            },
-            {
-                "value": "60%",
-                "label": "Reducción de bugs"
-            },
-            {
-                "value": "-75%",
-                "label": "Tiempo de deploy"
-            }
-        ],
+        "description": "Desarrollé y di mantenimiento a aplicaciones del ERP comercial Merksyst con C/C++ y Delphi Pascal. Contribuí en la migración del ERP a una plataforma web moderna con ASP.NET MVC.",
         "highlights": [
-            "Redujo el tiempo de carga de la aplicación en un 40%",
-            "Implementó CI/CD reduciendo bugs en producción en 60%",
-            "Lideró equipo de 5 desarrolladores",
-            "Migró sistemas legacy a arquitectura moderna"
+            "Optimizé más de 40 consultas SQL",
+            "Resolví más de 300 tickets críticos, lo que mejoró el rendimiento general del sistema.",
         ],
         "tech_stack": [
-            "React",
-            "Node.js",
-            "AWS",
-            "PostgreSQL",
-            "Docker"
+            "C/C++",
+            "Delphi Pascal",
+            "SQL Server",
+            "ASP.NET MVC"
+        ]
+    },
+    {
+        "title": "Consiss",
+        "duration": "4 meses",
+        "job_title": "Mobile Developer",
+        "date_range": "septiembre 2014 - enero 2015",
+        "location": "Monterrey, NL.",
+        "employment_type": "Medio tiempo",
+        "description": "Desarrollé una aplicación nativa en Android (Java) para un programa de lealtad de Arca Continental. Implementé el backend con ASP.NET Web API (C#) y SQL Server para la gestión de usuarios y transacciones.",
+        "highlights": [
+            "Desarrollo de aplicación móvil nativa en Android.",
+            "Implementación del backend para gestión de usuarios y transacciones.",
+        ],
+        "tech_stack": [
+            "Java",
+            "Eclipse IDE",
+            "ASP.NET",
+            "C#",
+            "SQL Server"
         ]
     }
 ]

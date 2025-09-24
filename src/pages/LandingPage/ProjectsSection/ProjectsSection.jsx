@@ -7,11 +7,11 @@ import ProjectCard from "../../../components/shared/ProjectCard/ProjectCard";
 
 const ProjectsSection = () => {
     return (
-        <Box id="projects_section" component="section" bgcolor="background" py={10}>
+        <Box id="projects_section" component="section" bgcolor="background" py={{ xs: 8, md: 10 }}>
             <Container maxWidth="lg">
                 <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" textAlign="center">
                     <Typography variant="h4" fontWeight="600" color="text.primary" mb={2}>Proyectos <Box component="span" color="secondary.main">Personales</Box></Typography>
-                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: '42rem' }}>Soluciones tecnológicas que estoy desarrollando para resolver problemas reales</Typography>
+                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: '42rem' }}>Iniciativas propias en desarrollo para enfrentar retos reales y potenciar mi crecimiento profesional.</Typography>
                 </Box>
                 <Grid container spacing={4} mt={8} justifyContent="center" alignItems="stretch">
                     {data.map((project, index) => (
