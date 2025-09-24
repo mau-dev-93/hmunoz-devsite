@@ -3,9 +3,9 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import Icon from '@mui/material/Icon';
 import Container from '@mui/material/Container';
 import Fade from '@mui/material/Fade';
+import { useMediaQuery, useTheme } from "@mui/material";
 
 // components
 import SocialIconButton from '../../../components/shared/SocialIconButton/SocialIconButton';
@@ -16,6 +16,9 @@ import ContactDetail from "../../../components/shared/ContactDetail/ContactDetai
 import profile from '../../../data/profile';
 
 const HeroSection = () => {
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+
     return (
         <Box id="hero_section" component="section" display="flex" alignItems="center" justifyContent="center" position="relative" bgcolor="background" sx={{ minHeight: { xs: '100svh', md: '80vh' } }}>
             <Box position="absolute"
@@ -44,9 +47,9 @@ const HeroSection = () => {
                                 <Typography variant="body1" fontWeight="400" color="text.secondary">{profile.personal.resume}</Typography>
                             </Grid>
                             <Box display="flex" flexDirection="column" width={{ xs: "100%", md: "auto" }} textAlign={{ xs: "center", md: "left" }} gap={1} mb={2}>
-                                <ContactDetail text={profile.personal.email} icon={<i className="ri-mail-line" />} actionHref={`mailto:${profile.personal.email}`} />
-                                <ContactDetail text={profile.personal.phone} icon={<i className="ri-phone-line" />} actionHref={`tel:${profile.personal.phone}`} />
-                                <ContactDetail text={profile.personal.location} icon={<i className="ri-map-pin-line" />} actionHref={`https://www.google.com/maps/search/?api=1&query=${profile.personal.location}`} />
+                                <ContactDetail text={profile.personal.email} icon={<i className="ri-mail-line" />} isMobile={isMobile} actionHref={`mailto:${profile.personal.email}`}  />
+                                <ContactDetail text={profile.personal.phone} icon={<i className="ri-phone-line" />} isMobile={isMobile} actionHref={`tel:${profile.personal.phone}`} />
+                                <ContactDetail text={profile.personal.location} icon={<i className="ri-map-pin-line" />} isMobile={isMobile} actionHref={`https://www.google.com/maps/search/?api=1&query=${profile.personal.location}`} />
                             </Box>
                             <Box display="flex" width={{ xs: "100%", md: "auto" }} flexDirection={{ xs: "column", sm: "row" }} justifyContent={{ xs: "center" }} alignItems={{ xs: "center", sm: "inherit" }} gap={1.5}>
                                 <Button

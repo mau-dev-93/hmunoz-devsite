@@ -7,7 +7,7 @@ import { resolveColor2 } from "./../../../utils/paletteUtils";
 // components
 import Toast from "../Toast/Toast";
 
-const ContactDetail = ({ text = "", actionHref = "", icon }) => {
+const ContactDetail = ({ text = "", actionHref = "", isMobile = false, icon }) => {
     const [hovered, setHovered] = React.useState(false);
     const [showToast, setShowToast] = React.useState(false);
 
@@ -49,24 +49,28 @@ const ContactDetail = ({ text = "", actionHref = "", icon }) => {
                     sx={{
                         textDecoration: 'none',
                         cursor: 'pointer',
-                        flexGrow: 1
+                        flexGrow: 1,
+                        "&:hover": {
+                            textDecoration: "underline",
+                        },
                     }}>
                     {text}
                 </Typography>
-                {hovered && (
+                {(hovered || isMobile) && (
                     <Button
-                        size="small"
+                        size="medium"
                         variant="text"
                         title="Copiar"
                         aria-label="Copiar"
-                        sx={{
+                        sx={(theme) => ({
                             position: 'absolute',
                             right: 8,
-                            minWidth: 32,
+                            minWidth: theme.spacing(4),
+                            minHeight: theme.spacing(4),
                             padding: 0,
                             color: "text.secondary",
                             boxShadow: 'none'
-                        }}
+                        })}
                         onClick={handleCopyText}
                     >
                         <i className="ri-file-copy-line" style={{ fontSize: 18 }} />
