@@ -1,3 +1,7 @@
+import ecommercePic from '@/assets/images/projects/ecommerce.png';
+import erpPic from '@/assets/images/projects/erp.png';
+import devsitePic from '@/assets/images/projects/devsite.png';
+
 export default [
     {
         "name": "Sitio de Pedidos Online",
@@ -14,7 +18,7 @@ export default [
             "Gestión de Inventario y Órdenes",
             "Panel Administrativo"
         ],
-        "imagen_url": "src/assets/images/projects/ecommerce.png",
+        "imagen_url": ecommercePic,
         "github_repo_url": "https://github.com/usuario/portfolio-website",
         "live_demo_url": "https://portfolio-website-demo.netlify.app",
         "role": "Full Stack Developer"
@@ -34,7 +38,7 @@ export default [
             "Gestión de Clientes y Proveedores",
             "Reportes e Informes Analíticos"
         ],
-        "imagen_url": "src/assets/images/projects/erp.png",
+        "imagen_url": erpPic,
         "github_repo_url": "https://github.com/usuario/task-manager-app",
         "live_demo_url": "https://task-manager-demo.herokuapp.com",
         "role": "Full Stack Developer"
@@ -52,7 +56,7 @@ export default [
             "Información de Contacto",
             "Muestra de Habilidades Técnicas"
         ],
-        "imagen_url": "src/assets/images/projects/devsite.png",
+        "imagen_url": devsitePic,
         "github_repo_url": "https://github.com/usuario/task-manager-app",
         "live_demo_url": "https://task-manager-demo.herokuapp.com",
         "role": "Front-end Developer"

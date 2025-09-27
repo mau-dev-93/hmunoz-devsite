@@ -1,3 +1,5 @@
+import profilePic from '@/assets/images/profile.jpeg'
+
 // src/data/profile.js
 const profile = {
     personal: {
@@ -7,7 +9,7 @@ const profile = {
         email: "hmmunozf@gmail.com",
         phone: "8120136619",
         location: "Monterrey, Nuevo León, México",
-        picture: "@/assets/images/profile.jpeg",
+        picture: profilePic,
         resumen_url: "/files/Mauricio_Munoz_Resume.pdf"
     },
     socials: [

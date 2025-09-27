@@ -1,3 +1,8 @@
+import nestJsCoursePic from '@/assets/images/courses/nestjs-course.webp';
+import aspNetCoursePic from '@/assets/images/courses/aspnet-course.png';
+import javaCoursePic from '@/assets/images/courses/java-course.webp';
+import leadCoursePic from '@/assets/images/courses/leadership-course.avif';
+
 export default [
     {
         title: "Aprende NestJs desde 0",
@@ -8,7 +13,7 @@ export default [
         status: "En progreso",
         tags: ["NestJs", "MySQL", "Oracle", "MongoDB", "TypeScript", "TypeORM"],
         progress_percentage: 36,
-        image_url: "src/assets/images/courses/nestjs-course.webp"
+        image_url: nestJsCoursePic
     },
     {
         title: "Construyendo Web APIs RESTful con ASP.NET Core 9",
@@ -19,7 +24,7 @@ export default [
         status: "En progreso",
         tags: ["ASP.NET", "C#", "GitHub", "SQL Server", "Azure"],
         progress_percentage: 10,
-        image_url: "src/assets/images/courses/aspnet-course.png"
+        image_url: aspNetCoursePic
     },
     {
         title: "Máster Completo en Java de cero a experto 2025",
@@ -30,7 +35,7 @@ export default [
         status: "En progreso",
         tags: ["Java", "Spring", "Jakarta EE", "JUnit", "EJB", "Angular", "React.js"],
         progress_percentage: 17,
-        image_url: "src/assets/images/courses/java-course.webp"
+        image_url: javaCoursePic
     },
     {
         title: "Liderazgo y comunicación",
@@ -41,6 +46,6 @@ export default [
         status: "Completado",
         tags: ["Java", "Back-end", "SpringBoot", "React"],
         progress_percentage: 100,
-        image_url: "src/assets/images/courses/leadership-course.avif"
+        image_url: leadCoursePic
     },
 ]
