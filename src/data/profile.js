@@ -12,7 +12,7 @@ const profile = {
     },
     socials: [
         { name: "GitHub", icon: "ri-github-line", link: "https://github.com/mau-dev-93" },
-        { name: "LinkedIn", icon: "ri-linkedin-line", link: "https://www.linkedin.com/in/mau-dev-93/" }
+        { name: "LinkedIn", icon: "ri-linkedin-line", link: "https://www.linkedin.com/in/mauricio-munoz-fonseca/" }
     ],
     techStack: [
         { label: "React", icon: "react-original", color: "primary.main" },

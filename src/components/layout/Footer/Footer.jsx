@@ -15,8 +15,8 @@ const Footer = () => {
                             Desarrollador Full Stack especializado en crear soluciones tecnológicas que mejoran la forma en que las personas interactúan con los sistemas. Combinando experiencia técnica con habilidades humanas para entregar valor real.
                         </Typography>
                         <Box display="flex" gap={1.5}>
-                            <SocialIconButton size="medium" href="https://github.com/tu-usuario" icon={<i className='ri-github-line'></i>} />
-                            <SocialIconButton size="medium" href="https://github.com/tu-usuario" icon={<i className='ri-linkedin-line'></i>} />
+                            <SocialIconButton size="medium" href="https://github.com/mau-dev-93" icon={<i className='ri-github-line'></i>} />
+                            <SocialIconButton size="medium" href="https://www.linkedin.com/in/mauricio-munoz-fonseca/" icon={<i className='ri-linkedin-line'></i>} />
                         </Box>
                     </Grid>
                     <Grid size={{ xs: 12, md: 4 }}>

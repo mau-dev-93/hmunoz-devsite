@@ -19,6 +19,19 @@ const HeroSection = () => {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
+    const handleDownloadCV = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const pdfUrl = "https://personal-mauricio.s3.us-east-1.amazonaws.com/Mauricio-Munoz-Resume-202509.pdf";
+        const link = document.createElement('a');
+        link.href = pdfUrl;
+        link.download = 'Mauricio-Munoz-Resume.pdf'; // nombre del archivo descargado
+        // link.target = '_blank';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+    
     return (
         <Box id="hero_section" component="section" display="flex" alignItems="center" justifyContent="center" position="relative" bgcolor="background" sx={{ minHeight: { xs: '100svh', md: '80vh' } }}>
             <Box position="absolute"
@@ -59,6 +72,7 @@ const HeroSection = () => {
                                     sx={{
                                         width: { xs: '100%', sm: 'auto' }
                                     }}
+                                    onClick={handleDownloadCV}
                                 >
                                     Descargar CV
                                 </Button>
