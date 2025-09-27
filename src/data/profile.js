@@ -7,7 +7,7 @@ const profile = {
         email: "hmmunozf@gmail.com",
         phone: "8120136619",
         location: "Monterrey, Nuevo León, México",
-        picture: "src/assets/images/profile.jpeg",
+        picture: "@/assets/images/profile.jpeg",
         resumen_url: "/files/Mauricio_Munoz_Resume.pdf"
     },
     socials: [
