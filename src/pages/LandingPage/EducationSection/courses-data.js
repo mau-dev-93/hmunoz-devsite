@@ -1,52 +1,46 @@
 export default [
     {
-        title: "Aprendiendo con el curso de React",
+        title: "Aprende NestJs desde 0",
         institution: "Udemy",
         year: "2025",
-        duration: "50 horas",
-        hasCertificate: true,
+        duration: "17 horas",
+        hasCertificate: false,
         status: "En progreso",
-        tags: ["Java", "Back-end", "SpringBoot", "React"],
-        image_url: "https://blacksuan19.dev/assets/images/aws.jpg"
+        tags: ["NestJs", "MySQL", "Oracle", "MongoDB", "TypeScript", "TypeORM"],
+        progress_percentage: 36,
+        image_url: "src/assets/images/courses/nestjs-course.webp"
     },
     {
-        title: "Aprendiendo con el curso de React",
+        title: "Construyendo Web APIs RESTful con ASP.NET Core 9",
         institution: "Udemy",
         year: "2025",
-        duration: "50 horas",
-        hasCertificate: true,
+        duration: "27 horas",
+        hasCertificate: false,
         status: "En progreso",
-        tags: ["Java", "Back-end", "SpringBoot", "React", ],
-        image_url: "https://images.unsplash.com/photo-1670057046254-3b5095eb4b66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWFjdCUyMGphdmFzY3JpcHQlMjBjb2Rpbmd8ZW58MXx8fHwxNzU3NzkzNTA1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+        tags: ["ASP.NET", "C#", "GitHub", "SQL Server", "Azure"],
+        progress_percentage: 10,
+        image_url: "src/assets/images/courses/aspnet-course.png"
     },
     {
-        title: "Aprendiendo con el curso de React",
+        title: "Máster Completo en Java de cero a experto 2025",
         institution: "Udemy",
         year: "2025",
-        duration: "50 horas",
-        hasCertificate: true,
+        duration: "180 horas",
+        hasCertificate: false,
         status: "En progreso",
-        tags: ["Java", "Back-end", "SpringBoot", "React"],
-        image_url: "https://images.unsplash.com/photo-1506399558188-acca6f8cbf41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhYmFzZSUyMHNxbCUyMHNlcnZlciUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzU3NzkzNTA2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+        tags: ["Java", "Spring", "Jakarta EE", "JUnit", "EJB", "Angular", "React.js"],
+        progress_percentage: 17,
+        image_url: "src/assets/images/courses/java-course.webp"
     },
     {
-        title: "Aprendiendo con el curso de React",
-        institution: "Udemy",
-        year: "2025",
-        duration: "50 horas",
+        title: "Liderazgo y comunicación",
+        institution: "Coursera",
+        year: "2024",
+        duration: "10 horas",
         hasCertificate: true,
-        status: "En progreso",
+        status: "Completado",
         tags: ["Java", "Back-end", "SpringBoot", "React"],
-        image_url: "https://images.unsplash.com/photo-1668854096784-3ce7679fa841?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkb2NrZXIlMjBrdWJlcm5ldGVzJTIwZGV2b3BzfGVufDF8fHx8MTc1Nzc5MzUwNnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+        progress_percentage: 100,
+        image_url: "src/assets/images/courses/leadership-course.avif"
     },
-    {
-        title: "Aprendiendo con el curso de React",
-        institution: "Udemy",
-        year: "2025",
-        duration: "50 horas",
-        hasCertificate: true,
-        status: "En progreso",
-        tags: ["Java", "Back-end", "SpringBoot", "React"],
-        image_url: "https://images.unsplash.com/photo-1650234083180-4b965afac328?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxub2RlanMlMjBiYWNrZW5kJTIwZGV2ZWxvcG1lbnR8ZW58MXx8fHwxNzU3NzkzNTA2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-    }
 ]

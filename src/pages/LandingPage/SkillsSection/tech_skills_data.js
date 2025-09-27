@@ -5,32 +5,38 @@ export default [
         color: "primary",
         experience: '8+ años de experiencia sólida',
         skills: [
-            { name: 'JavaScript', level: 'Avanzado', years: 8, icon: 'ri-javascript-fill' },
-            { name: 'Python', level: 'Intermedio', years: 8, icon: 'ri-python-fill' },
+            { name: 'JavaScript', level: 'Avanzado', years: 8 },
+            { name: 'TypeScript', level: 'Avanzado', years: 8 },
+            { name: 'C#', level: 'Intermedio', years: 3 },
+            { name: 'Java', level: 'Intermedio', years: 2 },
+            { name: 'C/C++', level: 'Intermedio', years: 2 },
         ]
     },
     {
         title: 'Frontend',
         icon: 'ri-layout-4-line',
         color: "success",
-        experience: '7+ años de experiencia sólida',
+        experience: '10+ años de experiencia sólida',
         skills: [
-            { name: 'React', level: 'Avanzado', years: 8, icon: 'ri-reactjs-fill' },
-            { name: 'HTML', level: 'Avanzado', years: 8, icon: 'ri-html5-fill' },
-            { name: 'CSS', level: 'Avanzado', years: 8, icon: 'ri-css3-fill' },
-            { name: 'Material-UI', level: 'Intermedio', years: 8, icon: 'ri-material-ui-fill' },
+            { name: 'React.js', level: 'Avanzado', years: 8 },
+            { name: 'Redux', level: 'Avanzado', years: 8 },
+            { name: 'Material UI', level: 'Avanzado', years: 4 },
+            { name: 'HTML', level: 'Avanzado', years: 10 },
+            { name: 'CSS', level: 'Avanzado', years: 10 },
         ]
     },
     {
         title: 'Backend',
         icon: 'ri-database-2-line',
         color: "secondary",
-        experience: '6+ años de experiencia sólida',
+        experience: '10+ años de experiencia sólida',
         skills: [
-            { name: 'Node.js', level: 'Avanzado', years: 8, icon: 'ri-node-fill' },
-            { name: 'Express', level: 'Avanzado', years: 8, icon: 'ri-express-fill' },
-            { name: 'MongoDB', level: 'Intermedio', years: 8, icon: 'ri-mongodb-fill' },
-            { name: 'PostgreSQL', level: 'Intermedio', years: 8, icon: 'ri-postgresql-fill' },
+            { name: 'Node.js', level: 'Avanzado', years: 4 },
+            { name: '.NET (C#)', level: 'Intermedio', years: 3 },
+            { name: 'Express.js', level: 'Intermedio', years: 1 },
+            { name: 'NestJS', level: 'Intermedio', years: 1 },
+            { name: 'SQL Server', level: 'Avanzado', years: 10 },
+            { name: 'MySQL', level: 'Intermedio', years: 1 },
         ]
     },
     {
@@ -39,10 +45,9 @@ export default [
         color: "info",
         experience: '5+ años de experiencia sólida',
         skills: [
-            { name: 'AWS', level: 'Avanzado', years: 8, icon: 'ri-aws-fill' },
-            { name: 'Docker', level: 'Avanzado', years: 8, icon: 'ri-docker-fill' },
-            { name: 'Kubernetes', level: 'Intermedio', years: 8, icon: 'ri-kubernetes-fill' },
-            { name: 'Terraform', level: 'Intermedio', years: 8, icon: 'ri-terraform-fill' },
+            { name: 'AWS', level: 'Intermedio', years: 4 },
+            { name: 'Git', level: 'Intermedio', years: 8 },
+            { name: 'Docker', level: 'Básico', years: 1 },
         ]
     }
 ]

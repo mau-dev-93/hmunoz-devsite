@@ -23,6 +23,7 @@ export const colors = {
 
     // Semantic
     successGreen: "#00a63e",     // Verde brillante (éxito)
+    neonGreen: "#05df72",        // Verde neón (éxito destacado)
     errorRed: "#e7000b",         // Rojo intenso (error)
     warningYellow: "#facc15",    // Amarillo cálido (advertencia)
     infoSky: "#0ea5e9",          // Azul cielo (informativo)

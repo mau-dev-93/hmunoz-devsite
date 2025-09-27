@@ -24,7 +24,8 @@ export const palette = {
         contrastText: colors.whiteGray,
     },
     success: {
-        main: colors.successGreen
+        main: colors.successGreen,
+        primary: colors.neonGreen
     },
     error: {
         main: colors.errorRed

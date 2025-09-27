@@ -4,13 +4,13 @@ export default [
         institution: "Universidad Tecnológica de México",
         dateRange: "2023 - 2025",
         status: "Pasante",
-        specialties: ["Desarrollo de videojuegos", "Programación de software", "Desarrollo web"]
+        specialties: ["Gestión de Proyectos", "Dirección y Liderazgo", "Análisis de Datos", "Decisiones para Negocios"]
     },
      {
         degree: "Lic. en Multimedia y Animación Digital",
         institution: "Universidad Autónomas de Nuevo León",
         dateRange: "2010 - 2014",
         status: "Titulado",
-        specialties: ["Desarrollo de videojuegos", "Programación de software", "Desarrollo web"]
+        specialties: ["Desarrollo de videojuegos 2D & 3D", "Programación de Software", "Desarrollo Móvil", "Desarrollo Web"]
     }
 ]

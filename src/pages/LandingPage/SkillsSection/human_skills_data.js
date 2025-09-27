@@ -1,39 +1,39 @@
 const humanSkills = [
     {
-        title: "Comunicación",
-        icon: "ri-chat-3-line",
-        color: "primary.main",
-        description: "Expreso ideas de forma clara y efectiva, facilitando la colaboración y el entendimiento en equipos multidisciplinarios."
-    },
-    {
         title: "Liderazgo",
         icon: "ri-team-line",
         color: "warning.main",
-        description: "Coordiné con equipos multidisciplinarios en 3 países logrando entregas sin retrasos."
+        description: "He liderado equipos en el desarrollo de soluciones web y gestioné tareas para asegurar las entregas de proyectos a tiempo."
     },
     {
-        title: "Resolución de problemas",
+        title: "Comunicación",
+        icon: "ri-chat-3-line",
+        color: "primary.main",
+        description: "Colaboro en equipos ágiles con Scrum, facilitando una comunicación efectiva y el entendimiento para el éxito de los proyectos."
+    },
+    {
+        title: "Resolución de Problemas",
         icon: "ri-lightbulb-flash-line",
         color: "success.main",
-        description: "Identifico desafíos y propongo soluciones creativas y eficientes para superar obstáculos técnicos y organizacionales."
+        description: "Analizo errores para proponer soluciones y brindar soporte. También optimizo procesos y consultas para mejorar el rendimiento del sistema."
     },
     {
-        title: "Pensamiento crítico",
+        title: "Pensamiento Crítico",
         icon: "ri-brain-line",
         color: "info.main",
-        description: "Analizo situaciones complejas, evaluando información y alternativas para tomar decisiones informadas."
-    },
-    {
-        title: "Empatía",
-        icon: "ri-emotion-happy-line",
-        color: "secondary.main",
-        description: "Comprendo y respeto las perspectivas y emociones de los demás, fomentando un ambiente de trabajo positivo."
+        description: "Analizo requerimientos, diseño bases de datos y flujos de trabajo para procesos clave de cualquier proyecto en el que participe."
     },
     {
         title: "Adaptabilidad",
+        icon: "ri-emotion-happy-line",
+        color: "secondary.main",
+        description: "Me adapto rápidamente a diversas tecnologías y herramientas, lo que me permite integrarme eficazmente en diferentes equipos y proyectos."
+    },
+    {
+        title: "Aprendizaje Continuo",
         icon: "ri-refresh-line",
         color: "error.main",
-        description: "Me ajusto rápidamente a cambios y nuevas circunstancias, manteniendo la productividad y el enfoque en los objetivos."
+        description: "Me mantengo en constante aprendizaje, aplicando nuevas habilidades y conocimientos en proyectos personales y capacitación continua."
     }
 ];
 

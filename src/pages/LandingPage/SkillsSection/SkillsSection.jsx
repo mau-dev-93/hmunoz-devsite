@@ -58,23 +58,23 @@ const SkillsSection = () => {
                     })}>
                     <Box display="flex" alignItems="center" gap={0.5} color="primary.main" mb={1}>
                         <i className='ri-award-line' style={{ marginRight: 4, fontSize: 24, color: "inherit" }}></i>
-                        <Typography variant="h6" color="text.primary" fontWeight={600}>Enfoque Integral</Typography>
+                        <Typography variant="h6" color="text.primary" fontWeight={600}>Más Allá Del Código</Typography>
                     </Box>
                     <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600, mb: 2 }}>
-                        Combino expertise técnico con habilidades humanas para liderar proyectos, formar equipos de alto rendimiento y entregar soluciones de impacto real y medible
+                         Mi enfoque va más allá del desarrollo. Combino mi experiencia técnica con el liderazgo y la visión para crear soluciones que no solo funcionen, sino que también generen valor real para el negocio.
                     </Typography>
                     <Stack direction={{ xs: 'column', md: 'row' }} gap={{ xs: 2, md: 4 }} justifyContent="center" alignItems="center">
                         <Stack direction="row" spacing={1} alignItems="center">
                             <i className="ri-award-line" style={{ color: "orange", fontSize: 20 }}></i>
-                            <Typography variant="caption" color="text.primary" fontWeight={400}>8+ años experiencia</Typography>
+                            <Typography variant="caption" color="text.primary" fontWeight={400}>10+ años experiencia</Typography>
                         </Stack>
                         <Stack direction="row" spacing={1} color="primary.main" alignItems="center">
                             <i className="ri-team-line" style={{ color: "inherit", fontSize: 20 }}></i>
-                            <Typography variant="caption" color="text.primary" fontWeight={400}>5+ equipos liderados</Typography>
+                            <Typography variant="caption" color="text.primary" fontWeight={400}>3+ equipos liderados</Typography>
                         </Stack>
                         <Stack direction="row" spacing={1} color="secondary.main" alignItems="center">
                             <i className="ri-code-line" style={{ color: "inherit", fontSize: 20 }}></i>
-                            <Typography variant="caption" color="text.primary" fontWeight={400}>15+ tecnologías</Typography>
+                            <Typography variant="caption" color="text.primary" fontWeight={400}>10+ tecnologías</Typography>
                         </Stack>
                     </Stack>
                 </Box>

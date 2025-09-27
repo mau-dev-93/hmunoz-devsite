@@ -4,6 +4,7 @@ import { Box, Button, Card, CardActions, CardContent, CardMedia, Stack, Typograp
 // components
 import CustomChip from "../CustomChip/CustomChip";
 import BrandLogo from '../BrandLogo/BrandLogo';
+import ProgressBar from '../ProgressBar/ProgressBar';
 
 const CourseCard = ({
     title = "",
@@ -13,7 +14,8 @@ const CourseCard = ({
     hasCertificate = false,
     status = "",
     tags = [],
-    image_url = ""
+    image_url = "",
+    progress_percentage = 0
 }) => {
     return (
         <Card
@@ -34,29 +36,32 @@ const CourseCard = ({
                     label={status}
                     variant="condensed"
                     size="small"
-                    color="black" 
+                    color="black"
                 />
             </Box>
             <CardMedia
                 component="img"
                 alt={`Curso ${title} de ${institution}`}
-                height="100"
+                height="150"
                 image={image_url}
                 onError={(e) => {
                     e.target.src = 'https://img.freepik.com/free-photo/scorched-fall-wood-concept_23-2147866526.jpg?semt=ais_incoming&w=740&q=80'; // imagen por defecto
                 }}
             />
-            <CardContent sx={{ p: 2 }}>
+            <CardContent sx={{ p: 2, pt: 3 }}>
                 <Box mb={2}>
-                    <Typography gutterBottom variant="body1" fontWeight={600} component="div">{title}</Typography>
+                    <Typography variant="subtitle1" fontWeight={600} component="div" gutterBottom mb={1}>{title}</Typography>
                     <BrandLogo
                         brandId='udemy'
-                        size={24}
+                        size={22}
                         bgColor="#101010"
                         rounded="full"
                     />
                 </Box>
                 <Stack spacing={1} mb={3}>
+                    <Box display="flex" >
+                        <ProgressBar progress_percentage={progress_percentage} sx={{ marginBottom: 1 }} />
+                    </Box>
                     <Box display="flex" justifyContent="space-between" alignItems="center">
                         <Typography variant="caption" color="text.secondary">
                             Año
@@ -77,9 +82,16 @@ const CourseCard = ({
                         <Typography variant="caption" color="text.secondary">
                             Certificado
                         </Typography>
-                        <Typography variant="caption" color={hasCertificate ? "success.main" : "text.primary"} fontWeight={600}>
-                            {hasCertificate ? "Sí" : "No"}
-                        </Typography>
+                        {hasCertificate ? (
+                            <Typography variant="caption" color="success.primary">
+                                <i className="ri-checkbox-circle-line"></i> Certificado obtenido
+                            </Typography>
+                        ) : (
+                            <Typography variant="caption" color="secondary.main">
+                                <i className="ri-time-line"></i> Pendiente
+                            </Typography>
+                        )}
+
                     </Box>
                 </Stack>
                 <Typography variant="body2" fontWeight={600} color="text.primary" gutterBottom>Tecnologías:</Typography>
