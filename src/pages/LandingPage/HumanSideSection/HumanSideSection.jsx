@@ -15,7 +15,7 @@ const HumanSideSection = () => {
             <Container maxWidth="lg">
                 <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" textAlign="center" mb={8}>
                     <Typography variant="h4" fontWeight="600" color="text.primary" gutterBottom>Más Allá del <Box component="span" color="secondary.main">Código</Box></Typography>
-                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600 }}>Mi motor, mis pasiones y lo que me inspira como persona y programador</Typography>
+                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600 }}>Una mirada a lo que me inspira y motiva fuera del código.</Typography>
                 </Box>
                 <Box
                     mb={10}

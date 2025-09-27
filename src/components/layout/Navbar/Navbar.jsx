@@ -8,6 +8,9 @@ import { Toolbar, Box, Typography } from "@mui/material";
 import NavbarLinks from "../NavbarLinks/NavbarLinks";
 import NavbarDrawer from "../NavbarDrawer/NavbarDrawer";
 
+// components
+import Logo from "../../shared/Logo/Logo";
+
 export const AppBar = React.forwardRef(function AppBar(props, ref) {
     return (
         <MuiAppBar
@@ -26,10 +29,8 @@ export const AppBar = React.forwardRef(function AppBar(props, ref) {
 const Navbar = ({ isMobile }) => {
     return (
         <AppBar position="fixed" elevation={0}>
-            <Toolbar variant="regular" sx={{ display: "flex", justifyContent: "space-between" }}>
-                <Box display="flex" flex={1} justifyContent="flex-start">
-                    <Typography variant="h6" color="primary" fontWeight="bold">Mauricio Muñoz</Typography>
-                </Box>
+            <Toolbar variant="regular" sx={{ display: "flex", justifyContent: "space-between" }} >
+                <Logo isMobile={isMobile} />
                 {!isMobile && (
                     <NavbarLinks isMobile={isMobile} />
                 )}

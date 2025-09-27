@@ -2,6 +2,7 @@ import { Box, Container, Grid, Typography, Divider, Link } from "@mui/material";
 
 // shared
 import SocialIconButton from "../../shared/SocialIconButton/SocialIconButton.jsx";
+import Logo from "../../shared/Logo/Logo.jsx";
 
 const Footer = () => {
     return (
@@ -9,7 +10,7 @@ const Footer = () => {
             <Container maxWidth="lg">
                 <Grid container spacing={4}>
                     <Grid size={{ xs: 12, md: 5 }}>
-                        <Typography variant="h6" fontWeight="bold" mb={2}>Mauricio Muñoz</Typography>
+                        <Logo  isMobile={false} sx={{ marginBottom: 2 }} />
                         <Typography variant="body2" color="text.secondary" mb={2} lineHeight={1.8}>
                             Desarrollador Full Stack especializado en crear soluciones tecnológicas que mejoran la forma en que las personas interactúan con los sistemas. Combinando experiencia técnica con habilidades humanas para entregar valor real.
                         </Typography>
@@ -27,7 +28,7 @@ const Footer = () => {
                             <Link href="#experience_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">Experiencia</Typography></Link>
                             <Link href="#skills_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">Habilidades</Typography></Link>
                             <Link href="#education_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">Educación</Typography></Link>
-                            <Link href="#humanside_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">Lado Humano</Typography></Link>
+                            <Link href="#humanside_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">Más Allá</Typography></Link>
                         </Box>
                     </Grid>
                     <Grid size={{ xs: 12, md: 3 }}>

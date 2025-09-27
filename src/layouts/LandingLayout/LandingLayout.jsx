@@ -26,7 +26,7 @@ const LandingLayout = ({ children }) => {
             <LandingContainer as="main">
                 {children}
             </LandingContainer>
-            <Footer />
+            <Footer isMobile={isMobile} />
         </NavbarScrollProvider>
     );
 };
