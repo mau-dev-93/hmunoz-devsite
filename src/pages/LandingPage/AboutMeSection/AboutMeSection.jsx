@@ -76,9 +76,9 @@ const AboutMeSection = () => {
                             <HeroStatCard
                                 color="success"
                                 variant='outlined'
-                                title="35k+ usuarios"
-                                subtitle="activos mensuales"
-                                icon={<i className="ri-group-line"></i>}
+                                title="10+ tecnologías"
+                                subtitle="experiencia probada"
+                                icon={<i className="ri-tools-line"></i>}
                             />
                         </Grid>
                         <Grid size={{ xs: 6 }}>
@@ -102,8 +102,8 @@ const AboutMeSection = () => {
                     </Grid>
                     <Grid size={{ xs: 12 }}>
                         <HighlightBox gradientDirection='center' sx={{ py: 4 }}>
-                            <Typography variant="subtitle1" fontWeight={700}>🚀 ¿Hasta dónde puede llegar una idea con propósito?</Typography>
-                            <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 800 }}>Mi filosofía como desarrollador es fundamental: construir sistemas que resuelvan problemas reales. Por eso mi compromiso es crear tecnología segura, centrada en el usuario y que genere un impacto positivo y duradero.</Typography>
+                            <Typography variant="subtitle1" fontWeight={700}>🚀 ¿Hasta dónde puede llegar una idea bien construida?</Typography>
+                            <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 800 }}>Mi compromiso es <strong>claridad, confianza y valor</strong> que permanezca mientras el producto evoluciona.</Typography>
                         </HighlightBox>
                     </Grid>
                 </Grid>

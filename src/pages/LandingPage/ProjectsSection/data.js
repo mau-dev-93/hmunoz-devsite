@@ -1,11 +1,11 @@
-import ecommercePic from '@/assets/images/projects/ecommerce.png';
-import erpPic from '@/assets/images/projects/erp.png';
-import devsitePic from '@/assets/images/projects/devsite.png';
+import ecommercePic from '@/assets/images/projects/ecommerce-2.png';
+import erpPic from '@/assets/images/projects/erp-2.png';
+import devsitePic from '@/assets/images/projects/devsite-2.png';
 
 export default [
     {
-        "name": "Plataforma E-commerce para Restaurantes",
-        "description": "Plataforma e-commerce que optimiza las operaciones de un negocio gastronómico. Abarca todo el flujo de un pedido, incluyendo personalización y tracking en tiempo real. Su arquitectura está diseñada para ser una solución robusta y fácilmente adaptable.",
+        "name": "E-commerce para Restaurantes",
+        "description": "Plataforma e-commerce que optimiza las operaciones de un restaurante. Abarca todo el flujo de un pedido, checkout y tracking en tiempo real. Su arquitectura está diseñada para ser una solución robusta y fácilmente adaptable para cualquier negocio gastronómico.",
         "status": "En desarrollo",
         "icon": "ri-shopping-cart-line",
         "progress_percentage": 30,
@@ -26,9 +26,9 @@ export default [
     },
     {
         "name": "ERP Cloud para PYMES",
-        "description": "Este proyecto es la culminación de mi experiencia en el sector ERP. Una plataforma de planificación de recursos diseñada desde cero para la nube, con el objetivo de optimizar las operaciones críticas de las PYMES. Centraliza desde la gestión de inventario y facturación hasta el análisis de datos, facilitando una toma de decisiones inteligente.",
+        "description": "Este proyecto es la culminación de mi experiencia en el sector ERP: una plataforma de planificación de recursos diseñada desde cero para la nube, con el objetivo de optimizar las operaciones críticas de las PYMES. Permite tomar decisiones estratégicas basadas en datos al centralizar toda la gestión del negocio, desde las operaciones diarias y el inventario hasta la facturación.",
         "status": "En desarrollo",
-        "icon": "ri-check-line",
+        "icon": "ri-database-2-line",
         "progress_percentage": 20,
         "tech_stack": ["React.js", "TypeScript", "AWS API Gateway", "AWS Lambda", "MySQL"],
         "features": [
@@ -47,16 +47,18 @@ export default [
     },
     {
         "name": "Portafolio Profesional",
-        "description": "Este portafolio es mi carta de presentación digital. Un proyecto diseñado para centralizar mi experiencia, habilidades y proyectos en una plataforma interactiva. Creado con un stack de Front-end moderno, es también un espacio de aprendizaje continuo donde aplico y refino mis conocimientos en desarrollo web y UI/UX.",
+        "description": "Este portafolio es mi carta de presentación digital, una plataforma interactiva que centraliza mi experiencia, habilidades y proyectos. Desarrollado con un stack moderno de Front-end (React, Vite y MUI), este sitio es en sí mismo un proyecto activo y un espacio de aprendizaje donde continuamente aplico y refino mis conocimientos en desarrollo web y UI/UX.",
         "status": "En desarrollo",
-        "icon": "ri-check-line",
+        "icon": "ri-computer-line",
         "progress_percentage": 80,
-        "tech_stack": ["React", "Redux", "JavaScript", "Material UI", "i18n"],
+        "tech_stack": ["React", "Redux", "JavaScript", "Material UI", "AWS Amplify", "i18n"],
         "features": [
             "Diseño Responsivo",
-            "Presentación de Proyectos",
             "Información de Contacto",
-            "Muestra de Habilidades Técnicas"
+            "Presentación de Proyectos",
+            "Trayectoria Profesional",
+            "Habilidades Técnicas y Humanas",
+             "Multiidioma (próximamente)",
         ],
         "imagen_url": devsitePic,
         "github_repo_url": "https://github.com/usuario/task-manager-app",

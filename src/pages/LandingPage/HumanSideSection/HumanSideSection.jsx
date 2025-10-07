@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography, Button } from "@mui/material";
 import cardsData from "./humaside-data.js";
 import identityData from "./identity-data.js";
 
@@ -14,8 +14,8 @@ const HumanSideSection = () => {
         <Box id="humanside_section" component="section" bgcolor="background.default" py={{ xs: 8, md: 10 }}>
             <Container maxWidth="lg">
                 <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" textAlign="center" mb={8}>
-                    <Typography variant="h4" fontWeight="600" color="text.primary" gutterBottom>Más Allá del <Box component="span" color="secondary.main">Código</Box></Typography>
-                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600 }}>Una mirada a lo que me inspira y motiva fuera del código.</Typography>
+                    <Typography variant="h4" fontWeight="600" color="text.primary" gutterBottom>Código y <Box component="span" color="secondary.main">Vida</Box></Typography>
+                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600 }}>Pasiones que me definen como profesional y como persona.</Typography>
                 </Box>
                 <Box
                     mb={10}
@@ -67,14 +67,15 @@ const HumanSideSection = () => {
                     </Grid>
                 </Box>
                 <HighlightBox gradientDirection="to left" borderColor="secondary" sx={{ py: 6 }}>
-                    <Typography variant="h6" component="div" fontWeight={700} display="flex" gap={1}  gutterBottom mb={2}>
+                    <Typography variant="h6" component="div" fontWeight={700} display="flex" gap={1} gutterBottom mb={2}>
                         <Box component="span" color="secondary.main" fontWeight={400}><i className='ri-heart-3-line'></i></Box>
-                        <Box component="span">Gracias por Llegar Hasta <Box component="span" color="secondary.main">Aquí</Box></Box>
+                        <Box component="span">Gracias por Llegar Hasta <Box component="span">Aquí</Box></Box>
                         <Box component="span" color="secondary.main" fontWeight={400}><i className='ri-heart-3-line'></i></Box>
                     </Typography>
-                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 750 }}>
-                        Si has llegado hasta esta sección, probablemente compartimos una visión similar: las mejores colaboraciones surgen cuando nos conocemos como personas, no solo como profesionales. Cada proyecto es una oportunidad de crear algo significativo, y me encantaría ser parte de tu próxima historia de éxito.
+                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 750, mb: 2 }}>
+                        <Box color="secondary.main" component="span" fontWeight={600}>Busco oportunidades donde mi experiencia genere un impacto real.</Box> <br /> Si compartimos visión, será un gusto conversar sobre objetivos y próximos pasos.
                     </Typography>
+                    <Button variant='outlined' size='medium' href='#hero_section' color="input" startIcon={<i className='ri-arrow-up-line'></i>}>Volver arriba</Button>
                 </HighlightBox>
             </Container>
         </Box>

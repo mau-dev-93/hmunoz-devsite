@@ -11,7 +11,7 @@ const ExperienceSection = () => {
                 {/*buena distancia*/}
                 <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" textAlign="center" mb={6}>
                     <Typography variant="h4" fontWeight="600" color="text.primary" mb={2}>Experiencia <Box component="span" color="secondary.main">Profesional</Box></Typography>
-                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600 }}>10 años construyendo soluciones de software escalables y de alto impacto.</Typography>
+                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600 }}>Más de 10 años construyendo soluciones de software escalables y de alto impacto.</Typography>
                 </Box>
                 <ExperienceTimeline experiences={data} />
             </Container>

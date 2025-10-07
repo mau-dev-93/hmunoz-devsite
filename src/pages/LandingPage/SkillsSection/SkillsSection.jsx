@@ -12,8 +12,8 @@ const SkillsSection = () => {
         <Box id="skills_section" component="section" bgcolor="background" py={{ xs: 8, md: 10 }}>
             <Container maxWidth="lg">
                 <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" textAlign="center">
-                    <Typography variant="h4" fontWeight="600" color="text.primary" mb={2}>Habilidades</Typography>
-                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600 }}>La combinación de dominio técnico y un enfoque humano para construir software con propósito.</Typography>
+                    <Typography variant="h4" fontWeight="600" color="text.primary" mb={2}>Mis <Box component="span" color="secondary.main">Habilidades</Box></Typography>
+                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600 }}>Técnicas sólidas y habilidades humanas para construir productos con calidad.</Typography>
                 </Box>
                 <Typography variant="h6" color="text.primary" fontWeight={600} mt={8} mb={2} textAlign="center">Habilidades Técnicas</Typography>
                 <Grid container spacing={3} justifyContent="center" alignItems="stretch" width={'100%'}>
@@ -60,8 +60,8 @@ const SkillsSection = () => {
                         <i className='ri-award-line' style={{ marginRight: 4, fontSize: 24, color: "inherit" }}></i>
                         <Typography variant="h6" color="text.primary" fontWeight={600}>Más Allá Del Código</Typography>
                     </Box>
-                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600, mb: 2 }}>
-                         Mi enfoque va más allá del desarrollo. Combino mi experiencia técnica con el liderazgo y la visión para crear soluciones que no solo funcionen, sino que también generen valor real para el negocio.
+                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 650, mb: 2 }}>
+                        Más allá del código, combino mis habilidades técnicas con liderazgo, comunicación y pensamiento crítico. El resultado: <strong>productos sólidos, seguros y mantenibles</strong>, con entregas constantes y aprendizaje continuo.
                     </Typography>
                     <Stack direction={{ xs: 'column', md: 'row' }} gap={{ xs: 2, md: 4 }} justifyContent="center" alignItems="center">
                         <Stack direction="row" spacing={1} alignItems="center">

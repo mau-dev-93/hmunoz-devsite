@@ -3,7 +3,7 @@ const humanSkills = [
         title: "Liderazgo",
         icon: "ri-team-line",
         color: "warning.main",
-        description: "Experiencia liderando y mentoreando equipos de desarrollo. Gestiono tareas para asegurar entregas puntuales y fomentar la colaboración."
+        description: "Experiencia liderando y asesorando equipos de desarrollo. Gestiono tareas para asegurar entregas puntuales y fomentar la colaboración."
     },
     {
         title: "Comunicación",
@@ -21,19 +21,19 @@ const humanSkills = [
         title: "Pensamiento Crítico",
         icon: "ri-brain-line",
         color: "info.main",
-        description: "Mi pensamiento crítico me permite ir más allá del requerimiento. Diseño soluciones y arquitecturas que optimizan procesos y entregan valor real al negocio."
+        description: "Con un enfoque analítico, diseño soluciones y arquitecturas que optimizan procesos y entregan valor real al negocio."
     },
     {
         title: "Adaptabilidad",
         icon: "ri-emotion-happy-line",
         color: "secondary.main",
-        description: "Rápida adaptación a diversos entornos tecnológicos. Experiencia comprobada desde C/C++ y .NET hasta arquitecturas serverless con Node.js y AWS."
+        description: "Rápida adaptación a diversos entornos tecnológicos. Experiencia comprobada desde C/C++ hasta arquitecturas serverless con AWS."
     },
     {
         title: "Aprendizaje Continuo",
         icon: "ri-refresh-line",
         color: "error.main",
-        description: "Impulso mi evolución con proyectos personales usando NestJS y Docker. Complemento mi formación continua en microservicios y DevOps."
+        description: "Fortalezco mis habilidades en backend con NestJS, NoSQL, Docker, y prácticas DevOps para mejorar las entregas continuas."
     }
 ];
 

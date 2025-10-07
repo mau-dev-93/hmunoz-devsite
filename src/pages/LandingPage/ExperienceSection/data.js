@@ -6,13 +6,15 @@ export default [
         "date_range": "enero 2021 - diciembre 2024",
         "location": "Monterrey, NL.",
         "employment_type": "Tiempo completo",
-        "description": "Lideré el desarrollo del e-commerce de Talisis, diseñando soluciones full-stack con Node.js y AWS. Fui responsable de implementar funcionalidades de pago y suscripciones para más de 35,000 usuarios activos, generando sobre $400,000 MXN en ingresos mensuales.",
+        "description": "Lideré el desarrollo e-commerce de la plataforma educativa Talisis.com, diseñando soluciones full-stack con React, Node.js y AWS.",
         "highlights": [
+            "35,000+ usuarios activos utilizando los servicios de pagos.",
+            "$400,000+ MXN ingresos mensuales habilitados por el flujo de pagos.",
             "Desarrollé interfaces responsivas con React.js, Redux y Material UI.",
             "Diseñé arquitecturas serverless con AWS Lambda y API Gateway para transacciones seguras.",
             "Desarrollé APIs RESTful de alto rendimiento y diseñé modelos de datos en SQL Server.",
             "Aseguré la calidad del código mediante code reviews, testing y monitoreo con AWS CloudWatch.",
-            "Creé una aplicación de accesos con QR para eventos masivos, con monitoreo en tiempo real.",
+            "Creé una aplicación de accesos con QR en 3 días para eventos masivos, con monitoreo en tiempo real.",
         ],
         "tech_stack": [
             "React",
@@ -34,12 +36,12 @@ export default [
         "date_range": "julio 2017 - septiembre 2020",
         "location": "San Pedro Garza García, NL.",
         "employment_type": "Tiempo completo",
-        "description": "Contribuí a la modernización del ERP Enkontrol, desarrollando funcionalidades full-stack con ASP.NET (C#) y React.",
+        "description": "Participé activamente en la modernización del ERP Enkontrol, liderando el análisis de procesos de negocio y el desarrollo de nuevas funcionalidades full-stack con ASP.NET y React.",
         "highlights": [
-            "Modernicé la experiencia de usuario con interfaces responsivas en React.js y TypeScript.",
-            "Desarrollé APIs RESTful en ASP.NET (C#) aplicando principios SOLID y patrones de diseño.",
-            "Lideré y mentoricé a un equipo de desarrollo, gestionando tareas para asegurar entregas a tiempo.",
-            "Diseñé bases de datos y stored procedures en SQL Server para procesos clave del ERP."
+            "Desarrollé interfaces responsivas utilizando React.js, TypeScript, Redux y CSS, mejorando la usabilidad y el rendimiento del sistema.",
+            "Desarrollé APIs RESTful en ASP.NET (C#), aplicando principios SOLID y patrones de diseño para garantizar escalabilidad y mantenibilidad.",
+            "Lideré un equipo de desarrollo, coordinando tareas y asegurando entregas puntuales.",
+            "Realicé el análisis de requerimientos y el diseño de bases de datos en SQL Server, optimizando procesos clave del ERP."
         ],
         "tech_stack": [
             "React",
@@ -60,12 +62,12 @@ export default [
         "date_range": "febrero 2015 - julio 2017",
         "location": "Monterrey, NL.",
         "employment_type": "Tiempo completo",
-        "description": "Desarrollé y di mantenimiento a aplicaciones del ERP comercial Merksyst, trabajando con tecnologías legacy como C/C++ y Delphi Pascal. Contribuí activamente en la migración del sistema a una plataforma web moderna con ASP.NET.",
+        "description": "Desarrollé y di mantenimiento a aplicaciones del ERP comercial Merksyst, y contribuí activamente en la migración del sistema a una plataforma web moderna con ASP.NET.",
         "highlights": [
             "Mantenimiento a un ERP comercial con C/C++, Delphi Pascal y SQL Server.",
             "Participé en la migración del sistema a una plataforma web con ASP.NET MVC.",
-            "Optimicé más de 40 consultas SQL, mejorando el rendimiento general del sistema.",
-            "Resolví más de 300 tickets críticos de soporte y mantenimiento del software."
+            "40+ consultas SQL optimizadas, mejorando el rendimiento general del sistema.",
+            "300+ tickets críticos de soporte resueltos exitosamente, asegurando la satisfacción del cliente."
         ],
         "tech_stack": [
             "C/C++",
@@ -81,7 +83,7 @@ export default [
         "date_range": "septiembre 2014 - enero 2015",
         "location": "Monterrey, NL.",
         "employment_type": "Medio tiempo",
-        "description": "Desarrollé una solución móvil completa para un programa de lealtad del cliente Arca Continental. Fui responsable de crear tanto la aplicación nativa en Android (Java) como el backend en ASP.NET (C#) para la gestión de usuarios y transacciones.",
+        "description": "Desarrollé una solución móvil completa para un programa de lealtad del cliente Arca Continental.",
         "highlights": [
             "Desarrollé una aplicación de lealtad nativa para Android utilizando Java.",
             "Implementé el backend de la aplicación con ASP.NET Web API (C#).",

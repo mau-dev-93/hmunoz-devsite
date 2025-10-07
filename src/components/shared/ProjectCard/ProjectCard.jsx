@@ -22,12 +22,27 @@ const ProjectCard = ({ name, description, status, role, icon, progress_percentag
                 <IconSquare icon={icon} color="primary" />
                 <CustomChip label={status} variant="condensed" size="small" color="black" sx={{ fontSize: 10 }} />
             </Box>
-            <CardMedia
+            {/* <CardMedia
                 component="img"
                 alt={name}
                 height="168"
                 image={imagen_url}
-            />
+            /> */}
+            <CardMedia component="div" sx={{ position: "relative", height: { xs: 168, sm: 168 }, overflow: "hidden" }}>
+                <Box
+                    sx={{
+                        position: "absolute", inset: 0,
+                        backgroundImage: `url(${imagen_url})`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "left top",
+                        transition: "transform 700ms cubic-bezier(.4,0,.2,1)",
+                        transform: "scale(1)",
+                        "&:hover": {
+                            transform: "scale(1.1)"
+                        },
+                    }}
+                />
+            </CardMedia>
             <CardContent sx={{ flexGrow: 1, px: 2 }}>
                 <Box py={2}>
                     <Typography gutterBottom variant="h6" fontWeight={600} component="div">

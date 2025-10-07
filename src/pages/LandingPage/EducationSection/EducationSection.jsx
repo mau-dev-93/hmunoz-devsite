@@ -27,7 +27,7 @@ const Education = () => {
             <Container maxWidth="lg">
                 <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" textAlign="center" mb={8}>
                     <Typography variant="h4" fontWeight="600" color="text.primary" mb={2}>Educación <Box component="span" color="secondary.main">y Formación</Box></Typography>
-                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600 }}>Una base académica sólida complementada con mi pasión por la actualización constante en la industria tecnológica</Typography>
+                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600 }}>Una base académica sólida y mi pasión por la actualización constante.</Typography>
                 </Box>
                 <Box textAlign="center" pb={6}>
                     <Typography variant="h6" fontWeight="600" color="text.primary" mb={4}>Formación Académica</Typography>
