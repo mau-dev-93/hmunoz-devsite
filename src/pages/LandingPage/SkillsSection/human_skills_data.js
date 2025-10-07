@@ -3,37 +3,37 @@ const humanSkills = [
         title: "Liderazgo",
         icon: "ri-team-line",
         color: "warning.main",
-        description: "He liderado equipos en el desarrollo de soluciones web y gestioné tareas para asegurar las entregas de proyectos a tiempo."
+        description: "Experiencia liderando y mentoreando equipos de desarrollo. Gestiono tareas para asegurar entregas puntuales y fomentar la colaboración."
     },
     {
         title: "Comunicación",
         icon: "ri-chat-3-line",
         color: "primary.main",
-        description: "Colaboro en equipos ágiles con Scrum, facilitando una comunicación efectiva y el entendimiento para el éxito de los proyectos."
+        description: "Comunicación efectiva en equipos ágiles (Scrum) para alinear áreas técnicas y de negocio, asegurando el éxito de cada proyecto."
     },
     {
         title: "Resolución de Problemas",
         icon: "ri-lightbulb-flash-line",
         color: "success.main",
-        description: "Analizo errores para proponer soluciones y brindar soporte. También optimizo procesos y consultas para mejorar el rendimiento del sistema."
+        description: "Traduzco problemas de negocio en soluciones técnicas. He optimizado más de 40 consultas SQL y resuelto más de 300 tickets críticos."
     },
     {
         title: "Pensamiento Crítico",
         icon: "ri-brain-line",
         color: "info.main",
-        description: "Analizo requerimientos, diseño bases de datos y flujos de trabajo para procesos clave de cualquier proyecto en el que participe."
+        description: "Mi pensamiento crítico me permite ir más allá del requerimiento. Diseño soluciones y arquitecturas que optimizan procesos y entregan valor real al negocio."
     },
     {
         title: "Adaptabilidad",
         icon: "ri-emotion-happy-line",
         color: "secondary.main",
-        description: "Me adapto rápidamente a diversas tecnologías y herramientas, lo que me permite integrarme eficazmente en diferentes equipos y proyectos."
+        description: "Rápida adaptación a diversos entornos tecnológicos. Experiencia comprobada desde C/C++ y .NET hasta arquitecturas serverless con Node.js y AWS."
     },
     {
         title: "Aprendizaje Continuo",
         icon: "ri-refresh-line",
         color: "error.main",
-        description: "Me mantengo en constante aprendizaje, aplicando nuevas habilidades y conocimientos en proyectos personales y capacitación continua."
+        description: "Impulso mi evolución con proyectos personales usando NestJS y Docker. Complemento mi formación continua en microservicios y DevOps."
     }
 ];
 

@@ -6,13 +6,13 @@ export default [
         "date_range": "enero 2021 - diciembre 2024",
         "location": "Monterrey, NL.",
         "employment_type": "Tiempo completo",
-        "description": "Lideré el desarrollo del e-commerce de talisis.com, diseñando soluciones front-end y back-end. Fui responsable de liberar funcionalidades de pagos y suscripciones para más de 35,000 usuarios activos. Implementé arquitecturas serverless en AWS e integré pasarelas de pago que generaron más de $400,000 MXN en ingresos mensuales.",
+        "description": "Lideré el desarrollo del e-commerce de Talisis, diseñando soluciones full-stack con Node.js y AWS. Fui responsable de implementar funcionalidades de pago y suscripciones para más de 35,000 usuarios activos, generando sobre $400,000 MXN en ingresos mensuales.",
         "highlights": [
-            "Desarrollé interfaces responsivas con React.js y Redux.",
-            "Integré pasarelas de pago de forma segura, generando más de $400,000 MXN en ingresos mensuales.",
-            "Creé APIs RESTful de alto rendimiento y diseñé modelos de datos con SQL Server.",
-            "Aseguré la calidad del código mediante code reviews, testing y monitoreo de logs con AWS CloudWatch.",
-            "Lideré la creación de una aplicación de accesos con QR para eventos masivos.",
+            "Desarrollé interfaces responsivas con React.js, Redux y Material UI.",
+            "Diseñé arquitecturas serverless con AWS Lambda y API Gateway para transacciones seguras.",
+            "Desarrollé APIs RESTful de alto rendimiento y diseñé modelos de datos en SQL Server.",
+            "Aseguré la calidad del código mediante code reviews, testing y monitoreo con AWS CloudWatch.",
+            "Creé una aplicación de accesos con QR para eventos masivos, con monitoreo en tiempo real.",
         ],
         "tech_stack": [
             "React",
@@ -29,39 +29,43 @@ export default [
     },
     {
         "title": "Enkontrol",
-        "duration": "3 años 2 meses",
+        "duration": "3 años",
         "job_title": "Full-Stack Developer",
         "date_range": "julio 2017 - septiembre 2020",
         "location": "San Pedro Garza García, NL.",
         "employment_type": "Tiempo completo",
-        "description": "Contribuí en el desarrollo web del ERP Enkontrol con ASP.NET. Lideré un equipo de desarrollo, gestionando tareas para asegurar las entregas a tiempo.",
+        "description": "Contribuí a la modernización del ERP Enkontrol, desarrollando funcionalidades full-stack con ASP.NET (C#) y React.",
         "highlights": [
-            "Desarrollé interfaces responsivas con React.js, TypeScript y Redux.",
-            "Creé APIs RESTful en ASP.NET Web API (C#) utilizando arquitectura de capas y patrones de diseño.",
-            "Analicé requerimientos y diseñé bases de datos, vistas y stored procedures en SQL Server para procesos clave del ERP.",
-            "Lideré y gestioné un equipo de desarrollo para garantizar la entrega de proyectos en tiempo."
+            "Modernicé la experiencia de usuario con interfaces responsivas en React.js y TypeScript.",
+            "Desarrollé APIs RESTful en ASP.NET (C#) aplicando principios SOLID y patrones de diseño.",
+            "Lideré y mentoricé a un equipo de desarrollo, gestionando tareas para asegurar entregas a tiempo.",
+            "Diseñé bases de datos y stored procedures en SQL Server para procesos clave del ERP."
         ],
         "tech_stack": [
             "React",
             "TypeScript",
             "Redux",
-            "ASP.NET",
             "C#",
+            "ASP.NET",
+            "SOLID",
+            "Design Patterns",
             "Git",
             "SQL Server"
         ]
     },
     {
         "title": "TCA Software Solutions",
-        "duration": "2 años 4 meses",
+        "duration": "2.5 años",
         "job_title": "Software Developer",
         "date_range": "febrero 2015 - julio 2017",
         "location": "Monterrey, NL.",
         "employment_type": "Tiempo completo",
-        "description": "Desarrollé y di mantenimiento a aplicaciones del ERP comercial Merksyst con C/C++ y Delphi Pascal. Contribuí en la migración del ERP a una plataforma web moderna con ASP.NET MVC.",
+        "description": "Desarrollé y di mantenimiento a aplicaciones del ERP comercial Merksyst, trabajando con tecnologías legacy como C/C++ y Delphi Pascal. Contribuí activamente en la migración del sistema a una plataforma web moderna con ASP.NET.",
         "highlights": [
-            "Optimizé más de 40 consultas SQL",
-            "Resolví más de 300 tickets críticos, lo que mejoró el rendimiento general del sistema.",
+            "Mantenimiento a un ERP comercial con C/C++, Delphi Pascal y SQL Server.",
+            "Participé en la migración del sistema a una plataforma web con ASP.NET MVC.",
+            "Optimicé más de 40 consultas SQL, mejorando el rendimiento general del sistema.",
+            "Resolví más de 300 tickets críticos de soporte y mantenimiento del software."
         ],
         "tech_stack": [
             "C/C++",
@@ -77,10 +81,11 @@ export default [
         "date_range": "septiembre 2014 - enero 2015",
         "location": "Monterrey, NL.",
         "employment_type": "Medio tiempo",
-        "description": "Desarrollé una aplicación nativa en Android (Java) para un programa de lealtad de Arca Continental. Implementé el backend con ASP.NET Web API (C#) y SQL Server para la gestión de usuarios y transacciones.",
+        "description": "Desarrollé una solución móvil completa para un programa de lealtad del cliente Arca Continental. Fui responsable de crear tanto la aplicación nativa en Android (Java) como el backend en ASP.NET (C#) para la gestión de usuarios y transacciones.",
         "highlights": [
-            "Desarrollo de aplicación móvil nativa en Android.",
-            "Implementación del backend para gestión de usuarios y transacciones.",
+            "Desarrollé una aplicación de lealtad nativa para Android utilizando Java.",
+            "Implementé el backend de la aplicación con ASP.NET Web API (C#).",
+            "Desarrollé un panel administrativo web para la gestión de usuarios y recompensas."
         ],
         "tech_stack": [
             "Java",

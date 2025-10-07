@@ -58,6 +58,7 @@ const HeroSection = () => {
                                 <Typography variant="h2" fontWeight="600" mb={0.75}>{profile.personal.name}</Typography>
                                 <Typography variant="h5" fontWeight="600" color="secondary" gutterBottom>{profile.personal.role}</Typography>
                                 <Typography variant={isMobile ? "body2" : "body1"} fontWeight="400" color="text.secondary">{profile.personal.resume}</Typography>
+                                 <Typography variant={isMobile ? "body2" : "body1"} fontWeight="400" color="text.secondary">{profile.personal.resume2}</Typography>
                             </Grid>
                             <Box display="flex" flexDirection="column" width={{ xs: "100%", md: "auto" }} textAlign={{ xs: "center", md: "left" }} gap={1} mb={2}>
                                 <ContactDetail text={profile.personal.email} icon={<i className="ri-mail-line" />} isMobile={isMobile} actionHref={`mailto:${profile.personal.email}`} />

@@ -23,8 +23,12 @@ const AboutMeSection = () => {
                     <Grid size={{ xs: 12, lg: 6 }} mb={3}>
                         <Box mb={3}>
                             <Typography variant="h4" fontWeight="600" color="text.primary" mb={2}>Sobre <Box component="span" color="secondary.main">Mí</Box></Typography>
+                            <Typography variant="body1" fontWeight="400" color="text.secondary" gutterBottom>
+                                Soy <strong>Mauricio Muñoz</strong>, desarrollador <strong>Full-Stack</strong> de Monterrey, México.
+                                A lo largo de mi experiencia he aprendido a tomar una idea o problema y convertirla en un producto sólido, escalable y mantenible.
+                            </Typography>
                             <Typography variant="body1" fontWeight="400" color="text.secondary">
-                                ¡Hola! Soy <strong>Mauricio Muñoz</strong>, un <strong>Full-Stack Developer</strong> de Monterrey, Nuevo León. Cuento con 10+ años de experiencia en el diseño y construcción de plataformas web modernas. Me especializo en tecnologías como React.js, Node.js y AWS para crear soluciones escalables y seguras. Mi enfoque combina la arquitectura sólida y las buenas prácticas para garantizar el éxito de cada proyecto. Me impulsa la innovación tecnológica, el aprendizaje continuo y la pasión por brindar soluciones y valor real.
+                                En más de 10 años he participado en productos usados por miles de personas en sectores de <strong>Retail, Construcción y Educación</strong>, con el objetivo de ver usuarios satisfechos y valor real generado tras cada entrega.
                             </Typography>
                         </Box>
                         <HighlightBox textAlign='left' alignItems='left' sx={{ marginBottom: 4 }}>
@@ -32,11 +36,11 @@ const AboutMeSection = () => {
                             <Grid container spacing={2}>
                                 <Grid size={{ xs: 12, md: 6 }}>
                                     <Typography variant="subtitle1" color="secondary.main" fontWeight={600} mb={1}>🎨 Frontend Development</Typography>
-                                    <Typography variant="body2" color="text.secondary">Diseño y desarrollo de interfaces de usuario modernas y responsivas. Mi trabajo se centra en React, Redux, TypeScript y Material UI, garantizando una experiencia de usuario fluida y optimizada para el rendimiento.</Typography>
+                                    <Typography variant="body2" color="text.secondary">Creo interfaces intuitivas y responsivas, con buen rendimiento y consistencia visual. Utilizo <strong>React, TypeScript, Redux y Material UI</strong> para entregar componentes reutilizables y bien probados, preparados para crecer con el producto.</Typography>
                                 </Grid>
                                 <Grid size={{ xs: 12, md: 6 }}>
                                     <Typography variant="subtitle1" color="secondary.main" fontWeight={600} mb={1}>⚙️ Backend Development</Typography>
-                                    <Typography variant="body2" color="text.secondary">Desarrollo APIs RESTful de alto rendimiento en Node.js y .NET. Implemento modelos de datos en bases de datos SQL Server y diseño arquitecturas serverless con AWS. Mi prioridad es la seguridad y la eficiencia en las operaciones escenciales del negocio.</Typography>
+                                    <Typography variant="body2" color="text.secondary">Diseño microservicios y arquitecturas desacopladas en <strong>AWS</strong>, construyo APIs RESTful seguras y de alto rendimiento con <strong>Node.js, NestJS y .NET</strong>. Sigo fortaleciendo mis conocimientos en DevOps y NoSQL para mejorar mis entregas continuas.</Typography>
                                 </Grid>
                             </Grid>
                         </HighlightBox>
@@ -72,9 +76,9 @@ const AboutMeSection = () => {
                             <HeroStatCard
                                 color="success"
                                 variant='outlined'
-                                title="4+ industrias"
-                                subtitle="trayectoria profesional"
-                                icon={<i className="ri-apps-2-line"></i>}
+                                title="35k+ usuarios"
+                                subtitle="activos mensuales"
+                                icon={<i className="ri-group-line"></i>}
                             />
                         </Grid>
                         <Grid size={{ xs: 6 }}>
@@ -82,7 +86,7 @@ const AboutMeSection = () => {
                                 color="secondary"
                                 variant='outlined'
                                 title="Arquitecturas"
-                                subtitle="escalables & seguras"
+                                subtitle="serverless & seguras"
                                 icon={<i className="ri-stack-line"></i>}
                             />
                         </Grid>
@@ -98,8 +102,8 @@ const AboutMeSection = () => {
                     </Grid>
                     <Grid size={{ xs: 12 }}>
                         <HighlightBox gradientDirection='center' sx={{ py: 4 }}>
-                            <Typography variant="h6" fontWeight={700}>¿Hasta dónde puede llegar una idea con propósito?</Typography>
-                            <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 800 }}>Cada proyecto es una oportunidad para construir sistemas que trasciendan la funcionalidad. <br />Mi compromiso es crear tecnología que conecte con lo humano, brinde seguridad y genere valor duradero.</Typography>
+                            <Typography variant="subtitle1" fontWeight={700}>🚀 ¿Hasta dónde puede llegar una idea con propósito?</Typography>
+                            <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 800 }}>Mi filosofía como desarrollador es fundamental: construir sistemas que resuelvan problemas reales. Por eso mi compromiso es crear tecnología segura, centrada en el usuario y que genere un impacto positivo y duradero.</Typography>
                         </HighlightBox>
                     </Grid>
                 </Grid>

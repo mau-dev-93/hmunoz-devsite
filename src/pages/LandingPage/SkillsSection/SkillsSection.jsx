@@ -13,7 +13,7 @@ const SkillsSection = () => {
             <Container maxWidth="lg">
                 <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" textAlign="center">
                     <Typography variant="h4" fontWeight="600" color="text.primary" mb={2}>Habilidades</Typography>
-                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600 }}>Combinación de habilidades técnicas y habilidades humanadas para crear soluciones integrales</Typography>
+                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600 }}>La combinación de dominio técnico y un enfoque humano para construir software con propósito.</Typography>
                 </Box>
                 <Typography variant="h6" color="text.primary" fontWeight={600} mt={8} mb={2} textAlign="center">Habilidades Técnicas</Typography>
                 <Grid container spacing={3} justifyContent="center" alignItems="stretch" width={'100%'}>

@@ -4,48 +4,50 @@ import devsitePic from '@/assets/images/projects/devsite.png';
 
 export default [
     {
-        "name": "Sitio de Pedidos Online",
-        "description": "Un sistema de e-commerce completo, desde la visualización del menú hasta la gestión de pedidos, diseñado para digitalizar y optimizar negocios de comida.",
+        "name": "Plataforma E-commerce para Restaurantes",
+        "description": "Plataforma e-commerce que optimiza las operaciones de un negocio gastronómico. Abarca todo el flujo de un pedido, incluyendo personalización y tracking en tiempo real. Su arquitectura está diseñada para ser una solución robusta y fácilmente adaptable.",
         "status": "En desarrollo",
         "icon": "ri-shopping-cart-line",
         "progress_percentage": 30,
-        "tech_stack": ["React", "JavaScript", "NestJS", "PostgreSQL", "AWS"],
+        "tech_stack": ["React", "TypeScript", "NestJS", "PostgreSQL", "EC2", "AWS"],
         "features": [
-            "Diseño Responsivo",
-            "APIs RESTful",
-            "Seguimiento de Pedidos",
-            "Pasarelas de Pago Integradas",
-            "Gestión de Inventario y Órdenes",
-            "Panel Administrativo"
+            "Catálogo de Productos",
+            "Personalización de Pedidos",
+            "Proceso de Checkout",
+            "Integración con Pasarelas de Pago",
+            "Seguimiento de Órdenes en Tiempo Real",
+            "Panel de Administración"
         ],
         "imagen_url": ecommercePic,
         "github_repo_url": "https://github.com/usuario/portfolio-website",
         "live_demo_url": "https://portfolio-website-demo.netlify.app",
-        "role": "Full Stack Developer"
+        "role": "Full Stack Developer",
+        "disabled": true
     },
     {
-        "name": "ERP Comercial para PYMEs",
-        "description": " Un sistema de planificación de recursos empresariales diseñado para optimizar las operaciones de pequeñas y medianas empresas. Incluye módulos para la gestión de inventarios, facturación, punto de venta y reportes analíticos para una toma de decisiones informada.",
+        "name": "ERP Cloud para PYMES",
+        "description": "Este proyecto es la culminación de mi experiencia en el sector ERP. Una plataforma de planificación de recursos diseñada desde cero para la nube, con el objetivo de optimizar las operaciones críticas de las PYMES. Centraliza desde la gestión de inventario y facturación hasta el análisis de datos, facilitando una toma de decisiones inteligente.",
         "status": "En desarrollo",
         "icon": "ri-check-line",
         "progress_percentage": 20,
         "tech_stack": ["React.js", "TypeScript", "AWS API Gateway", "AWS Lambda", "MySQL"],
         "features": [
-            "Autenticación de Usuarios",
-            "Módulo de Facturación y Ventas",
-            "Módulo de Ventas, Compras e Inventarios",
+            "Autenticación y Roles de Usuario",
+            "Facturación y Cuentas por Cobrar",
+            "Inventario, Compras y Proveedores",
             "Punto de Venta (POS)",
-            "Gestión de Clientes y Proveedores",
-            "Reportes e Informes Analíticos"
+            "Gestión de Clientes (CRM Básico)",
+            "Dashboard con Reportes Analíticos"
         ],
         "imagen_url": erpPic,
         "github_repo_url": "https://github.com/usuario/task-manager-app",
         "live_demo_url": "https://task-manager-demo.herokuapp.com",
-        "role": "Full Stack Developer"
+        "role": "Full Stack Developer",
+        "disabled": true
     },
     {
-        "name": "Este devsite profesional",
-        "description": "Este sitio web es una iniciativa para consolidar y mostrar mi experiencia, habilidades y proyectos. Construido con tecnologías modernas, sirve como una plataforma para aprender continuamente y exhibir mi trabajo de manera profesional a reclutadores y colegas.",
+        "name": "Portafolio Profesional",
+        "description": "Este portafolio es mi carta de presentación digital. Un proyecto diseñado para centralizar mi experiencia, habilidades y proyectos en una plataforma interactiva. Creado con un stack de Front-end moderno, es también un espacio de aprendizaje continuo donde aplico y refino mis conocimientos en desarrollo web y UI/UX.",
         "status": "En desarrollo",
         "icon": "ri-check-line",
         "progress_percentage": 80,
@@ -59,6 +61,7 @@ export default [
         "imagen_url": devsitePic,
         "github_repo_url": "https://github.com/usuario/task-manager-app",
         "live_demo_url": "https://task-manager-demo.herokuapp.com",
-        "role": "Front-end Developer"
+        "role": "Front-end Developer",
+        "disabled": true
     }
 ]

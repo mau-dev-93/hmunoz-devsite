@@ -5,7 +5,8 @@ const profile = {
     personal: {
         name: "Mauricio Muñoz",
         role: "Full-Stack Developer",
-        resume: "Construyo aplicaciones modernas y seguras que transcienden más allá de la funcionalidad. Mi objetivo es generar un impacto real, una transformación y un valor en cada solución que creo.",
+        resume: 'Transformo ideas en soluciones claras, seguras y confiables.',
+        resume2: 'En cada entrega busco un valor real y mejora continua.',
         email: "hmmunozf@gmail.com",
         phone: "8120136619",
         location: "Monterrey, Nuevo León, México",
