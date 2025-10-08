@@ -2,7 +2,7 @@ import { alpha } from "@mui/system";
 
 export const MuiButton = {
     styleOverrides: {
-        root: (/*{ theme }*/) => ({
+        root: ({ theme }) => ({
             borderRadius: '6px',
             textTransform: 'none',
             // fontWeight: 700,
@@ -10,6 +10,13 @@ export const MuiButton = {
             '& .MuiButton-startIcon, & .MuiButton-endIcon': {
                 // marginInline: theme.spacing(0.75),
             },
+            '&.Mui-disabled': {
+                border: `1px dashed ${alpha('#fff', .25)}`,
+                color: theme.palette.action.disabled,
+                backgroundColor: theme.palette.action.disabledBackground,
+                boxShadow: 'none',
+                cursor: 'not-allowed',
+            }
         }),
     },
     variants: [

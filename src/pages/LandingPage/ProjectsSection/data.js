@@ -19,7 +19,7 @@ export default [
             "Panel de Administración"
         ],
         "imagen_url": ecommercePic,
-        "github_repo_url": "https://github.com/usuario/portfolio-website",
+        "github_repo_url": "https://github.com/mau-dev-93/casa-parmesana",
         "live_demo_url": "https://portfolio-website-demo.netlify.app",
         "role": "Full Stack Developer",
         "disabled": true
@@ -61,8 +61,8 @@ export default [
              "Multiidioma (próximamente)",
         ],
         "imagen_url": devsitePic,
-        "github_repo_url": "https://github.com/usuario/task-manager-app",
-        "live_demo_url": "https://task-manager-demo.herokuapp.com",
+        "github_repo_url": "https://github.com/mau-dev-93/hmunoz-devsite",
+        "live_demo_url": null,
         "role": "Front-end Developer",
         "disabled": true
     }

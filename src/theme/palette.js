@@ -47,6 +47,11 @@ export const palette = {
         contrastText: colors.slateGray300,
         disabled: colors.inputGray,
     },
+    action: {
+        disabled: 'rgba(255,255,255,.55)',            // color del texto/ícono
+        disabledBackground: 'rgba(255,255,255,.06)',  // fondo
+        disabledOpacity: 1,                           // evita que MUI baje la opacidad global
+    },
     input: {
         main: colors.inputGray,
         contrastText: colors.foreground,

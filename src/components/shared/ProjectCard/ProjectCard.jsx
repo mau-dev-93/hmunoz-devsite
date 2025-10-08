@@ -75,12 +75,25 @@ const ProjectCard = ({ name, description, status, role, icon, progress_percentag
                 </Box>
             </CardContent>
             <CardActions disableSpacing sx={{ p: 2, mt: 'auto', flexDirection: { xs: 'column', sm: 'row' }, gap: 2 }}>
-                <Button variant="outlined" color="input" fullWidth size='medium' href={github_repo_url} target="_blank" startIcon={<i className='ri-github-line'></i>}>
-                    <Typography variant="body2" color="text.primary">Ver código</Typography>
-                </Button>
-                <Button variant="contained" color="primary" fullWidth size='medium' href={live_demo_url} target="_blank" startIcon={<i className='ri-external-link-line'></i>}>
-                    <Typography variant="body2" color="text.primary">Ver proyecto</Typography>
-                </Button>
+                {live_demo_url && (
+                    <Button
+                        data-state="soon"
+                        aria-disabled="true"
+                        tabIndex={-1}
+                        variant="contained"
+                        color="primary"
+                        title='Próximamente'
+                        fullWidth
+                        size='medium'
+                        disabled
+                        onClick={(e) => e.preventDefault()}
+                        href={live_demo_url}
+                        target="_blank"
+                        startIcon={<i className='ri-external-link-line'></i>}
+                    >
+                        <Typography variant="body2" color="inherit">Ver proyecto</Typography>
+                    </Button>
+                )}
             </CardActions>
         </Card>
     )
