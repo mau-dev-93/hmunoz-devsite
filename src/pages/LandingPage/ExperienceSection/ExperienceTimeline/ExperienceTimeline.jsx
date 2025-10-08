@@ -27,6 +27,7 @@ const ExperienceTimeline = ({ experiences }) => {
                         dateRange={experience.date_range}
                         location={experience.location}
                         employmentType={experience.employment_type}
+                        employmentLocation={experience.employment_location}
                         description={experience.description}
                         highlights={experience.highlights}
                         techStack={experience.tech_stack}
@@ -67,6 +68,7 @@ const ExperienceTimeline = ({ experiences }) => {
                             dateRange={experience.date_range}
                             location={experience.location}
                             employmentType={experience.employment_type}
+                            employmentLocation={experience.employment_location}
                             description={experience.description}
                             highlights={experience.highlights}
                             techStack={experience.tech_stack}
