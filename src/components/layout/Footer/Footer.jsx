@@ -1,18 +1,21 @@
-import { Box, Container, Grid, Typography, Divider, Link } from "@mui/material";
+import { Box, Container, Grid, Typography, Divider, Link, Button } from "@mui/material";
 
 // shared
 import SocialIconButton from "../../shared/SocialIconButton/SocialIconButton.jsx";
 import Logo from "../../shared/Logo/Logo.jsx";
 
+// utils
+import { downloadCV } from "@/utils/downloadCV.js";
+
 const Footer = () => {
     return (
-        <Box component="footer" bgcolor="background.paper" pt={6} pb={4}>
+        <Box component="footer" bgcolor="background.paper" pt={6} pb={{ xs: 2, sm: 4 }}>
             <Container maxWidth="lg">
                 <Grid container spacing={4}>
                     <Grid size={{ xs: 12, md: 5 }}>
-                        <Logo  isMobile={false} sx={{ marginBottom: 2 }} />
+                        <Logo isMobile={false} sx={{ marginBottom: 2 }} />
                         <Typography variant="body2" color="text.secondary" mb={2} lineHeight={1.8}>
-                            Desarrollador Full Stack especializado en crear soluciones tecnológicas que mejoran la forma en que las personas interactúan con los sistemas. Combinando experiencia técnica con habilidades humanas para entregar valor real.
+                            Desarrollador Full-Stack. Entrego valor real con claridad, seguridad y mejora continua.
                         </Typography>
                         <Box display="flex" gap={1.5}>
                             <SocialIconButton size="medium" href="https://github.com/mau-dev-93" icon={<i className='ri-github-line'></i>} />
@@ -24,10 +27,10 @@ const Footer = () => {
                         <Box display="flex" flexDirection="column" gap={1.5}>
                             <Link href="#hero_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">Inicio</Typography></Link>
                             <Link href="#aboutme_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">Sobre mí</Typography></Link>
-                            <Link href="#projects_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">Proyectos</Typography></Link>
                             <Link href="#experience_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">Experiencia</Typography></Link>
+                            <Link href="#projects_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">Proyectos</Typography></Link>
                             <Link href="#skills_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">Habilidades</Typography></Link>
-                            <Link href="#education_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">Educación</Typography></Link>
+                            <Link href="#education_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">Formación</Typography></Link>
                             <Link href="#humanside_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">Lado Humano</Typography></Link>
                         </Box>
                     </Grid>
@@ -49,11 +52,20 @@ const Footer = () => {
                         </Box>
                     </Grid>
                 </Grid>
-                <Divider sx={{ my: 4 }} />
-                <Box display="flex" justifyContent="space-between" alignItems="center" flexWrap="wrap">
+                <Divider sx={{ mt: 4, mb: { xs: 2, sm: 4 } }} />
+                <Box display="flex" justifyContent={{ xs: "center", sm: "space-between" }} alignItems="center" flexWrap="wrap" gap={1}>
                     <Typography variant="caption" color="text.secondary">
                         © 2025 Mauricio Muñoz. Hecho con <Box component="span" color="error.main"><i className='ri-heart-line'></i></Box> y mucho código.
                     </Typography>
+                    <Button
+                        variant='outlined'
+                        color="input"
+                        size="small"
+                        startIcon={<i className='ri-download-2-line'></i>}
+                        onClick={downloadCV}
+                    >
+                        <Typography variant="caption" whiteSpace="nowrap">Descargar CV</Typography>
+                    </Button>
                 </Box>
             </Container>
         </Box>

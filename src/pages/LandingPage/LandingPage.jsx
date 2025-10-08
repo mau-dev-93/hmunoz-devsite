@@ -16,8 +16,8 @@ const LandingPage = () => {
     return <>
         <HeroSection />
         <AboutMeSection />
-        <ProjectsSection />
         <ExperienceSection />
+        <ProjectsSection />
         <SkillsSection />
         <EducationSection />
         <HumanSideSection />

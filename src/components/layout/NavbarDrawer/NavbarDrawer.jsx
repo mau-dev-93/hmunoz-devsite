@@ -28,7 +28,7 @@ const NavbarDrawer = () => {
     return (
         <React.Fragment>
             <IconButton
-                edge={"start"}
+                edge={"end"}
                 color="inherit"
                 aria-label="menu"
                 onClick={toggleDrawer(!openDrawer)}
