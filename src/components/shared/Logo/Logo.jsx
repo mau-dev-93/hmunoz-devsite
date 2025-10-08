@@ -15,7 +15,7 @@ const Logo = ({ isMobile, sx }) => {
                 document.getElementById("hero_section")
                     ?.scrollIntoView({ behavior: "smooth" });
             }}>
-            <Typography variant="h6" color="primary" fontWeight="bold" component="span" noWrap>{"{ M }"}</Typography>
+            <Typography variant="h6" color="primary" fontWeight="bold" component="span" noWrap>{"[ M ]"}</Typography>
             {!isMobile && (
                 <Box component="span" sx={{ letterSpacing: '0.5' }}>
                     <Typography variant="h6" color="text.primary" fontWeight="600" >Mauricio</Typography>

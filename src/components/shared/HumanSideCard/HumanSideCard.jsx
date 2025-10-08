@@ -4,6 +4,7 @@ import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
 import IconSquare from "../IconSquare/IconSquare";
 
 const HumanSideCard = ({
+    icon = '',
     title = "Human side title",
     imageUrl = 'https://images.unsplash.com/photo-1736479494478-d1bb4fd5d09d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMGZhbWlseSUyMHRvZ2V0aGVyJTIwbG92ZSUyMGluc3BpcmF0aW9ufGVufDF8fHx8MTc1Nzg4NTMwN3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
     description = 'This is a description of the human side card. It provides insights into personal motivations, passions, and inspirations as a person and programmer.'
@@ -21,7 +22,7 @@ const HumanSideCard = ({
                 flexDirection: "column",
             }}>
             <Box position="absolute" display="flex" justifyContent="space-between" width="100%" p={1.5}>
-                <IconSquare icon={'ri-calendar-line'} color="secondary" variant="outlined" />
+                <IconSquare icon={icon} color="secondary" variant="outlined" />
             </Box>
             <CardMedia component="div" sx={{ position: "relative", height: 260, overflow: "hidden" }}>
                 <Box

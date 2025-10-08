@@ -5,5 +5,5 @@ export const SECTIONS = [
     { id: "experience_section", label: "Experiencia" },
     { id: "skills_section", label: "Habilidades" },
     { id: "education_section", label: "Educación" },
-    { id: "humanside_section", label: "Código y Vida" },
+    { id: "humanside_section", label: "Lado Humano" },
 ];

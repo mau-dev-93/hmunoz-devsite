@@ -57,8 +57,8 @@ const SkillsSection = () => {
                         gap: 1
                     })}>
                     <Box display="flex" alignItems="center" gap={0.5} color="primary.main" mb={1}>
-                        <i className='ri-award-line' style={{ marginRight: 4, fontSize: 24, color: "inherit" }}></i>
-                        <Typography variant="h6" color="text.primary" fontWeight={600}>Más Allá Del Código</Typography>
+                        <i className='ri-code-line' style={{ marginRight: 4, fontSize: 24, color: "inherit" }}></i>
+                        <Typography variant="h6" color="text.primary" fontWeight={700}>Más Allá del Código</Typography>
                     </Box>
                     <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 650, mb: 2 }}>
                         Más allá del código, combino mis habilidades técnicas con liderazgo, comunicación y pensamiento crítico. El resultado: <strong>productos sólidos, seguros y mantenibles</strong>, con entregas constantes y aprendizaje continuo.

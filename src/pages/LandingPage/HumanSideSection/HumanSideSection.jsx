@@ -14,7 +14,7 @@ const HumanSideSection = () => {
         <Box id="humanside_section" component="section" bgcolor="background.default" py={{ xs: 8, md: 10 }}>
             <Container maxWidth="lg">
                 <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" textAlign="center" mb={8}>
-                    <Typography variant="h4" fontWeight="600" color="text.primary" gutterBottom>Código y <Box component="span" color="secondary.main">Vida</Box></Typography>
+                    <Typography variant="h4" fontWeight="600" color="text.primary" gutterBottom>Lado <Box component="span" color="secondary.main">Humano</Box></Typography>
                     <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600 }}>Pasiones que me definen como profesional y como persona.</Typography>
                 </Box>
                 <Box
@@ -51,6 +51,7 @@ const HumanSideSection = () => {
                                 title={it.title}
                                 description={it.description}
                                 imageUrl={it.image_url}
+                                icon={it.icon}
                             />
                         </Box>
                     ))}
