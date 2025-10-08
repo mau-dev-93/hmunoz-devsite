@@ -6,7 +6,7 @@ import CustomChip from '../CustomChip/CustomChip';
 import HighlightList from '../HighlightList/HighlightList';
 
 const ExperienceCard = ({ title, duration, jobTitle, dateRange, location, employmentType, employmentLocation, isMobile, description, highlights = [], techStack = [] }) => {
-    const employmentLocationColor = employmentLocation === 'Remoto' ? 'secondary' : (employmentLocation === 'Híbrido' ? 'info' : 'warning');
+    const employmentLocationColor = employmentLocation === 'Remoto' ? 'secondary' : (employmentLocation === 'Híbrido' ? 'success' : 'warning');
     
     return (
         <Card sx={{ borderRadius: 3, p: 1 }} variant='outlined'>

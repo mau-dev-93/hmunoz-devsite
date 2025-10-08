@@ -13,7 +13,7 @@ export default [
         icon: 'ri-road-map-line',
         image_url: highwayPic, // Persona tocando guitarra
         description: "Soy Héctor Mauricio Muñoz Fonseca, me gusta que me llamen Mauricio. Tengo 32 años, esposo y padre, de Monterrey, México. Desde niño fui de preguntas y de música: la batería y guitarra me enseñaron disciplina y creatividad. En bachillerato, sin tener claro mi rumbo, en la asignatura Orientación Vocacional descubro la carrera “Multimedia y Animación Digital”. No era gamer, aficionado de algunos juegos tal vez, pero en esas materias hubo un clic: la programación. Descubrí un medio para crear desde cero. Hice prácticas laborales en una empresa de telefonía con Android (Java) y desde ahí empecé mi camino como desarrollador full-stack. Hoy sigo evolucionando —entre IA, frameworks, devOps, contenedores y Kubernetes— con la misma curiosidad de siempre y el objetivo de entregar valor real en cada proyecto.",
-        span: { xs: { c: 12, r: 1 }, sm: { c: 6, r: 1 }, md: { c: 8, r: 1 } }
+        span: { xs: { c: 12, r: 1 }, sm: { c: 12, r: 1 }, md: { c: 8, r: 1 } }
     },
     {
         id: "familia",
@@ -21,7 +21,7 @@ export default [
         icon: 'ri-home-2-line',
         image_url: familyPic, // Familia unida
         description: "Todo lo que hago comienza y termina con mi familia. Ellos son la razón de mi esfuerzo y mi fuente de inspiración constante. Mi trabajo es más que una profesión; es mi herramienta para construir un entorno estable y un futuro brillante para las personas que más quiero.",
-        span: { xs: { c: 12, r: 1 }, sm: { c: 6, r: 2 }, md: { c: 4, r: 1 } }
+        span: { xs: { c: 12, r: 1 }, sm: { c: 6, r: 1 }, md: { c: 4, r: 1 } }
     },
     {
         id: "valores",
@@ -45,7 +45,7 @@ export default [
         icon: 'ri-restaurant-line',
         image_url: pizzaPic, // Persona cocinando pizza
         description: "Me apasiona el proceso artesanal de cocinar pizza, desde preparar la masa hasta elegir los mejores ingredientes. He descubierto que, al igual que en el desarrollo de software, la cocina requiere una mezcla de paciencia, precisión y amor por los detalles. Al final, tanto una buena pizza como una buena aplicación son una forma de crear y compartir algo valioso con los demás.",
-        span: { xs: { c: 12, r: 2 }, sm: { c: 12, r: 2 }, md: { c: 4, r: 2 } } // ALTO Y ESTRECHO (tipo tu mock)
+        span: { xs: { c: 12, r: 1 }, sm: { c: 6, r: 2 }, md: { c: 4, r: 1 } } // ALTO Y ESTRECHO (tipo tu mock)
     },
     {
         id: "coding",
@@ -61,6 +61,6 @@ export default [
         icon: 'ri-music-2-line',
         image_url: guitarPic, // Taza de café y laptop
         description: "La música fue mi primer espacio creativo. Aprendí ritmo, escucha y estructura; con la improvisación, avanzar sin partitura. Hoy es mi medio de sublimación y libertad mental: decanto emociones, ordeno ideas y vuelvo claro. Ese enfoque guía mi código: empezar simple, iterar con intención y hallar armonía entre idea, diseño y ejecución. Crear es conectar; la música me lo recuerda.",
-        span: { xs: { c: 12, r: 1 }, sm: { c: 6, r: 1 }, md: { c: 4, r: 1 } }
+        span: { xs: { c: 12, r: 1 }, sm: { c: 6, r: 1 }, md: { c: 8, r: 1 } }
     },
 ]
