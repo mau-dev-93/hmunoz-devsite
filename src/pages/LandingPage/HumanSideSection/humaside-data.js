@@ -2,7 +2,7 @@ import highwayPic from '@/assets/images/human-side/highway.png';
 import guitarPic from '@/assets/images/human-side/guitar.jpg';
 import familyPic from '@/assets/images/human-side/family_2.jpg';
 import justicePic from '@/assets/images/human-side/universe.png';
-import philosophyPic from '@/assets/images/human-side/book.png';
+import philosophyPic from '@/assets/images/human-side/analisis.png';
 import pizzaPic from '@/assets/images/human-side/pizza.png';
 import developerPic from '@/assets/images/human-side/react.jpg';
 
@@ -32,11 +32,11 @@ export default [
         span: { xs: { c: 12, r: 1 }, sm: { c: 6, r: 1 }, md: { c: 4, r: 1 } }
     },
     {
-        id: "filosofia",
-        title: "Filosofía",
+        id: "analitico",
+        title: "Proceso analítico",
         icon: 'ri-book-open-line',
         image_url: philosophyPic, // Libros apilados
-        description: "La filosofía y el psicoanálisis han transformado mi perspectiva, llevándome a reflexionar sobre mis deseos y el impacto de mis acciones. Llevo esta introspección al desarrollo de software, donde me permite abordar los problemas con mayor empatía para crear soluciones que respondan a necesidades humanas reales.",
+        description: "Antes de construir, defino el sentido de la idea y el valor que entregará. Evalúo impacto, riesgos y compensaciones; mapeo escenarios y priorizo necesidades. Como en un lienzo, trazo el bosquejo y, a partir de un borrador, materializo. Este hábito también lo aplico en lo cotidiano —en casa y en lo personal— para decidir mejor y ejecutar con claridad.",
         span: { xs: { c: 12, r: 1 }, sm: { c: 6, r: 1 }, md: { c: 4, r: 1 } }
     },
     {
@@ -49,7 +49,7 @@ export default [
     },
     {
         id: "coding",
-        title: "Codificando al mundo",
+        title: "Código para transformar",
         icon: 'ri-code-s-slash-line',
         image_url: developerPic, // Taza de café y laptop
         description: "Busco constantemente problemas no resueltos como oportunidades para generar un cambio. La programación es mi medio para crear y conectar con ese propósito. La satisfacción de ver los resultados de este proceso es lo que alimenta mi pasión por seguir aprendiendo y mejorando cada día.",

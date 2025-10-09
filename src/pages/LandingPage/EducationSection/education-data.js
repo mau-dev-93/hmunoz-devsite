@@ -11,6 +11,6 @@ export default [
         institution: "Universidad Autónomas de Nuevo León",
         dateRange: "2010 - 2014",
         status: "Titulado",
-        specialties: ["Desarrollo de videojuegos 2D & 3D", "Programación de Software", "Desarrollo Móvil", "Desarrollo Web"]
+        specialties: ["Desarrollo Web (PHP, HTML, CSS)", "Videojuegos (C++ & OpenGL)", "Desarrollo Android (Java)", "Bases de Datos (SQL Server & MySQL)"]
     }
 ]
