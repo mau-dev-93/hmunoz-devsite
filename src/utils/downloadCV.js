@@ -1,4 +1,4 @@
-export const CV_URL = "https://personal-mauricio.s3.us-east-1.amazonaws.com/Mauricio-Munoz-Resume-202509.pdf";
+export const CV_URL = "https://personal-mauricio.s3.us-east-1.amazonaws.com/cv/Mauricio-Munoz-Resume.pdf";
 export const CV_NAME = "Mauricio-Munoz-CV.pdf";
 
 export const downloadCV = (e) => {
