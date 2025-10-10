@@ -21,7 +21,7 @@ import profile from '../../../data/profile';
 const HeroSection = () => {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-    
+    /* comentario */
     return (
         <Box id="hero_section" component="section" display="flex" alignItems="center" justifyContent="center" position="relative" bgcolor="background" sx={{ minHeight: { xs: '100svh', md: '80vh' } }}>
             <Box position="absolute"
