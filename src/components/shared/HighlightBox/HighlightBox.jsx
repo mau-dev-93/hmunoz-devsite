@@ -13,6 +13,7 @@ const HighlightBox = ({ children, gradientDirection = 'to right', textAlign = 'c
     return (
         <Box
             display="flex"
+            role="region"
             flexDirection="column"
             textAlign={textAlign}
             alignItems={alignItems}

@@ -43,6 +43,7 @@ const Navbar = ({ isMobile }) => {
                             <Button
                                 variant='contained'
                                 size="medium"
+                                color="secondary"
                                 startIcon={<i className='ri-download-2-line'></i>}
                                 sx={{
                                     width: { xs: '100%', sm: 'auto' },
