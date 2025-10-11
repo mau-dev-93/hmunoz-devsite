@@ -1,20 +1,42 @@
 import PropTypes from 'prop-types';
-import { Card, CardContent, Box, Typography, Stack, Paper } from "@mui/material";
+import { Card, CardContent, Box, Typography, Stack, Paper, IconButton } from "@mui/material";
 
 // components
 import CustomChip from '../CustomChip/CustomChip';
 import HighlightList from '../HighlightList/HighlightList';
 
-const ExperienceCard = ({ title, duration, jobTitle, dateRange, location, employmentType, employmentLocation, isMobile, description, highlights = [], techStack = [] }) => {
+const ExperienceCard = ({ title, duration, jobTitle, dateRange, location, employmentType, employmentLocation, companyUrl, isMobile, description, highlights = [], techStack = [] }) => {
     const employmentLocationColor = employmentLocation === 'Remoto' ? 'secondary' : (employmentLocation === 'Híbrido' ? 'success' : 'warning');
-    
+
     return (
         <Card sx={{ borderRadius: 3, p: 1 }} variant='outlined'>
             <CardContent>
                 <Box display="flex" justifyContent="space-between" mb={isMobile ? 2 : 0.5} flexDirection={{ xs: 'column', sm: 'row' }} gap={1}>
                     <Box component="div">
-                        <Typography variant="h6" color="text.primary" fontWeight={600} gutterBottom={!isMobile}>{jobTitle}</Typography>
-                        <Typography variant="subtitle1" color="primary" fontWeight={600} gutterBottom={!isMobile}>{title}</Typography>
+                        <Typography variant="h6" color="text.primary" fontWeight={700} gutterBottom={!isMobile}>{jobTitle}</Typography>
+                        <Box
+                            component="a"
+                            href={companyUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            display="flex"
+                            alignItems="center"
+                            color="primary.main"
+                            gap={0.5}
+                            mb={isMobile ? 0 : 1}
+                            sx={{
+                                textDecoration: 'none',
+                                cursor: 'pointer',
+                                transition: 'color 0.2s, text-decoration 0.2s',
+                                '&:hover': {
+                                    color: 'secondary.main',
+                                }
+                            }}>
+                            <Typography variant="subtitle1" color="inherit" fontWeight={600} sx={{ cursor: 'inherit' }}>
+                                {title}
+                            </Typography>
+                            <i className="ri-external-link-line" style={{ fontSize: 12, color: 'inherit' }} />
+                        </Box>
                     </Box>
                     <CustomChip label={`${duration}`} variant="outlined" size="medium" color="secondary" sx={{ width: 'fit-content', fontSize: 10 }} />
                 </Box>
@@ -77,6 +99,7 @@ ExperienceCard.propTypes = {
     dateRange: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,
     employmentType: PropTypes.string.isRequired,
+    companyUrl: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     goals: PropTypes.arrayOf(PropTypes.shape({
         label: PropTypes.string.isRequired,

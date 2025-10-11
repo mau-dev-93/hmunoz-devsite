@@ -5,22 +5,27 @@ import Box from "@mui/material/Box"
 import Grid from "@mui/material/Grid"
 import Typography from "@mui/material/Typography"
 import Stack from "@mui/material/Stack"
-import { Button, Container } from '@mui/material';
+import { Button, Container, Divider, useMediaQuery, useTheme } from '@mui/material';
 
 // components
 import HeroStatCard from '../../../components/shared/HeroStatCard/HeroStatCard';
 import HighlightBox from '../../../components/shared/HighlightBox/HighlightBox';
 import TechLogoChip from '../../../components/shared/TechLogoChip/TechLogoChip';
+import QuickMatch from '../../../components/shared/QuickMatch/QuickMatch';
 
 // data
 import profile from '../../../data/profile';
+import { downloadCV } from '@/utils/downloadCV';
 
 const AboutMeSection = () => {
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+
     return (
         <Box id="aboutme_section" component="section" bgcolor="background" py={{ xs: 8, md: 10 }}>
             <Container maxWidth="lg">
                 <Grid container spacing={4}>
-                    <Grid size={{ xs: 12, lg: 6 }} mb={3}>
+                    <Grid size={{ xs: 12, lg: 6 }}>
                         <Box mb={3}>
                             <Typography variant="h4" fontWeight="600" color="text.primary" mb={2}>Sobre <Box component="span" color="secondary.main">Mí</Box></Typography>
                             <Typography variant="body1" fontWeight="400" color="text.secondary" gutterBottom>
@@ -45,8 +50,8 @@ const AboutMeSection = () => {
                             </Grid>
                         </HighlightBox>
                         <Box mb={4}>
-                            <Typography variant="subtitle1" fontWeight="600" color="text.primary" mb={1}>Stack Principal</Typography>
-                            <Stack direction="row" spacing={0} flexWrap="wrap" gap={2}>
+                            <Typography variant="subtitle1" fontWeight="600" color="text.primary" mb={1} gutterBottom>Stack Principal</Typography>
+                            <Stack direction="row" spacing={0} flexWrap="wrap" gap={2} mb={2}>
                                 {profile.techStack.map((tech, index) => (
                                     <TechLogoChip
                                         key={index}
@@ -56,10 +61,42 @@ const AboutMeSection = () => {
                                     />
                                 ))}
                             </Stack>
+                            <Button
+                                variant='text'
+                                size='medium'
+                                href='#projects_section'
+                                endIcon={<i className='ri-arrow-right-line' style={{ fontSize: 16 }}></i>}
+                                color="secondary">
+                                Ver Proyectos
+                            </Button>
                         </Box>
                         <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
-                            <Button variant='contained' size='large' href='#projects_section'>Ver Proyectos</Button>
-                            <Button variant='outlined' size='large' href='#hero_section' color="input">Contactar</Button>
+                            <Button
+                                variant='contained'
+                                size='medium'
+                                href='#experience_section'
+                                endIcon={<i className='ri-arrow-right-line'></i>}
+                            >
+                                Ver Experiencia
+                            </Button>
+                            <Button
+                                variant='outlined'
+                                color="input"
+                                size="medium"
+                                startIcon={<i className='ri-download-2-line'></i>}
+                                onClick={downloadCV}
+                            >
+                                Descargar CV
+                            </Button>
+                            <Button
+                                variant='outlined'
+                                size='medium'
+                                href='#hero_section'
+                                color="input"
+                                startIcon={<i className='ri-mail-line'></i>}
+                            >
+                                Contactar
+                            </Button>
                         </Stack>
                     </Grid>
                     <Grid container size={{ xs: 12, lg: 6 }} spacing={2} alignContent={"center"} alignItems={"center"} justifyContent={"center"}>
@@ -100,13 +137,16 @@ const AboutMeSection = () => {
                             />
                         </Grid>
                     </Grid>
-                    <Grid size={{ xs: 12 }}>
-                        <HighlightBox gradientDirection='center' sx={{ py: 4 }}>
-                            <Typography variant="subtitle1" fontWeight={700}>🚀 ¿Hasta dónde puede llegar una idea bien construida?</Typography>
-                            <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 800 }}>Mi compromiso es <strong>claridad, confianza y valor</strong> que permanezca mientras el producto evoluciona.</Typography>
-                        </HighlightBox>
-                    </Grid>
                 </Grid>
+                <HighlightBox gradientDirection='center' sx={{ py: 3, mt: isMobile ? 4 : 6 }}>
+                    <Typography variant="subtitle1" fontWeight={700}>🚀 ¿Hasta dónde puede llegar una idea bien construida?</Typography>
+                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 550 }}>Mi compromiso es claridad, confianza y valor que permanezca mientras el producto evoluciona.</Typography>
+
+                    <Box mt={2}>
+                        <Divider variant='fullWidth' component="div" style={{ marginBottom: '24px', opacity: 0.6 }} />
+                        <QuickMatch isMobile={isMobile} />
+                    </Box>
+                </HighlightBox>
             </Container>
         </Box>
     )
