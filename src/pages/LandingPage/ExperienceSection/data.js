@@ -7,6 +7,7 @@ export default [
         "location": "Monterrey, NL.",
         "employment_type": "Tiempo completo",
         "employment_location": "Híbrido",
+        "company_url": "https://www.talisis.com",
         "description": "Lideré el desarrollo e-commerce de la plataforma educativa Talisis.com, diseñando soluciones full-stack con React, Node.js y AWS.",
         "highlights": [
             "35,000+ usuarios activos utilizando los servicios de pagos.",
@@ -38,6 +39,7 @@ export default [
         "location": "San Pedro Garza García, NL.",
         "employment_type": "Tiempo completo",
         "employment_location": "Presencial",
+        "company_url": "https://www.enkontrol.com",
         "description": "Participé activamente en la modernización del ERP Enkontrol, liderando el análisis de procesos de negocio y el desarrollo de nuevas funcionalidades full-stack con ASP.NET y React.",
         "highlights": [
             "Desarrollé interfaces responsivas utilizando React.js, TypeScript, Redux y CSS, mejorando la usabilidad y el rendimiento del sistema.",
@@ -65,6 +67,7 @@ export default [
         "location": "Monterrey, NL.",
         "employment_type": "Tiempo completo",
         "employment_location": "Presencial",
+        "company_url": "https://www.tca.com",
         "description": "Desarrollé y di mantenimiento a aplicaciones del ERP comercial Merksyst, y contribuí activamente en la migración del sistema a una plataforma web moderna con ASP.NET.",
         "highlights": [
             "Mantenimiento a un ERP comercial con C/C++, Delphi Pascal y SQL Server.",
@@ -87,6 +90,7 @@ export default [
         "location": "Monterrey, NL.",
         "employment_type": "Medio tiempo",
         "employment_location": "Presencial",
+        "company_url": "https://www.consiss.com",
         "description": "Desarrollé una solución móvil completa para un programa de lealtad del cliente Arca Continental.",
         "highlights": [
             "Desarrollé una aplicación de lealtad nativa para Android utilizando Java.",
