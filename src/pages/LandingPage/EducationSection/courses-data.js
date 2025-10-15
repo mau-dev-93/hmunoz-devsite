@@ -46,4 +46,15 @@ export default [
         progress_percentage: 100,
         image_url: buildS3Url(ENV.bucket, ENV.region, "courses/crs_0004-liderazgo-y-comunicacion/default.avif")
     },
+    {
+        title: "Git GitHub Actions, Buenas Prácticas de Integración Continua",
+        institution: "Udemy",
+        year: "2025",
+        duration: "9 horas",
+        hasCertificate: false,
+        status: "En progreso",
+        tags: ["Git", "GitHub", "CI/CD", "DevOps"],
+        progress_percentage: 10,
+        image_url: buildS3Url(ENV.bucket, ENV.region, "courses/crs_0005-git-github-actions-buenas-practicas-de-integracion-continua/default.webp")
+    },
 ]
