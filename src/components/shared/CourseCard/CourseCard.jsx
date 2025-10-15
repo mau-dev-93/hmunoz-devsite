@@ -42,10 +42,13 @@ const CourseCard = ({
             <CardMedia
                 component="img"
                 alt={`Curso ${title} de ${institution}`}
-                height="150"
+                height="160"
                 image={image_url}
+                loading='lazy'
+                decoding='async'
+                referrerPolicy="no-referrer"
                 onError={(e) => {
-                    e.target.src = 'https://img.freepik.com/free-photo/scorched-fall-wood-concept_23-2147866526.jpg?semt=ais_incoming&w=740&q=80'; // imagen por defecto
+                    e.target.src = 'https://placehold.co/400x180/png?text=</>';
                 }}
             />
             <CardContent sx={{ p: 2, pt: 3 }}>

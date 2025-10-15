@@ -1,4 +1,7 @@
-export const CV_URL = "https://personal-mauricio.s3.us-east-1.amazonaws.com/cv/Mauricio-Munoz-Resume.pdf";
+import { ENV } from "@/config/env";
+import { buildS3Url } from "./s3Url";
+
+export const CV_URL = buildS3Url(ENV.bucket, ENV.region, "cv/Mauricio-Munoz-Resume.pdf");
 export const CV_NAME = "Mauricio-Munoz-CV.pdf";
 
 export const downloadCV = (e) => {

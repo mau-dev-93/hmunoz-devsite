@@ -8,8 +8,8 @@ export default [
             { name: 'JavaScript', level: 'Avanzado', years: 8 },
             { name: 'TypeScript', level: 'Avanzado', years: 8 },
             { name: 'C#', level: 'Intermedio', years: 3 },
-            { name: 'Java', level: 'Intermedio', years: 2 },
             { name: 'C/C++', level: 'Intermedio', years: 2 },
+            { name: 'Java', level: 'Intermedio', years: 2 },
         ]
     },
     {
@@ -32,11 +32,10 @@ export default [
         experience: '10+ años de experiencia sólida',
         skills: [
             { name: 'Node.js', level: 'Avanzado', years: 4 },
-            { name: '.NET (C#)', level: 'Intermedio', years: 3 },
-            { name: 'Express.js', level: 'Intermedio', years: 1 },
             { name: 'NestJS', level: 'Intermedio', years: 1 },
+            { name: '.NET (C#)', level: 'Intermedio', years: 3 },
             { name: 'SQL Server', level: 'Avanzado', years: 10 },
-            { name: 'MySQL', level: 'Intermedio', years: 1 },
+            { name: 'MySQL', level: 'Intermedio', years: 2 },
         ]
     },
     {
@@ -48,6 +47,7 @@ export default [
             { name: 'AWS', level: 'Intermedio', years: 4 },
             { name: 'Git', level: 'Intermedio', years: 8 },
             { name: 'Docker', level: 'Básico', years: 1 },
+            { name: 'GitHub Actions', level: 'Básico', years: 1 },
         ]
     }
 ]

@@ -3,8 +3,15 @@ import { alpha, Avatar } from "@mui/material";
 const ProfileAvatar = ({ src }) => {
     return (
         <Avatar
-            alt="Mauricio Muñoz"
+            alt="Mauricio Muñoz | Full-Stack Developer"
             src={src}
+            slotProps={{
+                img: {
+                    loading: "lazy",
+                    decoding: "async",
+                    referrerPolicy: "no-referrer",
+                }
+            }}
             sx={(theme) => ({
                 width: {
                     xs: theme.spacing(24),  // 160px - móvil pequeño

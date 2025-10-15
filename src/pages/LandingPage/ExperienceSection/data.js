@@ -10,12 +10,14 @@ export default [
         "company_url": "https://www.talisis.com",
         "description": "Lideré el desarrollo e-commerce de la plataforma educativa Talisis.com, diseñando soluciones full-stack con React, Node.js y AWS.",
         "highlights": [
-            "35,000+ usuarios activos utilizando los servicios de pagos.",
+            "50,000+ usuarios activos utilizando los servicios de pagos.",
             "$400,000+ MXN ingresos mensuales habilitados por el flujo de pagos.",
             "Desarrollé interfaces responsivas con React.js, Redux y Material UI.",
-            "Diseñé arquitecturas serverless con AWS Lambda y API Gateway para transacciones seguras.",
-            "Desarrollé APIs RESTful de alto rendimiento y diseñé modelos de datos en SQL Server.",
-            "Aseguré la calidad del código mediante code reviews, testing y monitoreo con AWS CloudWatch.",
+            "Diseñé arquitecturas serverless con AWS (Lambda, API Gateway, Step Functions y EventBridge) para transacciones seguras.",
+            "Desarrollé APIs REST en API Gateway de alto rendimiento, implementando tokens JWT y Lambda Authorizers.",
+            "Diseñé modelos de datos con dbdiagram.io y SQL Server, con encriptación de datos sensibles.",
+            "Aseguré la calidad del código mediante code reviews, testing y monitoreo de errores y logs con Sentry.",
+            "Documenté arquitecturas, procesos de pagos, modelos de datos y APIs en ClickUp y Postman.",
             "Creé una aplicación de accesos con QR en 3 días para eventos masivos, con monitoreo en tiempo real.",
         ],
         "tech_stack": [

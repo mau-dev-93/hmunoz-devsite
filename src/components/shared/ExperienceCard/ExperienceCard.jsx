@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Card, CardContent, Box, Typography, Stack, Paper, IconButton } from "@mui/material";
+import { Card, CardContent, Box, Typography, Stack, Paper } from "@mui/material";
 
 // components
 import CustomChip from '../CustomChip/CustomChip';
@@ -74,7 +74,7 @@ const ExperienceCard = ({ title, duration, jobTitle, dateRange, location, employ
                 </Paper>
                 <Box color="primary.main" display="flex" alignItems="center" gap={0.5} mb={1.5}>
                     <i className='ri-code-line' style={{ marginRight: 4 }}></i>
-                    <Typography variant="body2" color="text.primary" fontWeight={600}> Tecnologias</Typography>
+                    <Typography variant="body2" color="text.primary" fontWeight={600}>Tecnologías</Typography>
                 </Box>
                 <Stack direction="row" flexWrap="wrap" gap={1}>
                     {techStack.map((tech, index) => (

@@ -7,7 +7,7 @@ import IconSquare from '../IconSquare/IconSquare';
 import ProgressBar from '../ProgressBar/ProgressBar';
 import HighlightList from '../HighlightList/HighlightList';
 
-const ProjectCard = ({ name, description, status, role, icon, progress_percentage = 0, tech_stack = [], features = [], imagen_url, github_repo_url, live_demo_url }) => {
+const ProjectCard = ({ name, description, status, role, icon, progress_percentage = 0, tech_stack = [], features = [], image_url, live_demo_url }) => {
     return (
         <Card
             variant='outlined'
@@ -22,17 +22,11 @@ const ProjectCard = ({ name, description, status, role, icon, progress_percentag
                 <IconSquare icon={icon} color="primary" />
                 <CustomChip label={status} variant="condensed" size="small" color="black" sx={{ fontSize: 10 }} />
             </Box>
-            {/* <CardMedia
-                component="img"
-                alt={name}
-                height="168"
-                image={imagen_url}
-            /> */}
             <CardMedia component="div" sx={{ position: "relative", height: { xs: 168, sm: 168 }, overflow: "hidden" }}>
                 <Box
                     sx={{
                         position: "absolute", inset: 0,
-                        backgroundImage: `url(${imagen_url})`,
+                        backgroundImage: `url(${image_url})`,
                         backgroundSize: "cover",
                         backgroundPosition: "left top",
                         transition: "transform 700ms cubic-bezier(.4,0,.2,1)",
@@ -107,7 +101,7 @@ ProjectCard.propTypes = {
     progress_percentage: PropTypes.number.isRequired,
     tech_stack: PropTypes.arrayOf(PropTypes.string).isRequired,
     features: PropTypes.arrayOf(PropTypes.string).isRequired,
-    imagen_url: PropTypes.string.isRequired,
+    image_url: PropTypes.string.isRequired,
     github_repo_url: PropTypes.string.isRequired,
     live_demo_url: PropTypes.string.isRequired
 };
@@ -118,7 +112,7 @@ ProjectCard.defaultProps = {
     progress_percentage: 0,
     tech_stack: [],
     features: [],
-    imagen_url: "",
+    image_url: "",
     github_repo_url: "",
     live_demo_url: ""
 };

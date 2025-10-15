@@ -1,6 +1,9 @@
-import ecommercePic from '@/assets/images/projects/ecommerce-2.png';
-import erpPic from '@/assets/images/projects/erp-2.png';
-import devsitePic from '@/assets/images/projects/devsite-2.png';
+// import ecommercePic from '@/assets/images/projects/ecommerce-2.png';
+// import erpPic from '@/assets/images/projects/erp-2.png';
+// import devsitePic from '@/assets/images/projects/devsite-2.png';
+
+import { buildS3Url } from "@/utils/s3Url";
+import { ENV } from "@/config/env";
 
 export default [
     {
@@ -18,10 +21,10 @@ export default [
             "Seguimiento de Órdenes en Tiempo Real",
             "Panel de Administración"
         ],
-        "imagen_url": ecommercePic,
+        "image_url": buildS3Url(ENV.bucket, ENV.region, "projects/001-ecommerce-para-restaurantes/default.png"),
         "github_repo_url": "https://github.com/mau-dev-93/casa-parmesana",
         "live_demo_url": "https://portfolio-website-demo.netlify.app",
-        "role": "Full Stack Developer",
+        "role": "Full-Stack Developer",
         "disabled": true
     },
     {
@@ -39,10 +42,10 @@ export default [
             "Gestión de Clientes (CRM Básico)",
             "Dashboard con Reportes Analíticos"
         ],
-        "imagen_url": erpPic,
+        "image_url": buildS3Url(ENV.bucket, ENV.region, "projects/002-erp-cloud-para-pymes/default.png"),
         "github_repo_url": "https://github.com/usuario/task-manager-app",
         "live_demo_url": "https://task-manager-demo.herokuapp.com",
-        "role": "Full Stack Developer",
+        "role": "Full-Stack Developer",
         "disabled": true
     },
     {
@@ -58,9 +61,9 @@ export default [
             "Presentación de Proyectos",
             "Trayectoria Profesional",
             "Habilidades Técnicas y Humanas",
-             "Multiidioma (próximamente)",
+            "Multiidioma (próximamente)",
         ],
-        "imagen_url": devsitePic,
+        "image_url": buildS3Url(ENV.bucket, ENV.region, "projects/003-portafolio-profesional/default.png"),
         "github_repo_url": "https://github.com/mau-dev-93/hmunoz-devsite",
         "live_demo_url": null,
         "role": "Front-end Developer",

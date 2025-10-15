@@ -25,7 +25,7 @@ const ProjectsSection = () => {
                                 progress_percentage={project.progress_percentage}
                                 tech_stack={project.tech_stack}
                                 features={project.features}
-                                imagen_url={project.imagen_url}
+                                image_url={project.image_url}
                                 github_repo_url={project.github_repo_url}
                                 live_demo_url={project.live_demo_url}
                                 disabled={project.disabled}

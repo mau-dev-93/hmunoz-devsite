@@ -1,7 +1,5 @@
-import nestJsCoursePic from '@/assets/images/courses/nestjs-course.webp';
-import aspNetCoursePic from '@/assets/images/courses/aspnet-course.png';
-import javaCoursePic from '@/assets/images/courses/java-course.webp';
-import leadCoursePic from '@/assets/images/courses/leadership-course.avif';
+import { buildS3Url } from "@/utils/s3Url";
+import { ENV } from "@/config/env";
 
 export default [
     {
@@ -13,7 +11,7 @@ export default [
         status: "En progreso",
         tags: ["NestJs", "MySQL", "Oracle", "MongoDB", "TypeScript", "TypeORM"],
         progress_percentage: 36,
-        image_url: nestJsCoursePic
+        image_url: buildS3Url(ENV.bucket, ENV.region, "courses/crs_0001-aprende-nestjs-desde-0/default.webp")
     },
     {
         title: "Construyendo Web APIs RESTful con ASP.NET Core 9",
@@ -24,7 +22,7 @@ export default [
         status: "En progreso",
         tags: ["ASP.NET", "C#", "GitHub", "SQL Server", "Azure"],
         progress_percentage: 10,
-        image_url: aspNetCoursePic
+        image_url: buildS3Url(ENV.bucket, ENV.region, "courses/crs_0002-construyendo-web-apis-restful-con-aspnet-core-9/default.png")
     },
     {
         title: "Máster Completo en Java de cero a experto 2025",
@@ -35,7 +33,7 @@ export default [
         status: "En progreso",
         tags: ["Java", "Spring", "Jakarta EE", "JUnit", "EJB", "Angular", "React.js"],
         progress_percentage: 17,
-        image_url: javaCoursePic
+        image_url: buildS3Url(ENV.bucket, ENV.region, "courses/crs_0003-master-completo-en-java-de-cero-a-experto-2025/default.webp")
     },
     {
         title: "Liderazgo y comunicación",
@@ -46,6 +44,6 @@ export default [
         status: "Completado",
         tags: ["Java", "Back-end", "SpringBoot", "React"],
         progress_percentage: 100,
-        image_url: leadCoursePic
+        image_url: buildS3Url(ENV.bucket, ENV.region, "courses/crs_0004-liderazgo-y-comunicacion/default.avif")
     },
 ]
