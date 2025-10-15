@@ -1,4 +1,5 @@
-import profilePic from '@/assets/images/profile.jpeg'
+import { buildS3Url } from "@/utils/s3Url";
+import { ENV } from "@/config/env";
 
 // src/data/profile.js
 const profile = {
@@ -10,7 +11,7 @@ const profile = {
         email: "hmmunozf@gmail.com",
         phone: "8120136619",
         location: "Monterrey, Nuevo León, México",
-        picture: profilePic,
+        picture: buildS3Url(ENV.bucket, ENV.region, "profile/profile_v3.png"),
         resumen_url: "/files/Mauricio_Munoz_Resume.pdf"
     },
     socials: [

@@ -19,25 +19,25 @@ const aboutMe = {
         {
             icon: "ri-code-line",
             value: "12+",
-            labelKey: "aboutMe.highlights.experience", // "años de experiencia"
+            labelKey: "aboutMe.highlights.experience",
             descriptionKey: "aboutMe.highlights.experienceDesc"
         },
         {
             icon: "ri-user-search-line",
             value: "5+",
-            labelKey: "aboutMe.highlights.projects", // "proyectos"
+            labelKey: "aboutMe.highlights.projects", 
             descriptionKey: "aboutMe.highlights.projectsDesc"
         },
         {
             icon: "ri-medal-line",
             value: "15+",
-            labelKey: "aboutMe.highlights.techs", // "tecnologías"
+            labelKey: "aboutMe.highlights.techs",
             descriptionKey: "aboutMe.highlights.techsDesc"
         },
         {
             icon: "ri-flashlight-line",
             value: "",
-            labelKey: "aboutMe.highlights.fullstack", // "Full Stack Developer"
+            labelKey: "aboutMe.highlights.fullstack",
             descriptionKey: "aboutMe.highlights.fullstackDesc"
         }
     ],

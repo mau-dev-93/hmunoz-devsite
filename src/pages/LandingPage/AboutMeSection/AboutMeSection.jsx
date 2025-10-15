@@ -15,7 +15,7 @@ import QuickMatch from '../../../components/shared/QuickMatch/QuickMatch';
 
 // data
 import profile from '../../../data/profile';
-import { downloadCV } from '@/utils/downloadCV';
+// import { downloadCV } from '@/utils/downloadCV';
 
 const AboutMeSection = () => {
     const theme = useTheme();
@@ -37,7 +37,7 @@ const AboutMeSection = () => {
                             </Typography>
                         </Box>
                         <HighlightBox textAlign='left' alignItems='left' sx={{ marginBottom: 4 }}>
-                            <Typography variant="subtitle1" fontWeight={600}>Mi Enfoque Full Stack</Typography>
+                            <Typography variant="subtitle1" fontWeight={600}>Mi Enfoque Full-Stack</Typography>
                             <Grid container spacing={2}>
                                 <Grid size={{ xs: 12, md: 6 }}>
                                     <Typography variant="subtitle1" color="secondary.main" fontWeight={600} mb={1}>🎨 Frontend Development</Typography>
@@ -67,7 +67,7 @@ const AboutMeSection = () => {
                                 href='#projects_section'
                                 endIcon={<i className='ri-arrow-right-line' style={{ fontSize: 16 }}></i>}
                                 color="secondary">
-                                Ver Proyectos
+                                <Typography variant="caption" fontWeight={600}>Ver Proyectos</Typography>
                             </Button>
                         </Box>
                         <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
@@ -79,7 +79,7 @@ const AboutMeSection = () => {
                             >
                                 Ver Experiencia
                             </Button>
-                            <Button
+                            {/* <Button
                                 variant='outlined'
                                 color="input"
                                 size="medium"
@@ -87,7 +87,7 @@ const AboutMeSection = () => {
                                 onClick={downloadCV}
                             >
                                 Descargar CV
-                            </Button>
+                            </Button> */}
                             <Button
                                 variant='outlined'
                                 size='medium'
