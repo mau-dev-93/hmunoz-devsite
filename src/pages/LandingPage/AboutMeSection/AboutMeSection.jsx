@@ -139,9 +139,13 @@ const AboutMeSection = () => {
                     </Grid>
                 </Grid>
                 <HighlightBox gradientDirection='center' sx={{ py: 3, mt: isMobile ? 4 : 6 }}>
-                    <Typography variant="subtitle1" fontWeight={700}>🚀 ¿Hasta dónde puede llegar una idea bien construida?</Typography>
-                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 550 }}>Mi compromiso es claridad, confianza y valor que permanezca mientras el producto evoluciona.</Typography>
-
+                    <Typography variant="h6" fontWeight={700}>🚀 ¿Hasta dónde puede llegar una idea bien construida?</Typography>
+                    <Typography variant="body1" color="textSecondary" sx={{ maxWidth: 800 }}>
+                        Mi experiencia en <Box component="span" fontWeight={600} color="secondary.main">e-commerce, educación y comercio</Box> me ha enseñado que la tecnología es universal, pero su aplicación es un reto específico y apasionante en cada dominio.
+                    </Typography>
+                    <Typography variant="body1" color="textSecondary" sx={{ maxWidth: 800 }}>
+                        Estoy <Box component="span" fontWeight={600} color="secondary.main">abierto a nuevos retos</Box> para aprender, adaptar y liderar proyectos en cualquier industria. Con mi perfil <Box component="span" fontWeight={600} color="secondary.main">Full-Stack</Box>, garantizo un valor inmediato desde el primer día.
+                    </Typography>
                     <Box mt={2}>
                         <Divider variant='fullWidth' component="div" style={{ marginBottom: '24px', opacity: 0.6 }} />
                         <QuickMatch isMobile={isMobile} />

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import { Box, Button, Card, CardActions, CardContent, CardMedia, Stack, Typography, Divider } from "@mui/material";
+import { Box, Button, Card, CardActions, CardContent, CardMedia, Stack, Typography } from "@mui/material";
 
 // components
 import CustomChip from "../CustomChip/CustomChip";
@@ -15,12 +15,15 @@ const CourseCard = ({
     status = "",
     tags = [],
     image_url = "",
+    course_url = "",
     progress_percentage = 0
 }) => {
     return (
         <Card
             variant='outlined'
             sx={{
+                display: 'flex',
+                flexDirection: 'column',
                 minWidth: 245,
                 width: "100%",
                 position: "relative",
@@ -51,7 +54,7 @@ const CourseCard = ({
                     e.target.src = 'https://placehold.co/400x180/png?text=</>';
                 }}
             />
-            <CardContent sx={{ p: 2, pt: 3 }}>
+            <CardContent sx={{ p: 2, pt: 3, flexGrow: 1 }}>
                 <Box mb={2}>
                     <Typography variant="subtitle1" fontWeight={600} component="div" gutterBottom mb={1}>{title}</Typography>
                     <BrandLogo
@@ -112,6 +115,22 @@ const CourseCard = ({
                     </Stack>
                 </Box>
             </CardContent>
+            <CardActions disableSpacing sx={{ p: 2, flexDirection: { xs: 'column', sm: 'row' }, gap: 2 }}>
+                <Button
+                    component="a"
+                    variant="outlined"
+                    color="input"
+                    title='Ir a curso'
+                    fullWidth
+                    size='medium'
+                    disabled={!course_url}
+                    href={course_url}
+                    target="_blank"
+                    startIcon={<i className='ri-external-link-line'></i>}
+                >
+                    <Typography variant="body2" color="inherit">Ir al curso</Typography>
+                </Button>
+            </CardActions>
         </Card>
     )
 };
@@ -122,6 +141,7 @@ CourseCard.propTypes = {
     year: PropTypes.string.isRequired,
     duration: PropTypes.string.isRequired,
     hasCertificate: PropTypes.boolean,
+    course_url: PropTypes.string,
     status: PropTypes.string.isRequired,
     tags: PropTypes.arrayOf(PropTypes.string),
     image_url: PropTypes.string,

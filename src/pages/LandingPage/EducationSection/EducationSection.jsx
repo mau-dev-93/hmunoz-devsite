@@ -20,6 +20,7 @@ import { useMediaQuery, useTheme } from "@mui/material";
 
 const Education = () => {
     const theme = useTheme();
+    const isUnique = educationData.length === 1;
     const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
     return (
@@ -31,12 +32,20 @@ const Education = () => {
                 </Box>
                 <Box textAlign="center" pb={6}>
                     <Typography variant="h6" fontWeight="600" color="text.primary" mb={4}>Formación Académica</Typography>
-                    <Timeline position={isMobile ? "right" : "alternate"} sx={{ px: isMobile ? 1 : 'inherit' }}>
+                    <Timeline
+                        position={isMobile ? "right" : "alternate"}
+                        sx={{
+                            px: isMobile ? 1 : 'inherit',
+                            alignItems: isMobile ? 'inherit' : isUnique ? 'center' : 'inherit',
+                        }}
+                    >
                         {educationData.map((education, index) => (
                             <TimelineItem
                                 key={index}
                                 sx={{
-                                    '&.MuiTimelineItem-missingOppositeContent:before': { display: isMobile ? 'none' : 'block' },
+                                    '&.MuiTimelineItem-missingOppositeContent:before': { 
+                                        display: isMobile || isUnique ? 'none' : 'block' 
+                                    },
                                 }}>
                                 <TimelineSeparator
                                     sx={{
@@ -55,11 +64,13 @@ const Education = () => {
                                     }}>
                                     <EducationCard
                                         isMobile={isMobile}
+                                        isUnique={isUnique}
                                         degree={education.degree}
                                         institution={education.institution}
                                         dateRange={education.dateRange}
                                         specialties={education.specialties}
                                         status={education.status}
+                                        gpa={education.gpa}
                                         direction={isMobile ? "right" : index % 2 === 0 ? 'right' : 'left'}
                                     />
                                 </TimelineContent>
@@ -82,6 +93,7 @@ const Education = () => {
                                 status={course.status}
                                 tags={course.tags}
                                 image_url={course.image_url}
+                                course_url={course.course_url}
                                 progress_percentage={course.progress_percentage}
                             />
                         </Grid>
