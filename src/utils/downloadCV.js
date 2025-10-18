@@ -1,7 +1,7 @@
 import { ENV } from "@/config/env";
 import { buildS3Url } from "./s3Url";
 
-export const CV_URL = buildS3Url(ENV.bucket, ENV.region, "cv/Mauricio-Munoz-Resume.pdf");
+export const CV_URL = buildS3Url(ENV.bucket, ENV.region, "cv/v2/Mauricio-Munoz-Resume.pdf");
 export const CV_NAME = "Mauricio-Munoz-CV.pdf";
 
 export const downloadCV = (e) => {
