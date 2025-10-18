@@ -11,7 +11,8 @@ export default [
         status: "En progreso",
         tags: ["NestJs", "MySQL", "Oracle", "MongoDB", "TypeScript", "TypeORM"],
         progress_percentage: 36,
-        image_url: buildS3Url(ENV.bucket, ENV.region, "courses/crs_0001-aprende-nestjs-desde-0/default.webp")
+        image_url: buildS3Url(ENV.bucket, ENV.region, "courses/crs_0001-aprende-nestjs-desde-0/default.webp"),
+        course_url: "https://www.udemy.com/course/aprende-nestjs-desde-0/"
     },
     {
         title: "Construyendo Web APIs RESTful con ASP.NET Core 9",
@@ -22,7 +23,8 @@ export default [
         status: "En progreso",
         tags: ["ASP.NET", "C#", "GitHub", "SQL Server", "Azure"],
         progress_percentage: 10,
-        image_url: buildS3Url(ENV.bucket, ENV.region, "courses/crs_0002-construyendo-web-apis-restful-con-aspnet-core-9/default.png")
+        image_url: buildS3Url(ENV.bucket, ENV.region, "courses/crs_0002-construyendo-web-apis-restful-con-aspnet-core-9/default.png"),
+        course_url: "https://www.udemy.com/course/construyendo-web-apis-restful-con-aspnet-core/"
     },
     {
         title: "Máster Completo en Java de cero a experto 2025",
@@ -33,7 +35,8 @@ export default [
         status: "En progreso",
         tags: ["Java", "Spring", "Jakarta EE", "JUnit", "EJB", "Angular", "React.js"],
         progress_percentage: 17,
-        image_url: buildS3Url(ENV.bucket, ENV.region, "courses/crs_0003-master-completo-en-java-de-cero-a-experto-2025/default.webp")
+        image_url: buildS3Url(ENV.bucket, ENV.region, "courses/crs_0003-master-completo-en-java-de-cero-a-experto-2025/default.webp"),
+        course_url: "https://www.udemy.com/course/master-completo-java-de-cero-a-experto/"
     },
     {
         title: "Liderazgo y comunicación",
@@ -44,7 +47,8 @@ export default [
         status: "Completado",
         tags: ["Java", "Back-end", "SpringBoot", "React"],
         progress_percentage: 100,
-        image_url: buildS3Url(ENV.bucket, ENV.region, "courses/crs_0004-liderazgo-y-comunicacion/default.avif")
+        image_url: buildS3Url(ENV.bucket, ENV.region, "courses/crs_0004-liderazgo-y-comunicacion/default.avif"),
+        course_url: "https://www.coursera.org/learn/liderazgo-y-comunicacion/"
     },
     {
         title: "Git GitHub Actions, Buenas Prácticas de Integración Continua",
@@ -55,6 +59,7 @@ export default [
         status: "En progreso",
         tags: ["Git", "GitHub", "CI/CD", "DevOps"],
         progress_percentage: 10,
-        image_url: buildS3Url(ENV.bucket, ENV.region, "courses/crs_0005-git-github-actions-buenas-practicas-de-integracion-continua/default.webp")
+        image_url: buildS3Url(ENV.bucket, ENV.region, "courses/crs_0005-git-github-actions-buenas-practicas-de-integracion-continua/default.webp"),
+        course_url: "https://www.udemy.com/course/git-github-actions-buenas-practicas-de-integracion-continua/"
     },
 ]
