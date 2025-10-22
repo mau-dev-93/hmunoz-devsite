@@ -1,0 +1,18 @@
+{
+    "navbar": {
+        "home": "Inicio",
+        "about": "Sobre mí",
+        "experience": "Experiencia",
+        "projects": "Proyectos",
+        "skills": "Habilidades",
+        "education": "Formación",
+        "human": "Lado Humano"
+    },
+    "buttons": {
+        "downloadCV": "Descargar CV"
+    },
+    "footer": {
+        "contact": "Contacto",
+        "rights": "Todos los derechos reservados."
+    }
+}

@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 // @mui/material
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
@@ -21,6 +23,8 @@ import profile from '../../../data/profile';
 const HeroSection = () => {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+    const { t } = useTranslation("common");
+
     /* comentario */
     return (
         <Box id="hero_section" component="section" display="flex" alignItems="center" justifyContent="center" position="relative" bgcolor="background" sx={{ minHeight: { xs: '100svh', md: '80vh' } }}>
@@ -65,7 +69,7 @@ const HeroSection = () => {
                                     }}
                                     onClick={downloadCV}
                                 >
-                                    Descargar CV
+                                    {t("buttons.downloadCV")}
                                 </Button>
                                 <Box display="flex" gap={1.5} mt={{ xs: 1, sm: 0 }}>
                                     {profile.socials.map((social, index) => (

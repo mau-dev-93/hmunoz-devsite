@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useTranslation } from "react-i18next";
 
 // @material-ui/core
 import MuiAppBar from "@mui/material/AppBar";
@@ -30,6 +31,8 @@ export const AppBar = React.forwardRef(function AppBar(props, ref) {
 });
 
 const Navbar = ({ isMobile }) => {
+    const { t } = useTranslation("common");
+
     return (
         <AppBar position="fixed" elevation={0}>
             <Toolbar variant="regular" sx={{ display: "flex", justifyContent: "space-between" }} >
@@ -50,7 +53,7 @@ const Navbar = ({ isMobile }) => {
                                 }}
                                 onClick={downloadCV}
                             >
-                                <Typography variant="body2" fontWeight={500} whiteSpace="nowrap">Descargar CV</Typography>
+                                <Typography variant="body2" fontWeight={500} whiteSpace="nowrap">{t("buttons.downloadCV")}</Typography>
                             </Button>
                         )}
                         {/* Botones de idiomas y tema del sistema */}
