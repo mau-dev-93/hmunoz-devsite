@@ -33,7 +33,7 @@ const AboutMeSection = () => {
                                 A lo largo de mi experiencia he aprendido a tomar una idea o problema y convertirla en un producto sólido, escalable y mantenible.
                             </Typography>
                             <Typography variant="body1" fontWeight="400" color="text.secondary">
-                                En más de 10 años he participado en productos usados por miles de personas en sectores de <strong>Retail, Construcción y Educación</strong>, con el objetivo de ver usuarios satisfechos y valor real generado tras cada entrega.
+                                En más de 10 años he participado en productos usados por miles de personas en sectores de <strong>E-commerce, Retail y Educación</strong>, con el objetivo de ver usuarios satisfechos y valor real generado tras cada entrega.
                             </Typography>
                         </Box>
                         <HighlightBox textAlign='left' alignItems='left' sx={{ marginBottom: 4 }}>
@@ -141,7 +141,7 @@ const AboutMeSection = () => {
                 <HighlightBox gradientDirection='center' sx={{ py: 3, mt: isMobile ? 4 : 6 }}>
                     <Typography variant="h6" fontWeight={700}>🚀 ¿Hasta dónde puede llegar una idea bien construida?</Typography>
                     <Typography variant="body1" color="textSecondary" sx={{ maxWidth: 800 }}>
-                        Mi experiencia en <Box component="span" fontWeight={600} color="secondary.main">e-commerce, educación y comercio</Box> me ha enseñado que la tecnología es universal, pero su aplicación es un reto específico y apasionante en cada dominio.
+                        Mi experiencia en <Box component="span" fontWeight={600} color="secondary.main">e-commerce, retail y educación</Box> me ha enseñado que la tecnología es universal, pero su aplicación es un reto específico y apasionante en cada dominio.
                     </Typography>
                     <Typography variant="body1" color="textSecondary" sx={{ maxWidth: 800 }}>
                         Estoy <Box component="span" fontWeight={600} color="secondary.main">abierto a nuevos retos</Box> para aprender, adaptar y liderar proyectos en cualquier industria. Con mi perfil <Box component="span" fontWeight={600} color="secondary.main">Full-Stack</Box>, garantizo un valor inmediato desde el primer día.
