@@ -29,7 +29,7 @@ const AboutMeSection = () => {
                         <Box mb={3}>
                             <Typography variant="h4" fontWeight="600" color="text.primary" mb={2}>Sobre <Box component="span" color="secondary.main">Mí</Box></Typography>
                             <Typography variant="body1" fontWeight="400" color="text.secondary" gutterBottom>
-                                Soy <strong>Mauricio Muñoz</strong>, desarrollador <strong>Full-Stack</strong> de Monterrey, México.
+                                Soy <strong>Mauricio Muñoz</strong>, <strong>Senior Full-Stack Developer</strong>.
                                 A lo largo de mi experiencia he aprendido a tomar una idea o problema y convertirla en un producto sólido, escalable y mantenible.
                             </Typography>
                             <Typography variant="body1" fontWeight="400" color="text.secondary">

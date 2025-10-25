@@ -5,7 +5,7 @@ import { ENV } from "@/config/env";
 const profile = {
     personal: {
         name: "Mauricio Muñoz",
-        role: "Full-Stack Developer",
+        role: "Senior Full-Stack Developer",
         resume: 'Transformo ideas en soluciones claras, seguras y confiables.',
         resume2: 'En cada entrega busco un valor real y mejora continua.',
         email: "hmmunozf@gmail.com",

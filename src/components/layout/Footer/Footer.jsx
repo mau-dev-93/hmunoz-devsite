@@ -15,7 +15,7 @@ const Footer = () => {
                     <Grid size={{ xs: 12, md: 5 }}>
                         <Logo isMobile={false} sx={{ marginBottom: 2 }} />
                         <Typography variant="body2" color="text.secondary" mb={2} lineHeight={1.8}>
-                            Desarrollador Full-Stack. Entrego valor real con claridad, seguridad y mejora continua.
+                            Senior Full-Stack Developer. Entrego valor real con claridad, seguridad y mejora continua.
                         </Typography>
                         <Box display="flex" gap={1.5}>
                             <SocialIconButton size="medium" href="https://github.com/mau-dev-93" icon={<i className='ri-github-line'></i>} />
@@ -28,8 +28,8 @@ const Footer = () => {
                             <Link href="#hero_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">Inicio</Typography></Link>
                             <Link href="#aboutme_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">Sobre mí</Typography></Link>
                             <Link href="#experience_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">Experiencia</Typography></Link>
-                            <Link href="#projects_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">Proyectos</Typography></Link>
                             <Link href="#skills_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">Habilidades</Typography></Link>
+                            <Link href="#projects_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">Proyectos</Typography></Link>
                             <Link href="#education_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">Formación</Typography></Link>
                             <Link href="#humanside_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">Lado Humano</Typography></Link>
                         </Box>
