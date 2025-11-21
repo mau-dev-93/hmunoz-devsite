@@ -10,7 +10,7 @@ export default [
         hasCertificate: false,
         status: "En progreso",
         tags: ["NestJs", "MySQL", "Oracle", "MongoDB", "TypeScript", "TypeORM"],
-        progress_percentage: 36,
+        progress_percentage: 51,
         image_url: buildS3Url(ENV.bucket, ENV.region, "courses/crs_0001-aprende-nestjs-desde-0/default.webp"),
         course_url: "https://www.udemy.com/course/aprende-nestjs-desde-0/"
     },
@@ -25,6 +25,18 @@ export default [
         progress_percentage: 10,
         image_url: buildS3Url(ENV.bucket, ENV.region, "courses/crs_0002-construyendo-web-apis-restful-con-aspnet-core-9/default.png"),
         course_url: "https://www.udemy.com/course/construyendo-web-apis-restful-con-aspnet-core/"
+    },
+    {
+        title: "Domina Github Actions",
+        institution: "Udemy",
+        year: "2024",
+        duration: "4 horas",
+        hasCertificate: false,
+        status: "En progreso",
+        tags: ["Git", "GitHub", "CI/CD"],
+        progress_percentage: 45,
+        image_url: buildS3Url(ENV.bucket, ENV.region, "courses/crs_0006_domina-github-actions/default.webp"),
+        course_url: "https://www.udemy.com/course/domina-github-actions/"
     },
     {
         title: "Máster Completo en Java de cero a experto 2025",
@@ -58,7 +70,7 @@ export default [
         hasCertificate: false,
         status: "En progreso",
         tags: ["Git", "GitHub", "CI/CD", "DevOps"],
-        progress_percentage: 10,
+        progress_percentage: 15,
         image_url: buildS3Url(ENV.bucket, ENV.region, "courses/crs_0005-git-github-actions-buenas-practicas-de-integracion-continua/default.webp"),
         course_url: "https://www.udemy.com/course/git-github-actions-buenas-practicas-de-integracion-continua/"
     },
