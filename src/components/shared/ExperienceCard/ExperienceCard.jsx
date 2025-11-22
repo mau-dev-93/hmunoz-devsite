@@ -1,4 +1,7 @@
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
+
+// @mui/material
 import { Card, CardContent, Box, Typography, Stack, Paper } from "@mui/material";
 
 // components
@@ -6,14 +9,15 @@ import CustomChip from '../CustomChip/CustomChip';
 import HighlightList from '../HighlightList/HighlightList';
 
 const ExperienceCard = ({ title, duration, jobTitle, dateRange, location, employmentType, employmentLocation, companyUrl, isMobile, description, highlights = [], techStack = [] }) => {
-    const employmentLocationColor = employmentLocation === 'Remoto' ? 'secondary' : (employmentLocation === 'Híbrido' ? 'success' : 'warning');
+    const { t } = useTranslation("experience");
+    const employmentLocationColor = t(employmentLocation) === 'Remoto' ? 'secondary' : (t(employmentLocation) === 'Híbrido' ? 'success' : 'warning');
 
     return (
         <Card sx={{ borderRadius: 3, p: 1 }} variant='outlined'>
             <CardContent>
                 <Box display="flex" justifyContent="space-between" mb={isMobile ? 2 : 0.5} flexDirection={{ xs: 'column', sm: 'row' }} gap={1}>
                     <Box component="div">
-                        <Typography variant="h6" color="text.primary" fontWeight={700} gutterBottom={!isMobile}>{jobTitle}</Typography>
+                        <Typography variant="h6" color="text.primary" fontWeight={700} gutterBottom={!isMobile}>{t(jobTitle)}</Typography>
                         <Box
                             component="a"
                             href={companyUrl}
@@ -38,26 +42,26 @@ const ExperienceCard = ({ title, duration, jobTitle, dateRange, location, employ
                             <i className="ri-external-link-line" style={{ fontSize: 12, color: 'inherit' }} />
                         </Box>
                     </Box>
-                    <CustomChip label={`${duration}`} variant="outlined" size="medium" color="secondary" sx={{ width: 'fit-content', fontSize: 10 }} />
+                    <CustomChip label={`${t(duration)}`} variant="outlined" size="medium" color="secondary" sx={{ width: 'fit-content', fontSize: 10 }} />
                 </Box>
                 <Stack direction="row" mb={5} flexWrap="wrap" gap={2}>
                     <Box color="text.secondary" display="flex" alignItems="center" gap={0.5}>
                         <i className='ri-calendar-line' style={{ marginRight: 4 }}></i>
-                        <Typography variant="body2" color="text.secondary">{dateRange}</Typography>
+                        <Typography variant="body2" color="text.secondary">{t(dateRange)}</Typography>
                     </Box>
                     <Box color="text.secondary" display="flex" alignItems="center" gap={0.5}>
                         <i className='ri-map-pin-2-line' style={{ marginRight: 4 }}></i>
-                        <Typography variant="body2" color="text.secondary">{location}</Typography>
+                        <Typography variant="body2" color="text.secondary">{t(location)}</Typography>
                     </Box>
                     <Box gap={1} display="flex">
-                        <CustomChip label={employmentType} variant="outlined" color="primary" size="small" sx={{ fontSize: 10 }} />
-                        <CustomChip label={employmentLocation} variant="outlined" color={employmentLocationColor} size="small" sx={{ fontSize: 10 }} />
+                        <CustomChip label={t(employmentType)} variant="outlined" color="primary" size="small" sx={{ fontSize: 10 }} />
+                        <CustomChip label={t(employmentLocation)} variant="outlined" color={employmentLocationColor} size="small" sx={{ fontSize: 10 }} />
                     </Box>
                 </Stack>
-                <Typography variant={isMobile ? "body2" : "body1"} color="text.secondary" mb={3}>{description}</Typography>
+                <Typography variant={isMobile ? "body2" : "body1"} color="text.secondary" mb={3}>{t(description)}</Typography>
                 <Box color="secondary.main" display="flex" alignItems="center" gap={0.5} mb={1.5}>
                     <i className='ri-award-line' style={{ marginRight: 4 }}></i>
-                    <Typography variant="body2" color="text.primary" fontWeight={600}>Actividades y logros</Typography>
+                    <Typography variant="body2" color="text.primary" fontWeight={600}>{t("achievements_label")}</Typography>
                 </Box>
                 <Paper
                     variant="outlined"
@@ -70,11 +74,11 @@ const ExperienceCard = ({ title, duration, jobTitle, dateRange, location, employ
                         mb: 3
                     }}
                 >
-                    <HighlightList features={highlights} variant='body2' color="secondary.main" />
+                    <HighlightList features={highlights} format={(item) => t(item)} variant='body2' color="secondary.main" />
                 </Paper>
                 <Box color="primary.main" display="flex" alignItems="center" gap={0.5} mb={1.5}>
                     <i className='ri-code-line' style={{ marginRight: 4 }}></i>
-                    <Typography variant="body2" color="text.primary" fontWeight={600}>Tecnologías</Typography>
+                    <Typography variant="body2" color="text.primary" fontWeight={600}>{t("technologies_label")}</Typography>
                 </Box>
                 <Stack direction="row" flexWrap="wrap" gap={1}>
                     {techStack.map((tech, index) => (
