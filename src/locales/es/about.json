@@ -1,1 +1,57 @@
-{}
+{
+    "section_title": "Sobre <strong>Mí</strong>",
+    "me": {
+        "description1": "Soy <strong>Mauricio Muñoz</strong>, <strong>Senior Full-Stack Developer</strong>. A lo largo de mi experiencia he aprendido a tomar una idea o problema y convertirla en un producto sólido, escalable y mantenible.",
+        "description2": "En más de 10 años he participado en productos usados por miles de personas en sectores de <strong>E-commerce, Retail y Educación</strong>, con el objetivo de ver usuarios satisfechos y valor real generado tras cada entrega."
+    },
+    "focus": {
+        "title": "Mi Enfoque Full-Stack",
+        "frontend_development": {
+            "title": "Desarrollo Frontend",
+            "description": "Creo interfaces intuitivas y responsivas, con buen rendimiento y consistencia visual. Utilizo <strong>React, TypeScript, Redux y Material UI</strong> para entregar componentes reutilizables y bien probados, preparados para crecer con el producto."
+        },
+        "backend_development": {
+            "title": "Desarrollo Backend",
+            "description": "Diseño microservicios y arquitecturas desacopladas en <strong>AWS</strong>, construyo APIs RESTful seguras y de alto rendimiento con <strong>Node.js, NestJS y .NET</strong>. Sigo fortaleciendo mis conocimientos en DevOps y NoSQL para mejorar mis entregas continuas."
+        }
+    },
+    "tech_stack": {
+        "title": "Stack Principal",
+        "view_projects": "Ver Proyectos"
+    },
+    "buttons": {
+        "view_experience": "Ver Experiencia",
+        "contact": "Contactar"
+    },
+    "hero_stats": {
+        "experience": {
+            "title": "10+ años",
+            "subtitle": "de experiencia"
+        },
+        "technologies": {
+            "title": "10+ tecnologías",
+            "subtitle": "experiencia probada"
+        },
+        "architectures": {
+            "title": "Arquitecturas",
+            "subtitle": "serverless & seguras"
+        },
+        "fullstack": {
+            "title": "Full-Stack",
+            "subtitle": "autodidacta & creativo"
+        }
+    },
+    "highlight_box": {
+        "title": "🚀 ¿Hasta dónde puede llegar una idea bien construida?",
+        "description1": "Mi experiencia en <strong>e-commerce, retail y educación</strong> me ha enseñado que la tecnología es universal, pero su aplicación es un reto específico y apasionante en cada dominio.",
+        "description2": "Estoy <strong>abierto a nuevos retos</strong> para aprender, adaptar y liderar proyectos en cualquier industria. Con mi perfil <strong>Full-Stack</strong>, garantizo un valor inmediato desde el primer día."
+    },
+    "quick_match":{
+        "title": "Datos clave:",
+        "fullstack": "Full-Stack / Backend",
+        "senior": "Senior (10 años)",
+        "work_mode": "Presencial · Híbrido · Remoto",
+        "languages": "ES / EN",
+        "availability": "Disponibilidad Inmediata"
+    }
+}

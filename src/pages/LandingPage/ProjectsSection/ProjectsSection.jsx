@@ -7,7 +7,7 @@ import ProjectCard from "../../../components/shared/ProjectCard/ProjectCard";
 
 const ProjectsSection = () => {
     return (
-        <Box id="projects_section" component="section" bgcolor="background.section" py={{ xs: 8, md: 10 }}>
+        <Box id="projects_section" component="section" bgcolor="background.default" py={{ xs: 8, md: 10 }}>
             <Container maxWidth="lg">
                 <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" textAlign="center">
                     <Typography variant="h4" fontWeight="600" color="text.primary" mb={2}>Proyectos <Box component="span" color="secondary.main">Personales</Box></Typography>
