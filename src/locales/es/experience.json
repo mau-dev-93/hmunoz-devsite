@@ -5,12 +5,8 @@
     "technologies_label": "Tecnologías",
     "jobs": {
         "talisis": {
-            "duration": "4 años",
             "job_title": "Desarrollador Full-Stack",
             "date_range": "enero 2021 - diciembre 2024",
-            "location": "Monterrey, NL.",
-            "employment_type": "Tiempo completo",
-            "employment_location": "Híbrido",
             "description": "Lideré el desarrollo e-commerce de la plataforma educativa Talisis.com, diseñando soluciones full-stack con React, Node.js y AWS.",
             "highlights": {
                 "point1": "50,000+ usuarios activos utilizando los servicios de pagos.",
@@ -25,12 +21,8 @@
             }
         },
         "enkontrol": {
-            "duration": "3 años",
             "job_title": "Desarrollador Full-Stack",
             "date_range": "julio 2017 - septiembre 2020",
-            "location": "San Pedro Garza García, NL.",
-            "employment_type": "Tiempo completo",
-            "employment_location": "Presencial",
             "description": "Participé activamente en la modernización del ERP Enkontrol, liderando el análisis de procesos de negocio y el desarrollo de nuevas funcionalidades full-stack con ASP.NET y React.",
             "highlights": {
                 "point1": "Desarrollé interfaces responsivas utilizando React.js, TypeScript, Redux y CSS, mejorando la usabilidad y el rendimiento del sistema.",
@@ -40,12 +32,8 @@
             }
         },
         "tca": {
-            "duration": "2.5 años",
             "job_title": "Software Developer",
             "date_range": "febrero 2015 - julio 2017",
-            "location": "Monterrey, NL.",
-            "employment_type": "Tiempo completo",
-            "employment_location": "Presencial",
             "description": "Desarrollé y di mantenimiento a aplicaciones del ERP comercial Merksyst, y contribuí activamente en la migración del sistema a una plataforma web moderna con ASP.NET.",
             "highlights": {
                 "point1": "Mantenimiento a un ERP comercial con C/C++, Delphi Pascal y SQL Server.",
@@ -55,12 +43,8 @@
             }
         },
         "consiss": {
-            "duration": "4 meses",
             "job_title": "Software Developer",
             "date_range": "septiembre 2014 - enero 2015",
-            "location": "Monterrey, NL.",
-            "employment_type": "Medio tiempo",
-            "employment_location": "Presencial",
             "description": "Desarrollé una solución móvil completa para un programa de lealtad del cliente Arca Continental.",
             "highlights": {
                 "point1": "Desarrollé una aplicación de lealtad nativa para Android utilizando Java.",
@@ -68,5 +52,21 @@
                 "point3": "Desarrollé un panel administrativo web para la gestión de usuarios y recompensas."
             }
         }
+    },
+    "duration_formats": {
+        "years": "{{count}} años",
+        "months": "{{count}} meses"
+    },
+    "employment_types": {
+        "full_time": "Tiempo completo",
+        "part_time": "Medio tiempo",
+        "contract": "Contrato",
+        "internship": "Pasantía",
+        "freelance": "Freelance"
+    },
+    "employment_locations": {
+        "onsite": "Presencial",
+        "remote": "Remoto",
+        "hybrid": "Híbrido"
     }
 }

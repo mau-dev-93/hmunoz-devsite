@@ -1,24 +1,27 @@
 import PropTypes from 'prop-types';
-import { Paper, Box, Typography, Stack, Chip } from "@mui/material";
+import { Paper, Box, Typography, Stack } from "@mui/material";
+import { useTranslation } from 'react-i18next';
 
 // components
 import CustomChip from '../CustomChip/CustomChip';
 import IconSquare from '../IconSquare/IconSquare';
 
-const TechSkillsCard = ({ title, icon, color, experience, skills = [] }) => {
+const TechSkillsCard = ({ title, icon, color, experience_years, skills = [] }) => {
+    const { t } = useTranslation("skills");
+
     const getLevelProps = (level) => {
         switch (level.toLowerCase()) {
-            case 'avanzado':
+            case 'levels.advanced':
                 return {
                     color: 'primary',
                     variant: 'condensed'
                 }
-            case 'intermedio':
+            case 'levels.intermediate':
                 return {
                     color: 'secondary',
                     variant: 'outlined'
                 }
-            case 'básico':
+            case 'levels.beginner':
                 return {
                     color: 'info',
                     variant: 'outlined'
@@ -41,18 +44,16 @@ const TechSkillsCard = ({ title, icon, color, experience, skills = [] }) => {
                 border: "1px solid",
                 borderColor: "divider",
                 height: "100%",
-                // minWidth: 264,
-                // maxWidth: "100%"
                 width: '100%'
             }}
         >
             <Box display="flex" flexDirection="column" alignItems="center" mb={3}>
                 <IconSquare icon={icon} size={40} variant='bicolor' color={color} sx={{ mb: 2 }} />
                 <Typography variant="body2" color="text.primary" fontWeight={600} textAlign="center" gutterBottom>
-                    {title}
+                    {t(title)}
                 </Typography>
                 <Typography variant="caption" color="text.tertiary" textAlign="center">
-                    {experience}
+                    {t("experience", { count: experience_years })}
                 </Typography>
             </Box>
             <Stack spacing={1}>
@@ -74,10 +75,10 @@ const TechSkillsCard = ({ title, icon, color, experience, skills = [] }) => {
                                     {skill.name}
                                 </Typography>
                                 <Typography variant="caption" color="text.secondary">
-                                    {skill.years}+ años
+                                     {t("years", { count: skill.years })}
                                 </Typography>
                             </Box>
-                            <CustomChip label={skill.level} variant={levelProps.variant} color={levelProps.color} size="small" sx={{ fontSize: 10 }} />
+                            <CustomChip label={t(skill.level)} variant={levelProps.variant} color={levelProps.color} size="small" sx={{ fontSize: 10 }} />
                         </Box>
                     )
                 })}

@@ -1,1 +1,58 @@
-{}
+{
+    "section_title": "Mis <strong>Habilidades</strong>",
+    "section_subtitle": "Técnicas sólidas y habilidades humanas para construir productos con calidad.",
+    "tech_skills_title": "Habilidades Técnicas",
+    "soft_skills_title": "Habilidades Humanas",
+    "tech_skills": {
+        "programming_languages": {
+            "title": "Lenguajes de programación"
+        },
+        "frontend": {
+            "title": "Frontend"
+        },
+        "backend": {
+            "title": "Backend"
+        },
+        "cloud_devops": {
+            "title": "Cloud & DevOps"
+        }
+    },
+    "soft_skills": {
+        "leadership": {
+            "title": "Liderazgo",
+            "description": "Experiencia liderando y asesorando equipos de desarrollo. Gestiono tareas para asegurar entregas puntuales y fomentar la colaboración."
+        },
+        "communication": {
+            "title": "Comunicación Efectiva",
+            "description": "Comunicación efectiva en equipos ágiles (Scrum) para alinear áreas técnicas y de negocio, asegurando el éxito de cada proyecto."
+        },
+        "problem_solving": {
+            "title": "Resolución de Problemas",
+            "description": "Traduzco problemas de negocio en soluciones técnicas. He optimizado más de 40 consultas SQL y resuelto más de 300 tickets críticos."
+        },
+        "thinking": {
+            "title": "Pensamiento Crítico",
+            "description": "Con un enfoque analítico, diseño soluciones y arquitecturas que optimizan procesos y entregan valor real al negocio."
+        },
+        "adaptability": {
+            "title": "Adaptabilidad",
+            "description": "Rápida adaptación a diversos entornos tecnológicos. Experiencia comprobada desde C/C++ hasta arquitecturas serverless con AWS."
+        },
+        "continuous_learning": {
+            "title": "Aprendizaje Creativo",
+            "description": "Fortalezco mis habilidades en backend con NestJS, NoSQL, Docker, y prácticas DevOps para mejorar las entregas continuas."
+        }
+    },
+    "experience": "{{count}}+ años de experiencia sólida",
+    "years": "{{count}}+ años",
+    "levels": {
+        "beginner": "Básico",
+        "intermediate": "Intermedio",
+        "advanced": "Avanzado"
+    },
+    "highlight_title": "Más Allá del Código",
+    "highlight_subtitle": "Más allá del código, combino mis habilidades técnicas con liderazgo, comunicación y pensamiento crítico. El resultado: <strong>productos sólidos, seguros y mantenibles</strong>, con entregas constantes y aprendizaje continuo.",
+    "highlight_experience_years": "10+ años experiencia",
+    "highlight_teams_led": "3+ equipos liderados",
+    "highlight_technologies": "10+ tecnologías"
+}

@@ -1,12 +1,15 @@
 export default [
     {
         "title": "Talisis",
-        "duration": "jobs.talisis.duration",
+        "duration": {
+            "count": 4,
+            "format": "duration_formats.years"
+        },
         "job_title": "jobs.talisis.job_title",
         "date_range": "jobs.talisis.date_range",
-        "location": "jobs.talisis.location",
-        "employment_type": "jobs.talisis.employment_type",
-        "employment_location": "jobs.talisis.employment_location",
+        "location": "Monterrey, NL.",
+        "employment_type": "employment_types.full_time",
+        "employment_location": "employment_locations.hybrid",
         "company_url": "https://www.jobs.talisis.com",
         "description": "jobs.talisis.description",
         "highlights": [
@@ -35,12 +38,15 @@ export default [
     },
     {
         "title": "Enkontrol",
-        "duration": "jobs.enkontrol.duration",
+        "duration": {
+            "count": 3,
+            "format": "duration_formats.years"
+        },
         "job_title": "jobs.enkontrol.job_title",
         "date_range": "jobs.enkontrol.date_range",
-        "location": "jobs.enkontrol.location",
-        "employment_type": "jobs.enkontrol.employment_type",
-        "employment_location": "jobs.enkontrol.employment_location",
+        "location": "San Pedro Garza García, NL.",
+        "employment_type": "employment_types.full_time",
+        "employment_location": "employment_locations.onsite",
         "company_url": "https://www.jobs.enkontrol.com",
         "description": "jobs.enkontrol.description",
         "highlights": [
@@ -63,12 +69,15 @@ export default [
     },
     {
         "title": "TCA Software Solutions",
-        "duration": "jobs.tca.duration",
+        "duration": {
+            "count": 2,
+            "format": "duration_formats.years"
+        },
         "job_title": "jobs.tca.job_title",
         "date_range": "jobs.tca.date_range",
-        "location": "jobs.tca.location",
-        "employment_type": "jobs.tca.employment_type",
-        "employment_location": "jobs.tca.employment_location",
+        "location": "Monterrey, NL.",
+        "employment_type": "employment_types.full_time",
+        "employment_location": "employment_locations.onsite",
         "company_url": "https://www.jobs.tca.com",
         "description": "jobs.tca.description",
         "highlights": [
@@ -86,12 +95,15 @@ export default [
     },
     {
         "title": "Consiss",
-        "duration": "jobs.consiss.duration",
+        "duration": {
+            "count": 4,
+            "format": "duration_formats.months"
+        },
         "job_title": "jobs.consiss.job_title",
         "date_range": "jobs.consiss.date_range",
-        "location": "jobs.consiss.location",
-        "employment_type": "jobs.consiss.employment_type",
-        "employment_location": "jobs.consiss.employment_location",
+        "location": "Monterrey, NL.",
+        "employment_type": "employment_types.part_time",
+        "employment_location": "employment_locations.onsite",
         "company_url": "https://www.jobs.consiss.com",
         "description": "jobs.consiss.description",
         "highlights": [

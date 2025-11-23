@@ -10,7 +10,7 @@ import HighlightList from '../HighlightList/HighlightList';
 
 const ExperienceCard = ({ title, duration, jobTitle, dateRange, location, employmentType, employmentLocation, companyUrl, isMobile, description, highlights = [], techStack = [] }) => {
     const { t } = useTranslation("experience");
-    const employmentLocationColor = t(employmentLocation) === 'Remoto' ? 'secondary' : (t(employmentLocation) === 'Híbrido' ? 'success' : 'warning');
+    const employmentLocationColor = employmentLocation === "employment_locations.remote" ? 'secondary' : (employmentLocation === "employment_locations.hybrid" ? 'success' : 'warning');
 
     return (
         <Card sx={{ borderRadius: 3, p: 1 }} variant='outlined'>
@@ -42,7 +42,7 @@ const ExperienceCard = ({ title, duration, jobTitle, dateRange, location, employ
                             <i className="ri-external-link-line" style={{ fontSize: 12, color: 'inherit' }} />
                         </Box>
                     </Box>
-                    <CustomChip label={`${t(duration)}`} variant="outlined" size="medium" color="secondary" sx={{ width: 'fit-content', fontSize: 10 }} />
+                    <CustomChip label={t(duration.format, { count: duration.count })} variant="outlined" size="medium" color="secondary" sx={{ width: 'fit-content', fontSize: 10 }} />
                 </Box>
                 <Stack direction="row" mb={5} flexWrap="wrap" gap={2}>
                     <Box color="text.secondary" display="flex" alignItems="center" gap={0.5}>
@@ -51,7 +51,7 @@ const ExperienceCard = ({ title, duration, jobTitle, dateRange, location, employ
                     </Box>
                     <Box color="text.secondary" display="flex" alignItems="center" gap={0.5}>
                         <i className='ri-map-pin-2-line' style={{ marginRight: 4 }}></i>
-                        <Typography variant="body2" color="text.secondary">{t(location)}</Typography>
+                        <Typography variant="body2" color="text.secondary">{location}</Typography>
                     </Box>
                     <Box gap={1} display="flex">
                         <CustomChip label={t(employmentType)} variant="outlined" color="primary" size="small" sx={{ fontSize: 10 }} />

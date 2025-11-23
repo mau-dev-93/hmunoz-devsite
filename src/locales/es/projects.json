@@ -1,1 +1,54 @@
-{}
+{
+    "section_title": "Proyectos <strong>Personales</strong>",
+    "section_subtitle": "Proyectos de estudio para dominar tecnologías y conceptos que me apasionan.",
+    "projects": {
+        "ecommerce": {
+            "title": "E-commerce para Restaurantes",
+            "description": "Plataforma e-commerce que optimiza las operaciones de un restaurante. Abarca todo el flujo de un pedido, checkout y tracking en tiempo real. Su arquitectura está diseñada para ser una solución robusta y fácilmente adaptable para cualquier negocio gastronómico.",
+            "features": {
+                "feature_1": "Catálogo de Productos",
+                "feature_2": "Personalización de Pedidos",
+                "feature_3": "Proceso de Checkout",
+                "feature_4": "Integración con Pasarelas de Pago",
+                "feature_5": "Seguimiento de Órdenes en Tiempo Real",
+                "feature_6": "Panel de Administración"
+            }
+        },
+        "erp": {
+            "title": "ERP Cloud para PYMES",
+            "description": "Este proyecto es la culminación de mi experiencia en el sector ERP: una plataforma de planificación de recursos diseñada desde cero para la nube, con el objetivo de optimizar las operaciones críticas de las PYMES. Permite tomar decisiones estratégicas basadas en datos al centralizar toda la gestión del negocio, desde las operaciones diarias y el inventario hasta la facturación.",
+            "features": {
+                "feature_1": "Autenticación y Roles de Usuario",
+                "feature_2": "Facturación y Cuentas por Cobrar",
+                "feature_3": "Inventario, Compras y Proveedores",
+                "feature_4": "Punto de Venta (POS)",
+                "feature_5": "Gestión de Clientes (CRM Básico)",
+                "feature_6": "Dashboard con Reportes Analíticos"
+            }
+        },
+        "portfolio": {
+            "title": "Portafolio Profesional",
+            "description": "Este portafolio es mi carta de presentación digital, una plataforma interactiva que centraliza mi experiencia, habilidades y proyectos. Desarrollado con un stack moderno de Front-end (React, Vite y MUI), este sitio es en sí mismo un proyecto activo y un espacio de aprendizaje donde continuamente aplico y refino mis conocimientos en desarrollo web y UI/UX.",
+            "features": {
+                "feature_1": "Diseño Responsivo",
+                "feature_2": "Información de Contacto",
+                "feature_3": "Presentación de Proyectos",
+                "feature_4": "Trayectoria Profesional",
+                "feature_5": "Habilidades Técnicas y Humanas",
+                "feature_6": "Multiidioma (i18n)"
+            }
+        }
+    },
+    "progress_bar": "Progreso",
+    "tech_stack": "Tecnologías",
+    "features": "Características principales",
+    "view_project": "Ver proyecto",
+    "roles": {
+        "fullstack": "Full-stack Developer",
+        "frontend": "Front-end Developer"
+    },
+    "status": {
+        "completed": "Completado",
+        "in_progress": "En desarrollo"
+    }
+}
