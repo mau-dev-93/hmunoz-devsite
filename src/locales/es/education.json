@@ -1,1 +1,45 @@
-{}
+{
+    "section_title": "Educación y <strong>Formación</strong>",
+    "section_description": "Una base académica sólida y mi pasión por la actualización constante.",
+    "academic_background": {
+        "title": "Formación Académica",
+        "specialties_title": "Especialidades",
+        "bachelor": {
+            "detail_1": "Desarrollo Web (PHP, HTML, CSS)",
+            "detail_2": "Videojuegos (C++ & OpenGL)",
+            "detail_3": "Desarrollo Android (Java)",
+            "detail_4": "Bases de Datos (SQL Server & MySQL)"
+        },
+        "master": {
+            "detail_1": "",
+            "detail_2": "",
+            "detail_3": "",
+            "detail_4": ""
+        }
+    },
+    "continuing_education": {
+        "title": "Formación Continua",
+        "progress_bar": "Progreso",
+        "year": "Año",
+        "duration":  {
+            "title": "Duración",
+            "format": "{{count}} horas"
+        },
+        "certificate": "Certificado",
+        "technologies": "Tecnologías",
+        "go_to_course": "Ir al curso"
+    },
+    "bachelor_status": {
+        "graduated": "Titulado",
+        "completed": "Pasante"
+    },
+    "course_progress_status": {
+        "completed": "Completado",
+        "in_progress": "En progreso",
+        "not_started": "No iniciado"
+    },
+    "certification_status": {
+        "completed": "Certificado obtenido",
+        "pending": "Pendiente"
+    }
+}

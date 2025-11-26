@@ -1,13 +1,15 @@
 import { Box, Stack, Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 // components
 import CustomChip from "../CustomChip/CustomChip";
 
 const EducationCard = ({ degree, institution, dateRange, status = "", specialties = [], isMobile = false, isUnique = false, gpa = "", direction = "right" }) => {
+    const { t } = useTranslation("education");
     const levelColor = () => {
         const s = (status || "").toLowerCase();
-        if (s === "titulado") return "success";
-        if (s === "pasante") return "secondary";
+        if (s === "bachelor_status.graduated") return "success";
+        if (s === "bachelor_status.completed") return "secondary";
         return "text";
     };
 
@@ -47,12 +49,12 @@ const EducationCard = ({ degree, institution, dateRange, status = "", specialtie
             <Stack direction="row" mt={2} spacing={1} justifyContent={direction === "right" ? "" : "flex-end"} alignItems="center" color="text.secondary" mb={2}>
                 <i className='ri-calendar-line' style={{ color: 'inherit' }} />
                 <Typography variant="body2" fontWeight="400" color="text.secondary" pr={1}>{dateRange}</Typography>
-                <CustomChip label={status} variant="outlined" size="small" color={levelColor()} />
+                <CustomChip label={t(status)} variant="outlined" size="small" color={levelColor()} />
                 {gpa && <CustomChip label={`GPA: ${gpa}`} variant="outlined" size="small" color="info" />}
             </Stack>
-            <Typography variant="caption" fontWeight="500" color="text.primary">Especialidades:</Typography>
+            <Typography variant="caption" fontWeight="500" color="text.primary">{t("academic_background.specialties_title")}:</Typography>
             <Stack direction="column" mt={1} spacing={1} alignItems={direction === "right" ? "flex-start" : "flex-end"} color="text.secondary">
-                {specialties.length && specialties.map((item, index) => <CustomChip key={index} label={item} variant="condensed" size="small" color="text" />)}
+                {specialties.length && specialties.map((item, index) => <CustomChip key={index} label={t(item)} variant="condensed" size="small" color="text" />)}
             </Stack>
         </Box>
     )

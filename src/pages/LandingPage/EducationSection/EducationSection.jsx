@@ -1,3 +1,5 @@
+import { Trans, useTranslation } from "react-i18next";
+
 // @mui/material
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
@@ -10,8 +12,9 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import Grid from "@mui/material/Grid";
 
-import educationData from './education-data';
-import coursesData from './courses-data';
+// import educationData from './education-data';
+// import coursesData from './courses-data';
+import educationData from '../../../data/education';
 
 // components
 import EducationCard from '../../../components/shared/EducationCard/EducationCard';
@@ -20,18 +23,20 @@ import { useMediaQuery, useTheme } from "@mui/material";
 
 const Education = () => {
     const theme = useTheme();
-    const isUnique = educationData.length === 1;
+    const { academicBackground, continueEducation } = educationData;
+    const isUnique = academicBackground.length === 1;
     const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+    const { t } = useTranslation("education");
 
     return (
         <Box id="education_section" component="section" bgcolor="background.section" py={{ xs: 8, md: 10 }}>
             <Container maxWidth="lg">
                 <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" textAlign="center" mb={8}>
-                    <Typography variant="h4" fontWeight="600" color="text.primary" mb={2}>Educación <Box component="span" color="secondary.main">y Formación</Box></Typography>
-                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600 }}>Una base académica sólida y mi pasión por la actualización constante.</Typography>
+                    <Typography variant="h4" fontWeight="600" color="text.primary" mb={2}><Trans ns="education" i18nKey="section_title" components={{ strong: <Box component="span" color="secondary.main" /> }} /></Typography>
+                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600 }}>{t("section_description")}</Typography>
                 </Box>
                 <Box textAlign="center" pb={6}>
-                    <Typography variant="h6" fontWeight="600" color="text.primary" mb={4}>Formación Académica</Typography>
+                    <Typography variant="h6" fontWeight="600" color="text.primary" mb={4}>{t("academic_background.title")}</Typography>
                     <Timeline
                         position={isMobile ? "right" : "alternate"}
                         sx={{
@@ -39,12 +44,12 @@ const Education = () => {
                             alignItems: isMobile ? 'inherit' : isUnique ? 'center' : 'inherit',
                         }}
                     >
-                        {educationData.map((education, index) => (
+                        {academicBackground.map((education, index) => (
                             <TimelineItem
                                 key={index}
                                 sx={{
-                                    '&.MuiTimelineItem-missingOppositeContent:before': { 
-                                        display: isMobile || isUnique ? 'none' : 'block' 
+                                    '&.MuiTimelineItem-missingOppositeContent:before': {
+                                        display: isMobile || isUnique ? 'none' : 'block'
                                     },
                                 }}>
                                 <TimelineSeparator
@@ -60,7 +65,7 @@ const Education = () => {
                                 <TimelineContent
                                     sx={{
                                         pt: 0,
-                                        pb: (index + 1) < educationData.length ? 4 : 0,
+                                        pb: (index + 1) < academicBackground.length ? 4 : 0,
                                     }}>
                                     <EducationCard
                                         isMobile={isMobile}
@@ -79,10 +84,10 @@ const Education = () => {
                     </Timeline>
                 </Box>
                 <Box textAlign="center">
-                    <Typography variant="h6" fontWeight="600" color="text.primary" mb={2}>Certificaciones y Cursos</Typography>
+                    <Typography variant="h6" fontWeight="600" color="text.primary" mb={2}>{t("continuing_education.title")}</Typography>
                 </Box>
                 <Grid container spacing={4} mt={4} justifyContent="flex-start" alignItems="stretch" sx={{ minHeight: "100%" }}>
-                    {coursesData.map((course, index) => (
+                    {continueEducation.map((course, index) => (
                         <Grid key={index} size={{ xs: 12, md: 6, lg: 4 }}>
                             <CourseCard
                                 title={course.title}
