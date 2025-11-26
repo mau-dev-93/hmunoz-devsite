@@ -12,7 +12,20 @@
         "downloadCV": "Descargar CV"
     },
     "footer": {
+        "greeting": "Senior Full-Stack Developer. Entrego valor real con claridad, seguridad y mejora continua.",
         "contact": "Contacto",
-        "rights": "Todos los derechos reservados."
+        "quick_links": {
+            "title": "Enlaces Rápidos",
+            "links": {
+                "home": "Inicio",
+                "about": "Sobre mí",
+                "experience": "Experiencia",
+                "skills": "Habilidades",
+                "projects": "Proyectos",
+                "education": "Formación",
+                "human": "Lado Humano"
+            }
+        },
+        "rights": "Hecho con <heart/> y mucho código."
     }
 }
