@@ -1,1 +1,52 @@
-{}
+{
+    "section_title": "Lado <strong>Humano</strong>",
+    "section_subtitle": "Pasiones que me definen como profesional y como persona.",
+    "card_section": {
+        "card_1": {
+            "title": "Mi Historia",
+            "description": "¡Hola! Mi nombre es Mauricio Muñoz. Tengo 32 años, radico en Monterrey, México, soy desarrollador de software, esposo y padre. Desde niño, mi curiosidad se formó entre preguntas y la música: tocando la batería y la guitarra. En la preparatoria, aún sin un rumbo claro, la materia de Orientación Vocacional me llevó a conocer la carrera de Multimedia y Animación Digital. Aunque no era gamer, unas materias del plan de estudios me hicieron clic de inmediato: las de programación. Ahí descubrí un medio para crear desde cero y darles forma a mis propias ideas. Mi carrera profesional arrancó en una empresa de telecomunicaciones desarrollando una app Android (Java), y fue ahí donde inició mi camino como desarrollador full-stack. Hoy, sigo en constante evolución —entre IAs, DevOps y contenedores—, impulsado por la misma curiosidad de siempre y con el objetivo de entregar valor real en cada proyecto."
+        },
+        "card_2": {
+            "title": "Sobre la familia",
+            "description": "Todo lo que hago, de alguna manera, empieza y termina con mi familia. Ellos son mi motor y la razón de mi esfuerzo diario. Por eso mi trabajo no es solo una profesión; es el medio que tengo para construir un entorno estable y un buen futuro para las personas que más quiero."
+        },
+        "card_3": {
+            "title": "Sobre los valores",
+            "description": "El respeto, la honestidad y la gratitud son la base de cómo me relaciono con la gente. Busco aplicar estos principios en todo lo que hago, tanto en el trabajo como con mi familia y amigos. Al final, se trata de ofrecer un trato genuino y considerado a las personas a mi alrededor."
+        },
+        "card_4": {
+            "title": "“Pienso, luego desarrollo”",
+            "description": "Antes de tirar una línea de código, me detengo a entender el porqué de la idea y el valor que va a entregar. Evalúo el impacto, los riesgos y priorizo lo que de verdad se necesita. Es como tener un lienzo en blanco: primero trazo el bosquejo general y, a partir de ahí, empiezo a materializar. Es un hábito que aplico para todo, me ayuda a ejecutar con más claridad."
+        },
+        "card_5": {
+            "title": "Programando pizzas",
+            "description": "Me encanta el proceso de hacer pizza en casa, desde cero. He descubierto que se parece mucho al desarrollo de software: ambos necesitan paciencia, precisión y ponerle atención a los detalles. Al final, tanto una buena pizza como una buena aplicación son el resultado de crear algo valioso para compartir con los demás."
+        },
+        "card_6": {
+            "title": "Resolver con código",
+            "description": "Para mí, un problema no resuelto es el inicio de una buena idea. Veo la programación como mi herramienta para construir soluciones y conectar con ese objetivo. La satisfacción de ver que algo funciona y ayuda a otros es lo que me mantiene aprendiendo y buscando cómo hacerlo mejor cada día."
+        },
+        "card_7": {
+            "title": "Sobre la música",
+            "description": "La música fue mi primera escuela de creatividad. Ahí aprendí de ritmo, escucha y estructura, pero sobre todo, a improvisar sin partitura. Hoy, ese proceso es mi forma de encontrar claridad: ordeno ideas, simplifico y avanzo. Llevo esa misma filosofía a mi código: empezar simple, iterar con intención y encontrar la armonía entre la idea, el diseño y el resultado final."
+        }
+    },
+    "identity_section": {
+        "title": "Pequeñas Cosas Que Me <strong>Definen</strong>",
+        "subtitle": "Los detalles que forman mi identidad y que, de alguna manera, influyen en mi forma de crear y pensar el desarrollo de software",
+        "identity_1": "Toco guitarra y batería desde los 6 años",
+        "identity_2": "Disfruto cocinar mis propias pizzas",
+        "identity_3": "Soy papá, esposo y desarrollador",
+        "identity_4": "Mi primer programa fue a los 15 años",
+        "identity_5": "Soy curioso por naturaleza, investigo constantemente",
+        "identity_6": "Fan del psicoanálisis y la filosofía moderna",
+        "identity_7": "Vivo la gratitud, el respeto y la honestidad en lo que hago",
+        "identity_8": "Arranco el día con una taza de café"
+    },
+    "gratitude_section": {
+        "title": "Gracias por Llegar Hasta Aquí",
+        "description_1": "Busco oportunidades donde mi experiencia genere un impacto real.",
+        "description_2": "Si compartimos visión, será un gusto conversar sobre objetivos y próximos pasos.",
+        "button_text": "Volver arriba"
+    }
+}
