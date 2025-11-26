@@ -1,1 +1,54 @@
-{}
+{
+    "section_title": "Personal <strong>Projects</strong>",
+    "section_subtitle": "Study projects designed to master technologies and concepts I am passionate about.",
+    "projects": {
+        "ecommerce": {
+            "title": "Restaurant E-commerce",
+            "description": "An e-commerce platform that optimizes restaurant operations. It covers the entire order flow, checkout, and real-time tracking. Its architecture is designed to be a robust and easily adaptable solution for any gastronomic business.",
+            "features": {
+                "feature_1": "Product Catalog",
+                "feature_2": "Order Customization",
+                "feature_3": "Checkout Process",
+                "feature_4": "Payment Gateway Integration",
+                "feature_5": "Real-Time Order Tracking",
+                "feature_6": "Admin Panel"
+            }
+        },
+        "erp": {
+            "title": "Cloud ERP for SMBs",
+            "description": "This project is the culmination of my experience in the ERP sector: a resource planning platform designed from scratch for the cloud, aiming to optimize critical SMB operations. It enables data-driven strategic decisions by centralizing all business management, from daily operations and inventory to invoicing.",
+            "features": {
+                "feature_1": "Authentication and User Roles",
+                "feature_2": "Invoicing and Accounts Receivable",
+                "feature_3": "Inventory, Purchasing, and Suppliers",
+                "feature_4": "Point of Sale (POS)",
+                "feature_5": "Customer Management (Basic CRM)",
+                "feature_6": "Dashboard with Analytics"
+            }
+        },
+        "portfolio": {
+            "title": "Professional Portfolio",
+            "description": "This portfolio is my digital cover letter, an interactive platform that centralizes my experience, skills, and projects. Developed with a modern Front-end stack (React, Vite, and MUI), this site is an active project in itself and a learning space where I continuously apply and refine my knowledge in web development and UI/UX.",
+            "features": {
+                "feature_1": "Responsive Design",
+                "feature_2": "Contact Information",
+                "feature_3": "Project Showcase",
+                "feature_4": "Professional Career",
+                "feature_5": "Technical and Soft Skills",
+                "feature_6": "Multi-language (i18n)"
+            }
+        }
+    },
+    "progress_bar": "Progress",
+    "tech_stack": "Technologies",
+    "features": "Main Features",
+    "view_project": "View Project",
+    "roles": {
+        "fullstack": "Full-stack Developer",
+        "frontend": "Front-end Developer"
+    },
+    "status": {
+        "completed": "Completed",
+        "in_progress": "In Progress"
+    }
+}

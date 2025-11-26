@@ -1,7 +1,7 @@
 {
     "navbar": {
         "home": "Home",
-        "about": "About me",
+        "about": "About Me",
         "experience": "Experience",
         "projects": "Projects",
         "skills": "Skills",
@@ -9,10 +9,23 @@
         "human": "Human Side"
     },
     "buttons": {
-        "downloadCV": "Download Resume"
+        "downloadCV": "Download CV"
     },
     "footer": {
-        "contact": "Contacto",
-        "rights": "Todos los derechos reservados."
+        "greeting": "Senior Full-Stack Developer. I deliver real value with clarity, security, and continuous improvement.",
+        "contact": "Contact",
+        "quick_links": {
+            "title": "Quick Links",
+            "links": {
+                "home": "Home",
+                "about": "About Me",
+                "experience": "Experience",
+                "skills": "Skills",
+                "projects": "Projects",
+                "education": "Education",
+                "human": "Human Side"
+            }
+        },
+        "rights": "Made with <heart/> and lots of code."
     }
 }
