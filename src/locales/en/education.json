@@ -35,8 +35,8 @@
     },
     "course_progress_status": {
         "completed": "Completed",
-        "in_progress": "In Progress",
-        "not_started": "Not Started"
+        "in_progress": "In progress",
+        "not_started": "Not started"
     },
     "certification_status": {
         "completed": "Certificate Earned",

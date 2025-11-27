@@ -9,7 +9,8 @@
         "human": "Lado Humano"
     },
     "buttons": {
-        "downloadCV": "Descargar CV"
+        "downloadCV": "Descargar CV",
+        "copy": "Copiar"
     },
     "footer": {
         "greeting": "Senior Full-Stack Developer. Entrego valor real con claridad, seguridad y mejora continua.",

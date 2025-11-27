@@ -123,7 +123,7 @@ const CourseCard = ({
                     component="a"
                     variant="outlined"
                     color="input"
-                    title='Ir a curso'
+                    title={t("continuing_education.go_to_course")}
                     fullWidth
                     size='medium'
                     disabled={!course_url}

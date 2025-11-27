@@ -56,9 +56,9 @@ const HeroSection = () => {
                                  <Typography variant={isMobile ? "body2" : "body1"} fontWeight="400" color="text.secondary">{t_home("resumeLine2")}</Typography>
                             </Grid>
                             <Box display="flex" flexDirection="column" width={{ xs: "100%", md: "auto" }} textAlign={{ xs: "center", md: "left" }} gap={1} mb={2}>
-                                <ContactDetail text={profile.email} icon={<i className="ri-mail-line" />} isMobile={isMobile} actionHref={`mailto:${profile.email}`} />
-                                <ContactDetail text={profile.phone} icon={<i className="ri-phone-line" />} isMobile={isMobile} actionHref={`tel:${profile.phone}`} />
-                                <ContactDetail text={profile.location} icon={<i className="ri-map-pin-line" />} isMobile={isMobile} actionHref={`https://www.google.com/maps/search/?api=1&query=${profile.location}`} />
+                                <ContactDetail text={profile.email} icon={<i className="ri-mail-line" />} isMobile={isMobile} actionHref={`mailto:${profile.email}`} buttonTitle={t_common("buttons.copy")} />
+                                <ContactDetail text={profile.phone} icon={<i className="ri-phone-line" />} isMobile={isMobile} actionHref={`tel:${profile.phone}`} buttonTitle={t_common("buttons.copy")} />
+                                <ContactDetail text={profile.location} icon={<i className="ri-map-pin-line" />} isMobile={isMobile} actionHref={`https://www.google.com/maps/search/?api=1&query=${profile.location}`} buttonTitle={t_common("buttons.copy")} />
                             </Box>
                             <Box display="flex" width={{ xs: "100%", md: "auto" }} flexDirection={{ xs: "column", sm: "row" }} justifyContent={{ xs: "center" }} alignItems={{ xs: "center", sm: "inherit" }} gap={1.5}>
                                 <Button

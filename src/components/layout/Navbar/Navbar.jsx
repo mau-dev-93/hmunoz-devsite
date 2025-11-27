@@ -1,9 +1,8 @@
 import * as React from "react";
-import { useTranslation } from "react-i18next";
 
 // @material-ui/core
 import MuiAppBar from "@mui/material/AppBar";
-import { Toolbar, Box, Button, IconButton, Typography } from "@mui/material";
+import { Toolbar, Box } from "@mui/material";
 
 // navbar links
 import NavbarLinks from "../NavbarLinks/NavbarLinks";
@@ -11,9 +10,9 @@ import NavbarDrawer from "../NavbarDrawer/NavbarDrawer";
 
 // components
 import Logo from "../../shared/Logo/Logo";
+import MultilingualButton from "@/components/shared/MultilingualButton/MultilingualButton";
+import ResumeButton from "@/components/shared/ResumeButton/ResumeButton";
 
-// utils
-import { downloadCV } from "@/utils/downloadCV";
 
 export const AppBar = React.forwardRef(function AppBar(props, ref) {
     return (
@@ -31,8 +30,6 @@ export const AppBar = React.forwardRef(function AppBar(props, ref) {
 });
 
 const Navbar = ({ isMobile }) => {
-    const { t } = useTranslation("common");
-
     return (
         <AppBar position="fixed" elevation={0}>
             <Toolbar variant="regular" sx={{ display: "flex", justifyContent: "space-between" }} >
@@ -40,24 +37,9 @@ const Navbar = ({ isMobile }) => {
                 {!isMobile && (
                     <NavbarLinks isMobile={isMobile} />
                 )}
-                <Box display="flex" flex={1} justifyContent="flex-end" gap={2}>
-                    <Box>
-                        {!isMobile && (
-                            <Button
-                                variant='contained'
-                                size="medium"
-                                color="secondary"
-                                startIcon={<i className='ri-download-2-line'></i>}
-                                sx={{
-                                    width: { xs: '100%', sm: 'auto' },
-                                }}
-                                onClick={downloadCV}
-                            >
-                                <Typography variant="body2" fontWeight={500} whiteSpace="nowrap">{t("buttons.downloadCV")}</Typography>
-                            </Button>
-                        )}
-                        {/* Botones de idiomas y tema del sistema */}
-                    </Box>
+                <Box display="flex" flex={1} justifyContent="right" gap={2}>
+                    <ResumeButton isMobile={isMobile} />
+                    <MultilingualButton isMobile={isMobile} />
                     {isMobile && <NavbarDrawer />}
                 </Box>
             </Toolbar>

@@ -7,7 +7,7 @@ import { resolveColor2 } from "./../../../utils/paletteUtils";
 // components
 import Toast from "../Toast/Toast";
 
-const ContactDetail = ({ text = "", actionHref = "", isMobile = false, icon }) => {
+const ContactDetail = ({ text = "", actionHref = "", buttonTitle = "", isMobile = false, icon }) => {
     const [hovered, setHovered] = React.useState(false);
     const [showToast, setShowToast] = React.useState(false);
 
@@ -60,8 +60,8 @@ const ContactDetail = ({ text = "", actionHref = "", isMobile = false, icon }) =
                     <Button
                         size="medium"
                         variant="text"
-                        title="Copiar"
-                        aria-label="Copiar"
+                        title={buttonTitle}
+                        aria-label={buttonTitle}
                         sx={(theme) => ({
                             position: 'absolute',
                             right: 8,

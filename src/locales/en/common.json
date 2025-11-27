@@ -9,7 +9,8 @@
         "human": "Human Side"
     },
     "buttons": {
-        "downloadCV": "Download CV"
+        "downloadCV": "Download CV",
+        "copy": "Copy"
     },
     "footer": {
         "greeting": "Senior Full-Stack Developer. I deliver real value with clarity, security, and continuous improvement.",

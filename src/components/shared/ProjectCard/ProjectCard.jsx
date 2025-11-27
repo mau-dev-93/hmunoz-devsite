@@ -74,7 +74,7 @@ const ProjectCard = ({ name, description, status, role, icon, progress_percentag
                         tabIndex={-1}
                         variant="contained"
                         color="primary"
-                        title='Próximamente'
+                        // title={t("coming_soon")}
                         fullWidth
                         size='medium'
                         disabled
