@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 // @mui/material
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
@@ -21,6 +23,9 @@ import profile from '../../../data/profile';
 const HeroSection = () => {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+    const { t: t_common } = useTranslation("common");
+    const { t: t_home } = useTranslation("home");
+
     /* comentario */
     return (
         <Box id="hero_section" component="section" display="flex" alignItems="center" justifyContent="center" position="relative" bgcolor="background" sx={{ minHeight: { xs: '100svh', md: '80vh' } }}>
@@ -45,15 +50,15 @@ const HeroSection = () => {
                     <Grid container spacing={4} direction={{ xs: "column-reverse", md: "row" }}>
                         <Grid container size={{ xs: 12, md: 6 }} spacing={2} justifyContent={{ xs: "center", md: "flex-start" }} /*sx={{ marginBottom: "16px" }}*/>
                             <Grid size={12} mb={1} textAlign={{ xs: "center", md: "left" }}>
-                                <Typography variant="h2" fontWeight="600" mb={0.75}>{profile.personal.name}</Typography>
-                                <Typography variant="h5" fontWeight="600" color="secondary" gutterBottom>{profile.personal.role}</Typography>
-                                <Typography variant={isMobile ? "body2" : "body1"} fontWeight="400" color="text.secondary">{profile.personal.resume}</Typography>
-                                 <Typography variant={isMobile ? "body2" : "body1"} fontWeight="400" color="text.secondary">{profile.personal.resume2}</Typography>
+                                <Typography variant="h2" fontWeight="600" mb={0.75}>{profile.name}</Typography>
+                                <Typography variant="h5" fontWeight="600" color="secondary" gutterBottom>{t_home("role")}</Typography>
+                                <Typography variant={isMobile ? "body2" : "body1"} fontWeight="400" color="text.secondary">{t_home("resumeLine1")}</Typography>
+                                 <Typography variant={isMobile ? "body2" : "body1"} fontWeight="400" color="text.secondary">{t_home("resumeLine2")}</Typography>
                             </Grid>
                             <Box display="flex" flexDirection="column" width={{ xs: "100%", md: "auto" }} textAlign={{ xs: "center", md: "left" }} gap={1} mb={2}>
-                                <ContactDetail text={profile.personal.email} icon={<i className="ri-mail-line" />} isMobile={isMobile} actionHref={`mailto:${profile.personal.email}`} />
-                                <ContactDetail text={profile.personal.phone} icon={<i className="ri-phone-line" />} isMobile={isMobile} actionHref={`tel:${profile.personal.phone}`} />
-                                <ContactDetail text={profile.personal.location} icon={<i className="ri-map-pin-line" />} isMobile={isMobile} actionHref={`https://www.google.com/maps/search/?api=1&query=${profile.personal.location}`} />
+                                <ContactDetail text={profile.email} icon={<i className="ri-mail-line" />} isMobile={isMobile} actionHref={`mailto:${profile.email}`} buttonTitle={t_common("buttons.copy")} />
+                                <ContactDetail text={profile.phone} icon={<i className="ri-phone-line" />} isMobile={isMobile} actionHref={`tel:${profile.phone}`} buttonTitle={t_common("buttons.copy")} />
+                                <ContactDetail text={profile.location} icon={<i className="ri-map-pin-line" />} isMobile={isMobile} actionHref={`https://www.google.com/maps/search/?api=1&query=${profile.location}`} buttonTitle={t_common("buttons.copy")} />
                             </Box>
                             <Box display="flex" width={{ xs: "100%", md: "auto" }} flexDirection={{ xs: "column", sm: "row" }} justifyContent={{ xs: "center" }} alignItems={{ xs: "center", sm: "inherit" }} gap={1.5}>
                                 <Button
@@ -65,7 +70,7 @@ const HeroSection = () => {
                                     }}
                                     onClick={downloadCV}
                                 >
-                                    Descargar CV
+                                    {t_common("buttons.downloadCV")}
                                 </Button>
                                 <Box display="flex" gap={1.5} mt={{ xs: 1, sm: 0 }}>
                                     {profile.socials.map((social, index) => (
@@ -75,7 +80,7 @@ const HeroSection = () => {
                             </Box>
                         </Grid>
                         <Grid size={{ xs: 12, md: 6 }} alignSelf="center" justifyItems={{ xs: "center", md: "flex-end" }}>
-                            <ProfileAvatar src={profile.personal.picture} />
+                            <ProfileAvatar src={profile.picture} />
                         </Grid>
                     </Grid>
                 </Fade>

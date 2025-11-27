@@ -1,0 +1,58 @@
+{
+    "section_title": "My <strong>Skills</strong>",
+    "section_subtitle": "Solid technical techniques and human skills to build quality products.",
+    "tech_skills_title": "Technical Skills",
+    "soft_skills_title": "Soft Skills",
+    "tech_skills": {
+        "programming_languages": {
+            "title": "Programming Languages"
+        },
+        "frontend": {
+            "title": "Frontend"
+        },
+        "backend": {
+            "title": "Backend"
+        },
+        "cloud_devops": {
+            "title": "Cloud & DevOps"
+        }
+    },
+    "soft_skills": {
+        "leadership": {
+            "title": "Leadership",
+            "description": "Experience leading and mentoring development teams. I manage tasks to ensure timely deliveries and foster collaboration."
+        },
+        "communication": {
+            "title": "Effective Communication",
+            "description": "Effective communication in agile teams (Scrum) to align technical and business areas, ensuring the success of every project."
+        },
+        "problem_solving": {
+            "title": "Problem Solving",
+            "description": "I translate business problems into technical solutions. I have optimized over 40 SQL queries and resolved over 300 critical tickets."
+        },
+        "thinking": {
+            "title": "Critical Thinking",
+            "description": "With an analytical approach, I design solutions and architectures that optimize processes and deliver real business value."
+        },
+        "adaptability": {
+            "title": "Adaptability",
+            "description": "Rapid adaptation to diverse technological environments. Proven experience ranging from C/C++ to serverless architectures with AWS."
+        },
+        "continuous_learning": {
+            "title": "Continuous Learning",
+            "description": "I strengthen my backend skills with NestJS, NoSQL, Docker, and DevOps practices to improve continuous delivery."
+        }
+    },
+    "experience": "{{count}}+ years of solid experience",
+    "years": "{{count}}+ years",
+    "levels": {
+        "beginner": "Basic",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced"
+    },
+    "highlight_title": "Beyond the Code",
+    "highlight_subtitle": "Beyond the code, I combine my technical skills with leadership, communication, and critical thinking. The result: <strong>solid, secure, and maintainable products</strong>, with consistent delivery and continuous learning.",
+    "highlight_experience_years": "10+ years experience",
+    "highlight_teams_led": "3+ teams led",
+    "highlight_technologies": "10+ technologies"
+}

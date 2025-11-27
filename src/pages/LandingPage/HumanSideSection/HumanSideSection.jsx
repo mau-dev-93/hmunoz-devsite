@@ -1,6 +1,6 @@
 import { Box, Container, Grid, Typography, Button } from "@mui/material";
-import cardsData from "./humaside-data.js";
-import identityData from "./identity-data.js";
+import humandData from "../../../data/human";
+import { Trans, useTranslation } from "react-i18next";
 
 // components
 import HumanSideCard from "../../../components/shared/HumanSideCard/HumanSideCard";
@@ -9,13 +9,17 @@ import HighlightBox from "../../../components/shared/HighlightBox/HighlightBox.j
 
 const HumanSideSection = () => {
     const row = 600;
+    const { t } = useTranslation("human");
+    const { humanSideCards, identityData } = humandData;
 
     return (
         <Box id="humanside_section" component="section" bgcolor="background.default" py={{ xs: 8, md: 10 }}>
             <Container maxWidth="lg">
                 <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" textAlign="center" mb={8}>
-                    <Typography variant="h4" fontWeight="600" color="text.primary" gutterBottom>Lado <Box component="span" color="secondary.main">Humano</Box></Typography>
-                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600 }}>Pasiones que me definen como profesional y como persona.</Typography>
+                    <Typography variant="h4" fontWeight="600" color="text.primary" gutterBottom>
+                        <Trans ns="human" i18nKey="section_title" components={{ strong: <Box component="span" color="secondary.main" /> }} />
+                    </Typography>
+                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600 }}>{t("section_subtitle")}</Typography>
                 </Box>
                 <Box
                     mb={10}
@@ -31,7 +35,7 @@ const HumanSideSection = () => {
                         gridAutoRows: `${row}px`,
                     }}
                 >
-                    {cardsData.map((it) => (
+                    {humanSideCards.map((it) => (
                         <Box
                             key={it.id}
                             sx={() => ({
@@ -48,8 +52,8 @@ const HumanSideSection = () => {
                             })}
                         >
                             <HumanSideCard
-                                title={it.title}
-                                description={it.description}
+                                title={t(it.title)}
+                                description={t(it.description)}
                                 imageUrl={it.image_url}
                                 icon={it.icon}
                             />
@@ -57,12 +61,14 @@ const HumanSideSection = () => {
                     ))}
                 </Box>
                 <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" textAlign="center" sx={{ width: { xs: "100%", md: "70%" }, mx: "auto" }} mb={10}>
-                    <Typography variant="h5" fontWeight="600" color="text.primary" mb={2}>Pequeñas Cosas Que Me <Box component="span" color="secondary.main">Definen</Box></Typography>
-                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600, mb: 4 }}>Los detalles que forman mi identidad y que, de alguna manera, influyen en mi forma de crear y pensar el desarrollo de software</Typography>
+                    <Typography variant="h5" fontWeight="600" color="text.primary" mb={2}>
+                        <Trans ns="human" i18nKey="identity_section.title" components={{ strong: <Box component="span" color="secondary.main" /> }} />
+                    </Typography>
+                    <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 600, mb: 4 }}>{t("identity_section.subtitle")}</Typography>
                     <Grid container spacing={3} direction="row">
                         {identityData.map((item, index) => (
                             <Grid key={index} size={{ xs: 12, md: 6 }}>
-                                <IdentityPaper icon={item.icon} description={item.description} />
+                                <IdentityPaper icon={item.icon} description={t(item.description)} />
                             </Grid>
                         ))}
                     </Grid>
@@ -70,13 +76,15 @@ const HumanSideSection = () => {
                 <HighlightBox gradientDirection="to left" borderColor="secondary" sx={{ py: 6 }}>
                     <Typography variant="h6" component="div" fontWeight={700} display="flex" gap={1} gutterBottom mb={2}>
                         <Box component="span" color="secondary.main" fontWeight={400}><i className='ri-heart-3-line'></i></Box>
-                        <Box component="span">Gracias por Llegar Hasta <Box component="span">Aquí</Box></Box>
+                        <Box component="span">
+                            <Trans ns="human" i18nKey="gratitude_section.title" components={{ strong: <Box component="span" color="secondary.main" /> }} />
+                        </Box>
                         <Box component="span" color="secondary.main" fontWeight={400}><i className='ri-heart-3-line'></i></Box>
                     </Typography>
                     <Typography variant="body2" color="textSecondary" sx={{ maxWidth: 750, mb: 2 }}>
-                        <Box color="secondary.main" component="span" fontWeight={600}>Busco oportunidades donde mi experiencia genere un impacto real.</Box> <br /> Si compartimos visión, será un gusto conversar sobre objetivos y próximos pasos.
+                        <Box color="secondary.main" component="span" fontWeight={600}>{t("gratitude_section.description_1")}</Box> <br></br> {t("gratitude_section.description_2")}
                     </Typography>
-                    <Button variant='outlined' size='medium' href='#hero_section' color="input" startIcon={<i className='ri-arrow-up-line'></i>}>Volver arriba</Button>
+                    <Button variant='outlined' size='medium' href='#hero_section' color="input" startIcon={<i className='ri-arrow-up-line'></i>}>{t("gratitude_section.button_text")}</Button>
                 </HighlightBox>
             </Container>
         </Box>

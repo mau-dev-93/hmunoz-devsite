@@ -1,10 +1,13 @@
 import PropTypes from 'prop-types';
 import { Paper, Box, Typography } from "@mui/material";
+import { useTranslation } from 'react-i18next';
 
 // components
 import IconSquare from '../IconSquare/IconSquare';
 
 const HumanSkillCard = ({ title, icon, color, description }) => {
+    const { t } = useTranslation("skills");
+
     return (
         <Paper
             variant="outlined"
@@ -16,17 +19,16 @@ const HumanSkillCard = ({ title, icon, color, description }) => {
                 borderColor: "divider",
                 height: "100%",
                 width: '100%',
-                // maxWidth: "100%"
             }}
         >
             <Box display="flex" flexDirection="column" alignItems="center" mb={1}>
                 <IconSquare icon={icon} size={40} variant='bicolor' color={color} sx={{ mb: 1.5 }} />
                 <Typography variant="body2" color="text.primary" fontSize={14} fontWeight={600} textAlign="center">
-                    {title}
+                    {t(title)}
                 </Typography>
             </Box>
             <Typography variant="body2" color="text.secondary" fontSize={13} textAlign="center">
-                {description}
+                {t(description)}
             </Typography>
         </Paper>
     );

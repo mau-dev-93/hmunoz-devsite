@@ -5,12 +5,13 @@ import { Box, Button, Card, CardActions, CardContent, CardMedia, Stack, Typograp
 import CustomChip from "../CustomChip/CustomChip";
 import BrandLogo from '../BrandLogo/BrandLogo';
 import ProgressBar from '../ProgressBar/ProgressBar';
+import { useTranslation } from 'react-i18next';
 
 const CourseCard = ({
     title = "",
     institution = "",
     year = "",
-    duration = "",
+    duration,
     hasCertificate = false,
     status = "",
     tags = [],
@@ -18,6 +19,8 @@ const CourseCard = ({
     course_url = "",
     progress_percentage = 0
 }) => {
+    const { t } = useTranslation("education");
+
     return (
         <Card
             variant='outlined'
@@ -36,7 +39,7 @@ const CourseCard = ({
             }}>
             <Box position="absolute" top={12} right={12} zIndex={1}>
                 <CustomChip
-                    label={status}
+                    label={t(status)}
                     variant="condensed"
                     size="small"
                     color="black"
@@ -66,11 +69,11 @@ const CourseCard = ({
                 </Box>
                 <Stack spacing={1} mb={3}>
                     <Box display="flex" >
-                        <ProgressBar progress_percentage={progress_percentage} sx={{ marginBottom: 1 }} />
+                        <ProgressBar progress_percentage={progress_percentage} title={t("continuing_education.progress_bar")} sx={{ marginBottom: 1 }} />
                     </Box>
                     <Box display="flex" justifyContent="space-between" alignItems="center">
                         <Typography variant="caption" color="text.secondary">
-                            Año
+                            {t("continuing_education.year")}
                         </Typography>
                         <Typography variant="caption" color="text.primary" fontWeight={500}>
                             {year}
@@ -78,29 +81,29 @@ const CourseCard = ({
                     </Box>
                     <Box display="flex" justifyContent="space-between" alignItems="center">
                         <Typography variant="caption" color="text.secondary">
-                            Duración
+                            {t("continuing_education.duration.title")}
                         </Typography>
                         <Typography variant="caption" color="text.primary" fontWeight={500}>
-                            {duration}
+                            {t("continuing_education.duration.format", { count: duration })}
                         </Typography>
                     </Box>
                     <Box display="flex" justifyContent="space-between" alignItems="center">
                         <Typography variant="caption" color="text.secondary">
-                            Certificado
+                            {t("continuing_education.certificate")}
                         </Typography>
                         {hasCertificate ? (
                             <Typography variant="caption" color="success.primary">
-                                <i className="ri-checkbox-circle-line"></i> Certificado obtenido
+                                <i className="ri-checkbox-circle-line"></i> {t("course_progress_status.completed")}
                             </Typography>
                         ) : (
                             <Typography variant="caption" color="secondary.main">
-                                <i className="ri-time-line"></i> Pendiente
+                                <i className="ri-time-line"></i> {t("course_progress_status.in_progress")}
                             </Typography>
                         )}
 
                     </Box>
                 </Stack>
-                <Typography variant="body2" fontWeight={600} color="text.primary" gutterBottom>Tecnologías:</Typography>
+                <Typography variant="body2" fontWeight={600} color="text.primary" gutterBottom>{t("continuing_education.technologies")}:</Typography>
                 <Box mt={1}>
                     <Stack direction="row" spacing={1} useFlexGap flexWrap="wrap">
                         {tags?.map((tag, index) => (
@@ -120,7 +123,7 @@ const CourseCard = ({
                     component="a"
                     variant="outlined"
                     color="input"
-                    title='Ir a curso'
+                    title={t("continuing_education.go_to_course")}
                     fullWidth
                     size='medium'
                     disabled={!course_url}
@@ -128,7 +131,7 @@ const CourseCard = ({
                     target="_blank"
                     startIcon={<i className='ri-external-link-line'></i>}
                 >
-                    <Typography variant="body2" color="inherit">Ir al curso</Typography>
+                    <Typography variant="body2" color="inherit">{t("continuing_education.go_to_course")}</Typography>
                 </Button>
             </CardActions>
         </Card>

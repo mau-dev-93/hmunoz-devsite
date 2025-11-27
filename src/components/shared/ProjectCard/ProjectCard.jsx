@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { Box, Button, Card, CardActions, CardContent, CardMedia, Stack, Typography } from "@mui/material";
+import { useTranslation } from 'react-i18next';
 
 // Components
 import CustomChip from '../CustomChip/CustomChip';
@@ -8,6 +9,8 @@ import ProgressBar from '../ProgressBar/ProgressBar';
 import HighlightList from '../HighlightList/HighlightList';
 
 const ProjectCard = ({ name, description, status, role, icon, progress_percentage = 0, tech_stack = [], features = [], image_url, live_demo_url }) => {
+    const { t } = useTranslation("projects");
+
     return (
         <Card
             variant='outlined'
@@ -40,17 +43,17 @@ const ProjectCard = ({ name, description, status, role, icon, progress_percentag
             <CardContent sx={{ flexGrow: 1, px: 2 }}>
                 <Box py={2}>
                     <Typography gutterBottom variant="h6" fontWeight={600} component="div">
-                        {name}
+                        {t(name)}
                     </Typography>
-                    <CustomChip label={role} variant="outlined" color="secondary" size="small" />
+                    <CustomChip label={t(role)} variant="outlined" color="secondary" size="small" />
                     <Typography variant="body2" color="text.secondary" mt={2}>
-                        {description}
+                        {t(description)}
                     </Typography>
                 </Box>
                 <Box py={2}>
-                    <ProgressBar progress_percentage={progress_percentage} sx={{ marginBottom: 3 }} />
+                    <ProgressBar progress_percentage={progress_percentage} title={t("progress_bar")} sx={{ marginBottom: 3 }} />
                     <Typography variant="body2" color="text.primary" fontWeight={600}>
-                        Tecnologías
+                        {t("tech_stack")}
                     </Typography>
                     <Stack direction="row" spacing={0} flexWrap="wrap" gap={1} mt={1} mb={3}>
                         {tech_stack.map((tech, index) => (
@@ -58,14 +61,9 @@ const ProjectCard = ({ name, description, status, role, icon, progress_percentag
                         ))}
                     </Stack>
                     <Typography variant="body2" color="text.primary" fontWeight={600}>
-                        Caracteristicas principales
+                        {t("features")}
                     </Typography>
-                    <HighlightList
-                        features={features}
-                        color="primary.main"
-                        variant="body2"
-                        sx={{ marginTop: 1 }}
-                    />
+                    <HighlightList features={features} color="primary.main" variant="body2" format={(item) => t(item)} sx={{ marginTop: 1 }} />
                 </Box>
             </CardContent>
             <CardActions disableSpacing sx={{ p: 2, mt: 'auto', flexDirection: { xs: 'column', sm: 'row' }, gap: 2 }}>
@@ -76,7 +74,7 @@ const ProjectCard = ({ name, description, status, role, icon, progress_percentag
                         tabIndex={-1}
                         variant="contained"
                         color="primary"
-                        title='Próximamente'
+                        // title={t("coming_soon")}
                         fullWidth
                         size='medium'
                         disabled
@@ -85,7 +83,7 @@ const ProjectCard = ({ name, description, status, role, icon, progress_percentag
                         target="_blank"
                         startIcon={<i className='ri-external-link-line'></i>}
                     >
-                        <Typography variant="body2" color="inherit">Ver proyecto</Typography>
+                        <Typography variant="body2" color="inherit">{t("view_project")}</Typography>
                     </Button>
                 )}
             </CardActions>

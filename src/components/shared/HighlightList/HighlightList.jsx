@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { List, ListItem, ListItemText, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 
-const HighlightList = ({ features, color, variant, sx }) => {
+const HighlightList = ({ features, color, variant, format = null, sx }) => {
     return (
         <List dense disablePadding sx={{ ...sx }}>
             {features.map((feature, index) => (
@@ -18,7 +18,7 @@ const HighlightList = ({ features, color, variant, sx }) => {
                         }}
                     />
                     <ListItemText sx={{ lineHeight: "16px" }} primary={
-                        <Typography variant={variant} color="text.secondary">{feature}</Typography>
+                        <Typography variant={variant} color="text.secondary">{format ? format(feature) : feature}</Typography>
                     } />
                 </ListItem>
             ))}

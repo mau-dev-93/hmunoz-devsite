@@ -1,0 +1,52 @@
+{
+    "section_title": "The <strong>Human</strong> Side",
+    "section_subtitle": "Passions that define me as a professional and as a person.",
+    "card_section": {
+        "card_1": {
+            "title": "My Story",
+            "description": "Hello! My name is Mauricio Muñoz. I am 32 years old, based in Monterrey, Mexico, and I am a software developer, husband, and father. Since I was a child, my curiosity was shaped by questions and music: playing the drums and guitar. In high school, still without a clear path, a Career Counseling class introduced me to the Multimedia and Digital Animation degree. Although I wasn't a gamer, some subjects in the curriculum clicked immediately: the programming ones. There I discovered a medium to create from scratch and shape my own ideas. My professional career started at a telecommunications company developing an Android app (Java), and that's where my path as a full-stack developer began. Today, I continue to evolve—among AIs, DevOps, and containers—driven by the same curiosity as always and with the goal of delivering real value in every project."
+        },
+        "card_2": {
+            "title": "On Family",
+            "description": "Everything I do, in some way, begins and ends with my family. They are my drive and the reason for my daily effort. That is why my work is not just a profession; it is the means I have to build a stable environment and a good future for the people I love most."
+        },
+        "card_3": {
+            "title": "On Values",
+            "description": "Respect, honesty, and gratitude are the foundation of how I relate to people. I seek to apply these principles in everything I do, both at work and with my family and friends. In the end, it is about offering genuine and considerate treatment to the people around me."
+        },
+        "card_4": {
+            "title": "“I think, therefore I develop”",
+            "description": "Before writing a single line of code, I stop to understand the 'why' of the idea and the value it will deliver. I evaluate the impact, the risks, and prioritize what is truly needed. It's like having a blank canvas: first I sketch the general outline, and from there, I start materializing. It is a habit I apply to everything; it helps me execute with greater clarity."
+        },
+        "card_5": {
+            "title": "Programming Pizzas",
+            "description": "I love the process of making pizza at home, from scratch. I discovered it is very similar to software development: both require patience, precision, and attention to detail. In the end, both a good pizza and a good application are the result of creating something valuable to share with others."
+        },
+        "card_6": {
+            "title": "Solving with Code",
+            "description": "For me, an unresolved problem is the start of a good idea. I see programming as my tool to build solutions and connect with that goal. The satisfaction of seeing that something works and helps others is what keeps me learning and looking for ways to do it better every day."
+        },
+        "card_7": {
+            "title": "On Music",
+            "description": "Music was my first school of creativity. There I learned about rhythm, listening, and structure, but above all, to improvise without sheet music. Today, that process is my way of finding clarity: I organize ideas, simplify, and move forward. I bring that same philosophy to my code: start simple, iterate with intention, and find the harmony between the idea, the design, and the final result."
+        }
+    },
+    "identity_section": {
+        "title": "Small Things That <strong>Define</strong> Me",
+        "subtitle": "The details that shape my identity and, in some way, influence how I create and think about software development",
+        "identity_1": "I've played guitar and drums since age 6",
+        "identity_2": "I enjoy making my own pizzas",
+        "identity_3": "I am a dad, husband, and developer",
+        "identity_4": "My first program was at age 15",
+        "identity_5": "Curious by nature, constantly researching",
+        "identity_6": "Fan of psychoanalysis and modern philosophy",
+        "identity_7": "I live by gratitude, respect, and honesty in what I do",
+        "identity_8": "I start the day with a cup of coffee"
+    },
+    "gratitude_section": {
+        "title": "Thank You for Making It This Far",
+        "description_1": "I look for opportunities where my experience creates a real impact.",
+        "description_2": "If we share a vision, it would be a pleasure to discuss goals and next steps.",
+        "button_text": "Back to top"
+    }
+}

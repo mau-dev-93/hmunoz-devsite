@@ -1,0 +1,72 @@
+{
+    "section_title": "Professional <strong>Experience</strong>",
+    "section_description": "Over 10 years building scalable and high-impact software solutions.",
+    "achievements_label": "Activities and Achievements",
+    "technologies_label": "Technologies",
+    "jobs": {
+        "talisis": {
+            "job_title": "Full-Stack Developer",
+            "date_range": "January 2021 - December 2024",
+            "description": "Led the e-commerce development of the Talisis.com educational platform, designing full-stack solutions with React, Node.js, and AWS.",
+            "highlights": {
+                "point1": "50,000+ active users utilizing payment services.",
+                "point2": "$400,000+ MXN monthly revenue enabled by the payment flow.",
+                "point3": "Developed responsive interfaces with React.js, Redux, and Material UI.",
+                "point4": "Designed serverless architectures with AWS (Lambda, API Gateway, Step Functions, and EventBridge) for secure transactions.",
+                "point5": "Developed high-performance REST APIs on API Gateway, implementing JWT tokens and Lambda Authorizers.",
+                "point6": "Designed data models with dbdiagram.io and SQL Server, including encryption for sensitive data.",
+                "point7": "Ensured code quality through code reviews, testing, and error/log monitoring with Sentry.",
+                "point8": "Documented architectures, payment processes, data models, and APIs in ClickUp and Postman.",
+                "point9": "Created a QR access application in 3 days for massive events, with real-time monitoring."
+            }
+        },
+        "enkontrol": {
+            "job_title": "Full-Stack Developer",
+            "date_range": "July 2017 - September 2020",
+            "description": "Actively participated in the modernization of the Enkontrol ERP, leading business process analysis and the development of new full-stack functionalities with ASP.NET and React.",
+            "highlights": {
+                "point1": "Developed responsive interfaces using React.js, TypeScript, Redux, and CSS, improving system usability and performance.",
+                "point2": "Developed RESTful APIs in ASP.NET (C#), applying SOLID principles and design patterns to ensure scalability and maintainability.",
+                "point3": "Led a development team, coordinating tasks and ensuring timely deliveries.",
+                "point4": "Conducted requirements analysis and database design in SQL Server, optimizing key ERP processes."
+            }
+        },
+        "tca": {
+            "job_title": "Software Developer",
+            "date_range": "February 2015 - July 2017",
+            "description": "Developed and maintained applications for the Merksyst commercial ERP, and actively contributed to the system migration to a modern web platform with ASP.NET.",
+            "highlights": {
+                "point1": "Maintained a commercial ERP using C/C++, Delphi Pascal, and SQL Server.",
+                "point2": "Participated in the system migration to a web platform with ASP.NET MVC.",
+                "point3": "40+ SQL queries optimized, improving overall system performance.",
+                "point4": "300+ critical support tickets successfully resolved, ensuring customer satisfaction."
+            }
+        },
+        "consiss": {
+            "job_title": "Software Developer",
+            "date_range": "September 2014 - January 2015",
+            "description": "Developed a complete mobile solution for an Arca Continental customer loyalty program.",
+            "highlights": {
+                "point1": "Developed a native loyalty application for Android using Java.",
+                "point2": "Implemented the application backend with ASP.NET Web API (C#).",
+                "point3": "Developed a web administrative panel for user and reward management."
+            }
+        }
+    },
+    "duration_formats": {
+        "years": "{{count}} years",
+        "months": "{{count}} months"
+    },
+    "employment_types": {
+        "full_time": "Full-time",
+        "part_time": "Part-time",
+        "contract": "Contract",
+        "internship": "Internship",
+        "freelance": "Freelance"
+    },
+    "employment_locations": {
+        "onsite": "On-site",
+        "remote": "Remote",
+        "hybrid": "Hybrid"
+    }
+}

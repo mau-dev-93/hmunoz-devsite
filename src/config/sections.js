@@ -1,9 +1,9 @@
 export const SECTIONS = [
-    { id: "hero_section", label: "Inicio" },
-    { id: "aboutme_section", label: "Sobre mí" },
-    { id: "experience_section", label: "Experiencia" },
-    { id: "skills_section", label: "Habilidades" },
-    { id: "projects_section", label: "Proyectos" },
-    { id: "education_section", label: "Formación" },
-    { id: "humanside_section", label: "Lado Humano" },
+    { id: "hero_section", i18nKey: "navbar.home" },
+    { id: "aboutme_section", i18nKey: "navbar.about" },
+    { id: "experience_section", i18nKey: "navbar.experience" },
+    { id: "projects_section", i18nKey: "navbar.projects" },
+    { id: "skills_section", i18nKey: "navbar.skills" },
+    { id: "education_section", i18nKey: "navbar.education" },
+    { id: "humanside_section", i18nKey: "navbar.human" },
 ];
