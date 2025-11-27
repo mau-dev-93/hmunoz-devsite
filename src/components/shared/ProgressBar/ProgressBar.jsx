@@ -25,12 +25,12 @@ const BorderLinearProgress = styled(LinearProgress)(({ theme, value }) => ({
 }));
 
 
-const ProgressBar = ({ progress_percentage, sx }) => {
+const ProgressBar = ({ progress_percentage, title, sx }) => {
     return (
         <Box width="100%" sx={{ ...sx }}>
             <Box display="flex" alignItems="center" justifyContent="space-between" mb={0.5}>
                 <Typography component="span" variant="caption" color="text.secondary">
-                    Progreso
+                    {title || "Progress"}
                 </Typography>
                 <Typography component="span" variant="caption" fontWeight="600" color="text.primary">
                     {progress_percentage}%

@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 // @material-ui/core
 import { Tab, Tabs, Typography } from "@mui/material";
 
@@ -8,6 +10,7 @@ import { SECTIONS } from "../../../config/sections";
 import { useNavbarScrollContext } from "../../../contexts/NavbarScrollContext/useNavbarScrollContext";
 
 const NavbarLinks = ({ isMobile }) => {
+    const { t } = useTranslation("common");
     const { activeSection, scrollToSection } = useNavbarScrollContext();
 
     const handleTabClick = (sectionId, index) => {
@@ -44,7 +47,7 @@ const NavbarLinks = ({ isMobile }) => {
                     key={section.id}
                     disableRipple
                     onClick={() => handleTabClick(section.id, index)}
-                    label={<Typography variant="body2" component="span" noWrap fontWeight="600">{section.label}</Typography>}
+                    label={<Typography variant="body2" component="span" noWrap fontWeight="600">{t(section.i18nKey)}</Typography>}
                 />
             ))}
         </Tabs>

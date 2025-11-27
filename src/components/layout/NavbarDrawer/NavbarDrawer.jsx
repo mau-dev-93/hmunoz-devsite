@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 // @material-ui/core
 import { alpha, Drawer, IconButton, List, Icon, ListItemButton, ListItemText } from "@mui/material";
@@ -34,6 +35,7 @@ const NavbarDrawer = () => {
                 onClick={toggleDrawer(!openDrawer)}
                 size="medium"
                 sx={{
+                    mr: -1,
                     transition: (t) => t.transitions.create("background-color", { duration: t.transitions.duration.shorter }),
                     "&:hover": { bgcolor: "background.section" },
                 }}
@@ -79,6 +81,7 @@ const NavbarDrawer = () => {
 
 const DrawerList = ({ onToggleDrawer }) => {
     const { activeSection, scrollToSection } = useNavbarScrollContext();
+    const { t } = useTranslation("common");
 
     const handleListItemClick = (sectionId, index) => {
         onToggleDrawer(false)({ type: 'click' });
@@ -110,7 +113,7 @@ const DrawerList = ({ onToggleDrawer }) => {
                         }
                     }}
                 >
-                    <ListItemText primary={section.label} slotProps={{ primary: { variant: 'body2' } }} />
+                    <ListItemText primary={t(section.i18nKey)} slotProps={{ primary: { variant: 'body2' } }} />
                 </ListItemButton>
             ))}
         </List>

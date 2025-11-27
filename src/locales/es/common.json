@@ -1,0 +1,32 @@
+{
+    "navbar": {
+        "home": "Inicio",
+        "about": "Sobre mí",
+        "experience": "Experiencia",
+        "projects": "Proyectos",
+        "skills": "Habilidades",
+        "education": "Formación",
+        "human": "Lado Humano"
+    },
+    "buttons": {
+        "downloadCV": "Descargar CV",
+        "copy": "Copiar"
+    },
+    "footer": {
+        "greeting": "Senior Full-Stack Developer. Entrego valor real con claridad, seguridad y mejora continua.",
+        "contact": "Contacto",
+        "quick_links": {
+            "title": "Enlaces Rápidos",
+            "links": {
+                "home": "Inicio",
+                "about": "Sobre mí",
+                "experience": "Experiencia",
+                "skills": "Habilidades",
+                "projects": "Proyectos",
+                "education": "Formación",
+                "human": "Lado Humano"
+            }
+        },
+        "rights": "Hecho con <heart/> y mucho código."
+    }
+}

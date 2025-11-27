@@ -1,0 +1,45 @@
+{
+    "section_title": "Education and <strong>Training</strong>",
+    "section_description": "A solid academic foundation and a passion for continuous learning.",
+    "academic_background": {
+        "title": "Academic Background",
+        "specialties_title": "Specialties",
+        "bachelor": {
+            "detail_1": "Web Development (PHP, HTML, CSS)",
+            "detail_2": "Game Development (C++ & OpenGL)",
+            "detail_3": "Android Development (Java)",
+            "detail_4": "Databases (SQL Server & MySQL)"
+        },
+        "master": {
+            "detail_1": "",
+            "detail_2": "",
+            "detail_3": "",
+            "detail_4": ""
+        }
+    },
+    "continuing_education": {
+        "title": "Continuing Education",
+        "progress_bar": "Progress",
+        "year": "Year",
+        "duration":  {
+            "title": "Duration",
+            "format": "{{count}} hours"
+        },
+        "certificate": "Certificate",
+        "technologies": "Technologies",
+        "go_to_course": "Go to course"
+    },
+    "bachelor_status": {
+        "graduated": "Graduated",
+        "completed": "Coursework Completed"
+    },
+    "course_progress_status": {
+        "completed": "Completed",
+        "in_progress": "In progress",
+        "not_started": "Not started"
+    },
+    "certification_status": {
+        "completed": "Certificate Earned",
+        "pending": "Pending"
+    }
+}

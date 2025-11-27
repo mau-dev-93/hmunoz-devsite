@@ -1,4 +1,5 @@
 import { Box, Container, Grid, Typography, Divider, Link, Button } from "@mui/material";
+import { Trans, useTranslation } from "react-i18next";
 
 // shared
 import SocialIconButton from "../../shared/SocialIconButton/SocialIconButton.jsx";
@@ -8,6 +9,8 @@ import Logo from "../../shared/Logo/Logo.jsx";
 import { downloadCV } from "@/utils/downloadCV.js";
 
 const Footer = () => {
+    const { t } = useTranslation("common");
+
     return (
         <Box component="footer" bgcolor="background.paper" pt={6} pb={{ xs: 2, sm: 4 }}>
             <Container maxWidth="lg">
@@ -15,7 +18,7 @@ const Footer = () => {
                     <Grid size={{ xs: 12, md: 5 }}>
                         <Logo isMobile={false} sx={{ marginBottom: 2 }} />
                         <Typography variant="body2" color="text.secondary" mb={2} lineHeight={1.8}>
-                            Senior Full-Stack Developer. Entrego valor real con claridad, seguridad y mejora continua.
+                            {t("footer.greeting")}
                         </Typography>
                         <Box display="flex" gap={1.5}>
                             <SocialIconButton size="medium" href="https://github.com/mau-dev-93" icon={<i className='ri-github-line'></i>} />
@@ -23,19 +26,19 @@ const Footer = () => {
                         </Box>
                     </Grid>
                     <Grid size={{ xs: 12, md: 4 }}>
-                        <Typography variant="body2" fontWeight="bold" mb={2}>Enlaces rápidos</Typography>
+                        <Typography variant="body2" fontWeight="bold" mb={2}>{t("footer.quick_links.title")}</Typography>
                         <Box display="flex" flexDirection="column" gap={1.5}>
-                            <Link href="#hero_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">Inicio</Typography></Link>
-                            <Link href="#aboutme_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">Sobre mí</Typography></Link>
-                            <Link href="#experience_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">Experiencia</Typography></Link>
-                            <Link href="#skills_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">Habilidades</Typography></Link>
-                            <Link href="#projects_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">Proyectos</Typography></Link>
-                            <Link href="#education_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">Formación</Typography></Link>
-                            <Link href="#humanside_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">Lado Humano</Typography></Link>
+                            <Link href="#hero_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">{t("footer.quick_links.links.home")}</Typography></Link>
+                            <Link href="#aboutme_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">{t("footer.quick_links.links.about")}</Typography></Link>
+                            <Link href="#experience_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">{t("footer.quick_links.links.experience")}</Typography></Link>
+                            <Link href="#skills_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">{t("footer.quick_links.links.skills")}</Typography></Link>
+                            <Link href="#projects_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">{t("footer.quick_links.links.projects")}</Typography></Link>
+                            <Link href="#education_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">{t("footer.quick_links.links.education")}</Typography></Link>
+                            <Link href="#humanside_section" color="text.secondary" sx={{ textDecoration: 'none', '&:hover': { color: 'primary.main' } }}><Typography variant="body2">{t("footer.quick_links.links.human")}</Typography></Link>
                         </Box>
                     </Grid>
                     <Grid size={{ xs: 12, md: 3 }}>
-                        <Typography variant="body2" fontWeight="bold" mb={2}>Contacto</Typography>
+                        <Typography variant="body2" fontWeight="bold" mb={2}>{t("footer.contact")}</Typography>
                         <Box display="flex" flexDirection="column" gap={1.5}>
                             <Box display="flex" alignItems="center" gap={1.5} color="text.secondary" sx={{ '&:hover': { color: 'primary.main' } }}>
                                 <i className='ri-mail-line'></i>
@@ -55,7 +58,7 @@ const Footer = () => {
                 <Divider sx={{ mt: 4, mb: { xs: 2, sm: 4 } }} />
                 <Box display="flex" justifyContent={{ xs: "center", sm: "space-between" }} alignItems="center" flexWrap="wrap" gap={1}>
                     <Typography variant="caption" color="text.secondary">
-                        © 2025 Mauricio Muñoz. Hecho con <Box component="span" color="error.main"><i className='ri-heart-line'></i></Box> y mucho código.
+                        © 2025 Mauricio Muñoz.{" "}<Trans ns="common" i18nKey="footer.rights" components={{ heart: <Box component="span" color="error.main"><i className='ri-heart-line'></i></Box> }} />
                     </Typography>
                     <Button
                         variant='outlined'
@@ -64,7 +67,7 @@ const Footer = () => {
                         startIcon={<i className='ri-download-2-line'></i>}
                         onClick={downloadCV}
                     >
-                        <Typography variant="caption" whiteSpace="nowrap">Descargar CV</Typography>
+                        <Typography variant="caption" whiteSpace="nowrap">{t("buttons.downloadCV")}</Typography>
                     </Button>
                 </Box>
             </Container>
