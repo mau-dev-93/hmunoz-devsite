@@ -6,7 +6,7 @@ import { ThemeProvider, CssBaseline } from '@mui/material';
 import { ThemeProvider as StyledProvider } from 'styled-components';
 
 import theme from './theme';
-import GlobalStyle from './theme/globalStyle.js';
+import GlobalStyle from './theme/GlobalStyle.js';
 
 import './config/locale/i18n.js';
 
