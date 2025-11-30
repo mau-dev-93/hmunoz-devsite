@@ -50,7 +50,7 @@ const projects = [
         "status": "status.completed",
         "icon": "ri-computer-line",
         "progress_percentage": 80,
-        "tech_stack": ["React", "Redux", "JavaScript", "Material UI", "AWS Amplify", "i18n"],
+        "tech_stack": ["React", "Redux", "JavaScript", "MUI v7", "i18n", "AWS Amplify", "AWS DynamoDB", "AWS Lambda", "AWS API Gateway"],
         "features": [
             "projects.portfolio.features.feature_1",
             "projects.portfolio.features.feature_2",
