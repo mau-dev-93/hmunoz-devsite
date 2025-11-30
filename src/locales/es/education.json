@@ -27,7 +27,8 @@
         },
         "certificate": "Certificado",
         "technologies": "Tecnologías",
-        "go_to_course": "Ir al curso"
+        "go_to_course": "Ir al curso",
+        "no_courses": "No hay cursos en progreso en este momento."
     },
     "bachelor_status": {
         "graduated": "Titulado",
